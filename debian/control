@@ -1,0 +1,26 @@
+Source: eboard
+Section: games
+Priority: optional
+Homepage: http://www.bergo.eng.br/eboard/
+Maintainer: Vincent Legout <vlegout@debian.org>
+Build-Depends: debhelper (>= 9), libgtk2.0-dev
+Standards-Version: 3.9.5
+
+Package: eboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: sox, xfonts-75dpi
+Breaks: eboard-extras-pack1 (<< 2-1)
+Replaces: eboard-extras-pack1 (<< 2-1)
+Suggests: gnuchess | crafty, eboard-extras-pack1
+Description: GTK+ chessboard program
+ eboard is a graphical chess program which can function as an interface to
+ Internet chess servers such as FICS and to chess engines such as Crafty.
+ .
+ eboard has a themeable and freely resizable board, a tabbed or multi-window
+ display, and supports multiple simultaneous boards.
+ .
+ This package contains a chess interface, which means that you can play against
+ another human on the same computer, or play on an Internet server.  If you
+ would like to play against a computer, you should install a chess engine such
+ as gnuchess in addition.

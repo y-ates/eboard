@@ -1,0 +1,1165 @@
+L72 109
+ ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n
+ ** PNG の読込に失敗: 内蔵の低解像度の駒セットを使います。見ため悪いけどね。
+L11 11
+ Browse... 
+ 閲覧... 
+L15 17
+ Play Selected 
+ プレイ選択 
+L9 8
+ Refresh 
+ 更新 
+L14 23
+ Remove Field 
+ フィールド削除 
+L5 8
+ Set 
+ 設定 
+L30 35
+%d %s to %s, %d Hz for %d msec
+%d %s を %s へ, %d Hz を %d msec
+L13 33
+%d games read
+%d のゲームを読みました
+L14 31
+%d moves in %s
+%d は %s に移動しました
+L25 30
+%d. Connect to %s:%d (%s)
+%d. %s:%d (%s) に繋ぎます
+L41 37
+%s (white) vs. %s (black)\n%s\n%d:%.2d %d
+%s (白) 対 %s (黒)\n%s\n%d:%.2d %d
+L31 45
+%s accepted your game proposal.
+%s はゲームの申込を断りました。
+L18 39
+%s engine started.
+%s エンジンを起動しました。
+L17 48
+%s offers a draw.
+%s は引き分けを提案してきました。
+L33 65
+(Wrapped) Match Found at Line %d.
+(Wrapped) %d 行に一致する文字列を見つけました。 
+L64 64
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)
+L39 65
+(message obfuscated -- password mode ?)
+(メッセージが不明瞭です -- パスワードモード ?)
+L14 26
+(no bookmarks)
+(ブックマークなし)
+L6 8
+(none)
+(なし)
+L13 17
+(time period)
+(時間区切り)
+L18 37
+* game not found: 
+* ゲームがみつかりません: 
+L47 77
+** [eboard] bad engine protocol # in bookmark: 
+** [eboard] 不正なエンジンのプロトコル # in ブックマーク: 
+L57 71
+** eboard ** warning: HOME environment variable not set\n
+** eboard ** 警告: 環境変数 HOME が設定されていません\n
+L26 44
+--- %s game to PGN file %s
+--- ゲーム %s を PGN ファイル %s へ
+L16 28
+--- Disconnected
+--- 接続を切りました
+L14 21
+/Game/Ad_journ
+/ゲーム/延期(_d)
+L19 24
+/Game/Retract _Move
+/ゲーム/待った(_M)
+L12 21
+/Game/_Abort
+/ゲーム/中断(_A)
+L17 33
+/Game/_Offer Draw
+/ゲーム/引き分け提案(_O)
+L13 21
+/Game/_Resign
+/ゲーム/投了(_R)
+L22 37
+/Help/_About eboard...
+/ヘルプ/eboard について(_A)...
+L17 33
+/Help/_Debug Info
+/ヘルプ/デバッグ情報(_D)
+L22 27
+/Help/_Getting Started
+/ヘルプ/はじめに(_G)
+L11 27
+/Help/_Keys
+/ヘルプ/キー入力(_K)
+L10 10
+/Help/sep4
+/Help/sep4
+L22 25
+/Peer/Connect to _FICS
+/接続/FICSに接続(_F)
+L43 39
+/Peer/Direct connect with _Remote eboard...
+/接続/別のeboardに直接接続(_R)
+L23 45
+/Peer/Engine B_ookmarks
+/接続/エンジンのブックマーク(_o)
+L20 36
+/Peer/ICS _Bookmarks
+/接続/ICSのブックマーク(_B)
+L36 46
+/Peer/Play against Engine/Cr_afty...
+/接続/コンピュータと対戦/Cr_afty...
+L41 51
+/Peer/Play against Engine/GNU Chess _4...
+/接続/コンピュータと対戦/GNU CHess _4...
+L44 54
+/Peer/Play against Engine/_Generic Engine...
+/接続/コンピュータと対戦/_Generic Engine...
+L35 45
+/Peer/Play against Engine/_Sjeng...
+/接続/コンピュータと対戦/_Sjeng...
+L30 40
+/Peer/Play against Engine/sep1
+/接続/コンピュータと対戦/sep1
+L26 35
+/Peer/Play against _Engine
+/接続/コンピュータと対戦
+L33 36
+/Peer/_Connect to Other Server...
+/接続/他のサーバに接続(_C)
+L17 27
+/Peer/_Disconnect
+/接続/接続を切る(_D)
+L26 36
+/Peer/_Empty Scratch Board
+/接続/空の編集用ボード(_E)
+L11 18
+/Peer/_Quit
+/接続/終了(_Q)
+L42 60
+/Peer/_Scratch Board with Initial Position
+/接続/駒が初期位置に並んだ編集用ボード(_S)
+L10 12
+/Peer/sep2
+/接続/sep2
+L10 12
+/Peer/sep3
+/接続/sep3
+L10 12
+/Peer/sep4
+/接続/sep4
+L48 64
+/Settings/Bitmapped Piece Sets/Load _Pieces Only
+/設定/ビットマップ駒セット/駒だけ読み込む(_P)
+L49 70
+/Settings/Bitmapped Piece Sets/Load _Squares Only
+/設定/ビットマップ駒セット/ボードだけ読み込む(_S)
+L42 67
+/Settings/Bitmapped Piece Sets/Load _Theme
+/設定/ビットマップ駒セット/テーマを読み込む(_T)
+L31 38
+/Settings/Bitmapped Piece _Sets
+/設定/ビットマップ駒セット
+L35 48
+/Settings/Enable Legality _Checking
+/設定/正当性のチェックを有効に(_C)
+L55 73
+/Settings/ICS Behavior/Popup Board Panes _Upon Creation
+/設定/ICS の振舞/ボードを他よりも手前にポップアップ
+L69 92
+/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends
+/設定/ICS の振舞/ゲーム終了後に観察していたボードをすぐに破棄(_D)
+L18 27
+/Settings/Pre_move
+/設定/プレムーブ(_m)
+L27 27
+/Settings/Sho_w Coordinates
+/設定/座標を表示(_w)
+L24 42
+/Settings/_Animate Moves
+/設定/移動をアニメーション(_A)
+L33 42
+/Settings/_Beep on Opponent Moves
+/設定/相手の移動でビープ音(_B)
+L30 39
+/Settings/_Enable Other Sounds
+/設定/他の効果音を有効に(_E)
+L30 45
+/Settings/_Highlight Last Move
+/設定/最後の移動をハイライト(_H)
+L23 22
+/Settings/_ICS Behavior
+/設定/_ICS の振舞
+L25 21
+/Settings/_Preferences...
+/設定/設定(_P)...
+L47 63
+/Settings/_Vectorized Pieces (Faster Rendering)
+/設定/_駒のベクター化(レンダリングが速い)(_V)
+L14 12
+/Settings/sep3
+/設定/sep3
+L23 33
+/Windows/Find _Previous
+/ウィンドウ/前を探す(_P)
+L28 60
+/Windows/Games on _Client...
+/ウィンドウ/クライアントのゲーム表示(_C)...
+L31 54
+/Windows/Save Desktop _Geometry
+/ウィンドウ/デスクップの位置を保存(_G)
+L29 63
+/Windows/Save _Text Buffer...
+/ウィンドウ/テキストバッファを保存する(_T)...
+L26 43
+/Windows/_Ads on Server...
+/ウィンドウ/_サーバの ad 表示...
+L26 45
+/Windows/_Detached Console
+/ウィンドウ/コンソールを切断(_D)
+L32 56
+/Windows/_Find Text (upwards)...
+/ウィンドウ/テキスト検索(上方向に)(_F)...
+L28 51
+/Windows/_Games on Server...
+/ウィンドウ/サーバのゲーム表示(_G)...
+L23 48
+/Windows/_Run Script...
+/ウィンドウ/スクリプトを実行(_R)...
+L13 21
+/Windows/sep1
+/ウィンドウ/sep1
+L13 21
+/Windows/sep2
+/ウィンドウ/sep2
+L13 21
+/Windows/sep3
+/ウィンドウ/sep3
+L6 14
+/_Game
+/ゲーム(_G)
+L6 14
+/_Help
+/ヘルプ(_H)
+L6 11
+/_Peer
+/接続(_P)
+L10 11
+/_Settings
+/設定(_S)
+L9 20
+/_Windows
+/ウィンドウ(_W)
+L106 163
+<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<AdListDialog::AdListDialog> 警告: 固定幅フォントを読み込めませんでした。このダイアログの内容も汚く見えているでしょう。
+L41 77
+<BareBoard::BareBoard> can't load font.\n
+<BareBoard::BareBoard> フォントをロードできませんでした。.\n
+L124 189
+<Board::Board> ** failed to load one or more board fonts - install X11 75 dpi and 100 dpi fonts, restart X, and try again.\n
+<Board::Board> ** ボードのフォント読み込みに失敗 - X11 の 75dip と 100 dip のフォントをインストールして、X を再起動し、また挑戦して下さい。\n
+L58 65
+<Board::Board> ** failed to load one or more board fonts\n
+<Board::Board> ** ボードのフォント読み込みに失敗\n
+L34 43
+<Fics Protocol> abort request sent
+<Fics Protocol> 中断リクエスト送信
+L36 43
+<Fics Protocol> adjourn request sent
+<Fics Protocol> 延期リクエスト送信
+L33 49
+<Fics Protocol> draw request sent
+<Fics Protocol> 引き分けリクエスト送信
+L110 167
+<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<GameListDialog::GameListDialog> 警告: 固定幅フォントを読み込めませんでした。このダイアログの内容も汚く見えているでしょう。
+L45 62
+<PatternMatcher::set> ** bad pattern string: 
+<PatternMatcher::set> ** 正しくないパターン文字列:
+L40 62
+<PieceSet::PieceSet> ** file not found: 
+<PieceSet::PieceSet> ** ファイルがみつかりません: 
+L39 46
+<SeekGraph::updatefont> failed to load 
+<SeekGraph::updatefont> 読み込みに失敗 
+L112 169
+<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<StockListDialog::StockListDialog> 警告: 固定幅フォントを読み込めませんでした。このダイアログの内容も汚く見えているでしょう。
+L34 41
+<Text::updateFont> failed to load 
+<Text::updateFont> 読み込みに失敗 
+L42 17
+<XBoard Protocol> Adjourning not supported
+<XBoard Protocol>
+L33 42
+<XBoard Protocol> Session Aborted
+<XBoard Protocol> セッションを中断
+L35 51
+<XBoard Protocol> draw request sent
+<XBoard Protocol> 引き分けリクエスト送信
+L9 9
+<editing>
+<editing>
+L17 25
+> (password sent)
+> (パスワード送信)
+L23 34
+> [issued from menu] %s
+> [メニューからの発行] %s
+L25 38
+> [issued from shortcut] 
+[ショートカットからの発行]
+L31 58
+> [script run from shortcut] %s
+> [ショートカットから実行のスクリプト] %s
+L12 16
+About eboard
+eboard を中断
+L6 15
+Accept
+受け入れる
+L36 48
+Accepted incoming connection from %s
+%s からの次の接続を受け入れました
+L14 12
+Ad Description
+Ad の詳細
+L7 12
+Ad List
+Ad の一覧
+L23 27
+Ad List (refreshing...)
+Ad の一覧 (更新中...)
+L33 61
+Add to Peer/Engine Bookmarks menu
+接続/エンジンをブックマークメニューに追加
+L22 45
+Address already in use
+アドレスはすでに使用しています
+L3 2
+Ads
+Ad
+L21 34
+Already connected ?!?
+すでに接続しています ?!?
+L675 956
+Anywhere:\nF3: Go to previous pane.\nF4: Go to next pane.\nF5: Go to the main board pane.\nF6: Go to the console pane.\nF7: Go to the seek graph pane (if available).\nF8: Toggle Shortcut Bar visilibity.\nPage Up/Page Down: scrolls the text console (must be visible)\nCtrl+(Left Arrow): Backward 1 halfmove\nCtrl+(Right Arrow): Forward 1 halfmove\nCtrl+F: Find Upwards(main console buffer)\nCtrl+G: Find Previous\n\nInput box:\nUp/Down (arrows): move thru input history\nEnter: send text line\nEsc: switch Chat/Command Mode\n\nSyntaxisms:\nIn main window's input box:\n.. entering %prefix text will set the chat prefix to text.\n.. entering %do scriptname will run scriptname.
+すべての場所:\nF3: 前のページに移動。\nF4: 次のページに移動。\nF5: メインボードに移動。\nF6: コンソールに移動。\nF7: (もし可能なら) 探索グラフに移動。\nF8: ショートカットバーの表示/非表示の切替え。\nPage Up/Page Down: (表示している)テキストコンソールのスクロール。\nCtrl+(Left Arrow): 半画面スクロール分戻る。\nCtrl+(Right Arrow): 半画面分スクロール進む。\nCtrl+F: 上方向に検索 (main console buffer)\nCtrl+G: 前を検索\n\n入力ボックス:\nUp/下矢印: 入力履歴に移動\nEnter: 一行入力を送る\nEsc: チャット/コマンド モードの切替え\n\nシンタックス:\nメインウィンドウの入力ボックスでは:\n.. 「%prefix」 の入力はチャットの「prefix」にテキストを設定します。\n.. 「%do スクリプト名」の入力は「スクリプト名」を実行します。
+L10 6
+Appearance
+外観
+L8 6
+Appended
+追加
+L5 6
+Apply
+適用
+L13 15
+Apply Changes
+変更を適用
+L24 42
+Auto-save observed games
+観察していたゲームを自動保存
+L22 39
+Auto-save played games
+プレイしたゲームを自動保存
+L8 12
+Autosave
+自動保存
+L14 15
+Bad descriptor
+不正な記述
+L45 75
+Beep (need Pitch, Duration, Count and Device)
+ビープ (ピッチ、継続時間、カウント、デバイスが必要)
+L10 18
+Bishop  %d
+ビショップ %d
+L14 12
+Black: %s - %s
+黒: %s - %s
+L17 30
+Bookmark Caption:
+ブックマークの見出し
+L6 3
+Bottom
+下
+L6 6
+Browse
+閲覧
+L19 45
+Buffer Save failed.
+バッファの保存に失敗しました。
+L8 15
+Bughouse
+バグハウス
+L22 44
+Bughouse: Partner Game
+バグハウス: パートナーのゲーム
+L14 21
+Button Caption
+ボタンの見出し
+L11 24
+Button Icon
+ボタンのアイコン
+L6 6
+Cancel
+取消
+L26 36
+Cancelled connection wait.
+接続待ちを取消しました。
+L9 9
+Change...
+変更...
+L13 24
+Channel Tells
+チャンネルの表示
+L9 21
+Checkmate
+チェックメイト
+L11 21
+Choose Font
+フォントを選択
+L9 9
+Choose...
+選択...
+L10 27
+Clock Font
+クロックのフォント
+L5 9
+Close
+閉じる
+L5 3
+Color
+色
+L15 12
+Color Selection
+色の選択
+L6 3
+Colors
+色
+L7 12
+Command
+コマンド
+L13 23
+Command Line:
+コマンドライン":
+L8 18
+Computer
+コンピュータ
+L30 37
+Computer White vs. Human Black
+コンピュータ 白 対 人間 黒
+L23 31
+Configured Sound Files:
+サウンドファイル編集:
+L7 6
+Connect
+接続
+L21 22
+Connect to ICS Server
+ICS サーバに接続
+L20 17
+Connected to %s (%s)
+%s (%s) に接続
+L19 18
+Connecting to %s...
+%s に接続中...
+L18 30
+Connection refused
+接続を拒否されました
+L28 29
+Connection to %s:%d failed: 
+%s:%d への接続を失敗: 
+L7 15
+Console
+コンソール
+L12 25
+Console Beep
+コンソール ブザー
+L12 30
+Console Font
+コンソールのフォント
+L21 33
+Console buffer saved.
+コンソールバッファ保存
+L6 13
+Count:
+カウント:
+L10 24
+Crazyhouse
+クレージーハウス
+L18 36
+Delete All Entries
+すべてのエントリーを削除
+L17 21
+Delete This Entry
+この項目を削除
+L12 25
+Depth Limit:
+思考の深さの制限:
+L11 6
+Description
+詳細
+L7 13
+Device:
+デバイス:
+L50 78
+Directory to run from (e.g., where book files are)
+実行するディレクトリ (例えば、ブックファイルのある所)
+L10 19
+Directory:
+ディレクトリ:
+L11 15
+Discard All
+すべて破棄
+L12 18
+Discard Game
+ゲームを破棄
+L7 9
+Dismiss
+やめる
+L12 18
+Display Game
+ゲームを表示
+L9 6
+Displayed
+表示
+L12 21
+Draw Offered
+引き分けを提案
+L16 33
+Draw offer sent.
+引き分けの提案を送信。
+L18 27
+Drawn by agreement
+合意により引き分け
+L16 20
+Duration (msec):
+継続時間 (msec):
+L18 15
+Dynamic Seek Table
+動的探索表
+L17 30
+Edit Bookmarks...
+ブックマークを編集...
+L21 42
+Edit Engine Bookmarks
+エンジンのブックマークを編集
+L14 24
+Edit Game Info
+ゲーム情報を編集
+L17 21
+Edit Time Control
+時間制御を編集
+L5 3
+Empty
+空
+L16 33
+Engine Bookmarks
+エンジンのブックマーク
+L14 27
+Engine Command
+エンジンのコマンド
+L12 22
+Engine Type:
+エンジンの種類:
+L28 40
+Engine Type: %s (uneditable)
+エンジンの種類: %s (編集不可)
+L43 84
+Engine asked more time to startup, waiting.
+エンジンの起動にもう少し時間がかかります、お待ち下さい。
+L19 36
+Engine command line
+エンジンのコマンドライン
+L14 30
+Engine loaded.
+エンジンを読み込み。
+L14 21
+Engine running
+エンジン実行中
+L30 56
+Engine started (2 sec timeout)
+エンジン開始しました (2 秒タイムアウト)
+L18 37
+Enter FEN Position
+FEN の場所を入力して下さい
+L10 18
+Event Type
+イベント種類
+L13 19
+Exam.Game #%d
+ゲーム検証 #%d
+L21 33
+Failed to run engine.
+エンジンの実行に失敗。
+L28 39
+Failed to run helper program
+補助プログラムの実行に失敗
+L30 57
+File to play / Program to run:
+プレイするファイル / 実行するプログラム
+L8 14
+Filter: 
+フィルタ: 
+L14 22
+Filter: (none)
+フィルタ: (なし)
+L36 54
+Finish the current connection first.
+まず現在の接続を終了させてください。
+L30 54
+Finish the current game first.
+まず現在のゲームを終了させて下さい。
+L5 9
+Flags
+フラグ
+L5 12
+Fonts
+フォント
+L8 10
+From FEN
+FEN から
+L6 11
+Game #
+ゲーム #
+L8 13
+Game #%d
+ゲーム #%d
+L19 24
+Game #%d - %d %d %s
+ゲーム #%d - %d %d %s
+L20 25
+Game #%d - %s vs. %s
+ゲーム #%d - %s 対 %s
+L21 9
+Game #%d - untimed %s
+ゲーム
+L12 17
+Game #%d: %s
+ゲーム #%d: %s
+L12 15
+Game Aborted
+ゲーム中断
+L16 18
+Game Description
+ゲームの詳細
+L21 27
+Game Information Font
+ゲーム情報フォント
+L9 18
+Game List
+ゲームリスト
+L25 36
+Game List (refreshing...)
+ゲームのリスト (更新中...)
+L9 15
+Game Lost
+ゲーム敗退
+L12 15
+Game Started
+ゲーム開始
+L8 15
+Game Won
+ゲーム勝利
+L19 24
+Game appended to %s
+%s にゲームを追加
+L17 15
+Game in progress.
+ゲーム中。
+L13 25
+Game over: %s
+ゲームオーバー: %s
+L19 36
+Game proposal sent.
+ゲーム申込を送りました。
+L13 16
+Game started!
+ゲーム開始!
+L12 21
+Game/Board: 
+ゲーム/ボード: 
+L5 9
+Games
+ゲーム
+L24 29
+Generic XBoard Engine...
+汎用 XBoard エンジン...
+L8 18
+Giveaway
+ギブアウェイ
+L46 46
+Graphic representation of crazy/bughouse stock
+クレージー/バグハウスの画面画像
+L16 29
+Help: Debug Info
+ヘルプ: デバッグ情報
+L22 24
+Help: Getting Started 
+ヘルプ: はじめに 
+L10 23
+Help: Keys
+ヘルプ: キー入力
+L5 7
+Hide!
+隠す!
+L18 37
+Host not found: %s
+ホストがみつかりません: %s
+L8 12
+Hostname
+ホスト名
+L23 38
+Hostname or IP address:
+ホスト名または IP アドレス:
+L5 6
+Human
+人間
+L30 37
+Human White vs. Computer Black
+人間 白 対 コンピュータ 黒
+L17 24
+Human plays white
+人間が白でプレイ
+L13 19
+ICS Challenge
+ICS チャレンジ
+L25 43
+IPC pipe creation failed.
+IPC パイプ生成に失敗しました。
+L2 2
+Id
+Id
+L55 63
+Inhibit seek lines on console when Seek Table is active
+探索表が有効な時、コンソールの探索行を抑制
+L4 6
+Kill
+中断
+L4 3
+Left
+左
+L8 16
+Load PGN
+PGN 読み込み
+L11 19
+Load PGN...
+PGN 読み込み...
+L5 12
+Local
+ローカル
+L15 30
+Local Game List
+ローカルのゲーム一覧
+L6 15
+Losers
+ルーザーズ
+L23 30
+Match Found at Line %d.
+%d 行に一致しました。
+L15 18
+Match Pattern: 
+一致パターン
+L8 15
+Max Ply:
+最大プライ
+L30 52
+Move made (Obs'vd/Exm'd Games)
+手番が移動 (観察/検査していたゲーム)
+L8 15
+No peer.
+接続なし。
+L19 30
+No previous search.
+前方にはありません。
+L12 18
+Normal Chess
+通常のチェス
+L2 6
+OK
+実行
+L17 36
+Obs'vd Game Ended
+観察していたゲームが終了
+L7 6
+Observe
+観察
+L2 6
+Ok
+実行
+L293 385
+Only lines that match the above pattern will be added\nto this text pane. Patterns can be OR'ed with the | (pipe)\ncharacter. A * (star) can be used to match anything.\nExamples:\n'(20)|(22)' shows only lines from channels 20 and 22\n'blik * bored' shows lines containing 'blik '(...)' bored'.
+上のパターンに一致する行のみが、このテキストに追加されます。\nパターンは、| (パイプ) 文字で 「または」を表せます。\n* (アスタリスク) はすべてに一致します。\n例:\n'(20)|(22)' は、チャンネル 20 と 22 の行のみを表示します。\n'blk * bored' は、'blk '(...)' bored' を含む行を表示します。
+L14 15
+Opponent Moved
+相手の移動
+L13 19
+PGN filename:
+PGN ファイル名
+L11 14
+Pitch (Hz):
+ピッチ (Hz)
+L4 9
+Play
+プレイ
+L56 63
+Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)
+プレイ %s, %s 対 %s (%s, 最高深度 %d, 常時思考: %s)
+L58 125
+Play WAV (need Device and Filename, sox must be installed)
+WAV を再生 (デバイスとファイル名が必要です。sox がインストールされている必要があります)
+L19 19
+Play against Crafty
+Crafty とプレイ
+L19 24
+Play against Engine
+エンジンとプレイ
+L24 24
+Play against GNU Chess 4
+GNU Chess 4 とプレイ
+L18 18
+Play against Sjeng
+Sjeng とプレイ
+L6 15
+Player
+プレイヤー
+L22 40
+Player/Color Name Font
+プレイヤーの名前のフォント 
+L11 6
+Preferences
+設定
+L12 12
+Private Tell
+電話番号
+L23 42
+Program exited too soon
+プログラムはすぐに終了します
+L8 6
+Progress
+進捗
+L17 15
+Promotion Piece  
+昇進する駒
+L8 15
+Protocol
+プロトコル
+L33 48
+Protocol mismatch, disconnecting.
+プロトコルの不一致、切断します。
+L10 15
+Queen   %d
+クイーン %d
+L12 15
+Refresh List
+一覧を更新
+L6 6
+Result
+結果
+L45 61
+Retrieve ICS Channel Lists from eboard.sf.net
+ICS チャンネル一覧を eboard.sf.net から引き出す
+L18 24
+Revert to Defaults
+デフォルトに戻す
+L18 24
+Revert to defaults
+デフォルトに戻す
+L5 3
+Right
+右
+L3 6
+Run
+実行
+L27 51
+Run Program (need Filename)
+プログラムを実行 (ファイル名が必要)
+L47 62
+Run autofics.pl script after connecting to FICS
+FICS に接続した後、autofics.pl スクリプトを実行
+L17 39
+Save Buffer As...
+ゲームを名前をつけて保存...
+L12 21
+Save Game...
+ゲームを保存...
+L11 19
+Save as PGN
+PGN として保存
+L6 15
+Script
+スクリプト
+L11 21
+Script List
+スクリプト一覧
+L34 48
+Scrollback limit (0 = unlimited) :
+スクロールバック範囲 (0 = 無制限) :
+L11 18
+Search Text
+テキスト検索
+L12 26
+Search for: 
+検索するテキスト: 
+L22 54
+Search text not found.
+検索テキストは見つかりませんでした。
+L10 9
+Seek Table
+探索表
+L15 30
+Seek Table Font
+探索表フォントを探す
+L10 21
+Set Filter
+フィルタを設定
+L13 24
+Set Filter...
+フィルタを設定...
+L49 99
+Set depth limit to 0 to use the engine's default.
+思考の深さの制限を 0 にすると、エンジンのデフォルトが使用されます。
+L13 18
+Setup Buttons
+ボタンを設定
+L21 39
+Shortcut Button Setup
+ショートカットボタンを設定
+L42 63
+Show channel tells in one pane per channel
+表示チャンネルはチャンネル毎に一つずつ表示
+L63 90
+Show channel tells on console too (when above option is active)
+表示チャンネルはコンソールにも表示 (上のオプションが有効な時)
+L31 54
+Show rating next to player name
+プレイヤー名の隣にレーティングを表示
+L33 57
+Show shortcut buttons below board
+ショートカットボタンをボードの下に表示
+L11 15
+Side & Time
+手番と時間
+L14 15
+Side Selection
+手番の選択
+L34 68
+Smoother animation (eats more CPU)
+滑らかなアニメーション (多くの CPU パワーを消費)
+L12 24
+Sound Events
+サウンドイベント
+L6 12
+Sounds
+サウンド
+L7 15
+Suicide
+スーサイド
+L12 12
+Tab Position
+タブ位置
+L4 9
+Test
+テスト
+L52 70
+The checkbox on the left enables/disables the sound.
+左のチェックボックスでサウンドの有効/無効を設定
+L69 82
+The engine will be run with\n/bin/sh -c 'cd directory ; command line'
+エンジンは /bin/sh -c 'cd directory ; command line'\nで実行されます。
+L24 36
+Think on opponent's time
+相手の時間のときも考える
+L12 12
+Time Control
+時間設定
+L15 15
+Time Control...
+時間設定...
+L13 13
+Time Control:
+時間設定:
+L16 12
+Time Running Out
+時間切れ
+L7 12
+Timeout
+時間切れ
+L44 71
+Times can be given as hh:mm:ss , mm:ss or ss
+時間は hh:mm:ss、mm:ss、ss のいずれかで設定できます。
+L3 3
+Top
+上
+L30 66
+Type: Fischer Clock (ICS-like)
+タイプ: フィッシャークロック (ICS のようなもの)
+L25 32
+Type: Fixed Time per Move
+タイプ: 固定時間で動く
+L34 59
+Type: Use engine's default setting
+タイプ: エンジンのデフォルトの設定を使う
+L29 46
+Type: X Moves per Time Period
+タイプ: X は時間区切りごとに動く
+L23 33
+Use plain color squares
+装飾のない色の目を使用
+L7 6
+Variant
+変種
+L8 7
+Variant:
+変種:
+L24 25
+Variant: %s (uneditable)
+変種: %s (編集不可)
+L4 6
+Wait
+待つ
+L21 27
+Wait for a connection
+接続を待っています
+L34 46
+Waiting for connection on port %d.
+ポート %d の接続を待っています。
+L30 65
+Warn when own clock is below: 
+自分のクロックが次の秒数未満になったら警告: 
+L18 22
+Welcome to eboard.
+eboard へようこそ
+L14 12
+White: %s - %s
+白: %s - %s
+L10 12
+Working...
+思考中...
+L16 30
+Write to Console
+コンソールに書き出す
+L19 30
+Wrong address space
+間違ったアドレス空間
+L5 9
+Wrote
+書いた
+L11 16
+Your color:
+あなたの色:
+L10 19
+Your name:
+あなたの名前:
+L6 14
+[chat]
+[チャット]
+L5 14
+[cmd]
+[コマンド]
+L39 61
+[eboard] ** failed to create directory 
+[eboard] ** ディレクトリの作成に失敗しました 
+L20 39
+[eboard] ** no $HOME
+[eboard} ** $HOME は存在しません
+L22 42
+[eboard] bad RC line\n
+[eboard] 間違った RC ラインです\n
+L4 9
+beep
+ブザー
+L5 9
+beeps
+ブザー
+L5 3
+black
+黒
+L53 101
+can't load PGN move text from %s (error opening file)
+%s から PGN 移動テキストを読み込めませんでした (ファイルオープンエラー)
+L30 57
+can't seek to offset %lu of %s
+オフセット %lu を %s から探せませんでした
+L32 46
+eboard Direct Connection Manager
+eboard ダイレクト接続マネージャー
+L343 609
+eboard version %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nThis program is free software; you can redistribute\nit and/or modify it under the terms of the GNU General\nPublic License as published by the Free Software\nFoundation; either version 2 of the License, or\n(at your option) any later version.\n
+eboard バージョン %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nThis program is free software; you can redistribute\nit and/or modify it under the terms of the GNU General\nPublic License as published by the Free Software\nFoundation; either version 2 of the License, or\n(at your option) any later version.\n\n[参考日本語訳]\nこのプログラムはフリーソフトウェアです; Free Software\nFoundation の GNU General Public License バージョン 2 または\nそれ以降のライセンスのもとで、自由に改変・再配布できます。\n
+L19 27
+eboard: Console #%d
+eboard: コンソール #%d
+L22 31
+error parsing PGN data
+PGN データの解析エラー
+L11 30
+flips board
+ボードをひっくり返す
+L20 12
+goes back 1 halfmove
+一手戻る
+L26 24
+goes back to start of game
+ゲーム開始に戻る
+L23 12
+goes forward 1 halfmove
+一手進む
+L27 24
+goes forward to end of game
+ゲーム終了に進む
+L13 22
+illegal move!
+正しくない動き!
+L2 9
+no
+いいえ
+L14 36
+no such game: 
+そんなゲームはありません
+L37 51
+opens new scratch board with position
+現在の駒位置で編集用のボードを作る
+L12 25
+play file %s
+ファイル %s を実行
+L21 15
+pops up the move list
+棋譜を表示
+L24 30
+process creation failed.
+プロセス生成に失敗。
+L6 9
+run %s
+実行 %s
+L10 12
+running %s
+実行中 %s
+L18 26
+savePGN failed: %s
+PGN の保存に失敗: %s
+L54 62
+savePGN failed: Won't save game with less than 2 moves
+PGN の保存に失敗: Won't save game with less than 2 moves
+L8 6
+seconds.
+秒。
+L5 3
+white
+白
+L3 6
+yes
+はい
+E 388

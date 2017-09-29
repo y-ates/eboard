@@ -1,0 +1,45 @@
+.\" In .TH, FOO should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.\"
+.\" This template provided by Tom Christiansen <tchrist@jhereg.perl.com>.
+.\" 
+.TH EBOARD-ADDTHEME 1
+.SH NAME
+eboard-addtheme \- a program to easily install new eboard board and
+sound themes.
+.SH SYNOPSIS
+.B eboard-addtheme
+\fIP graphics-file description\fR
+
+.B eboard-addtheme
+\fIS sound-file\fR
+.SH "DESCRIPTION"
+This manual page briefly documents the
+.B eboard-addtheme
+command.  This manual page was contributed by the developers of 
+the Debian GNU/Linux distribution.
+
+eboard-addtheme installs the given theme for eboard.  If it has
+sufficient permissions, it will install the theme in the system themes
+directory; otherwise, it will install it in \fI~/.eboard\fR.
+
+eboard-addtheme's behavior depends on its first argument.  If this
+argument is \fIP\fR, a graphics file in the proper format should be
+provided as the second argument, and the third argument should be a
+description of the theme.  The graphics file will be installed as a
+new piece/board set.  If, on the other hand, this argument is \fIS\fR,
+a sound file should be provided as the second argument; it will be
+installed as a new sound theme.
+
+eboard must be restarted after a new theme has been added to notice the
+addition. Graphics become available in the
+\fBSettings | Bitmapped Piece Sets\fR submenus, sound files
+become available in the Sound Event configuration dialog boxes.
+
+.SH AUTHOR
+This  manual  page  was  written  by Daniel Burrows <dburrows@debian.org>
+(for the Debian GNU/Linux system) and by Felipe Bergo <bergo@seul.org>.
+
+.SH "SEE ALSO"
+\fBeboard\fR(6), \fBeboard-config\fR(1)
+

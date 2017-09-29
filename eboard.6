@@ -1,0 +1,75 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH EBOARD 6 "January 22, 2007"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+eboard \- a graphical chess board
+.SH SYNOPSIS
+.B eboard
+.RI [ -log ]
+.RI [ -debug ]
+.RI [ -dgtport 
+device ]
+.br
+.SH DESCRIPTION
+This manual page briefly describes the
+.B eboard
+command.
+.PP
+\fBeboard\fP is a graphical chess board. It acts as an interface to
+chess engines (like GNU Chess, Sjeng and Crafty) and Internet Chess Servers
+(ICS) like FICS (http://www.freechess.org), and works as a browser
+for chess games saved as PGN (Portable Game Notation) files.
+.B eboard
+itself is not a chess engine: it won't play games, it will just act as
+a graphical interface between programs that play games like
+GNU chess (or ICS servers) and the end-user.
+.PP
+To move pieces click on the source square and then click to destination
+square. Optionally, you may drag the piece from the source to the
+destination square (you won't see the piece being dragged). To
+drop pieces on crazyhouse and bughouse variants (ICS-only) right-click
+the destination square and select the piece to drop from the popup
+menu.
+.PP
+For help with ICS commands consult the server (most of them
+have online help and help channels).
+.PP
+For help setting up associated programs (chess engines, timestamping, etc.)
+see the documentation in /usr/share/doc/eboard or visit the
+eboard web site at http://eboard.sourceforge.net. If the documentation
+is not installed in your system, you can find it in the source 
+distribution, available from the web site.
+.PP
+.SH OPTIONS
+.TP
+.B \-log
+Log network communications to "~/LOG.eboard". Communications
+held in password mode are not logged.
+.TP
+.B \-debug
+Print miscellaneous debug info to "~/DEBUG.eboard".
+.TP
+.B \-dgtport device
+Use the DGT board connected to the given device.
+.PP
+.SH AUTHORS
+.B eboard
+is being developed by Felipe Bergo. This manual page was written by
+Felipe Bergo <bergo@seul.org> and Daniel Burrows <dburrows@debian.org>.
+.PP
+.SH WEBSITE
+http://eboard.sourceforge.net

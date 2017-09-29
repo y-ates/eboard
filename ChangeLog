@@ -1,0 +1,1463 @@
+hey, emacs, got something for you: -*- fundamental -*-
+	
+eboard ChangeLog
+----------------
+
+[fics]    - applies to fics
+[craf]    - applies to crafty
+[gnuc]    - applies to gnu chess
+[sjen]    - applies to sjeng
+[ics]     - applies to all networked servers
+[eng]     - applies to all engines
+[all]     - applies to all
+
+  * [all]  Text search (Ctrl-F) no longer requires a modal dialog box,
+           the search text is typed in the input box (similar to the Firefox
+           search behavior).
+
+  * [ics]  Added ICS filtering options for Non-ASCII characters.
+
+  * [all]  Fixed some "invalid UTF-8 string" warnings related to the text console.
+
+  * [ics]  added an option to show timestamps for each text line
+
+  * [ics]  eboard no longer sets the seek variable when logging in to an
+           ICS
+
+  * [all]  Fixed promotion bug in P2P mode (capture promotions such as
+           exf8=Q did not work due to bad notation parsing).
+           Closes SF ticket #1832106.
+
+  * [ics]  Seek graph positioning now avoids text and marker overlaps.
+ 
+1.1.0a:
+  * [all]  Fixed compilation issue with GCC 4.1
+
+1.1.0:
+  * [ics]  The seek graph do not become red after updates (FICS sometimes
+           sends bogus updates that are annoying to check).
+
+  * [ics]  added seek graph, removed seek table
+
+  * [ics]  eboard now displays clocks and move times with milisecond
+           precision, on servers that support ivar ms
+
+  * [all]  slightly faster console (less frivolous buffer formattings)
+
+  * [all]  minor simplification of eboard-config script, patch from
+           Han Boetes
+
+1.0.4:
+  * [all]  fixed minor text selection bug (last character in line would disappear if
+           selection ended in the previous character).
+
+  * [all]  added Hungarian translation (contributed by Bajusz Tamás)
+
+  * [all]  fixed a couple of memory leaks (patches sent by Tom Vijlbrief)
+
+  * [all]  fixed some text-console relates crashes (closes SF#1664848)
+
+  * [eng]  added some diagnostic to the console when running an engine fails.
+
+  * [all]  eboard will no longer execvp gibberish (even though it wasn't doing
+           any harm when it did) (closes SF#1642023)
+
+  * [all]  Some dialogs now have automatic scrollbars, which should make
+           eboard usable on small screen mobile devices. Patch sent by
+           Peter Cox.
+ 
+1.0.3:
+  * [all]  eboard no longer writes the debug3.ppm file to the homedir
+           (leftover debug code) (closes SF#1640523)
+
+  * [all]  make install now accepts DESTDIR (mostly for binary packagers)
+           (closes SF#1640162)
+
+  * [all]  fixed console selections and treatment of UTF-8 content 
+           (closes SF#1633394). The console is also faster.
+
+  * [all]  safer string operations (SF#1639041, SF#1639841, SF#1640126)
+
+  * [all]  added joystick support under Linux
+
+  * [fics] eboard now remembers the column and direction of sorting set for the
+           Seek Table. (closes Feat.Req. SF#1112351)
+
+  * [eng]  Game->Resign should now work with any xboard-protocol engine.
+           (applied patch SF#1637343)
+
+  * [all]  Added DGT board support through dgtnix (http://dgtnix.sf.net)
+
+1.0.2:
+  * [fics] Fixed movelist retrieval of mass observation (such as when observing a
+           relay or a tourney on FICS). (closes SF#1626824)
+  
+  * [all]  Fixed (as much as possible) the layout of the scratch board
+           controls when there is not enough room to display all the controls
+           (closes SF#1631707)
+
+  * [fics] Added scrollbars to help navigating when there are too many board 
+           tabs. (closes SF#1634485)
+
+  * [fics] Annoying seek table "Ads Removed" messages no longer shown in the
+           console (closes SF#1634772)
+
+  * [fics] Fischer Random games are now distinguished from generic wild
+           games (closes SF#1632083) Wild 0/1/2 are also tagged according
+           to the winboard standard (applied patch SF#1634678)
+
+  * [fics] observed wild games on FICS are now reconstructed from the start,
+           so that the user can browse moves made before observation started.
+           (closes SF#1631873)
+
+  * [all]  updated french and italian translations.
+
+  * [all]  fixed the text layout of PGN annotations on the board clock area 
+           (closes SF#1631563)
+
+  * [fics] the board positions on observed crazyhouse are now accurate for
+           moves before the user started observing it. (closes SF#1631559)
+
+  * [all]  the 3D piecesets work again (closes SF#1630790)
+
+  * [fics] now games unobserved while in progress can be properly discarded in the
+           local games dialog (closes SF#1626570, SF#1631567)
+
+  * [eng]  games played against engines now have the TimeControl tag properly
+           written when saved to PGN. (closes SF#1630745)
+
+  * [all]  the Getting Started dialog was editable by accident. Fixed.
+           (closes SF#1630847)
+
+1.0.1:
+  * [all]  focus and cursor position of input box are back to normal
+           (changing panes won't select the input field, moving through
+           the history keeps the cursor at the end of the field).
+           (closes SF#1626448)
+
+  * [fics] observed game removal fixed: when smart discard is turned off, games
+           will pile up until the user removes them manually, as expected.
+           (closes SF#932920)
+
+  * [fics] material for suicide/losers will be correctly shown when a game starts 
+           being observed (closes SF#1179796)          
+
+  * [all]  (peer-to-peer) eboard now enforces legality checking when playing 
+           in peer-to-peer mode. (closes SF#836146)
+
+  * [eng]  eboard should no longer leave background processes when interrupted 
+           with Ctrl+C (SIGINT). (closes SF#1480964)
+
+  * [all]  removed usages of index and rindex, should fix compilation problems
+           on Solaris and other platforms (closes SF#993896)
+
+  * [fics] fixed crazyhouse-related bug that displayed incorrect stock pieces
+           when moving along a FICS crazyhouse game (closes SF#1628990).
+           (this bug was caused by a change in the FICS server output)
+
+  * [all]  fixed hanging and UI misbehavior when attempting to load an invalid 
+           PGN file from the Games on Client dialog. (closes SF#1628320)
+
+  * [fics] disabling the seek table while connected to FICS will no longer output
+           the table protocol garbage to the console(s) (closes SF#1628114)
+
+  * [all]  the theme used to draw crazyhouse stock is now correctly changed even
+           on finished games (closes SF#1628111)
+
+  * [all]  fixed some graphics artifacts during piece dragging (below and to the
+           extreme right of the board limits). (closes SF#1627374)
+
+  * [fics] when the console font is changed, the separate channel tabs will also
+           be updated, as expected (closes SF#1627871).
+
+  * [all]  substituted more GTK1 deprecated calls for the proper GTK2 ones.
+
+  * [eng]  fixed bug in en passant information in FEN positions (this affected
+           engines when playing from a set position - noticeably crafty)
+
+  * [eng]  the Run Engine... button on the scratch board works again.
+
+  * [gnuc] eboard no longer crashes when it runs GNU Chess 5 thinking it's 
+           GNU Chess 4. (closes SF#1480962/B). 
+
+  * [eng]  eboard will no longer freeze or crash when the user tries to play
+           against a missing chess engine. (closes SF#1480962/A)
+
+  * [eng]  eboard now detects xboard protocol v1-only engines and gracefully
+           closes the connection on them instead of crashing (proto v1 still
+           unsupported by eboard) (closes SF#911486)
+
+  * [eng]  fixed a bug that made eboard crash when a game against an engine was
+           interrupted (such as after being aborted) (closes SF#1107752).
+
+  * [eng]  eboard now respects the engine usermove setting. 
+           (closes SF#1017917)
+
+  * [all]  added more path options to the configure script to help
+           packagers.
+
+  * [all]  fixed the placement of the piece counts in the crazyhouse
+           stock (closes SF#1626472/A)
+
+  * [all]  fixed geometry saving/restore - now the bughouse divider
+           should be placed where it was saved. (closes SF#1626472/C)
+
+  * [all]  fixed occasional warnings/crashes when selecting a font in the
+           preferences dialog
+
+  * [all]  fixed libpng detection in the configure script for FreeBSD
+           (now checks for libpng12 and libpng13 is libpng is not found)
+ 
+  * [all]  fixed bug in PNG reading code that made eboard crash when
+           reading the Chap set from eboard extras pack 1.
+
+1.0.0:
+  * [all]  eboard now uses GTK+ 2.x
+
+  * [all]  eboard now compiles properly with GCC 4.x
+
+  * [all]  Fixed crashes on x86_64 (NULL / 0 problem on vararg calls,
+            SF patch #1534453)
+
+  * [all]  Added French translation (SF patch #931431 by Khanh-Dang)
+
+  * [all]  The weird configure error related to socket.h on
+           BSD and Mac OS X should be gone now.
+
+  * [all]  Added Japanese translation.
+
+  * [all]  Mouse scroll wheel now works on the text consoles.
+
+0.9.5:
+  * [all]  Completely changed the compilation process and
+           internationalization support, no longer depending
+           on GNU autoconf/automake or gettext.
+
+  * [ics]  Quite revamped the code that colorizes and parses
+           ICS output, I hope nothing is broken.
+
+  * [ics]  Non-move updates to observed games (setting the clock,
+           player names, ratings in a relay, for example) will
+           not play the "Move Made" sound. 
+           (closes bug ticket #786179).
+
+  * [fics] Fixed detection of ratings in game relays, where
+           player names can contain underscores, like GM_Anand.
+           (closes bug ticket #786177)
+
+  * [all]  The sound event dialog would incorrectly show "Beep"
+           when the event was configured to run an external
+           program, fixed. (closes bug ticket #785847)
+
+  * [ics]  Fixed a bug that would make eboard crash when the
+           connection was closed bu the ICS server on some
+           special rare occasions. (closes bug ticket #775154)
+
+  * [ics]  Fixed a translation bug in the FICS protocol that would
+           translate the command 'games' sent to get rating 
+           information.
+
+  * [ics]  Fixed a bug that would cause eboard to crash when an
+           observed game ended with a movement and move animation
+           was on.
+
+  * [all]  Fixed the vectorized piece set, which was full of bugs.
+           (would crash on board resizes, appear with gray bars and
+            other oddities)
+
+0.9.0
+
+  * [ics]  Fixed incompatibility with servers that allow digits
+           in player handles (such as Gustav998).
+
+  * [all]  Changed the way new input is detected, will probably
+           make lightning playing on ICS less sluggish.
+
+  * [eng]  Added the Retract Move command to the Game menu,
+           allowing to take back a move in a game against an
+           engine. It does nothing on ICS or P2P modes.
+
+  * [all]  Added peer-to-peer (P2P) connection (one eboard connects
+           to other eboard to allow network play).
+ 
+  * [eng]  Fixed a bug in the time control edit dialog,
+           the control type selection would always show
+           up as Fixed Time per Move regardless of the
+           current setting.
+
+  * [all]  Atomic games loaded from PGN will now be browsed
+           correctly (with explosions). (as long as the
+           Variant key in the PGN is set to "atomic", which
+           is already ok in games saved by eboard itself).
+
+  * [ics]  The seek table will now be cleared after the
+           connection with the server is lost.
+
+  * [all]  Fixed font encoding problem on tab labels, color
+           selection buttons, [chat]/[cmd] button, bug pane
+           action buttons. This problem only affected
+           translations (non-english).
+	   * Local Game List may still have the problem, mail
+             Ales about it *
+
+  * [all]  Save desktop geometry will now save the position of
+           the pane division in the main window, thanks to 
+           Tristan Colgate for the patch.
+
+0.8.0
+
+  * [all]  Changed behavior of PageDown/ PageUp keys: they'll act only
+           on the current window (instead of paging all consoles at the
+           same time).
+
+  * [fics] Added proper handling of the Atomic Chess variant.
+
+  * [fics] As of Feb 16 2003 FICS changed its output on game terminations,
+           so previous versions of eboard would discard game boards
+           even with Smart Discard on. Fixed.
+
+  * [sjen] illegal move behavior has been fixed. This was an issue on Sjeng
+           due to the variants it plays, for the other engines, having
+           eboard's legality check on is the most safe behavior. (if you
+           turn legality checking off with GNU chess 5, for example, it
+           won't complain about illegal moves, and will just sit waiting
+           for a new move, and the game will be broken).
+
+  * [eng]  now 3 types of time controls can be chosen for playing
+           against engines: fixed time per move, given number of
+           moves in given period of time or Fischer Clocks (increment
+           clocks like FICS's -- and move 1, both white and black -- 
+           do not count for the time control, so don't be surprised by
+           the clock being reset until white makes move 2).
+
+  * [eng]  the max depth setting was being sent completely wrong
+           to engines, fixed <sigh>.
+
+  * [fics] the undocumented pause/unpause flag on examined games
+           is now taken into account: relayed games (like Kasparov vs.
+           Deep Junior) will show up with clocks running correctly.
+           As a consequence, in the first two moves of every game
+           the clocks will not be shown running (because the first move,
+           both white and black, are always 0:00). FICS says the clock
+           is paused at those moves, and eboard behaves accordingly.
+
+  * [all]  rewrote the text console code from scratch, should fix
+           a lot of issues regarding selection/copy/paste.
+
+  * [all]  applied a patch to po/Makefile.in.in (NLS support) to
+           fix compilation/installation with DESTDIR. Thanks to
+           Federico Schwindt for sending the patch.
+
+  * [all]  fixed a crash on PGN game display when the PGN
+           contained illegal NAG codes ($140 and above).
+
+0.7.1pl1
+
+  * [n/a]  missed a required namespace option with the <iostream>
+           changes. I love gcc 3 soooo much.
+
+0.7.1
+
+  <warning: the translation files have not been updated since 0.7.0,
+   so new messages and new features will be displayed in english only.
+   I hope to update the translations soon>
+
+  * [all]  when saving to a PGN file, the game will be APPENDED if
+           the file already exists.
+
+  * [all]  eboard can now read .pgn.gz files (only read, not write).
+           However, the implementation is somewhat dumb: it decompresses
+           the file, indexes games, deletes the file. Each game you ask
+           to display requires a new decompression (gzip -d). "gzip" and
+           "cp" must be on the PATH for all this to work.
+          
+  * [all]  Status bar messages won't stay there forever, but rather
+           expire after a given timeout.
+
+  * [n/a]  Fixed iostream inclusions to compile without warnings
+           on gcc 3.2
+
+  * [all]  Fixed a bug in the PGN parser. (PGN files that had
+           no newline char at the end of the last line would
+           make eboard crash). Thanks to Hicks@FICS for spotting it.
+
+  * [ics]  Fixed the misplaying of an "opponent moved" sound event
+           on game starts.
+
+  * [eng]  Fixed long standing bug in move display, engine
+           pawn checks (like 'g4+') were incorrectly displayed
+           as '+'.
+
+  * [all]  5 new sound events added (game started (user playing), 
+           game won and game lost (by the user, does not apply to 
+           observed games on ICS), game over (observed games), and
+           move (observed games)).
+           Sound preferences pane revamped accordingly.
+
+  * [ics]  Clock updates will now be shown immediately (like when you or
+           the opponent issues a 'moretime' or when the examiner sets
+           the values of the clocks)
+
+  * [eng]  Fixed a bug in the xboard protocol that wouldn't allow users
+           to play against the engine with thinking output on (by typing
+           'post' after the engine has started).
+
+  * [ics]  A bug in animation code that would make eboard crash when
+           the position changed radically (a forw 999 in examination or
+           when lecturebot rewinds the variation, for example) was
+           fixed. (animation <source,dest> calculation rewritten to fix it)
+
+  * [all]  More code size optimization, especially regarding sequences
+           of gtk_widget_show()'s , dlg_about.cc/.h removed, content moved
+           to help.cc/.h. animate.cc/.h content moved to board.cc/.h
+
+  * [all]  Font configuration GUI code has been simplified (accomplishes
+           the same as before with less code)
+
+  * [all]  Added an option to select the font of the seek table.
+           Thanks to Michael G. Lane for the patch.
+
+  * [all]  Fixed a bug that would cause eboard to segfault when a 
+           title in the Local Games dialog list was clicked. Thanks
+           to Michael G. Lane for the patch.
+
+  * [all]  PGN reading now correctly reads PGN files with
+           variations in parenthesis (but those variations
+           are ignored). Thanks to Michael G. Lane for the patch.
+
+0.7.0
+  * [fics] eboard will now correctly set/unset the premove ivar
+           according to the setting in the Options menu.
+
+  * [all]  Added translations to brazilian portuguese (pt_BR), 
+           German (de), Spanish (es) and Italian (it_IT). To
+           set the language, make sure you did 'make install' to
+           get message catalogs installed and do something like
+           'export LANGUAGE=de' to set current language. You can't
+           change language after eboard has started.
+
+  * [all]  Code cleanups: destructors made virtual, many unused
+           declarations removed, default method argument syntax
+           changed to make it fit with pedantic ISO C++ compilers
+           (gcc 3.1 and above). Thanks to David Fries (destructors, 
+           vars) and Rich Churcher (default args) for the patches
+           above. Also ensured that it compiles without a single
+           warning with -Wall in egcs 2.91.66 and gcc 3.0.4.
+           (there are some warnings in the implementation of the STL
+            deque<> template that comes with egcs 2.91.66, I can't
+            do anything about that, sorry)
+
+  * [all]  eboard should now allow itself to be resized fullscreen
+           on large resolutions (1280x1024 and up). Thanks to David
+           Fries for the patches.
+
+  * [all]  The PGN "Event" Header is now set to values like
+           "ICS Rated Chess Match" and "Engine Chess Match"
+           for games played on ICS and vs. engines, respectively.
+
+  * [fics] Added Var command to board right-click menu. The original 
+           idea was making the whole menu user-customizable, but it's
+           all too messy, I'll postpone customization to some future.
+
+  * [all]  Described some of the latest undocumented syntaxisms in
+           Help -> Keys.
+
+  * [all]  scripts can be run from the input box with
+           %do scriptname , where scriptname is exactly the name
+           shown in the left column of the Windows -> Run Script
+           dialog. %do and %prefix commands are not stored in the
+           typing history.
+
+  * [all]  changed key binding: F8 now toggles shortcut bar visibility.
+
+  * [all]  added "Plain Beep" sound event. It just sends a bell character
+           to stdout, on PCs it'll probably be a beep on the internal
+           speaker, no idea what happens elsewhere.
+
+  * [all]  fixed 0.6.2's compilation issue on *BSD, where SOL_TCP isn't
+           defined.
+
+0.6.2
+ 
+  * [all]  shortcuts now can issue multiple commands, just separate
+           them with ;
+
+  * [all]  shortcuts can now programmatically call scripts, just
+           set the command to script.filename , where filename is
+           exactly the name shown in the left column of
+           Windows -> Run Script dialog.
+
+0.6.1
+
+  * [all]  scripts in the current directory (like ./timeseal.Linux)
+           should now be properly run when . is not in the PATH.
+
+  * [ics]  added a "chat mode", as many have requested. it'll
+           probably deceive some of you at first, if you have
+           better ideas, email eboard-devel / eboard-users
+           about it.
+
+           <cmd> mode is what eboard always was: what you type
+           is sent as typed to ICS
+
+           <chat> uses the prefix on its right side.
+
+           to switch modes use the ESC key or click the button
+           at the side of the input box. 
+
+           enter (without quotes) '%prefix whatever' to set a
+           custom prefix. Notice that receiving tells and says will
+           change the prefix in the console window.
+
+           all this documentation will be placed in the webpage
+           sometime soon, and probably next versions will add
+           a new pane in the Preferences dialog to configure
+           the behavior of this feature.
+
+           Currently available in the main window only. The
+           console pane has its idyosyncrasies over others
+           (%prefix is not sticky in it)
+
+  * [ics]  now it'll recognize your name even in different
+           capitalization.
+
+  * [all]  Changed a little the look of the graphical zhouse
+           stock.
+
+  * [ics]  Fixed zhouse stock count update bug (some pieces
+           wouldn't show up sometimes)
+
+  * [all]  Minor fix to PGN parsing (reading), should now
+           correctly read TWIC's 
+           (http://www.chesscenter.com/twic/twicp.html)
+           PGNs which have event names between game data.
+
+  * [ics]  Fixed drawing the little mouse icon in crazyhouse
+           games, now it won't be drawn over the stock.
+
+0.6.0
+
+  * [all]  The crazyhouse stock will now be shown in the same
+           pieceset used for playing. The non-black background
+           was needed to prevent all-black pieces from
+           disappearing. Pieces will appear the same size
+           as they are used on the board, and there may be 
+           overlapping. The real click target region is
+           delimited by the darker vertical lines.
+
+  * [all]  added Makefile.simple, a Makefile totally independent
+           of automake, to ease the life of people trying to
+           compile eboard on unexplored platforms. The INSTALL
+           has some hints about it.
+
+  * [all]  scratch boards can be set up from a FEN string.
+
+  * [eng]  engines can be started from arbitrary positions
+           (from a scratch board)
+
+  * [all]  faster (more responsive) piece dragging
+
+  * [sjen] the variant is now correctly saved in the engine
+           bookmark.
+
+  * [all]  compatibility fix for compilation on Solaris
+           (strings.h header)
+
+0.5.2
+
+  * [all]  minor speed hack on piece drag. Some may notice,
+           others may not.
+
+  * [eng]  Added a dialog box to edit the engine bookmarks.
+           (Peer -> Engine Bookmarks -> Edit Bookmarks...)
+
+  * [craf] minor fix to engine bookmark naming, now it
+           correctly extracts crafty's program name.
+
+  * [eng]  minor fix to xboard protocol implementation, will
+           now work correctly with engines with bad I/O
+           flushing, like GNU Chess 5.04.
+
+  * [all]  fixed font fallback when creating the bughouse pane.
+
+  * [all]  upgraded to autoconf 2.53 and automake 1.6.1
+           If you want to develop/make changes to eboard,
+           you're likely to need both.
+
+  * [all]  looks like SuSE has a broken imlib RPM that won't
+           load PNGs, I've added a fallback low-res theme,
+           but if you use SuSE yo should update the RPM,
+           SuSE told me they fixed the issue already and that
+           an update is available.
+
+  * [all]  fixed another compilation issue with gcc 3.0.x
+
+  * [all]  added beeping support for OpenBSD (possibly to NetBSD
+           too, but that's untested). Thanks to Federico Schwindt
+           for the code.
+
+0.5.1
+
+  * [eng]  promotion vs. engines was still broken, I hope it's
+           fixed now.
+
+  * [ics]  Absence of wget in the $PATH won't make eboard crash
+           when trying to connect anymore.
+
+  * [ics]  Channel list retrieval will work with non-timeseal
+           connections too.
+
+0.5.0
+
+  * [all]  Fixed a minor misfunction of the input history
+           in the detached consoles.
+
+  * [all]  Removed the antialias option since the new scaling
+           algorithm doesn't need it.
+
+  * [fics] Renamed the Seek Graph to Seek Table since it isn't really
+           what most interfaces call a seek graph.
+
+  * [eng]  Added engine bookmarks.
+
+  * [all]  Engine promotion fixed on engines that use uppercase
+           in promotion notation (like Yace).
+
+  * [all]  Fixed display of one-line annotations.
+
+  * [all]  Variants (the ones supported, of course) are correctly
+           detected in PGN files.
+
+  * [all]  X11 GC caching (should leak less memory).
+
+  * [all]  substituted many C char arrays for C++ dynamic strings, and a
+           a many C streams for C++ streams.
+
+  * [all]  Fixed yet another segfault situation when dragging
+           with extruded (3D) piece sets.
+
+  * [all]  Decent piece scaling algorithm (taken from Gimp 1.0.4)
+           Pieces look better when magnified.
+
+  * [fics] Bughouse support (in the bughouse pane) works.
+
+  * [all]  Lots of changes in class structures regarding
+           pieces, boards, bugpane.
+
+  * [all]  The console snippet/bughouse pane can now be seen
+           together with observed/examined games, not just
+           the main board.
+
+  * [all]  added an option to increase animation framerate
+           (Smoother animation in the Appeareance pane of the
+           preferences dialog). Will eat more CPU if turned on.
+
+  * [all]  removed the script popup and made it a control
+           next to the input box.
+
+  * [all]  the icon selection in the shortcut bar setup dialog 
+           had some glitches when buttons were set up for the
+           first time. Fixed.
+
+  * [ics]  the bughouse/console pane below the main board will
+           no longer be hidden/reduced when a new game is started.
+
+  * [all]  squeezed graphics code (bitblt) again by producing
+           assembly output and optimizing C++ code accordingly.
+           Better than this, only coding straight in assembly
+           (and yes, would get better, gcc is not particularly 
+           wise here)
+
+0.4.3
+
+  * [ics]  Now channel names (Help, Chat, Tourneys, etc.) will appear
+           on the channel tabs. The channel list is retrieved by
+           HTTP from eboard's website. You must have wget installed
+           else it won't work. Currently only FICS channels are
+           listed there, feel free to contribute channel lists
+           from other sites. Cache is stored in /tmp/eboard-chlist-*
+           and expires after 8 hours (remove the file to force a
+           reload).
+ 
+  * [ics]  Added a button on the channel panes to reove the panes
+           at will.
+
+  * [all]  Added a Hide button to the shortcut bar.
+
+  * [all]  Added a console snippet to the main board (drag up the small
+           square in the bottom left of the main board)
+
+  * [all]  Changed the look of the Local Game List dialog to display
+           games in a tree hierarchy. (ability to double click a
+           game to display it is disabled for the time being)
+
+  * [ics]  Added a sound warning to announce that time is running out.
+
+0.4.2
+
+  * [fics] As a side effect of the change below, some FICS lines that
+           included the user name but were not highlighted as personal 
+           (yellow) now will be.
+
+  * [fics] Hotfixed the treatment of LectureBot announcements when
+           channel splitting is on. Notice that the :LectureBot(TD)(67)
+           lines aren't really channel tells, but xtells pretending to
+           be channel tells. Now eboard is credulous and will send these
+           to the ch 67 channel pane. (translation: it is LectureBot's
+           fault, not mine)
+
+  * [all]  Added the shortcut bar below the board. If you don't like it,
+           disable it from the Settings -> Preferences : Appearance
+           dialog.
+
+  * [all]  Modified the antialias algorithm again, now it does a regular
+           gaussian smoothing as a 3x3 convolution in RGB-space instead
+           of the previous oddball.
+
+  * [all]  Beeping code now calls SNDCTL_DSP_POST, which should prevent
+           unwanted noise after the beep with some audio drivers
+           (especially on AC'97 devices).
+
+  * [all]  Revamped the Sound pane in the Preferences dialog so that
+           it becomes able to handle more sound events.
+
+  * [ics]  Added a sound event to be played when the user is
+           challenged.
+
+  * [all]  Changed button disposition in the Games on Client dialog.
+
+  * [fics] Now eboard works correctly when the FICS examine variable
+           is set (automatically start examination when game finishes)
+
+  * [all]  Minor corrections to network connection opening code
+           (more accurate reporting of connection failures)
+
+  * [ics]  Added the bookmarks submenu in the Peer menu.
+
+  * [ics]  The Connect to Other Server... dialog will no longer take
+           empty host names (which would lead to startup failure
+           on previous versions)
+
+0.4.1
+  * [eng]  Fixed bug that made eboard crash after a game against an
+           engine ended or was interrupted.
+           (the "game not found: 7777" message on the console)
+
+  * [sjen] Fixed bug that prevented crazyhouse playing (incorrect piece
+           drop processing).
+
+0.4.0
+  * [all]  Added the Help : Getting Started dialog, which will pop up
+           when the user runs eboard for the first time (no ~/.eboard
+           directory)
+
+  * [fics] Games observed with "follow" now are saved correctly
+           (untested with wild)
+
+  * [eng]  En passant captures in crazyhouse/bughouse now correctly
+           add a pawn to the stock. (fixes bug ticket #493844)
+
+  * [all]  Double-click selection on the first word of a line in the
+           console now behaves correctly (previously it would not
+           select the word's first character)
+           (fixes bug ticket #495103)
+
+  * [all]  PGN annotations (between { }) are now shown in the clock
+           pane of the board (as long as there is enough space)
+
+  * [all]  eboard will no longer write % comments in its PGN files,
+           but still understands %eboard when reading them,
+           for backward compatibility. Many chess programs are
+           confused by those comments, even though they are legal
+           PGN. There is a Perl script on the eboard website
+           that will convert your old PGN files removing the old
+           %eboard comments and adding the new-style PGN fields,
+           see the downloads section.
+
+  * [eng]  Now the user (human player) can correctly promote on
+           games against engines.
+           (fixes bug ticket #508092)
+  
+  * [all]  PGN code now can cope with bad move syntax (e.g.
+           a8Q instead of a8=Q. a8Q is _wrong_, but some
+           large PGN files around use it)
+
+  * [all]  To save memory, the movetext section of PGNs is _not_
+           loaded with the "Load PGN" command (Windows->Games on
+           Client dialog). It is only loaded when the game is
+           selected and the "Display" button is hit (and the PGN
+           file must still exist to load the moves from it)
+
+  * [all]  Rewrote PGN-reading code from scratch. Should be
+           simpler to maintain and does not crash on situations
+           where the old code crashed.
+
+  * [eng]  Fixed eboard hanging when engine crashed before
+           outputting a complete text line (e.g., running
+           GNU chess 4 with "gnuchess -t")
+
+  * [all]  Added the Help -> Debug Info dialog. 
+
+           **********************************************
+           Please report everything in it when you report
+           any kind of eboard crash.
+           **********************************************
+
+  * [ics]  Fixed the mess on the movelist when going back and
+           forth in an exmined game in FICS.
+
+  * [all]  Added the --enable-debug configure option to compile
+           with -ggdb instead of -O6 when desired
+
+  * [all]  Added Scratch/Edit Board Feature
+
+  * [all]  Fixed crashing when saving the desktop geometry
+           (bug observed in FreeBSD only)
+
+  * [all]  Minor typecasting bug solved, fixes compilation
+           some incarnation of gcc 2.95.2 somewhere.
+
+0.3.5
+  * [all]  Several little code cleanups suggested by Matt
+           Zimmerman: error reporting upon fork() failure,
+           correct closing of pipes when spawning child
+           processes, no script path fallback to /tmp when
+           HOME is not set, warning message (on stderr) if
+           HOME is not set.
+
+  * [all]  Now scripts can be in any language. That makes
+           writing autologin scripts easier with tools
+           like 'expect'.
+
+  * [all]  Added support for "extruded" piece sets (pieces can
+           take up a portion of the square right above it, good
+           for 3D sets. Please notice that such sets are even
+           slower to render than the regular bitmapped sets)
+
+  * [all]  Fixed (at last ?) the bug that made eboard segfault
+           when dragging pieces off the board's limits.
+
+0.3.4
+  * [fics] Added context menu with operations on games and players
+           (right-click anywhere in the clock region of a game
+           while conencted to FICS). Will be be extended to
+           engines soon.
+
+  * [all]  Modified "Show Coordinates" format to a more sane one.
+
+  * [all]  Added text search on the console (Ctrl+F, Ctrl+G,
+           the commands are currently in the Windows menu,
+           but will be relocated to a new "Edit" menu or
+           elsewhere soon).
+
+  * [all]  Added a Dismiss button to the "Run Script" dialog,
+           since some window managers (Sawfish) will make it
+           non-trivial to close a modal dialog box from the window
+           mamager.
+
+  * [all]  Added menu command to save the contents of the main
+           console to a file (Windows -> Save Text Buffer).
+
+  * [all]  Added common C++ code for file dialogs, instead of
+           scattered GTK+ C code (smaller code, possibly smaller
+           binaries, possibly faster compilation)
+
+  * [ics]  Yet another issue of password-showing on detached
+           consoles was fixed. (typing in the username, opening
+           a detached console then typing the password on that
+           console wouldn't masquerade it. Now it's fixed.)
+
+0.3.3
+  * [ics]  Now ratings, seek id  and time control columns are sorted
+           correctly (numerically) on the seek graph.
+
+  * [eng]  Crashes and weird behavior when engine is not found
+           were fixed. 
+
+  * [all]  Better fallback fonts, should work even if only the
+           100 dpi package is installed, and better message if
+           that still fails. If you still have problems loading
+           eboard due to lack of fonts, mail me the output of
+           your 'xlsfonts' command.
+
+  * [ics]  The input boxes of detached consoles now go to
+           password mode upon ICS login, as they should.
+ 
+  * [all]  Fonts with embedded spaces in their names are now accepted.
+
+  * [all]  Fixed crashes when dragging pieces way out of the
+           board.
+
+  * [all]  Added desktop state saving (Windows -> Save Desktop Geometry)
+
+0.3.2pl1
+  * [all]  Last-minute bugfix on eboard-extras loading.
+
+0.3.2
+  * [all]  Selecting a bitmapped theme while in Vector mode will
+           switch to bitmapped mode with the selected theme.
+           (this was causing confusion to some users)
+
+  * [all]  Added customization of console colors (please note that
+           after you change foreground colors, new text will come
+           out in the new colors but the current (old) content of the
+           buffer will remain in the previous setting.
+
+  * [all]  Multi-line strings pasted in the input box will
+           have the line breaks stripped.
+
+  * [fics] Added the Refresh button to the seek graph.
+
+  * [fics] The seek graph is now sorted on the variant
+           column, clicking on the column titles
+           changes sort column, clicking on currently-selected
+           column flips sort direction.
+
+  * [all]  The opponent-moved sound will be only played
+           after the piece animation ends, if animation
+           and sound-on-move are turned on.
+
+  * [all]  theme configuration files called DATADIR/themeconf.*
+           will now be loaded too (this is to keep theme
+           packaging easy).
+
+  * [all]  DATADIR is now used to determine the location of datafiles.
+           (this should only make a difference if the --datadir option is
+	   passed to configure)
+
+  * [all]  eboard-config now uses the configure datadir and bindir variables
+           to determine paths (this allows these variables to be modified
+	   without breaking things)
+
+0.3.1
+  * [all]  PGN reading should be much faster now.
+
+  * [all]  PGN files with comments inside { } should now be
+           read correctly. PGN files with black move numbers like
+           14... should be read correctly too. IMPORTANT: if you
+           have a PGN file that can't be read or is read incorrectly
+           by eboard _please_ email me it so I can fix eboard to
+           read it.
+
+  * [all]  Added a button in the detached console to spawn more
+           consoles.
+
+  * [all]  Better behavior of Page Up and Page Down keys in the
+           detached console.
+
+  * [all]  Fixed bug in dragging (old position was drawn if you were
+           holding a piece while waiting for the opponent to move).
+           But remember: piece holding and animation don't mix.
+
+  * [all]  Added 'Show Coordinates' option.
+
+  * [fics] Clocks won't tick when observing examined games.
+
+0.3.0
+  * [ics]  Added output filtering for detached console.
+
+  * [ics]  Added input box to detached console window.
+
+  * [ics]  Added option to control automatic discarding of
+           observed games.
+
+  * [ics]  Added option to control whether new games are brought
+           to front upon observation or examination.
+
+  * [all]  Keyboard focus will always remain in the inputbox.
+
+  * [all]  Fixed legality checking and move reproduction code for
+           double pawn pushes with a doubled pawn in 3rd or 6th
+           rank.
+
+  * [all]  The Sound Event dialog will list sound themes.
+           (but the controls are only created if at least one
+            file is found in the eboard_themes.conf files)
+
+  * [all]  Sound files can be listed as themes, syntax described
+           in Documentation/Themes.txt, eboard-addtheme is already
+           compliant.
+
+  * [all]  Several fixes to eboard-addtheme script.
+
+  * [all]  The game/board navigation buttons will be disabled
+           whenever they have no use (text panes, boards without
+           games)
+
+  * [all]  Cosmetic changes to the preferences dialog.
+
+  * [fics] 'say' lines will be recognized as personal tells
+           even if after a game.
+
+  * [fics] When examining a game the exmining pane will be
+           brought to front.
+
+  * [all]  Modified eboard_themes.conf search path semantics.
+           (all files in the search path are merged, instead of
+            loading just the first found)
+
+  * [all]  Fixed bug related to unexpected use of the 'discard board'
+           button.
+
+  * [all]  Added button to flip the board to the main window button
+           bar.
+
+  * [all]  Fix for segfaults that happened when closing eboard.
+
+  * [all]  Modified theme loading to allow having separated pieces
+           and squares.
+
+0.2.5
+  * [all]  More fallback fonts if default fonts aren't
+           present.
+
+  * [all]  Added eboard-config and eboard-addtheme scripts
+           for future theme packs.
+
+  * [all]  Fixed a bug that would prevent any sub-process (timeseal,
+           scripts, engines) from communicating correctly in some
+           systems. (Detected, fixed and tested in FreeBSD 4.2;
+           Linux's select() syscall is wise enough and was not
+           fooled by this bug)
+
+  * [ics]  Added support for the 'sposition' command (and
+           theoretically any other commands that make use of
+           the -3 code for isolated positions in style 12)
+
+  * [fics] Board windows will be removed despite of server
+           response (useful for removing sticky game windows
+           after a disconnection or server crash)
+
+  * [all]  Games will have the WhiteElo and BlackElo
+           fields saved if possible.
+
+  * [all]  Added support for C++ libraries that enforce the
+           std:: namespace for STL (GCC 3.0)
+
+  * [all]  Fixed the 'ghost piece' problem when dragging
+           pieces with bitmapped piece sets.
+
+  * [all]  Added double buffering for piece dragging to
+           reduce flicker.
+
+  * [fics] Fixed FICS support when ptime=1 on the server
+           (but since eboard supresses the prompts, why would
+            you have it set anyway ?)
+
+  * [all]  Introduced a delay between the button press event
+           and the start of dragging animation , to prevent the
+           dragging flicker when you're just clicking the piece.
+
+  * [ics]  Fixed crashes due to reuse of game ids.
+
+  * [all]  Minor include file fixes for FreeBSD
+
+0.2.4
+  * [fics] FEN saving fix for observed games.
+
+  * [eng]  Fixed FEN position field when saving games played with
+           engines.
+
+  * [all]  Fixed awful bug in FEN position generation.
+
+0.2.3
+  * [all]  Sound-handling process will be spawned with exec,
+           to prevent it from inheriting X file handlers from a
+           mere fork.
+
+  * [all]  Memory leak fixed when disposing board panes.
+
+  * [all]  Added key bindings for backward and forwards
+           (Ctrl Left, Ctrl Right)
+
+  * [all]  Wild games will be saved with a FEN tag to
+           indicate starting position. And FEN tags on
+           PGN files will be accepted as starting
+           positions.
+ 
+  * [all]  Bug fixed in chess moving code.
+           (1. e4 c5 2. d4 c4 3. b4 cxb3 against an engine
+            would segfault due to an infinite loop)
+
+  * [all]  En passant legality detection added.
+
+0.2.2
+  * [fics] Fixed the showing of provisional ratings on the
+           seek graph (all ratings with RD > 80.0 were being
+           shown as ++++)
+ 
+  * [all]  It's now possible to drop pieces in bug/crazyhouse
+           by dragging the piece from the stock to the board.
+
+  * [all]  Added option to show crazy/bughouse stock graphically.
+
+  * [all]  Added a count field for beep events.
+
+  * [all]  Reworked the sound routines so that it won't require
+           launching a new process for every beep (but it will
+           still launch a new process for every WAV played).
+ 
+  * [ics]  Channel tells can now be split to one window per channel
+           (must be configured via Preferences dialog)
+
+  * [fics] Better prompt removal
+
+  * [fics] Lines that contain the prompt on the middle
+           (e.g. 'help iv_defprompt') will now be
+           shown correctly instead of cut.
+
+  * [ics]  Finally tracked down and really solved the
+           script freezing bug.
+ 
+  * [all]  Implemented animation of piece dragging.
+
+  * [fics] Fixed freezes related to bad parsing of ill-located
+           FICS prompts.
+
+0.2.1
+  * [ics]  Fixed race condition in script I/O that would freeze
+           the whole application.
+
+  * [fics] Added dynamic seek graph, and options related to it.
+
+  * [fics] Fixed move permissions when examining a game.
+
+  * [all]  Fixed interpreation of games with moves
+           O-O+ and O-O-O+ (which caused previous versions
+           to segfault with WHAT YOU SAY!!! message)
+
+0.2.0pl1
+  * [all]  Fixed a bug introduced in 0.2.0 where connections
+           to FICS without timeseal would fail.
+
+0.2.0
+  * [all]  Page Up/Down work on detached console even if the main
+           console isn't shown in the main window.
+
+  * [all]  Added font selection for console windows.
+
+  * [all]  Added error message to stderr to help people
+           debug problems running timeseal and chess
+           engines.
+
+  * [fics] Fixed parsing of Examination status strings
+           (variant is detected correctly when examining a
+           game)
+
+  * [fics] Support for Losers variant on FICS added.
+ 
+  * [all]  Changed Material calculation for Suicide,Losers and
+           Giveaway variants (every piece is worth 1 material
+           point in these variants)
+
+  * [eng]  Added toggle for thinking on opponent's time
+           (xboard protocol hard/easy commands)
+
+  * [ics]  Minor change to premove on *ICS: you'll be able to
+           schedule the premove even before FICS acknowledges
+           the current move.
+
+  * [eng]  Added checkmate detection (will place # instead of +
+           in notation)
+
+  * [all]  Internal improvements to pattern matching
+           classes.
+
+  * [fics] Added colorization to shouts, cshouts, whispers,
+           kibitzes, channel tells, notifications... 
+
+  * [fics] Fixed wild variant detection and game creation.
+
+  * [all]  Fixed a bug in legality checking (some castlings were
+           being inhibited by flawed en passant code, which
+           assumed a pawn on fifth row could take to a square
+           in 8th row)
+
+0.1.10
+  * [fics] Fixed treatment of adjourned games (ignores duplicated
+           "Creating" string, gets the move list for the moves
+           that occurred prior to adjournment)
+
+  * [fics] Castling permissions are taken from FICS data.
+
+  * [all]  Added icons to most of the windows.
+
+  * [all]  Fixed clearing of excess space when resizing board
+           in vector-pieces mode.
+
+  * [all]  Added keybindings to detached console window
+           (same as the ones already existent on the
+           main window)
+
+  * [all]  Fix to piece selection semantics, the rule
+           implemented in 0.1.9 is made void for
+           premove, to allow premove queueing of
+           recaptures.
+
+  * [all]  Fixed castling checking for suicide (castling
+           never allowed), losers and giveaway (castling
+           allowed).
+
+0.1.9
+  * [all]  Fixed one more bug in move interpretation: SAN
+           notation was been ignored for pawn pushes that
+           resulted in a check (e.g. "g5+").
+
+  * [all]  Better vectorized piece set (reduced from 611 to
+           376 vertices, fixed manually the polygons)
+ 
+  * [all]  Minor change to piece selection semantics:
+           if a square with a piece is selected and you
+           select a a square with another piece of the
+           same color, selection is transferred instead
+           of trying to move from the first to the
+           second square.
+
+  * [all]  Added castling legality checking
+
+  * [fics] Fixed the use of non-initialized color (appeared as
+           dark green to me :-) for some FICS strings such as
+           when starting the observation of a game. 
+
+  * [fics] Added colorization for mamer (the FICS tourney bot)
+           messages.  
+
+  * [all]  Remodelled Client-side game list window, with more
+           columns.
+
+  * [all]  Fixed updating of crazyhouse stock when navigating
+           thru the game.
+
+  * [all]  A scheme has been implemented to correctly detect
+           variants, time controls and ratedness (these last
+           two for ICS only) in PGN files (but only
+           on games saved with eboard 0.1.9 or later)          
+           A hack was added to detect crazyhouse games saved with
+           previous versions of eboard or other programs as such.
+           (a drop move must exist)
+
+  * [all]  Inhibited saving PGN games without moves (e.g., when
+           a game is aborted on FICS before a move is made)
+
+  * [all]  More optimizations on bitmap piece drawing
+
+0.1.8
+  * [all]  Supressed animation of own move on FICS (which was
+           annoying)
+
+  * [all]  Added autosave (auto-append games to a PGN file when
+           games end)
+
+  * [all]  Added option to check legality before sending moves.
+           (Use it if you play against GNU Chess 5!)
+
+  * [eng]  The myname string given by the engine now will be used as
+           opponent name.
+
+  * [all]  PGN: better PGN read/write: will skip escape sequences,
+           and will always fill the mandatory STR (seven tag roster)
+           (but PGN support is not yet complete)
+
+  * [eng]  fixed notation translation error (you won't see things like
+           22. bxc8=Q+=Q anymore)
+
+  * [all]  many fixes, optimizations and improvements in
+           piece animation code.
+
+  * [all]  added vectorized piece drawing option (much faster
+           rendering of board, meant for lightning games and/or
+           slower computers)
+  
+  * [all]  added F3,F4 and F7 key bindings (to move across
+           panes)
+
+  * [all]  faster board updates.
+
+0.1.7
+  * [all]  minor bugs fixed in move checking code and legality
+           checking code.
+
+  * [all]  speed and size optimizations on pattern matching
+           code.
+
+  * [all]  attached PGN information to games, and added
+           dialog to edit PGN headers.
+
+  * [all]  fixed enbling state of the "Discard" button
+           on the Games on Client window.
+ 
+  * [all]  added capability to save PGN games
+
+  * [all]  added capability to read PGN games
+           (Windows -> Games on Client)
+
+  * [all]  added sound notification for opponent moves,
+           private tells and draw offers.
+
+  * [fics] disabled closing the ad and server game windows
+           during refreshes (which would cause segfaults)
+
+  * [fics] Fixed bug in Ad Window when only 1 game ad was
+           available.
+
+0.1.6
+  * [fics] Style 12 strings won't be mistakenly taken as
+           game ad lines.
+
+  * [all]  Added document about theme construction.
+
+  * [all]  Changed directory lookup priority to allow
+           local (`pwd`, ~/.eboard, ~/share/eboard) to
+           override system-default values.
+
+  * [fics] Fixed segfaults when discarding observed
+           games.
+
+  * [fics] Examination support added. (The move list is
+           ot retrieved correctly yet, though)
+
+  * [all]  Changed font querying method, won't lock if
+           font dialog is called while connected.
+
+  * [fics] Added option to show the rating next to the
+           player's name. 
+
+  * [ics]  Added scroll back limitation, made autofics.pl
+           usage optional (via Preferences dialog)
+
+  * [all]  Added toggle for piece antialiasing.
+
+  * [all]  Added plain color toggle for board squares.
+
+  * [ics]  Generic ics prompt parsing (*ics% instead of fics%),
+           for portability across servers.
+ 
+  * [eng]  Compilation fix for const typecasting + GCC >=2.95
+
+0.1.5
+  * [fics] Whenever a connection to FICS is made eboard will
+           try to run a script named autofics.pl to login
+           automatically.
+
+  * [all]  added scripting support. scripts go under ~/.eboard/scripts ,
+           must be written in Perl and must follow some convetions.
+           More info in the Documentation/Scripts.txt file.
+
+  * [all]  added preferences dialog, with options to change tab position
+           and fonts.
+
+  * [eng]  added maximum search depth field.
+
+  * [eng]  the clock will retain the time of the previous move until
+           the opponent moves.
+
+  * [eng]  position objects now keep track which pieces are result
+           of promotion. Only useful when playing crazyhouse against local
+           engines.
+
+  * [sjen] added support for Sjeng, a nice multi-variant
+           GPL'd engine.
+
+  * [fics] fixed detection of observed game removal when the
+           protocol line was prefixed by a fics prompt.
+
+  * [all]  now correctly discards local (client-side) game panes.
+
+  * [all]  (notation-only) translation coordinate -> SAN notation
+           now correctly adds promotion suffix (e.g., =Q) and
+           check sign (+). Many improvements in move notation code.
+
+  * [eng]  kills the engine process after the game is finished.
+
+  * [gnuc] added support for GNU Chess 4.x (which has some
+           idyosyncrasies about the xboard protocol)
+
+  * [eng]  added generic xboard protocol (v2) support, runs
+           crafty, GNU Chess 5.x and should run others too.
+           Support is not full. If you know of any Free Software
+           engine that comply with the protocol but fail to work
+           with eboard, contact me and I'll try to fix that.
+
+0.1.4
+  * [ics]  added the game ad window (interface to FICS 'sough' command)
+
+  * [all]  added man page (section 6, eboard)
+
+  * [all]  fixed search path (when using unusual prefixes,
+           prefix/share/eboard will be searched too)
+
+  * [all]  fixed autoconf script to detect GTK+ correctly when
+           the FreeBSD port of GTK+ is installed.
+
+  * [all]  added help menu (with help for keybindings) and moved
+           "about..." from the Peer to Help menu.
+
+  * [all]  added key shortcuts (F5,F6,F8,PgUp,PgDn).
+ 
+  * [ics]  added a history for the most recent hosts used, in the
+           Connect to other server... dialog
+
+  * [all]  implemented moving (and premoving too) by drag-and-drop.
+
+  * [all]  implemented premove (ability to queue the next move before
+           the opponent plays). Warning: move correctness checking is
+           barely implemented. It may send an illegal move to
+           the server (specifically, it won't check whether
+           castling is allowed)
+
+0.1.3	
+  * [all]  added the Local Game List window, which holds the
+           list of games stored locally, which in the future
+           will allow loading and saving PGN files.
+
+  * [all]  added the Detached console command to allow ICS/Engine output
+           on a separate window in addition to the Console notebook
+           pane.
+
+  * [all]  fixed segfaulting when disconnected by user request
+           thru the Peers menu.
+
+  * [craf] locked square selection when it's crafty's turn.
+
+  * [all]  now it paints square selection _over_ last move
+           highlight
+
+  * [fics] fixed some bugs on list insertion of chess boards, list
+           removal of notebook pages and game object updates that would
+           cause unstable behavior when observing several games
+           at once or when discarding game pages from the notebook.
+
+  * [ics]  added game list dialog (interface to the 'games' command
+           on FICS)
+
+  * [all]  better debugging facilities (-log and -debug
+           write to ~/LOG.eboard and DEBUG.eboard, SIGUSR1
+           will dump internal tables to stderr)
+	
+0.1.2
+  * [ics]  better handling of data after a connection
+           is closed (it waits for data on the pipe
+           before closing it, you'll see the FICS
+           farewell ASCII art, for example).
+
+  * [fics] added crazyhouse support. (right-click square to
+           drop a piece). bughouse works, but you must
+           observe your partner's game manually (bughouse
+           is untested)
+
+  * [all]  fixed animation code -- still a wee bit flashy,
+           but won't do the annoying cross-desktop trick.
+
+  * [fics] fixed game variant detection (it would always think
+           your game was regular chess, now it checks correctly)
+
+  * [eng]  corrected wrong end-game status after engine
+           disconnection.
+
+  * [fics] fixed segfaulting when opening the move list for
+           the game being played by the user.
+
+0.1.1
+  * first public release
+
+

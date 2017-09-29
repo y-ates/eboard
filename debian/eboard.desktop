@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=eboard
+Comment=A graphical chessboard program
+Comment[de]=Ein Schachprogramm
+TryExec=/usr/games/eboard
+Exec=/usr/games/eboard
+Categories=GTK;Game;BoardGame;
+Icon=eboard

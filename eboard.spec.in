@@ -1,0 +1,49 @@
+%define ver       THEVERSION
+%define rel       1
+%define prefix    /usr
+
+Summary: A chess board interface for ICS and engines
+Name: eboard
+Version: %ver
+Release: %rel
+Copyright: GPL
+Group: X11/Games
+Source: ftp://ftp.seul.org/pub/chess/eboard/eboard-%{version}.tar.gz
+URL: http://eboard.sourceforge.net
+Buildroot: /var/tmp/%{name}-root
+
+%description
+eboard is a GTK+ chess board interface for ICS (Internet
+Chess Servers) and chess engines (GNU Chess, Crafty, etc.).
+It also displays games in PGN (Portable Game Notation)
+format.
+
+%prep
+%setup -q
+
+%build
+%configure
+./configure --prefix=%prefix
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+make DESTDIR=$RPM_BUILD_ROOT install
+
+chmod 644 $RPM_BUILD_ROOT/%prefix/man/*/*
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root)
+%doc ChangeLog COPYING INSTALL README TODO Documentation/Crafty.txt Documentation/FICS-Timeseal.txt Documentation/GNUChess4.txt Documentation/GNUChess5.txt Documentation/Scripts.txt Documentation/Sjeng.txt Documentation/Themes.txt
+%prefix/bin/*
+%prefix/man/*/*
+%prefix/share/eboard/*
+
+%changelog
+* Fri May 25 2001 Felipe Bergo <bergo@seul.org>
+- built from the gPS spec
+

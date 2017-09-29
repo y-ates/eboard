@@ -1,0 +1,121 @@
+#!/bin/sh
+
+#
+# eboard-addtheme
+# adds a new sound or piece set to the eboard
+# config files.
+#
+# sound info is not yet supported by eboard, but will
+# be. this script is intended for use in theme-packs
+#
+# $Id: eboard-addtheme,v 1.3 2001/06/30 01:57:41 bergo Exp $
+#
+
+DATADIR=`eboard-config --datadir`
+
+usage()
+{
+    cat <<EOF
+Usage: eboard-addtheme P graphics-file description
+       eboard-addtheme S sound-file
+EOF
+    exit $1
+}
+
+if test x$DATADIR = x; then
+    echo "** error **: eboard-config not found in PATH."
+    exit 2
+fi
+
+if test $# = 0; then
+    usage 1 2>&1;
+fi
+
+
+DESTINATION="$DATADIR"
+
+if test ! -w $DATADIR; then
+    echo "** warning **: installing to ~/.eboard since $DATADIR isn't writeable"
+    DESTINATION="$HOME/.eboard"
+fi
+
+CONFIGFILE="$DESTINATION/eboard_themes.conf"
+TMPFILE="/tmp/temp_themes_conf.$$"
+
+case "$1" in
+    P)
+        # do we have the correct number of parameters ?
+	if test $# -ne 3; then usage 1; fi
+
+	# is the file to be installed readable ?
+	if test ! -r $2; then
+	    echo "$2: not found"
+	    exit 3
+	fi
+
+	# will we overwrite anything ?
+	if test -r $DESTINATION/$2; then
+	    if diff -q $2 $DESTINATION/$2; then
+		echo "skipping $2: same file already installed"
+		exit 4
+	    else
+		echo "existing $2 will be overwritten"
+                # remove existing entry from config file
+		fgrep -v "$2" $CONFIGFILE > $TMPFILE
+		if test -r $TMPFILE; then
+		    cp -f $TMPFILE $CONFIGFILE
+		fi
+	    fi
+	fi
+
+	# install it
+	echo "installing piece set \"$3\" ($2)"
+	if sh -c "cp -f $2 $DESTINATION/$2"; then
+	    echo "$2,$3" >> $CONFIGFILE
+	    echo "ok"
+	else
+	    echo "installation of $2 failed"
+	    exit 1
+	fi
+	exit 0
+	;;
+    S)
+	# do we have the correct number of parameters ?
+	if test $# -ne 2; then usage 1; fi
+
+	# is the file to be installed readable ?
+	if test ! -r $2; then
+	    echo "$2: not found"
+	    exit 3
+	fi
+
+	# will we overwrite anything ?
+	if test -r $DESTINATION/$2; then
+	    if diff -q $2 $DESTINATION/$2; then
+		echo "skipping $2: same file already installed"
+		exit 4
+	    else
+		echo "existing $2 will be overwritten"
+                # remove existing entry from config file
+		fgrep -v "$2" $CONFIGFILE > $TMPFILE
+		if test -r $TMPFILE; then
+		    cp -f $TMPFILE $CONFIGFILE
+		fi
+	    fi
+	fi
+
+	echo "installing sound file $2"
+	if sh -c "cp -f $2 $DESTINATION/$2"; then
+	    echo "+$2,sound file" >> $CONFIGFILE
+	    echo "ok"
+	else
+	    echo "installation of $2 failed"
+	    exit 1
+	fi
+	exit 0
+	;;
+    *)
+	usage 1
+	;;
+esac
+

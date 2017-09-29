@@ -1,0 +1,8 @@
+01_cleanup_config_log.dpatch
+03_fix_sound.dpatch
+40_french_translation.dpatch
+40_hungarian_translation.dpatch
+90_respect_deb_build_options.dpatch
+91_fix_ftbfs_554315.dpatch
+95_ubuntu_gcc_4.4.dpatch
+96_ubuntu_gcc_4.6.dpatch

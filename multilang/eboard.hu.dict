@@ -1,0 +1,1525 @@
+L72 101
+ ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n
+ ** PNG betöltés sikertelen: kis felbontású saját figurák használata. Rosszabbul fog kinézni.
+L11 12
+ Browse... 
+ Tallóz... 
+L15 27
+ Play Selected 
+ Játék a kiválasztottal 
+L9 10
+ Refresh 
+ Frissít 
+L14 23
+ Remove Field 
+ Mező eltávolítása 
+L5 11
+ Set 
+ Beállít 
+L1543 1864
+#L#Getting Started\n#M#Common Tasks in eboard\n\nPlaying against the computer\n#S#eboard does not "play chess" itself, but rather is works as interface to programs that do,\ncalled "engines", which don't have a graphical interface themselves. You need an engine to\nplay against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\nno cost.\nOnce you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\nengine#K# submenu, and select the appropriate option depending on which engine you have\ninstalled.\n\n#M#Playing Chess on the Internet\n#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\nUS Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\nTo connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\nother servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\nWhile you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\nis done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n\n#M#Browsing PGN Games\n#S#PGN is the most common file format to store chess games. It can store moves and comments\n(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\ngame, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\nwith the game.#L#
+#L#Bevezető\n#M#Lehetőségek az eboard-ban\n\nJáték a számítógép ellen\n#S#Az eboard program maga "nem tud sakkozni", csak egy grafikus felület, viszont futtatni tud\nmás sakkprogramokat, úgynevezett "gépeket", melyek nem rendelkeznek grafikus felülettel.\nAhhoz, hogy a számítógéppel sakkozz, szükség van egy ilyen programra (gépre).\nA GNU Chess, Crafty és Sjeng ilyen ingyenesen elérhető gépek. Ha ezek közül már telepítve\nvan valamelyik, nyisd meg a #B#Partner#K# menüt, aztán a #B#Gép elleni játék#K# almenüt, és\na gépek közül válaszd azt, amelyik telepítve van a számítógépeden.\n\n#M#Játék az Interneten\n#S#Az eboard támogatja a FICS protokollt. A FICS a freechess.org szerverén fut, de más\nszerverek, mint például a US Chess Live is a FICS szoftverét használják, így szintén működnek\naz eboard-dal. Az ICC nem támogatott.\nA FICS-hez kapcsolódáshoz nyisd meg a #B#Partner#K# menüt, majd válaszd a \n#B#Kapcsolódás a FICS-hez#K# almenüt. Más szerverekhez való kapcsolódáshoz nyisd meg a #B#Partner#K#\nmenüt, majd válaszd a #B#Kapcsolódás másik szerverhez...#K# almenüt.\nBejelentkezhetsz a FICS-re vendégként is (guest néven), de jobban fogod élvezi azt regisztrált\nfelhasználóként. Regisztrálni ingyen lehet a FICS honlapján: #B#http://www.freechess.org#K#.\n\n#M#PGN játszmák tallózása\n#S#A PGN a legelterjedtebb fájlformátum sakkjátszmák tárolására. Ebben megjegyzések is\ntárolhatók. Ilyen fájlok megnyitásához válaszd az #B#Ablakok#K# menüt, majd kattints a\n#B#Játszmák a kliensen#K# almenüre. A helyi lista ablakban kattints a #B#PGN betöltése...#K#\ngombra. Egy játszma megtekintéséhez #B#válaszd ki#K# azt, majd kattints a #B#megjelenít#K# gombra.\nEgy új panel jön majd létre a fő ablakban a betöltött játszmával.#L#
+L30 30
+%d %s to %s, %d Hz for %d msec
+%d %s to %s, %d Hz %d emp -hez
+L13 23
+%d games read
+%d játszma beolvasása
+L14 19
+%d moves in %s
+%s lépés %d alatt
+L41 46
+%s (white) vs. %s (black)\n%s\n%d:%.2d %d
+%s (világos) vs. %s (sötét)\n%s\n%d:%.2d %d
+L31 37
+%s accepted your game proposal.
+%s elfogadta a játszma ajánlatodat.
+L18 19
+%s engine started.
+%s gép elindítva.
+L17 22
+%s offers a draw.
+%s döntetlent ajánl.
+L11 17
+%s per move
+%s lépésenként
+L7 10
+%s/move
+%s/lépés
+L33 31
+(Wrapped) Match Found at Line %d.
+(Wrapped) egyezés a %d sorban.
+L64 62
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS név: Pulga)
+L39 40
+(message obfuscated -- password mode ?)
+(összezavart üzenet -- jelszó mód ?)
+L14 20
+(no bookmarks)
+(nincs könyvjelző)
+L6 7
+(none)
+(üres)
+L13 12
+(time period)
+(időtartam)
+L18 28
+* game not found: 
+* játszma nem található: 
+L47 54
+** [eboard] bad engine protocol # in bookmark: 
+** [eboard] hibás gép protocol # a könyvjelzőben: 
+L57 78
+** eboard ** warning: HOME environment variable not set\n
+** eboard ** figyelmeztetés: a HOME környezeti változó nincs beállítva\n
+L26 32
+--- %s game to PGN file %s
+--- %s játszma a %s PGN fájlba
+L16 26
+--- Disconnected
+--- Kapcsolat megszakítva
+L14 20
+/Game/Ad_journ
+/Játszma/_Elhalaszt
+L19 29
+/Game/Retract _Move
+/Játszma/Lépést _visszavon
+L12 21
+/Game/_Abort
+/Játszma/_Megszakít
+L17 29
+/Game/_Offer Draw
+/Játszma/_Döntetlent ajánl
+L13 16
+/Game/_Resign
+/Játszma/_Felad
+L22 17
+/Help/_About eboard...
+/Súgó/_Névjegy
+L17 38
+/Help/_Debug Info
+/Súgó/_Információk hibakereséshez
+L22 18
+/Help/_Getting Started
+/Súgó/_Bevezető
+L11 25
+/Help/_Keys
+/Súgó/_Gyorsbillentyűk
+L10 12
+/Help/sep4
+/Súgó/sep4
+L22 34
+/Peer/Connect to _FICS
+/Partner/Kapcsolódás a _FICS-hez
+L43 53
+/Peer/Direct connect with _Remote eboard...
+/Partner/Közvetlen kapcsolódás _távoli eboard-hoz
+L23 28
+/Peer/Engine B_ookmarks
+/Partner/Gép könyv_jelzők
+L20 27
+/Peer/ICS _Bookmarks
+/Partner/ICS _könyvjelzők
+L36 39
+/Peer/Play against Engine/Cr_afty...
+/Partner/Gép elleni játék/_Crafty...
+L38 42
+/Peer/Play against Engine/GNU Chess...
+/Partner/Gép elleni játék/_GNU Chess...
+L44 46
+/Peer/Play against Engine/_Generic Engine...
+/Partner/Gép elleni játék/_Általános gép
+L35 38
+/Peer/Play against Engine/_Sjeng...
+/Partner/Gép elleni játék/_Sjeng...
+L30 33
+/Peer/Play against Engine/sep1
+/Partner/Gép elleni játék/sep1
+L26 29
+/Peer/Play against _Engine
+/Partner/_Gép elleni játék
+L33 43
+/Peer/_Connect to Other Server...
+/Partner/Kapcsolódás másik szerverhez...
+L17 25
+/Peer/_Disconnect
+/Partner/Kapcsolat _vége
+L26 47
+/Peer/_Empty Scratch Board
+/Partner/Állás felállítása _üres táblán
+L11 19
+/Peer/_Quit
+/Partner/_Kilépés
+L42 47
+/Peer/_Scratch Board with Initial Position
+/Partner/Állás felállítása _alapállással
+L10 13
+/Peer/sep2
+/Partner/sep2
+L10 13
+/Peer/sep3
+/Partner/sep3
+L10 13
+/Peer/sep4
+/Partner/sep4
+L48 65
+/Settings/Bitmapped Piece Sets/Load _Pieces Only
+/Beállítások/Bittérképes készlet/Csak _figurák betöltése
+L49 63
+/Settings/Bitmapped Piece Sets/Load _Squares Only
+/Beállítások/Bittérképes készlet/Csak _tábla betöltése
+L42 57
+/Settings/Bitmapped Piece Sets/Load _Theme
+/Beállítások/Bittérképes készlet/_Téma betöltése
+L31 38
+/Settings/Bitmapped Piece _Sets
+/Beállítások/Bittérképes készlet
+L35 41
+/Settings/Enable Legality _Checking
+/Beállítások/Szabályok _ellenőrzése
+L55 64
+/Settings/ICS Behavior/Popup Board Panes _Upon Creation
+/Beállítások/ICS tulajdonságok/Tábla panel _létrehozáskor
+L69 94
+/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends
+/Beállítások/ICS tulajdonságok/Vizsgált állások bezárása ha a játszma befejeződött
+L18 39
+/Settings/Pre_move
+/Beállítások/Lépések _előjelzése
+L27 39
+/Settings/Sho_w Coordinates
+/Beállítások/_Kordináták mutatása
+L24 38
+/Settings/_Animate Moves
+/Beállítások/_Lépések animálása
+L33 51
+/Settings/_Beep on Opponent Moves
+/Beállítások/_Csipogás az ellenfél lépésekor
+L30 46
+/Settings/_Enable Other Sounds
+/Beállítások/Egyéb hangok _engedélyezése
+L30 43
+/Settings/_Highlight Last Move
+/Beállítások/_Utolsó lépés kijelzése
+L23 35
+/Settings/_ICS Behavior
+/Beállítások/_ICS tulajdonságok
+L25 31
+/Settings/_Preferences...
+/Beállítások/_Beállítások
+L47 64
+/Settings/_Vectorized Pieces (Faster Rendering)
+/Beállítások/_Vektorizált figurák (gyorsabb megjelenítés)
+L14 20
+/Settings/sep3
+/Beállítások/sep3
+L23 17
+/Windows/Find _Previous
+/Ablakok/_Előző
+L28 38
+/Windows/Games on _Client...
+/Ablakok/Játszmák a _helyi gépen...
+L31 30
+/Windows/Save Desktop _Geometry
+/Ablakok/_Elrendezés mentése
+L29 38
+/Windows/Save _Text Buffer...
+/Ablakok/Szöveges _puffer mentése...
+L26 36
+/Windows/_Ads on Server...
+/Ablakok/_Hirdetések a szerveren...
+L26 33
+/Windows/_Detached Console
+/Ablakok/Konzol _külön ablakban
+L32 35
+/Windows/_Find Text (upwards)...
+/Ablakok/Szöveg keresése (előre)
+L28 35
+/Windows/_Games on Server...
+/Ablakok/_Játszmák a szerveren...
+L23 31
+/Windows/_Run Script...
+/Ablakok/_Szkript futtatása...
+L13 13
+/Windows/sep1
+/Ablakok/sep1
+L13 13
+/Windows/sep2
+/Ablakok/sep2
+L13 13
+/Windows/sep3
+/Ablakok/sep3
+L6 10
+/_Game
+/_Játszma
+L6 8
+/_Help
+/_Súgó
+L6 9
+/_Peer
+/_Partner
+L10 16
+/_Settings
+/_Beállítások
+L9 9
+/_Windows
+/_Ablakok
+L106 122
+<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<AdListDialog::AdListDialog> Figyelmeztetés: nem lehet a fontot betölteni, ez az ablaknak borzasztóan fog kinézni.\n\n
+L34 39
+<Fics Protocol> abort request sent
+<Fics Protocol> elvet üzenet elküldve
+L36 43
+<Fics Protocol> adjourn request sent
+<Fics Protocol> elhalaszt üzenet elküldve
+L33 44
+<Fics Protocol> draw request sent
+<Fics Protocol> döntetlen üzenet elküldve
+L110 126
+<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<GameListDialog::GameListDialog> Figyelmeztetés: nem lehet a fontot betölteni, ez az ablaknak borzasztóan fog kinézni.\n\n
+L45 47
+<PatternMatcher::set> ** bad pattern string: 
+<PatternMatcher::set> ** hibás minta sztring: 
+L40 43
+<PieceSet::PieceSet> ** file not found: 
+<PieceSet::PieceSet> ** nincs ilyen fájl: 
+L39 46
+<SeekGraph::updatefont> failed to load 
+<SeekGraph::updatefont> sikertelen betöltés 
+L112 126
+<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<StockListDialog::StockListDialog> Figyelmeztetés: nem lehet a fontot betölteni, ez az ablaknak borzasztóan fog kinézni.\n
+L42 46
+<XBoard Protocol> Adjourning not supported
+<XBoard Protocol> elhalasztás nem támogatott
+L46 49
+<XBoard Protocol> Incompatible Engine Protocol
+<XBoard Protocol> nem kompatibilis gép protokoll
+L33 36
+<XBoard Protocol> Session Aborted
+<XBoard Protocol> menet megszakítva
+L35 46
+<XBoard Protocol> draw request sent
+<XBoard Protocol> döntetlen üzenet elküldve
+L9 14
+<editing>
+<szerkesztés>
+L17 21
+> (password sent)
+> (jelszó elküldve)
+L23 25
+> [issued from menu] %s
+> [menüből indítva] %s
+L25 32
+> [issued from shortcut] 
+> [gyorsbillentyűvel indítva] 
+L31 43
+> [script run from shortcut] %s
+> [gyorsbillentyűvel indított szkript] %s
+L12 8
+About eboard
+Névjegy
+L6 7
+Accept
+Elfogad
+L36 46
+Accepted incoming connection from %s
+%s Bejövő kapcsolódási kéreleme elfogadva
+L14 19
+Ad Description
+Hirdetés leírása
+L7 15
+Ad List
+Hirdetés lista
+L23 32
+Ad List (refreshing...)
+Hirdetés lista (frissítés...)
+L33 36
+Add to Peer/Engine Bookmarks menu
+Hozzáadás a Partner/Gép menühöz
+L22 19
+Address already in use
+A cím már foglalt
+L3 11
+Ads
+Hirdetések
+L21 21
+Already connected ?!?
+Már csatlakozott ?!?
+L675 696
+Anywhere:\nF3: Go to previous pane.\nF4: Go to next pane.\nF5: Go to the main board pane.\nF6: Go to the console pane.\nF7: Go to the seek graph pane (if available).\nF8: Toggle Shortcut Bar visilibity.\nPage Up/Page Down: scrolls the text console (must be visible)\nCtrl+(Left Arrow): Backward 1 halfmove\nCtrl+(Right Arrow): Forward 1 halfmove\nCtrl+F: Find Upwards(main console buffer)\nCtrl+G: Find Previous\n\nInput box:\nUp/Down (arrows): move thru input history\nEnter: send text line\nEsc: switch Chat/Command Mode\n\nSyntaxisms:\nIn main window's input box:\n.. entering %prefix text will set the chat prefix to text.\n.. entering %do scriptname will run scriptname.
+Mindenhol érvényes:\nF3: Előző panel.\nF4: Következő panel.\nF5: Fő tábla panel.\nF6: Konzol panel.\nF7: Keresés grafikon panel (ha elérhető).\nF8: Nyomógombok láthatósága kapcsoló.\nPage Up/Page Down: szöveges konzol görgetése\nCtrl+(Balra nyíl): 1 lépés vissza\nCtrl+(Jobbra nyíl): 1 lépés előre\nCtrl+F: Keresés előre (fő konzol puffer)\nCtrl+G: Előző keresése\n\nBeviteli mezőben:\nFel/Le (nyilak): mozgás a beviteli előzményekben\nEnter: szöveg elküldése\nEsc: Cset/Parancs mód kapcsoló\n\nSzintaxis:\nA fő ablak beviteli mezőjében:\n.. %prefix szöveg beállítja a cset prefixet szöveg -re.\n.. %do szkriptneve futtatja a szkriptneve szkriptet.
+L10 11
+Appearance
+Megjelenés
+L8 10
+Appended
+Hozzáadva
+L5 8
+Apply
+Alkalmaz
+L13 25
+Apply Changes
+Változások alkalmazása
+L24 41
+Auto-save observed games
+Vizsgált játszmák automatikus mentése
+L22 37
+Auto-save played games
+Játszott partik automatikus mentése
+L8 19
+Autosave
+Automatikus mentés
+L14 24
+Axis & Buttons
+Koordináták és Gombok
+L10 8
+Background
+Háttér
+L14 14
+Bad descriptor
+Hibás leíró
+L45 9
+Beep (need Pitch, Duration, Count and Device)
+Csipogás
+L10 8
+Bishop  %d
+Futó %d
+L5 7
+Black
+Sötét
+L14 16
+Black: %s - %s
+Sötét: %s - %s
+L119 136
+Board Cursor Axis: %d\nBoard Select Button: %d\nBoard Browsing Axis: %d\nPrevious Tab Button: %d\nNext Tab Button: %d\n
+Tábla kurzor irány: %d\nTábla kiválasztó gomb: %d\nTábla tallózás irány: %d\nElőző fül gomb: %d\nKövetkező fül gomb: %d\n
+L17 18
+Board version :%s
+Tábla verzió: %s
+L17 22
+Bookmark Caption:
+Könyvjelző szövege:
+L6 4
+Bottom
+Alul
+L11 15
+Bright Text
+Fényes szöveg
+L6 7
+Browse
+Tallóz
+L19 27
+Buffer Save failed.
+Puffer mentése sikertelen.
+L8 10
+Bughouse
+Négykezes
+L22 33
+Bughouse: Partner Game
+Négykezes: a partner játszmája
+L15 13
+Bus address :%s
+Busz cím :%s
+L14 19
+Button Caption
+Nyomógomb felirata
+L11 17
+Button Icon
+Nyomógomb ikonja
+L6 7
+Cancel
+Mégsem
+L29 36
+Cancel Joystick Configuration
+Joystick beállítás megszakítása
+L26 25
+Cancelled connection wait.
+Várakozás megszakítva.
+L9 13
+Change...
+Változtat...
+L13 18
+Channel Tells
+Csatorna mondások
+L9 4
+Checkmate
+Matt
+L14 13
+Chess Programs
+Sakkprogramok
+L11 24
+Choose Font
+Válassz betűkészletet
+L9 11
+Choose...
+Választ...
+L10 19
+Clock Font
+Óra betűkészlete
+L5 6
+Close
+Bezár
+L5 5
+Color
+Szín
+L15 20
+Color Selection
+Szín kiválasztása
+L6 7
+Colors
+Színek
+L7 7
+Command
+Parancs
+L13 11
+Command Line:
+Parancssor:
+L8 14
+Computer
+Számítógép
+L30 41
+Computer White vs. Human Black
+Számítógép világos vs. Ember sötét
+L24 34
+Configure Axis & Buttons
+Tengelyek és gombok beállítása
+L23 26
+Configured Sound Files:
+Hangfájlok beállítása:
+L7 12
+Connect
+Csatlakozás
+L21 27
+Connect to ICS Server
+Csatlakozás ICS szerverhez
+L20 20
+Connected to %s (%s)
+Csatlakozás %s (%s)
+L19 18
+Connecting to %s...
+Csatlakozás %s...
+L18 28
+Connection refused
+Csatlakozás visszautasítva
+L28 38
+Connection to %s:%d failed: 
+Csatlakozás ehhez: %s:%d sikertelen: 
+L7 6
+Console
+Konzol
+L12 16
+Console Beep
+Konzol csipogás
+L12 21
+Console Font
+Konzol betűkészlete
+L21 23
+Console buffer saved.
+Konzol puffer elmentve.
+L6 12
+Count:
+Számláló:
+L10 15
+Crazyhouse
+Őrültek háza
+L27 35
+DGT board found on port %s.
+A %s porton DGT táblát találtam.
+L29 20
+DGT support error: wrong page
+DGT hiba: hibás lap
+L60 74
+DGT warning: position mismatch between eboard and DGT board.
+DGT figyelmeztetés: nem egyezik a pozíció az eboard és a DGT között.
+L31 29
+DGT: unrecognized code: %c (%d)
+DGT: ismeretlen kód: %c (%d)
+L15 17
+Dark Squares...
+Sötét mezők...
+L18 28
+Delete All Entries
+Összes bejegyzés törlése
+L17 20
+Delete This Entry
+Bejegyzés törlése
+L12 18
+Depth Limit:
+Mélység korlát:
+L11 8
+Description
+Leírás
+L7 8
+Device:
+Eszköz:
+L50 65
+Directory to run from (e.g., where book files are)
+Könyvtár, ahonnan futtat (ahol a megnyitástár fájlok vannak)
+L10 11
+Directory:
+Könyvtár:
+L11 28
+Discard All
+Minden játszma abbahagyása
+L12 21
+Discard Game
+Játszma abbahagyása
+L7 12
+Dismiss
+Elutasítás
+L12 18
+Display Game
+Játszma mutatása
+L9 8
+Displayed
+Mutatott
+L81 81
+Distributed under the terms of the GNU General Public License, version 2 or later
+Distributed under the terms of the GNU General Public License, version 2 or later
+L12 19
+Draw Offered
+Döntetlen ajánlat
+L16 29
+Draw offer sent.
+Döntetlen ajánlat elküldve
+L18 25
+Drawn by agreement
+Döntetlen megegyezéssel
+L11 17
+Drop Piece:
+Figura lerakása:
+L16 17
+Duration (msec):
+Időtartam (msec)
+L18 26
+Dynamic Seek Table
+Dinamikus keresési tábla
+L17 30
+Edit Bookmarks...
+Könyvjelzők szerkesztése...
+L21 32
+Edit Engine Bookmarks
+Gép könyvjelzők szerkesztése
+L14 36
+Edit Game Info
+Játszma információk szerkesztése
+L17 25
+Edit Time Control
+Időkontrol szerkesztése
+L5 5
+Empty
+Üres
+L16 18
+Engine Bookmarks
+Gép könyvjelzők
+L14 12
+Engine Command
+Gép parancs
+L12 13
+Engine Type:
+Gép típusa:
+L28 37
+Engine Type: %s (uneditable)
+Gép típusa: %s (nem szerkeszthető)
+L43 47
+Engine asked more time to startup, waiting.
+Gép indítása többször kérve, várakozás.
+L19 16
+Engine command line
+Gép parancssora
+L14 15
+Engine loaded.
+Gép betöltve.
+L14 8
+Engine running
+Gép fut
+L30 30
+Engine started (2 sec timeout)
+Gép elindítva (2 mp timeout)
+L18 22
+Enter FEN Position
+Írd be a FEN állást
+L10 16
+Event Type
+Esemény típusa
+L13 27
+Exam.Game #%d
+#%d játszma végrehajtása
+L21 27
+Failed to run engine.
+Gép indítása sikertelen.
+L28 37
+Failed to run helper program
+A segédprogram futtatása sikertelen
+L30 42
+File to play / Program to run:
+Lejátszandó fájl / Futtatandó program:
+L8 7
+Filter: 
+Szűrő
+L14 16
+Filter: (none)
+Szűrő: (üres)
+L36 45
+Finish the current connection first.
+Először az aktuális kapcsolat befejezése.
+L30 44
+Finish the current game first.
+Először az aktuális játszma befejezése.
+L5 9
+Flags
+Zászlók
+L5 15
+Fonts
+Betűkészletek
+L22 18
+From Elsewhere (%d %s)
+Valahonnan (%d %s)
+L20 18
+From Engines (%d %s)
+Gépekből (%d %s)
+L8 8
+From FEN
+FEN-ből
+L16 16
+From ICS (%d %s)
+ICS-ből (%d %s)
+L22 23
+From PGN Files (%d %s)
+PGN fájlokból (%d %s)
+L6 10
+Game #
+Játszma #
+L8 12
+Game #%d
+Játszma #%d
+L13 17
+Game #%d - %s
+Játszma #%d - %s
+L18 21
+Game #%d - %s - %s
+Játszma #%d - %s  %s
+L20 24
+Game #%d - %s vs. %s
+Játszma #%d - %s vs. %s
+L12 16
+Game #%d: %s
+Játszma #%d: %s
+L12 21
+Game Aborted
+Játszma megszakítva
+L16 18
+Game Description
+Játszma leírása
+L21 37
+Game Information Font
+Játszma információk betűkészlete
+L9 14
+Game List
+Játszma lista
+L25 31
+Game List (refreshing...)
+Játszma lista (frissítés...)
+L9 20
+Game Lost
+Játszma elveszítve
+L12 17
+Game Started
+Játszma elkezdve
+L8 18
+Game Won
+Játszma megnyerve
+L19 29
+Game appended to %s
+Játszma hozzáadva ehhez: %s
+L17 21
+Game in progress.
+Játszma folyamatban.
+L13 18
+Game over: %s
+Játszma vége: %s
+L19 28
+Game proposal sent.
+Játszma javaslat elküldve.
+L13 25
+Game started!
+A játszma elkezdődött.
+L12 16
+Game/Board: 
+Játszma/Állás
+L5 10
+Games
+Játszmák
+L24 26
+Generic XBoard Engine...
+Általános XBoard gép...
+L8 10
+Giveaway
+Elárul(?)
+L46 49
+Graphic representation of crazy/bughouse stock
+Őrültek háza/négykezes grafikus ábrázolása
+L16 37
+Help: Debug Info
+Súgó: Információk hibakereséshez
+L22 17
+Help: Getting Started 
+Súgó: Bevezető
+L10 24
+Help: Keys
+Súgó: Gyorsbillentyűk
+L5 7
+Hide!
+Elrejt!
+L18 28
+Host not found: %s
+Gépnév nem található: %s
+L8 8
+Hostname
+Gépnév
+L23 22
+Hostname or IP address:
+Gépnév, vagy IP cím
+L5 5
+Human
+Ember
+L30 41
+Human White vs. Computer Black
+Ember Világos vs. Számítógép Sötét
+L17 29
+Human plays white
+Az ember játszik világossal
+L13 13
+ICS Challenge
+ICS kihívás
+L25 28
+IPC pipe creation failed.
+IPC cső létrehozási hiba.
+L2 2
+Id
+Id
+L104 130
+If you pick a bookmark, the engine\nwill play the next move, ignoring\nthe side setting in the bookmark.
+Amikor kiválasztasz egy könyvjelzőt,\nmindíg a gép következik majd lépésre,\nfüggetlenül a könyvjelzőben leírtaktól.
+L43 68
+Illegal Drop on %c%d (Legality Checking On)
+Szabálytalan lerakás:  %c%d (szabályok ellenőrzése bekapcsolva)
+L44 69
+Illegal Move %c%d%c%d (Legality Checking On)
+Szabálytalan lépés %c%d%c%d (szabályok ellenőrzése bekapcsolva)
+L23 41
+Illegal move, not sent.
+Szabálytalan lépés, nem küldhető el.
+L17 17
+Increment (secs):
+Növekmény (mp):
+L10 12
+Increment:
+Növekmény:
+L55 56
+Inhibit seek lines on console when Seek Table is active
+Keresési sorok tiltása amíg a keresési tábla aktív
+L16 17
+Initial Position
+Kiinduló állás
+L23 24
+Initial time ([mm:]ss):
+Kezdő idő ([perc:]mp):
+L19 21
+Initializing engine
+Gép inicializálása
+L46 49
+Invalid answer to DGT_SEND_BRD on port %s: %s 
+Érvénytelen DGT_SEND_BRD válasz (port %s): %s 
+L8 8
+Joystick
+Joystick
+L3 5
+Key
+Kulcs
+L4 6
+Key:
+Kulcs:
+L17 15
+Kibitzes/Whispers
+Kibicek/Súgók
+L4 6
+Kill
+Megöl
+L10 8
+Knight  %d
+Huszár:
+L22 26
+Last Proposal Received
+Utolsó javaslat elfogadva
+L4 3
+Left
+Bal
+L16 18
+Light Squares...
+Világos mezők...
+L8 15
+Load PGN
+PGN betöltése
+L11 18
+Load PGN...
+PGN betöltése...
+L5 5
+Local
+Helyi
+L15 20
+Local Game List
+Helyi játszma lista
+L21 20
+Looking up host %s...
+%s gép keresése...
+L6 9
+Losers
+Pancserek
+L10 10
+Main Board
+Fő tábla
+L13 14
+Mamer and TDs
+Mamer és TD-k
+L14 13
+Manual/Formula
+Kézi/Képlet
+L23 21
+Match Found at Line %d.
+Találat a %d sorban.
+L15 7
+Match Pattern: 
+Minta: 
+L17 14
+Material: %d - %d
+Anyag: %d - %d
+L8 16
+Max Ply:
+Max féllépés:
+L30 46
+Move made (Obs'vd/Exm'd Games)
+Megtett lépések (Vizsgált/Játszott partik)
+L5 9
+Moves
+Lépések
+L22 28
+Network is unreachable
+A hálózat nem érthető el
+L18 21
+News/Notifications
+Hírek/Értesítések
+L2 3
+No
+Nem
+L9 11
+No error.
+Nincs hiba.
+L19 32
+No material to mate
+Nincs elég anyag a mattadáshoz
+L23 34
+No output from program.
+Nincs kimenet a program számára.
+L8 14
+No peer.
+Nincs partner.
+L19 23
+No previous search.
+Nincs előző keresés.
+L18 21
+No proposals left.
+Nincs több javaslat.
+L22 23
+No proposals received.
+Nem érkezett javaslat.
+L43 41
+No response to DGT_SEND_BRD on port %s: %s.
+Nincs DGT_SEND_BRD válasz (port %s): %s.
+L4 5
+None
+Semmi
+L12 17
+Normal Chess
+Hagyományos sakk
+L11 15
+Normal Text
+Normál szöveg
+L16 14
+Not a socket ?!?
+Nem socket ?!?
+L2 2
+OK
+Ok
+L17 38
+Obs'vd Game Ended
+A megtekintett játszma befejeződött
+L7 7
+Observe
+Megnéz
+L2 2
+Ok
+Ok
+L160 174
+Once you connect to a host from this dialog, it will be added to\nthe Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\nto modify or remove entries.
+Ha egyszer már kapcsolódtál innen egy géphez, az hozzáadódik a\nPartner/ICS könyvjelzők menühöz. Módosíthatod vagy törölheted a \n~/.eboard/eboard.conf fájban.
+L14 20
+Opponent Moved
+Az ellenfél lépett
+L7 7
+Options
+Opciók
+L11 13
+PGN Headers
+PGN fejlécek
+L13 13
+PGN filename:
+PGN fájlév:
+L14 17
+Partner Tells:
+Parter üzenetek:
+L10 10
+Pawn    %d
+Gyalog  %d
+L11 10
+Pitch (Hz):
+Pitch (Hz)
+L4 11
+Play
+Lejátszás
+L56 74
+Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)
+%s, %s vs. %s (%s, max számítási mélység %d, mindíg gondolkodik: %s)
+L58 16
+Play WAV (need Device and Filename, sox must be installed)
+WAV lejátszása
+L19 21
+Play against Crafty
+Crafty elleni játék
+L19 19
+Play against Engine
+Gép elleni játék
+L22 24
+Play against GNU Chess
+GNU Chess elleni játék
+L18 20
+Play against Sjeng
+Sjeng elleni játék
+L6 9
+Player
+Játékos
+L14 19
+Player resigns
+A játékos feladta
+L22 35
+Player/Color Name Font
+Játékos/szín név betűkészlete
+L14 14
+Pos: %s vs. %s
+Poz: %s vs. %s
+L11 14
+Preferences
+Beállítások
+L12 14
+Private Tell
+Magán mondás
+L13 16
+Private Tells
+Magán mondások
+L23 32
+Program exited too soon
+A program túl gyakran kilépett
+L8 8
+Progress
+Haladás
+L17 33
+Promotion Piece  
+Figurák gyalogátváltozáshoz  
+L7 8
+Propose
+Ajánlat
+L12 17
+Propose Game
+Játszma ajánlat
+L8 9
+Protocol
+Protokoll
+L33 39
+Protocol mismatch, disconnecting.
+Nem egyező protokoll, kapcsolat vége.
+L10 11
+Queen   %d
+Vezér   %d
+L5 10
+Rated
+Értékelt
+L6 12
+Rating
+Értékszám
+L12 23
+Rating Range
+Értékszám tartomány
+L24 29
+Read error from program.
+Olvasási hiba a programtól.
+L33 38
+Received a game proposal from %s.
+Játszma javaslat érkezett innen: %s.
+L12 16
+Recent Hosts
+Előző gépnév
+L12 18
+Refresh List
+Lista frissítése
+L19 29
+Replied to seek #%d
+#%d keresés visszajátszása
+L9 8
+Resigned.
+Feladva.
+L6 9
+Result
+Eredmény
+L20 30
+Retracted last move.
+Utolsó lépés visszavonása.
+L45 65
+Retrieve ICS Channel Lists from eboard.sf.net
+ICS csatornák listájának letöltése az eboard.sf.net címről
+L18 35
+Revert to Defaults
+Kiinduló állás visszaállítása
+L18 35
+Revert to defaults
+Kiinduló állás visszaállítása
+L5 4
+Right
+Jobb
+L10 11
+Rook    %d
+Bástya  %d
+L3 6
+Run
+Futtat
+L13 18
+Run Engine...
+Gép futtatása...
+L27 41
+Run Program (need Filename)
+Program futtatása (fájlév szükséges)
+L47 66
+Run autofics.pl script after connecting to FICS
+Az autofics.pl szkript futtatása miután kapcsolódott a FICS-hez
+L17 23
+Save Buffer As...
+Puffer mentése mint...
+L12 20
+Save Game...
+Játszma mentése...
+L11 14
+Save as PGN
+Mentés PNG-be
+L10 13
+Scratch %d
+Felállít %d
+L6 7
+Script
+Szkript
+L11 13
+Script List
+Szkript lista
+L34 39
+Scrollback limit (0 = unlimited) :
+Visszagörgetési korlát (0=végtelen)
+L11 17
+Search Text
+Szöveg keresése
+L12 18
+Search for: 
+Keresett szöveg: 
+L22 35
+Search text not found.
+A keresett szöveg nem található.
+L8 21
+Seek Ads
+Hirdetések keresése
+L10 17
+Seek Table
+Állás keresése
+L15 28
+Seek Table Font
+Keresőtábla betűkészlete
+L10 9
+Serial :%s
+Soros :%s
+L10 21
+Set Filter
+Szűrő beállítása
+L13 24
+Set Filter...
+Szűrő beállítása...
+L49 81
+Set depth limit to 0 to use the engine's default.
+Állítsd a számítási mélység korlátját 0-ra a gép alapbeállításaihoz.
+L13 26
+Setup Buttons
+Nyomógombok beállítása
+L21 26
+Shortcut Button Setup
+Nyomógombok beállítása
+L6 14
+Shouts
+Bekiabálások
+L42 60
+Show channel tells in one pane per channel
+Csatorna mondások mutatása csatornánként külön panelen
+L63 73
+Show channel tells on console too (when above option is active)
+Csatorna mondások mutatása a konzolon is (amikor a fenti opció aktív)
+L31 47
+Show rating next to player name
+Értékszám mutatása a játékos neve mellett
+L33 37
+Show shortcut buttons below board
+Nyomógombok mutatása a tábla alatt
+L11 14
+Side & Time
+Szín és idő
+L14 18
+Side Selection
+Szín választása
+L14 23
+Side to move: 
+Lépésre következik: 
+L22 20
+Smooth joystick cursor
+Sima joystick kurzor
+L29 31
+Smooth joystick cursor speed:
+Sima joystick kurzor sebesség:
+L34 41
+Smoother animation (eats more CPU)
+Simább animáció (több CPU használat)
+L76 78
+Sorry, this protocol does not allow to retract a move thru this menu option.
+Sajnálom, de ez a protokoll nem teszi lehetővé a lépések visszavonását.
+L11 13
+Sound Event
+Hang esemény
+L12 15
+Sound Events
+Hang események
+L6 6
+Sounds
+Hangok
+L54 59
+Source code available at http://eboard.sourceforge.net
+A forráskód elérhető itt: http://eboard.sourceforge.net
+L9 4
+Stalemate
+Patt
+L18 26
+Start a connection
+Kapcsolat kezdeményezése
+L14 12
+Starting Time:
+Kezdő idő:
+L7 11
+Suicide
+Franciasakk
+L8 8
+TCP Port
+TCP port
+L9 9
+TCP Port:
+TCP Port:
+L12 18
+Tab Position
+Fülek pozíciója
+L4 5
+Test
+Teszt
+L52 60
+The checkbox on the left enables/disables the sound.
+A baloldali jelölőnégyzet engedélyezi/tiltja a hangokat.
+L12 22
+Think Always
+Állandó gondolkodás
+L24 51
+Think on opponent's time
+Gondolkodás az ellenfél gondolkodási ideje alatt
+L4 4
+Time
+Idő
+L12 12
+Time Control
+Idő kontrol
+L15 15
+Time Control...
+Idő kontrol...
+L13 13
+Time Control:
+Idő kontrol:
+L16 15
+Time Running Out
+Időtúllépés
+L7 15
+Timeout
+Időtúllépés
+L44 60
+Times can be given as hh:mm:ss , mm:ss or ss
+Időt megadni a következőképpen lehet  óó:pp:mm vagy mm
+L180 201
+To run multiple commands with one shortcut, separate the commands with ; (semicolon).\nTo run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl .
+Ha egy nyomógombbal több parancsot akarsz futtatni, akkor a parancsokat válszd el ; -vel.\nHa egy szkriptet akarsz futatni egy nyomógombbal, akkor írd be a szkript nevét pl.: script.myscript.pl .
+L3 5
+Top
+Fönt
+L13 12
+Trademark :%s
+Védjegy :%s
+L30 33
+Type: Fischer Clock (ICS-like)
+Típus: Fischer óra (ICS-szerű)
+L25 34
+Type: Fixed Time per Move
+Típus: lépésenként azonos idő
+L34 48
+Type: Use engine's default setting
+Típus: a gép alapbeállításainak használata
+L29 34
+Type: X Moves per Time Period
+Típus: X lépés adott idő alatt
+L26 35
+Unable to bind on port %d.
+Nem lehet kapcsolódni a %d porton.
+L24 32
+Unable to create socket.
+Nem lehet létrehozni socket-et.
+L44 40
+Unable to find the DGT board on port %s: %s.
+Nem található DGT tábla %s porton: %s
+L13 15
+Unknown error
+Ismeretlen hiba
+L14 20
+Unknown result
+Ismeretlen eredmény
+L23 36
+Use plain color squares
+Egyszerű színes mezők használata
+L5 7
+Value
+Érték
+L6 8
+Value:
+Érték:
+L7 9
+Variant
+Változat
+L8 10
+Variant:
+Változat:
+L24 34
+Variant: %s (uneditable)
+Változat: %s (nem szerkeszthető)
+L4 11
+Wait
+Várakozás
+L21 29
+Wait for a connection
+Várakozás a kapcsolódásra
+L34 42
+Waiting for connection on port %d.
+Várakozás a kapcsolódásra a %d porton.
+L30 46
+Warn when own clock is below: 
+Figyelmeztetés, ha saját idő kevesebb mint:
+L18 28
+Welcome to eboard.
+Üdvözöllek az eboard-ban!
+L5 8
+White
+Világos
+L14 17
+White: %s - %s
+Világos: %s - %s
+L10 11
+Working...
+Dolgozom...
+L16 17
+Write to Console
+Írás a konzolra
+L19 21
+Wrong address space
+Hibás címtartomány
+L5 4
+Wrote
+Írt
+L3 4
+Yes
+Igen
+L49 61
+You can only retract when it's your turn to move.
+Csak akkor vonhatod vissza a lépést, amikor te következel.
+L11 6
+Your color:
+Szín:
+L10 5
+Your name:
+Név:
+L6 6
+[chat]
+[cset]
+L5 9
+[cmd]
+[parancs]
+L29 32
+[eboard] ** $HOME is too long
+[eboard] ** a $HOME túl hosszú
+L39 53
+[eboard] ** failed to create directory 
+[eboard] ** nem sikerült a könyvtárat létrehozni 
+L20 37
+[eboard] ** no $HOME
+[eboard] ** nincs beállítva a $HOME
+L22 24
+[eboard] bad RC line\n
+[eboard] hibás RC sor\n
+L4 9
+beep
+csipogás
+L5 11
+beeps
+csipogások
+L5 7
+black
+sötét
+L53 74
+can't load PGN move text from %s (error opening file)
+nem sikerült betölteni a lépést a %s PGN-ből (fájl megnyitási hiba)
+L26 29
+dgtnix driver version %.1f
+dgtnix meghajtó verzió %.1f
+L14 17
+discards board
+tábla bezárása
+L32 31
+eboard Direct Connection Manager
+eboard direkt kapcsolat kezelő
+L22 22
+eboard version %s (%s)
+eboard verzió %s (%s)
+L19 18
+eboard: Console #%d
+eboard: Konzol #%d
+L60 71
+engine claimed illegal move but we didn't move, ignoring it.
+a gép szabálytalan lépést jelzett, de mi nem léptünk, no problem.
+L22 28
+error parsing PGN data
+hiba a PNG olvasása közben
+L11 17
+flips board
+fordított tábla
+L4 8
+game
+játszma
+L5 8
+games
+játszma
+L17 21
+generic xboard v2
+általános xboard v2
+L20 18
+goes back 1 halfmove
+egy lépés vissza
+L26 17
+goes back to start of game
+játszma elejére
+L23 18
+goes forward 1 halfmove
+egy lépés előre
+L27 17
+goes forward to end of game
+játszma végére
+L13 22
+illegal move!
+szabálytalan lépés!
+L11 11
+in progress
+folyamatban
+L29 31
+initial time %s, increment %s
+kezdeti idő %s, növekmény %s
+L8 7
+moves in
+lépés
+L2 3
+no
+nem
+L14 21
+no such game: 
+nincs ilyen játszma:
+L19 29
+no time control set
+nincs beállítva időkontrol
+L4 5
+none
+üres
+L7 5
+nothing
+semmi
+L37 4
+opens new scratch board with position
+új 
+L8 14
+per move
+lépésenként
+L18 26
+plain console beep
+egyszerű konzol csipogás
+L12 21
+play file %s
+%s fájl lejátszása
+L21 26
+pops up the move list
+előhozza a lépéslistát
+L24 33
+process creation failed.
+sikertelen processz létrehozás.
+L5 10
+rated
+értékelt
+L6 13
+run %s
+%s futtatása
+L10 13
+running %s
+%s futtatása
+L18 32
+savePGN failed: %s
+%s PGN fájl mentése sikertelen
+L54 73
+savePGN failed: Won't save game with less than 2 moves
+PGN fájl mentése sikertelen: nem lehet 2-nél kevesebb lépést menteni
+L8 11
+seconds.
+másodperc.
+L7 14
+unrated
+nem értékelt
+L7 20
+untimed
+időkontrol nélkül
+L5 8
+white
+világos
+L3 4
+yes
+igen
+E 508

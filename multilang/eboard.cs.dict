@@ -1,0 +1,1477 @@
+L72 108
+ ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n
+ ** NPODAŘILO SE NAHRÁT PNG: použity interní figury s nízkým rozlišením. Výsledek bude ošklivý.\n
+L11 15
+ Browse... 
+ Procházet... 
+L15 15
+ Play Selected 
+ Hraj zvolenou 
+L9 9
+ Refresh 
+ Obnovit 
+L14 20
+ Remove Field 
+ Odstranit položku 
+L5 10
+ Set 
+ Nastavit 
+L1543 1788
+#L#Getting Started\n#M#Common Tasks in eboard\n\nPlaying against the computer\n#S#eboard does not "play chess" itself, but rather is works as interface to programs that do,\ncalled "engines", which don't have a graphical interface themselves. You need an engine to\nplay against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\nno cost.\nOnce you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\nengine#K# submenu, and select the appropriate option depending on which engine you have\ninstalled.\n\n#M#Playing Chess on the Internet\n#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\nUS Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\nTo connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\nother servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\nWhile you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\nis done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n\n#M#Browsing PGN Games\n#S#PGN is the most common file format to store chess games. It can store moves and comments\n(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\ngame, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\nwith the game.#L#
+#L#Stručný úvod\n#M#Běžné činnosti s eboard\n\nHra proti počítači\n#S#eboard neumí "hrát šachy", ale funguje jako rozhraní k programům, které to dokáží.\nTyto programy, šachové "motory", sice dokáží hrát šachy, ale postrádají grafické rozhraní.\nAbyjste mohl(a) hrát proti počítači potřebujete motor. GNU Chess, Crafty a Sjeng jsou\nzdarma dostupné motory.\nPokud máte některý z těchto motorů nainstalován, otevřete menu #B#Oponent#K#, v něm\nzvolte položku #B#Hrát proti motoru#K# a vyberte motor instalovaný na vašem počítači.\n\n#M#Hra přes Internet\n#S#Eboard podporuje FICS protokol, používaný serverem freechess.org. Tento protokol používají\ni jiné servery jako US Chess Live. Eboard nepodporuje protokol ICC.\nPokud se chcete připojit k FICS, otevřete menu #B#Oponent#K# a klikněte na #B#Připojit k FICS#K#.\nJestliže se chcete připojit k jinému serveru otevřete menu #B#Oponent#K# a klikněte na\n#B#Připojit k jinému serveru...#K#.\nK FICS se můžete připojit jak host, ale mnohem lepší je stát se registrovaným uživatelem.\nRegistrovat se můžete bezplatně na domácí stránce FICS #B#http://www.freechess.org#K#.\n\n#M#Prohlížení partií ve formátu PGN\n#S#PGN je nejrozšířenějším formátem pro ukládání šachových partií. Spolu s tahy v něm lze\nukládat i komentáře a varianty. Pokud chcete otevřít soubor v tomto formátu pomocí eboardu,\notevřete menu #B#Windows#K# a klikněte na #B#Partie na klientovi#K#. V následnujícím\ndialogu klikněte na #B#Nahrát PGN...#K#. Pokud si chcete prohlédnout některou z partií,\n#B#vyberte ji#K# a klikněte na #B#Zobrazit partii#K#. Zvolená partie bude zobrazena na\nnově vytvořené šachovnici v hlavním okně aplikace.#L#
+L30 27
+%d %s to %s, %d Hz for %d msec
+%d %s na %s, %d Hz na %d ms
+L13 21
+%d games read
+Přečteno %d partií
+L14 14
+%d moves in %s
+%d tahů za %s
+L25 26
+%d. Connect to %s:%d (%s)
+%d. Připojit k %s:%d (%s)
+L41 42
+%s (white) vs. %s (black)\n%s\n%d:%.2d %d
+%s (bílý) x %s (černý)\n%s\n%d:%.2d %d
+L31 36
+%s accepted your game proposal.
+%s přijal vaši nabídku na partii.
+L18 19
+%s engine started.
+Motor %s spuštěn.
+L17 20
+%s offers a draw.
+%s nabízí remízu.
+L11 9
+%s per move
+%s na tah
+L33 55
+(Wrapped) Match Found at Line %d.
+Shoda nalezena na řádku %d. (hledáno znovu od konce)
+L64 69
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS přezdívka: Pulga)
+L39 39
+(message obfuscated -- password mode ?)
+(zpráva nezobrazena -- režim hesla ?)
+L14 11
+(no bookmarks)
+(prázdné)
+L6 5
+(none)
+(nic)
+L13 16
+(time period)
+(časový úsek)
+L18 21
+* game not found: 
+* partie nenalezena: 
+L47 59
+** [eboard] bad engine protocol # in bookmark: 
+** [eboard] špatné číslo protokolu motoru v záložce: 
+L57 69
+** eboard ** warning: HOME environment variable not set\n
+** eboard ** varování: Proměnná prstředí HOME není nastavena\n
+L26 36
+--- %s game to PGN file %s
+--- Partie byla %s do PGN souboru %s
+L16 12
+--- Disconnected
+--- Odpojeno
+L14 19
+/Game/Ad_journ
+/Partie/_Přerušit
+L19 20
+/Game/Retract _Move
+/Partie/Vrátit _tah
+L12 16
+/Game/_Abort
+/Partie/_Opustit
+L17 25
+/Game/_Offer Draw
+/Game/Nabídnout _remízu
+L13 15
+/Game/_Resign
+/Partie/_Vzdát
+L22 26
+/Help/_About eboard...
+/Nápověda/_O programu...
+L17 30
+/Help/_Debug Info
+/Nápověda/_Ladicí informace
+L22 28
+/Help/_Getting Started
+/Nápověda/_Stručný úvod
+L11 21
+/Help/_Keys
+/Nápověda/_Klávesy
+L10 16
+/Help/sep4
+/Nápověda/sep4
+L22 26
+/Peer/Connect to _FICS
+/Oponent/Připojit k _FICS
+L43 51
+/Peer/Direct connect with _Remote eboard...
+/Oponent/Přímé spojení na vzdálený _eboard...
+L23 27
+/Peer/Engine B_ookmarks
+/Oponent/Záložky _motorů
+L20 23
+/Peer/ICS _Bookmarks
+/Oponent/Záložky _ICS
+L36 38
+/Peer/Play against Engine/Cr_afty...
+/Oponent/Hrát proti motoru/_Crafty...
+L41 43
+/Peer/Play against Engine/GNU Chess _4...
+/Oponent/Hrát proti motoru/_GNU Chess 4...
+L44 45
+/Peer/Play against Engine/_Generic Engine...
+/Oponent/Hrát proti motoru/_Obecný motor...
+L35 37
+/Peer/Play against Engine/_Sjeng...
+/Oponent/Hrát proti motoru/_Sjeng...
+L30 32
+/Peer/Play against Engine/sep1
+/Oponent/Hrát proti motoru/sep1
+L26 28
+/Peer/Play against _Engine
+/Oponent/Hrát proti _motoru
+L33 40
+/Peer/_Connect to Other Server...
+/Oponent/_Připojit k jinému serveru...
+L17 17
+/Peer/_Disconnect
+/Oponent/_Odpojit
+L26 31
+/Peer/_Empty Scratch Board
+/Oponent/_Prázdná šachovnice
+L11 15
+/Peer/_Quit
+/Oponent/_Konec
+L42 45
+/Peer/_Scratch Board with Initial Position
+/Oponent/Šachovnice s _výchozím postavním
+L10 13
+/Peer/sep2
+/Oponent/sep2
+L10 13
+/Peer/sep3
+/Oponent/sep3
+L10 13
+/Peer/sep4
+/Oponent/sep4
+L48 59
+/Settings/Bitmapped Piece Sets/Load _Pieces Only
+/Nastavení/Obrázkové sady figurek/Nahrát pouze _figurky
+L49 63
+/Settings/Bitmapped Piece Sets/Load _Squares Only
+/Nastavení/Obrázkové sady figurek/Nahrát pouze _šachovnici
+L42 51
+/Settings/Bitmapped Piece Sets/Load _Theme
+/Nastavení/Obrázkové sady figurek/Nahrát _téma
+L31 37
+/Settings/Bitmapped Piece _Sets
+/Nastavení/_Obrázkové sady figurek
+L35 45
+/Settings/Enable Legality _Checking
+/Nastavení/Povolit _kontrolu platnosti tahů
+L55 82
+/Settings/ICS Behavior/Popup Board Panes _Upon Creation
+/Nastavení/Chování ICS/Při _zahájení sledování partie zobrazit šachovnici
+L69 81
+/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends
+/Nastavení/Chování ICS/Při _ukončení sledováné partie zrušit šachovnici
+L18 28
+/Settings/Pre_move
+/Nastavení/_Předvolba tahu
+L27 33
+/Settings/Sho_w Coordinates
+/Nastavení/Zobrazit _souřadnice
+L24 26
+/Settings/_Animate Moves
+/Nastavení/_Animovat tahy
+L33 42
+/Settings/_Beep on Opponent Moves
+/Nastavení/Pípnout po _tahu protihráče
+L30 35
+/Settings/_Enable Other Sounds
+/Nastavení/_Zapnout ostatní zvuky
+L30 37
+/Settings/_Highlight Last Move
+/Nastavení/_Zvýraznit poslední tah
+L23 26
+/Settings/_ICS Behavior
+/Nastavení/Chování _ICS
+L25 25
+/Settings/_Preferences...
+/Nastavení/_Možnosti...
+L47 60
+/Settings/_Vectorized Pieces (Faster Rendering)
+/Nastavení/_Vektorové figurky (Rychlejší vykreslování)
+L14 16
+/Settings/sep3
+/Nastavení/sep3
+L23 26
+/Windows/Find _Previous
+/Okna/Zopakovat h_ledání
+L28 29
+/Windows/Games on _Client...
+/Okna/Partie na _klientovi...
+L31 32
+/Windows/Save Desktop _Geometry
+/Okna/Uložit nastavení _plochy
+L29 22
+/Windows/Save _Text Buffer...
+/Okna/_Uložit text...
+L26 30
+/Windows/_Ads on Server...
+/Okna/_Nabídky na serveru ...
+L26 26
+/Windows/_Detached Console
+/Okna/Samostatná kon_zole
+L32 30
+/Windows/_Find Text (upwards)...
+/Okna/_Hledat text (odzadu)...
+L28 27
+/Windows/_Games on Server...
+/Okna/_Partie na serveru...
+L23 24
+/Windows/_Run Script...
+/Okna/_Spustit skript...
+L13 10
+/Windows/sep1
+/Okna/sep1
+L13 10
+/Windows/sep2
+/Okna/sep2
+L13 10
+/Windows/sep3
+/Okna/sep3
+L6 8
+/_Game
+/_Partie
+L6 12
+/_Help
+/_Nápověda
+L6 9
+/_Peer
+/_Oponent
+L10 12
+/_Settings
+/_Nastavení
+L9 6
+/_Windows
+/_Okna
+L106 137
+<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<AdListGialog::AdListDialog> Varování: nepodařilo se nahrát neproporcionální font, obsah tohoto dialogu bude vypadat škaredě.\n\n
+L41 45
+<BareBoard::BareBoard> can't load font.\n
+<BareBoard::BareBoard> nemohu nahrát font.\n
+L124 135
+<Board::Board> ** failed to load one or more board fonts - install X11 75 dpi and 100 dpi fonts, restart X, and try again.\n
+<Board::Board> ** nepodařilo se nahrát jeden či více fontů - nainstalujte 75 dpi a 100 dpi fonty, restartujete X a zkuste znovu.\n
+L58 65
+<Board::Board> ** failed to load one or more board fonts\n
+<Board::Board> ** nepodařilo se nahrát jeden či více fontů\n
+L34 44
+<Fics Protocol> abort request sent
+<Fics Protokol> návrh na zrušení odeslán
+L36 45
+<Fics Protocol> adjourn request sent
+<Fics Protokol> návrh na odložení odeslán
+L33 42
+<Fics Protocol> draw request sent
+<Fics Protokol> návrh na remízu odeslán
+L110 141
+<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<GameListGialog::GameListDialog> Varování: nepodařilo se nahrát neproporcionální font, obsah tohoto dialogu bude vypadat škaredě.\n\n
+L45 46
+<PatternMatcher::set> ** bad pattern string: 
+<PatternMatcher::set> ** špatný text vzoru: 
+L40 42
+<PieceSet::PieceSet> ** file not found: 
+<PieceSet::PieceSet> ** soubor nenalezen: 
+L39 47
+<SeekGraph::updatefont> failed to load 
+<SeekGraph::updatefont> nepodařilo se nahrát 
+L112 143
+<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<StockListGialog::StockListDialog> Varování: nepodařilo se nahrát neproporcionální font, obsah tohoto dialogu bude vypadat škaredě.\n\n
+L34 42
+<Text::updateFont> failed to load 
+<Text::updateFont> nepodařilo se nahrát 
+L42 47
+<XBoard Protocol> Adjourning not supported
+<XBoard Protokol> Odložení není podporováno
+L33 26
+<XBoard Protocol> Session Aborted
+<XBoard Protokol> Zrušeno
+L35 44
+<XBoard Protocol> draw request sent
+<XBoard Protokol> návrh na remízu odeslán
+L9 10
+<editing>
+<upravuji>
+L17 19
+> (password sent)
+> (heslo odesláno)
+L23 21
+> [issued from menu] %s
+> [zvoleno z menu] %s
+L25 28
+> [issued from shortcut] 
+> [zadáno pomocí zkratky] 
+L31 41
+> [script run from shortcut] %s
+> [skript spuštěný pomocí zkratky] %s
+L12 10
+About eboard
+O programu
+L6 9
+Accept
+Přijmout
+L36 38
+Accepted incoming connection from %s
+Přijímám příchozí spojení od %s
+L14 26
+Ad Description
+Detaily o nabízené parii
+L7 16
+Ad List
+Nabídky partií
+L23 30
+Ad List (refreshing...)
+Nabídky partií (obnovuji...)
+L33 41
+Add to Peer/Engine Bookmarks menu
+Přidat do menu Oponent/Záložky motorů
+L22 27
+Address already in use
+Adresa je již používána
+L3 8
+Ads
+Nabídky
+L21 16
+Already connected ?!?
+Již spojeno ?!?
+L675 754
+Anywhere:\nF3: Go to previous pane.\nF4: Go to next pane.\nF5: Go to the main board pane.\nF6: Go to the console pane.\nF7: Go to the seek graph pane (if available).\nF8: Toggle Shortcut Bar visilibity.\nPage Up/Page Down: scrolls the text console (must be visible)\nCtrl+(Left Arrow): Backward 1 halfmove\nCtrl+(Right Arrow): Forward 1 halfmove\nCtrl+F: Find Upwards(main console buffer)\nCtrl+G: Find Previous\n\nInput box:\nUp/Down (arrows): move thru input history\nEnter: send text line\nEsc: switch Chat/Command Mode\n\nSyntaxisms:\nIn main window's input box:\n.. entering %prefix text will set the chat prefix to text.\n.. entering %do scriptname will run scriptname.
+Kdekoliv:\nF3: Předchozí okno\nF4: Následující okno\nF5: Hlavní šachovnice\nF6: Konzole\nF7: Okno nabídek (pokud je dostupné)\nF8: Přepne zobrazení lišty s tlačítky\nPage Up/Page Down: posouvá text v konzoli (musí být vidět)\nCtrl+(šipka vlevo): Jeden půltah zpět\nCtrl+(šipka vpravo): Jeden půltah vpřed\nCtrl+F: Hledá v předchozím textu (buffer hlavní konzole)\nCtrl+G: Zopakuje hledání\n\nVstupní řádka:\nNahoru/Dolů (šipky): prochází historii zadaných příkazů\nEnter: Odešle zadaný řádek\nEsc: přepíná Komunikační/Příkazový režim\n\nSyntaxe:\nVstupní řádka hlavního okna:\n.. zadání "%prefix text" nastaví komunikační prefix na "text".\n.. zadání "%do scriptname" spustí "scriptname".
+L10 6
+Appearance
+Vzhled
+L8 9
+Appended
+přidána
+L5 8
+Apply
+Použít
+L13 8
+Apply Changes
+Použít
+L24 38
+Auto-save observed games
+Automaticky ukládat sledované partie
+L22 34
+Auto-save played games
+Automaticky ukládat hrané partie
+L8 24
+Autosave
+Automatické ukládání
+L10 7
+Background
+Pozadí
+L14 18
+Bad descriptor
+Chybný deskriptor
+L45 58
+Beep (need Pitch, Duration, Count and Device)
+Pípnout (je třeba Výška, Délka, Počet a Zařízení)
+L10 11
+Bishop  %d
+Střelec %d
+L5 7
+Black
+Černý
+L14 16
+Black: %s - %s
+Černý: %s - %s
+L17 16
+Bookmark Caption:
+Název programu:
+L6 4
+Bottom
+Dole
+L11 13
+Bright Text
+Světlý text
+L6 10
+Browse
+Procházet
+L19 24
+Buffer Save failed.
+Uložení textu selhalo.
+L8 8
+Bughouse
+Bughouse
+L22 25
+Bughouse: Partner Game
+Bughouse: Partie partnera
+L14 15
+Button Caption
+Text tlačítka
+L11 16
+Button Icon
+Ikona tlačítka
+L6 7
+Cancel
+Zrušit
+L26 31
+Cancelled connection wait.
+Čekání na spojení zrušeno.
+L9 10
+Change...
+Změnit...
+L13 21
+Channel Tells
+Sdělení v kanálech
+L9 3
+Checkmate
+Mat
+L14 18
+Chess Programs
+Šachové programy
+L11 11
+Choose Font
+Zvolte font
+L9 9
+Choose...
+Vybrat...
+L10 10
+Clock Font
+Font hodin
+L5 10
+Close
+ Zavřít 
+L5 5
+Color
+Barva
+L15 13
+Color Selection
+Výběr barvy
+L6 5
+Colors
+Barvy
+L7 8
+Command
+Příkaz
+L13 21
+Command Line:
+Příkazová řádky:
+L8 10
+Computer
+Počítač
+L30 40
+Computer White vs. Human Black
+Počítač bílými x Člověk černými
+L23 32
+Configured Sound Files:
+Konfigurované zvukové soubory:
+L7 6
+Connect
+Spojit
+L21 23
+Connect to ICS Server
+Připojit k ICS serveru
+L20 20
+Connected to %s (%s)
+Připojeno k %s (%s)
+L19 22
+Connecting to %s...
+Připojování k %s...
+L18 19
+Connection refused
+Spojení odmítnuto
+L28 26
+Connection to %s:%d failed: 
+Spojení s %s:%d selhalo: 
+L7 7
+Console
+Konzole
+L12 19
+Console Beep
+Pípnout na konzoli
+L12 12
+Console Font
+Font konzole
+L21 23
+Console buffer saved.
+Text v konzoli uložen.
+L6 7
+Count:
+Počet:
+L10 10
+Crazyhouse
+Crazyhouse
+L15 14
+Dark Squares...
+Tmavá pole...
+L18 24
+Delete All Entries
+Smazat všechny položky
+L17 20
+Delete This Entry
+Smazat tuto položku
+L12 20
+Depth Limit:
+Maximální hloubka:
+L11 5
+Description
+Popis
+L7 12
+Device:
+Zařízení:
+L50 54
+Directory to run from (e.g., where book files are)
+Adresář motoru (např. kde jsou knihovny zahájení)
+L10 10
+Directory:
+Adresář:
+L11 14
+Discard All
+Odstranit vše
+L12 16
+Discard Game
+Odstranit partii
+L7 8
+Dismiss
+Zavřít
+L12 15
+Display Game
+Zobrazit partii
+L9 10
+Displayed
+Zobrazená
+L81 80
+Distributed under the terms of the GNU General Public License, version 2 or later
+Distribuováno za podmínek GNU General Public License, verze 2 nebo pozdější
+L12 16
+Draw Offered
+Nabídka remízi
+L16 29
+Draw offer sent.
+Nabídka na remízu odeslána
+L18 15
+Drawn by agreement
+Remíza dohodou
+L11 16
+Drop Piece:
+Umístit kámen:
+L16 12
+Duration (msec):
+Délka (ms):
+L18 27
+Dynamic Seek Table
+Dynamická tabulka nabídek
+L17 20
+Edit Bookmarks...
+Upravit záložky...
+L21 22
+Edit Engine Bookmarks
+Upravit seznam motorů
+L14 12
+Edit Game Info
+Upravit Info
+L17 24
+Edit Time Control
+Upravit nastavení hodin
+L5 9
+Empty
+Prázdná
+L16 16
+Engine Bookmarks
+Použité motory
+L14 18
+Engine Command
+Spuštění motoru
+L12 11
+Engine Type:
+Typ motoru:
+L28 26
+Engine Type: %s (uneditable)
+Typ motoru: %s (neměnné)
+L43 55
+Engine asked more time to startup, waiting.
+Motor požádal o více času na spuštění, čekáme.
+L19 31
+Engine command line
+Příkaz pro spuštění motoru
+L14 17
+Engine loaded.
+Motor připraven.
+L14 13
+Engine running
+Motor běží
+L30 40
+Engine started (2 sec timeout)
+Motor spuštěn (2 vteřiny zpoždění)
+L18 18
+Enter FEN Position
+Zadejte FEN Pozice
+L10 13
+Event Type
+Typ události
+L13 24
+Exam.Game #%d
+Prohlížení partie #%d
+L21 29
+Failed to run engine.
+Nepodařilo se spustit motor.
+L28 41
+Failed to run helper program
+Nepodařilo se spustit podpůrný program
+L30 33
+File to play / Program to run:
+Soubor k přehrání/spuštění:
+L8 6
+Filter: 
+Filtr:
+L14 17
+Filter: (none)
+Filtr: (žádný)
+L36 43
+Finish the current connection first.
+Nejdříve ukončete stávající spojení.
+L30 40
+Finish the current game first.
+Nejdříve ukončete stavající partii.
+L5 7
+Flags
+Značky
+L5 5
+Fonts
+Fonty
+L22 15
+From Elsewhere (%d %s)
+Odjinud (%d %s)
+L20 17
+From Engines (%d %s)
+Z motorů (%d %s)
+L8 9
+From FEN
+Podle FEN
+L16 13
+From ICS (%d %s)
+Z ICS (%d %s)
+L22 22
+From PGN Files (%d %s)
+Z PGN souborů (%d %s)
+L6 8
+Game #
+Partie #
+L8 10
+Game #%d
+Partie #%d
+L19 21
+Game #%d - %d %d %s
+Partie #%d - %d %d %s
+L20 22
+Game #%d - %s vs. %s
+Partie #%d - %s vs. %s
+L21 25
+Game #%d - untimed %s
+Partie #%d - bez hodin %s
+L12 11
+Game #%d: %s
+Hra #%d: %s
+L12 15
+Game Aborted
+Partie zrušena
+L16 12
+Game Description
+Popis partie
+L21 27
+Game Information Font
+Font pro informace o partii
+L9 14
+Game List
+Seznam partií
+L25 28
+Game List (refreshing...)
+Seznam partií (obnovuji...)
+L9 16
+Game Lost
+Prohraná partie
+L12 16
+Game Started
+Začátek partie
+L8 15
+Game Won
+Vyhraná partie
+L19 22
+Game appended to %s
+Partie připojena k %s
+L17 16
+Game in progress.
+Partie se hraje.
+L13 20
+Game over: %s
+Partie skončila: %s
+L19 29
+Game proposal sent.
+Nabídka na partii odeslána.
+L13 15
+Game started!
+Partie začala!
+L12 20
+Game/Board: 
+Partie/Šachovnice: 
+L5 6
+Games
+Partie
+L24 27
+Generic XBoard Engine...
+Obecný motor pro XBoard...
+L8 8
+Giveaway
+Giveaway
+L46 54
+Graphic representation of crazy/bughouse stock
+Grafické zobrazení záložních crazy/bughouse figur
+L16 29
+Help: Debug Info
+Nápověda: Ladicí informace
+L22 27
+Help: Getting Started 
+Nápověda: Stručný úvod
+L10 20
+Help: Keys
+Nápověda: Klávesy
+L5 7
+Hide!
+Skrýt!
+L18 20
+Host not found: %s
+Server nenalezen: %s
+L8 14
+Hostname
+Jméno serveru
+L23 23
+Hostname or IP address:
+Jméno nebo IP adressa:
+L5 8
+Human
+Člověk
+L30 40
+Human White vs. Computer Black
+Člověk bílými x Počítač černými
+L17 23
+Human plays white
+Člověk hraje bílými
+L13 21
+ICS Challenge
+Výzva k partii (ICS)
+L25 47
+IPC pipe creation failed.
+Nepodařilo se vytvořit spojení mezi procesy.
+L2 2
+Id
+Id
+L104 120
+If you pick a bookmark, the engine\nwill play the next move, ignoring\nthe side setting in the bookmark.
+Pokud vyberete záložku, motor zahraje\ndalší tah, bez ohledu na to, jaká\nstrana je uvedena v nastavení záložky.
+L43 57
+Illegal Drop on %c%d (Legality Checking On)
+Nepovolené umístění %c%d (Kontrola platnosti zapnuta)
+L44 53
+Illegal Move %c%d%c%d (Legality Checking On)
+Nepovolený tah %c%d%c%d (Kontrola platnosti zapnuta)
+L23 28
+Illegal move, not sent.
+Neplatný tah - neodesláno.
+L17 17
+Increment (secs):
+Přírůstek (s):
+L10 13
+Increment:
+Přírůstek:
+L55 67
+Inhibit seek lines on console when Seek Table is active
+Nezobrazovat nabídky v konzoli, pokud je tabulka nabídek aktivní
+L16 9
+Initial Position
+Výchozí
+L23 29
+Initial time ([mm:]ss):
+Počáteční čas ([mm:]ss):
+L19 18
+Initializing engine
+Inicializuji motor
+L3 6
+Key
+Klíč
+L4 7
+Key:
+Klíč:
+L17 23
+Kibitzes/Whispers
+Kibicování/Šeptání
+L4 8
+Kill
+Ukončit
+L10 10
+Knight  %d
+Jezdec  %d
+L22 28
+Last Proposal Received
+Poslední přijatá nabídka
+L4 5
+Left
+Vlevo
+L16 16
+Light Squares...
+Světlá pole...
+L8 11
+Load PGN
+Nahrát PGN
+L11 14
+Load PGN...
+Nahrát PGN...
+L5 8
+Local
+Místní
+L15 26
+Local Game List
+Seznam lokálních partií
+L21 23
+Looking up host %s...
+Hledání serveru %s...
+L6 6
+Losers
+Losers
+L10 15
+Main Board
+Hl. šachovnice
+L13 10
+Mamer and TDs
+Mamer a TD
+L14 17
+Manual/Formula
+Manuální/Vzorec
+L23 29
+Match Found at Line %d.
+Shoda nalezena na řádku %d.
+L15 15
+Match Pattern: 
+Hledaný vzor: 
+L17 18
+Material: %d - %d
+Materiál: %d - %d
+L8 13
+Max Ply:
+Max. hloubka:
+L30 37
+Move made (Obs'vd/Exm'd Games)
+Tah (Sledovaná/Prohlížená partie)
+L5 4
+Moves
+Tahy
+L22 20
+Network is unreachable
+Síť je nedostupná
+L18 18
+News/Notifications
+Novinky/Oznámení
+L2 2
+No
+Ne
+L9 10
+No error.
+Bez chyby.
+L19 31
+No material to mate
+Nedostatek materiálu k výhře
+L8 13
+No peer.
+Bez oponenta.
+L19 32
+No previous search.
+Neexistuje předchozí hledání
+L18 28
+No proposals left.
+Nezbývá žádná nabídka.
+L22 29
+No proposals received.
+Nepřijata žádná nabídka.
+L4 3
+None
+Nic
+L12 17
+Normal Chess
+Normální šachy
+L11 15
+Normal Text
+Normální text
+L16 16
+Not a socket ?!?
+Není socket ?!?
+L2 2
+OK
+OK
+L17 23
+Obs'vd Game Ended
+Konec sledované partie
+L7 8
+Observe
+Sledovat
+L2 2
+Ok
+OK
+L160 205
+Once you connect to a host from this dialog, it will be added to\nthe Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\nto modify or remove entries.
+Servery ke kterým se přihlásíte pomocí tohoto dialogu budou přidány\ndo menu Oponent/ICS Záložky. Pokud chcete změnit nebo odstranit položky\nz tohoto menu, upravte soubor ~/.eboard/eboard.conf.
+L293 327
+Only lines that match the above pattern will be added\nto this text pane. Patterns can be OR'ed with the | (pipe)\ncharacter. A * (star) can be used to match anything.\nExamples:\n'(20)|(22)' shows only lines from channels 20 and 22\n'blik * bored' shows lines containing 'blik '(...)' bored'.
+Do konzole budou přidávány pouze řádky, které odpovídají\nvýše uvedenému vzoru. Vzory mohou být kombinovány pomocí\nznaku | (logické nebo). Znak * (hvězdička) znamená cokoliv.\nPříklady:\n'(20)|(22)' ukáže pouze řádky z kanálů 20 a 22\n'blik * bored' ukáže řádky obsahující 'blik '(...)' bored'.
+L14 13
+Opponent Moved
+Oponent táhl
+L7 5
+Options
+Volby
+L11 13
+PGN Headers
+PGN Hlavička
+L13 19
+PGN filename:
+Jméno PNG souboru:
+L14 20
+Partner Tells:
+Zprávy od partnera:
+L10 12
+Pawn    %d
+Pěšec   %d
+L11 13
+Pitch (Hz):
+Výška (Hz):
+L4 18
+Play
+Přijmout nabídku
+L56 66
+Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)
+Hrát %s jako %s x %s (%s, maxhloubka %d, stále přemýšlet: %s)
+L58 76
+Play WAV (need Device and Filename, sox must be installed)
+Přehrát WAV (je třeba Zařízení a Soubor; musí být nainstalován sox)
+L19 18
+Play against Crafty
+Hrát proti Crafty
+L19 18
+Play against Engine
+Hrát proti motoru
+L24 23
+Play against GNU Chess 4
+Hrát proti GNU Chess 4
+L18 17
+Play against Sjeng
+Hrát proti Sjeng
+L6 6
+Player
+Hráč
+L14 12
+Player resigns
+Hráč vzdal
+L22 25
+Player/Color Name Font
+Font jména hráče/barvy
+L14 16
+Pos: %s vs. %s
+Pozice: %s vs %s
+L11 10
+Preferences
+Nastavení
+L12 19
+Private Tell
+Soukromé sdělení
+L13 19
+Private Tells
+Soukromá sdělení
+L23 31
+Program exited too soon
+Program skončil příliš brzy
+L8 6
+Progress
+Postup
+L17 21
+Promotion Piece  
+Proměnit na figuru  
+L7 10
+Propose
+Nabídnout
+L12 17
+Propose Game
+Nabídnout partii
+L8 8
+Protocol
+Protokol
+L33 38
+Protocol mismatch, disconnecting.
+Chybný protokol - ukončuji spojení.
+L10 11
+Queen   %d
+Dáma    %d
+L5 10
+Rated
+Hodnocení
+L6 6
+Rating
+Rating
+L12 14
+Rating Range
+Rozsah ratingu
+L33 23
+Received a game proposal from %s.
+%s vám nabízí parii.
+L12 17
+Recent Hosts
+Poslední servery
+L12 14
+Refresh List
+Obnovit seznam
+L19 28
+Replied to seek #%d
+Odpověď na nabídku č. %d
+L9 6
+Resigned.
+Vzdal.
+L6 9
+Result
+Výsledek
+L20 26
+Retracted last move.
+Poslední tah byl vrácen.
+L45 45
+Retrieve ICS Channel Lists from eboard.sf.net
+Stáhnout seznam ICS kanálů z eboard.sf.net
+L18 18
+Revert to Defaults
+Zpět na výchozí
+L18 18
+Revert to defaults
+Zpět na výchozí
+L5 6
+Right
+Vpravo
+L10 12
+Rook    %d
+Věž     %d
+L3 7
+Run
+Spustit
+L13 16
+Run Engine...
+Spustit motor...
+L27 34
+Run Program (need Filename)
+Spustit program (je třeba Soubor)
+L47 51
+Run autofics.pl script after connecting to FICS
+Spustit autofics.pl skript po přihlášení k FICS
+L17 20
+Save Buffer As...
+Uložit text jako...
+L12 17
+Save Game...
+Uložit partii...
+L11 16
+Save as PGN
+Uložit jako PGN
+L10 8
+Scratch %d
+Nová %d
+L6 6
+Script
+Skript
+L11 15
+Script List
+Seznam skriptů
+L34 35
+Scrollback limit (0 = unlimited) :
+Historie konzole (0 = neomezená) :
+L11 11
+Search Text
+Hledat text
+L12 14
+Search for: 
+Hledaný text:
+L22 24
+Search text not found.
+Hledaný text nenalezen.
+L8 16
+Seek Ads
+Nabídky partií
+L10 16
+Seek Table
+Tabulka nabídek
+L15 21
+Seek Table Font
+Font tabulky nabídek
+L10 17
+Set Filter
+Nastavení filtru
+L13 17
+Set Filter...
+Nastavit filtr...
+L49 56
+Set depth limit to 0 to use the engine's default.
+Hloubka 0 znamená použít výchozí nastavení motoru.
+L13 19
+Setup Buttons
+Nastavit tlačítka
+L21 21
+Shortcut Button Setup
+Nastavení tlačítek
+L6 9
+Shouts
+Výkřiky
+L42 40
+Show channel tells in one pane per channel
+Samostatná okna pro jednotlivé kanály
+L63 83
+Show channel tells on console too (when above option is active)
+Zobrazovat sdělení z kanálů také na konzoli (je-li předchozí volba aktivní)
+L31 38
+Show rating next to player name
+Zobrazovat rating vedle jména hráče
+L33 38
+Show shortcut buttons below board
+Zobrazovat tlačítka pod šachovnicí
+L11 13
+Side & Time
+Strana a čas
+L14 14
+Side Selection
+Výběr strany
+L14 16
+Side to move: 
+Hráč na tahu: 
+L34 46
+Smoother animation (eats more CPU)
+Plynulá animace (větší zátěž procesoru)
+L76 50
+Sorry, this protocol does not allow to retract a move thru this menu option.
+Lituji, ale tento protokol nedovoluje vracet tahy.
+L11 17
+Sound Event
+Zvuková událost
+L12 20
+Sound Events
+Ozvučené události
+L6 5
+Sounds
+Zvuky
+L54 60
+Source code available at http://eboard.sourceforge.net
+Zdrojový kód je dostupný na http://eboard.sourceforge.net
+L9 3
+Stalemate
+Pat
+L18 17
+Start a connection
+Navázat spojení
+L14 19
+Starting Time:
+Počáteční čas:
+L7 7
+Suicide
+Suicide
+L8 8
+TCP Port
+TCP port
+L9 9
+TCP Port:
+TCP port:
+L12 21
+Tab Position
+Umístění záložek
+L4 4
+Test
+Test
+L52 53
+The checkbox on the left enables/disables the sound.
+Zaškrtnutí políčka nalevo povoluje/zakazuje zvuk.
+L69 81
+The engine will be run with\n/bin/sh -c 'cd directory ; command line'
+Motor bude spuštěn pomocí\n/bin/sh -c 'cd adresář; příkaz pro spuštění'
+L12 22
+Think Always
+Přemýšlí neustále
+L24 34
+Think on opponent's time
+Přemýšlet v čase protihráče.
+L4 4
+Time
+Čas
+L12 16
+Time Control
+Nastavení času
+L15 20
+Time Control...
+Časové kontroly...
+L13 18
+Time Control:
+Časová kontrola:
+L16 16
+Time Running Out
+Časová tíseň
+L7 13
+Timeout
+Vypršel čas
+L44 53
+Times can be given as hh:mm:ss , mm:ss or ss
+Čas může být uveden jako hh:mm:ss , mm:ss nebo ss
+L180 190
+To run multiple commands with one shortcut, separate the commands with ; (semicolon).\nTo run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl .
+Pokud chcete spustit více příkazů jedním tlačítkem oddělte je ; (středníkem).\nPokud chcete spustit skript, nastavte příkaz na script.JménoSkriptu, např.: script.MujSkript.pl .
+L3 7
+Top
+Nahoře
+L30 33
+Type: Fischer Clock (ICS-like)
+Typ: Fischerovi hodiny (styl ICS)
+L25 22
+Type: Fixed Time per Move
+Typ: Čas na jeden tah
+L34 41
+Type: Use engine's default setting
+Typ: Použít výchozí nastavení motoru
+L29 29
+Type: X Moves per Time Period
+Typ: X tahů v určité době
+L26 23
+Unable to bind on port %d.
+Nemohu obsadit port %d.
+L24 24
+Unable to create socket.
+Nemohu vytvořit socket.
+L13 15
+Unknown error
+Neznámá chyba
+L14 19
+Unknown result
+Neznámý výsledek
+L23 18
+Use plain color squares
+Jednobarevná pole
+L5 7
+Value
+Hodnota
+L6 8
+Value:
+Hodnota:
+L7 8
+Variant
+Varianta
+L8 9
+Variant:
+Varianta:
+L24 24
+Variant: %s (uneditable)
+Varianta: %s (neměnné)
+L4 6
+Wait
+Čekej
+L21 18
+Wait for a connection
+Čekat na spojení
+L34 32
+Waiting for connection on port %d.
+Čekám na spojení na portu %d.
+L30 40
+Warn when own clock is below: 
+Upozornění pokud zbývá méně než: 
+L18 26
+Welcome to eboard.
+Vítejte v programu eboard
+L5 6
+White
+Bílý
+L14 15
+White: %s - %s
+Bílý: %s - %s
+L10 10
+Working...
+Pracuji...
+L16 17
+Write to Console
+Zapsat do konzole
+L19 21
+Wrong address space
+Chybný prostor adres
+L5 8
+Wrote
+zapsána
+L3 3
+Yes
+Ano
+L49 46
+You can only retract when it's your turn to move.
+Vracet tahy můžete pouze pokud jste na tahu.
+L11 12
+Your color:
+Vaše barva:
+L10 13
+Your name:
+Vaše jméno:
+L6 5
+[chat]
+[kom]
+L5 8
+[cmd]
+[přík]
+L39 46
+[eboard] ** failed to create directory 
+[eboard] ** nepodařilo se vytvořit adresář
+L20 29
+[eboard] ** no $HOME
+[eboard] ** nenastaveno $HOME
+L22 52
+[eboard] bad RC line\n
+[eboard] chybná řádka v konfiguračním souboru\n
+L4 9
+beep
+pípnutí
+L5 9
+beeps
+pípnutí
+L5 7
+black
+černý
+L53 57
+can't load PGN move text from %s (error opening file)
+nemohu nahrát PGN z %s (chyba při otevírání souboru)
+L30 34
+can't seek to offset %lu of %s
+nemohu přejít na offset %lu v %s
+L14 19
+discards board
+zruší šachovnici
+L32 37
+eboard Direct Connection Manager
+eboard - Správce přímého spojení
+L22 20
+eboard version %s (%s)
+eboard verze %s (%s)
+L343 329
+eboard version %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nThis program is free software; you can redistribute\nit and/or modify it under the terms of the GNU General\nPublic License as published by the Free Software\nFoundation; either version 2 of the License, or\n(at your option) any later version.\n
+eboard verze %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nTento program je free software; můžete jej\nšířit a/nebo měnit za podmínek uvedených v\nGNU General Public Licence publikované Free\nSoftware Foundation; a to verze 2 nebo (dle\nvašeho uvážení) kterékoliv pozdější.\n
+L19 19
+eboard: Console #%d
+eboard: Konzole #%d
+L60 66
+engine claimed illegal move but we didn't move, ignoring it.
+motor hlásí neplatný tah, ale my jsme netáhli - ignorujeme ho.
+L22 27
+error parsing PGN data
+chyba při rozkladu PGN dat
+L11 20
+flips board
+obrátí šachovnici
+L4 6
+game
+partie
+L5 7
+games
+partií
+L17 17
+generic xboard v2
+obecný xboard v2
+L20 19
+goes back 1 halfmove
+jde zpět 1 půltah
+L26 29
+goes back to start of game
+jde zpět na začátek partie
+L23 20
+goes forward 1 halfmove
+jde vpřed 1 půltah
+L27 26
+goes forward to end of game
+jde vpřed na konec partie
+L13 14
+illegal move!
+neplatný tah!
+L11 8
+in progress
+hraje se
+L29 34
+initial time %s, increment %s
+výchozí čas %s, přírůstek %s
+L8 8
+moves in
+tahů za
+L2 2
+no
+ne
+L14 23
+no such game: 
+neexistující partie: 
+L19 21
+no time control set
+bez časové kontroly
+L4 5
+none
+není
+L7 3
+nothing
+nic
+L37 47
+opens new scratch board with position
+vytvoří novou šachovnici s výchozí pozicí
+L8 6
+per move
+na tah
+L18 25
+plain console beep
+prosté pípnutí konzole
+L12 19
+play file %s
+přehrát soubor %s
+L21 21
+pops up the move list
+zobrazí seznam tahů
+L24 32
+process creation failed.
+Nepodařilo se vytvořit proces.
+L5 10
+rated
+hodnocená
+L6 10
+run %s
+spustit %s
+L10 13
+running %s
+provádím %s
+L18 21
+savePGN failed: %s
+savePGN neuspělo: %s
+L54 65
+savePGN failed: Won't save game with less than 2 moves
+savePGN neuspělo: Nelze uložit partii s méně než dvěma tahy
+L8 7
+seconds.
+sekund.
+L7 6
+unrated
+volná
+L5 6
+white
+bílý
+L3 3
+yes
+ano
+E 492

@@ -1,0 +1,63 @@
+
+GNU Chess 4
+
+This document discusses the issues related to running the
+GNU Chess 4.x engine together with eboard.
+
+Felipe Bergo <bergo@seul.org>
+
+1. What is GNU Chess 4 ?
+2. Getting GNU Chess 4
+3. Compiling and installing
+4. Playing
+
+---
+
+1. What is GNU Chess 4 ?
+
+GNU Chess 4 is a Free Software chess engine, that
+can be modified under the terms of the GNU General
+Public License.
+
+It is the predecessor of GNU Chess 5 and newer
+versions.
+
+2. Getting GNU Chess 4
+
+You may be able to find GNU Chess 4.x in some GNU FTP
+mirrors or in old source code CDs of operating system
+distributions. I'm keeping the last GNU Chess 4 version,
+4.0pl80 in eboard's anonymous FTP directory at
+
+ftp://ftp.seul.org/pub/chess
+
+Note that GNU Chess 4 and 5 may conflict with each other
+(you can have only one of them installed, or eboard
+will be confused)
+
+3. Compiling and Installing
+
+Directions about installing are in the src/README and
+src/INSTALL files. More likely you'll just
+
+cd src
+./configure
+make
+(become root)
+make install
+
+
+4. Playing
+
+The 'gnuchessx' binary must be in the PATH.
+The book location is defined in compile time, if you
+didn't change the prefix, it'll be
+/usr/local/lib/gnuchess.data
+
+To play against GNU Chess 4, use the
+"Peer -> Play against Engine -> GNU Chess 4" command.
+
+gnuchessx will be run without change to the
+current directory. If you want to change
+bookfile location, recompile GNU Chess.
+

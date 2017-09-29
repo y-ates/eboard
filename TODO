@@ -1,0 +1,22 @@
+eboard TODO
+-----------
+
+TODO and KNOWN BUGS:
+
+- FICS recently introduced Thematic games which
+  don't provide the initial moves, but rather
+  an ECO code. You can play and watch those,
+  but moving forward/backward, PGN saving
+  and move list are still nuts.
+
+- engine vs. engine mode
+
+- show engine search (thinking)
+  (you can get it on the console by typing "post" after
+  the engine has been started)
+
+- allow variants and takebacks in direct connection mode.
+
+- support xboard protocol v1 engines (like phalanx)
+
+

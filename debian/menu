@@ -1,0 +1,2 @@
+?package(eboard):needs="X11" section="Games/Board"\
+  title="eboard" command="/usr/games/eboard"

@@ -1,0 +1,16 @@
+Description: Correct placement of libs to fix FTBFS with GCC 4.6.
+Author: Daniel T Chen <crimsun@ubuntu.com>
+
+Index: eboard/elifekam
+===================================================================
+--- eboard.orig/elifekam	2012-01-03 19:59:27.668161014 +0100
++++ eboard/elifekam	2012-01-03 19:59:29.316161046 +0100
+@@ -28,7 +28,7 @@
+ all: eboard nls-dicts
+ 
+ eboard: $(OBJS)
+-	$(CXX) $(LDFLAGS) -o eboard $(OBJS)
++	$(CXX) -o eboard $(OBJS) $(LDFLAGS)
+ 
+ .cc.o: $< $(HEADERS) $(XPMS)
+ 	$(CXX) $(CXXFLAGS) -c $< -o $@

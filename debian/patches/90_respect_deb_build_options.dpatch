@@ -1,0 +1,42 @@
+Description: Respect deb build options
+Author: Patrik Fimml <patrik@fimml.at>
+
+Index: eboard/configure
+===================================================================
+--- eboard.orig/configure	2013-12-31 16:04:14.760665506 +0100
++++ eboard/configure	2013-12-31 16:04:54.900665611 +0100
+@@ -6,8 +6,8 @@
+ my $package     = "eboard";
+ my $version     = "1.1.1";
+ my $cxx         = "g++";
+-my @cxxflags    = ("-O6");
+-my @ldflags     = ("-lpthread");
++my @cxxflags    = map { split } join(" ",$ENV{CXXFLAGS}," ",$ENV{CPPFLAGS});
++my @ldflags     = map { split } join(" -lpthread ",$ENV{LDFLAGS});
+ my @libs        = ();
+ my $configh     = "config.h";
+ my $configmake  = "config.make";
+Index: eboard/elifekam
+===================================================================
+--- eboard.orig/elifekam	2013-12-31 16:04:14.760665506 +0100
++++ eboard/elifekam	2013-12-31 16:04:14.760665506 +0100
+@@ -4,6 +4,10 @@
+ DIST = eboard-$(version)
+ 
+ INSTALL = install
++INSTALL_PROGRAM = $(INSTALL)
++ifeq (,$(findstring nostrip,$(DEB_BUILD_OPTIONS)))
++INSTALL_PROGRAM += -s
++endif
+ 
+ SRCS = board.cc bugpane.cc chess.cc cimg.cc clock.cc dgtboard.cc dlg_connect.cc dlg_gamelist.cc dlg_prefs.cc global.cc help.cc history.cc main.cc mainwindow.cc movelist.cc network.cc notebook.cc ntext.cc p2p.cc pieces.cc position.cc promote.cc proto_fics.cc proto_p2p.cc proto_xboard.cc protocol.cc quickbar.cc script.cc seekgraph.cc sound.cc status.cc text.cc tstring.cc util.cc widgetproxy.cc langs.cc
+ 
+@@ -42,7 +46,7 @@
+ 
+ install-bin: eboard
+ 	$(INSTALL) -d $(bindir)
+-	$(INSTALL) -m 0755 eboard $(bindir)/eboard
++	$(INSTALL_PROGRAM) -m 0755 eboard $(bindir)/eboard
+ 	$(INSTALL) -m 0755 eboard-config   $(bindir)/eboard-config
+ 	$(INSTALL) -m 0755 eboard-addtheme $(bindir)/eboard-addtheme
+ 

@@ -1,0 +1,122 @@
+
+Themes
+
+This document describes the format for piece sets and sounds
+and how eboard searches for them.
+
+Felipe Bergo <bergo@seul.org>
+
+1. File format
+2. Location
+3. Sound Files
+
+---
+
+1. File format
+
+Each piece set is a graphic file in the PNG format.
+I Recommend indexed PNG images without alpha channel,
+which will provide good, lossless compression. (RGB-color
+can be used instead on indexed, but will often produce
+larger files)
+
+The file must have an aspect ratio of exactly 7:2
+(the width must be a multiple of 7, the height
+must be a multiple of 2, and the resulting aspect
+must be 7:2 -- other arrangements _may_ work or not,
+and will not be officially supported).
+
+The graphic is logically divided in 14 squares of
+same size, which contain the pieces and squares
+in the following order:
+
+First Row, left to right:
+White Rook, White Knight, White Bishop, White Queen,
+White King, White Pawn, Light Square.
+
+Second Row, left to right:
+Black Rook, Black Knight, Black Bishop, Black Queen,
+Black King, Black Pawn, Dark Square.
+
+The color of pixel (0,0) (the topmost, leftmost pixel in the
+image file) is taken to be the transparent color for the
+pieces. Any format-dependent alpha information is not
+considered (thus using PNGs with alpha channel only wastes
+memory and disk usage).
+
+Transparent color information is not considered for the
+board squares, which are taken to be fully opaque.
+
+2. Location
+
+Theme configuration is read on startup from one or more
+files called eboard_themes.conf, these file are
+looked for in the following directories (in this order):
+
+. (current directory)
+~/.eboard
+~/share/eboard
+<prefix>/share/eboard
+/usr/local/share/eboard
+/usr/share/eboard
+
+(prefix is configured with --prefix in the configure script,
+the default is /usr/local)
+
+next, any files named themeconf.* (where * can be anything)
+in the datadir directory are loaded (usually
+<prefix>/share/eboard , to check what your datadir is type
+'eboard-config --datadir' after ebaord is installed).
+
+The eboard_themes.conf should contain one theme per line,
+lines started by '#' are considered comments. Lines
+started with '+' are considered sound files, sound files
+are described later in this document. Example:
+
+-------------------------------------
+# eboard themes
+
+basic_y.png,Simple Pieces on Wood 1
+basic_w.png,Simple Pieces on Wood 2
+basic_g.png,Simple Pieces on Metal
+rock.png,Stone Cold
++Move.wav,whatever follows the comma is discarded
+-------------------------------------
+
+The first field in the line is the filename of the graphics
+file, the second field is the name that will be shown in the
+Settings -> Bitmapped Piece Sets menu. The fields are
+separated by a comma.
+
+The contents of all eboard_theme.conf files are merged and
+this becomes the set of available themes. If two files
+with same name are listed in different .conf files with
+different descriptions, the first seen is used (according to
+the order listed above).
+
+Each graphic file must be in one of the directories
+listed above, not necessarily the same directory
+eboard_themes.conf or the other themes are.
+
+There's a script to help adding themes, eboard-addtheme,
+but it's syntax is still subject to changes and we do
+not encourage anyone to use this script in any package
+until we decide on a stable syntax for it.
+
+3. Sound Files
+
+Lines starting with a '+' can be used to list
+sound files. The syntax is
+
++filename,
+
+whatever follows the comma (which must be present) is
+disconsidered.
+
+The sound files listed will be available in the eboard's
+sound configuration interface. We strongly advise the
+use of the following suffixes:
+
+.wav          --> WAV audio file
+.mid or .midi --> MIDI sequencer files
+

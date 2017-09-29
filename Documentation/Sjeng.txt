@@ -1,0 +1,67 @@
+
+Sjeng
+
+This document describes the issues related to running the
+Sjeng chess engine together with eboard.
+
+Felipe Bergo <bergo@seul.org>
+
+1. What is Sjeng ?
+2. Getting Sjeng
+3. Compiling and Installing
+4. Running
+
+---
+
+1. What is Sjeng ?
+
+Sjeng is a chess engine developed by Gian-Carlo Pascutto, based
+on previous work by Adrien Regimbald. It is Free Software that
+can be distributed and modified under the terms of the GNU
+General Public License (the same license eboard is under)
+
+The greatest feature of Sjeng is that it can play some chess
+variants besides regular chess. As of this writing (Sjeng 9.1),
+it supports crazyhouse, bughouse, suicide, giveaway and
+losers. eboard allows you to play all of them except bughouse.
+Help about variants will be available in the eboard
+web site soon, but you can look for help in the ICC pages
+at <http://www.chessclub.com>.
+
+
+2. Getting Sjeng
+
+The Sjeng homepage is at <http://sjeng.sourceforge.net>, and
+the FTP directory with source tarballs is at
+<ftp://sjeng.sourceforge.net/pub/sjeng>
+I'm also keeping a Sjeng tarball in eboard's public FTP
+directory, <ftp://eboard.sourceforge.net/pub/eboard/engines>.
+
+3. Compiling and Installing
+
+Sjeng is quite standard to compile and install, from the
+toplevel directory you run
+
+./configure
+make
+(become root)
+make install
+
+It provides reasonable documentation, in fact it is the
+best distribution of a chess engine I have found so
+far. Cheers to Gian-Carlo.
+
+
+4. Running
+
+To play againt Sjeng use the
+Peer -> Play against Engine -> Sjeng command in
+eboard. Select the desired variant in the Variant
+notebook pane.
+Sjeng tries to open a book file from the directory
+it is run from. The default directory will
+be ~/.eboard/eng-out, but you can change this in
+the dialog box. See Sjeng's documentation for
+information on building book files for the
+different variants.
+

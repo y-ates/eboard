@@ -1,0 +1,128 @@
+
+Scripts
+
+This documents describes how to use scripts to
+automate tasks within eboard.
+
+Felipe Bergo <bergo@seul.org>
+
+1. Language and Location
+2. Requirements and I/O
+3. FICS auto login
+
+---
+
+1. Language and Location
+
+Scripts must be placed in ~/.eboard/scripts, must be
+owned by the user and must be readable and executable
+by him (mode u+rx).
+
+To run a generic script, select Windows -> Run Script,
+all scripts found will be listed.
+
+Scripts can be in any scripting language you prefer.
+I recommend expect for the very simple scripts and
+Perl for the trickier ones.
+
+2. Requirements and I/O
+
+After the script is running, every line of text received
+from the peer (either ICS server or chess engine) is
+sent to the scripts STDIN (standard input).
+
+The script must not buffer its output, else eboard will
+lock up.
+
+*The script must write a line to STDOUT (terminated by \n)
+as soon as it starts* -- this is used to detect that the
+script is running and this first line is discarded (not
+sent to the eboard peer).
+
+Any further output written to the script's STDOUT will
+be sent to the peer (ICS server / chess engine).
+
+The Script List window is capable of retrieving a
+description line for the script. Such a description
+is recognized if
+ 
+ (a) the  first character of the file is '#'
+
+ (b) there is a comment line started by '#' from
+     the file's second line on.
+
+The first requirement if meant to avoid reading data from
+files that do not start with '#!/usr/bin/perl' (in the future
+other languages may be supported).
+
+
+3. FICS auto login
+
+Whenever a connection to FICS is accomplished with the
+Peer -> Connect to FICS command, eboard will try to
+run a script named 'autofics.pl'.
+If you want to perform an automatic login, write an
+autofics.pl that provides your handle and password.
+
+*Notice*: the .pl extension is reminiscent from previous
+eboard versions where all scripts must be written in
+Perl. You can write autofics.pl in whatever language you
+desire, but the file name must still be autofics.pl.
+
+*Notice*: this can be quite a security flaw, because
+the password will be stored in cleartext in the script.
+I take no responsibility for it. If someone else
+have access to your password and abuses your FICS account
+(someone else connecting with your login is already abuse),
+it is your fault and your responsibility. Be sure to
+chmod 700 the autofics.pl file if you use this facility.
+
+Here are two sample login scripts for user 'foo' with password
+'bar', first in expect, next in Perl.
+Notice the description comment and the initialization
+to prevent STDOUT buffering.
+
+--------8<-----------------8<----------------
+#!/usr/bin/expect -f
+
+# my fics auto login script in expect
+
+send "hello\n"
+expect ogin:
+send "foo\n"
+expect word:
+send "bar\n"
+--------8<-----------------8<----------------
+
+
+--------8<-----------------8<----------------
+#!/usr/bin/perl
+
+# my fics auto login script in perl
+
+# set autoflush on stdout
+select(STDOUT); $| = 1;
+
+# proof of life to avoid hanging
+print "hello\n";
+
+# while there is input in STDIN, read a line
+while(<>) {
+	  print "foo\n" if /login:/;
+	  if (/password:/) {
+	     print "bar\n";
+	     exit 0;
+	  }
+}
+--------8<-----------------8<----------------
+
+Please don't bug me with questions about the
+Perl language -- for help with it see the
+'man perl' man page, especially
+'man perlipc' about I/O flushing and
+'man perlre' about regular expressions
+(the patterns /login:/ and /password:/ above
+are a very simple example),
+and 'man perlfunc' for a list of built-in
+functions.
+

@@ -1,0 +1,26 @@
+Description: Fix sound
+Author: Patrik Fimml <patrik@fimml.at>
+
+Index: eboard/sound.cc
+===================================================================
+--- eboard.orig/sound.cc	2011-12-19 20:31:11.929811336 +0100
++++ eboard/sound.cc	2011-12-19 20:34:16.301816412 +0100
+@@ -200,8 +200,7 @@
+ 
+     switch(type) {
+     case EXT_WAVE:
+-      execlp("play","play","-d",Device,ExtraData,0);
+-      execlp("sox",ExtraData,"-t","ossdsp",Device,0);
++      execlp("play","play",ExtraData,0);
+       break;
+     case EXT_PROGRAM:
+       execlp("/bin/sh","/bin/sh","-c",ExtraData,0);
+@@ -358,7 +357,7 @@
+ 
+   rd[0]=gtk_radio_button_new_with_label( 0, _("Beep (need Pitch, Duration, Count and Device)") );
+   rg=gtk_radio_button_group(GTK_RADIO_BUTTON(rd[0]));
+-  rd[1]=gtk_radio_button_new_with_label(rg, _("Play WAV (need Device and Filename, sox must be installed)") );
++  rd[1]=gtk_radio_button_new_with_label(rg, _("Play WAV (need Filename, sox must be installed)") );
+   rg=gtk_radio_button_group(GTK_RADIO_BUTTON(rd[1]));
+   rd[2]=gtk_radio_button_new_with_label(rg, _("Run Program (need Filename)") );
+   rg=gtk_radio_button_group(GTK_RADIO_BUTTON(rd[2]));

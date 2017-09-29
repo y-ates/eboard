@@ -1,0 +1,52 @@
+
+Hello, starting with eboard 0.9.5, the awfully bad-documented and
+bloated GNU gettext has been dropped, in favor of an 80-line perl
+script and 200 lines of C++ code (the source distribution of gettext
+has several megabytes these days...I keep getting amazed on how GNU
+manages to make things bloated).
+
+----------
+
+Translators:
+
+(If you want to fix oneof the inactive/unmaintained translations,
+the best thing to do is join the eboard-devel mailing list linked
+from eboard's website)
+
+pt_BR, Brazilian Portuguese:
+  Felipe Bergo <bergo at seul dot org>
+  active, maintained
+
+es, Spanish:    
+  Ricardo Mones Lastra <mones at aic dot uniovi dot es>
+  active, maintained
+
+de, German:    
+  Bernhard Bialas
+  active, maintained
+
+cs, Czech:    
+  Ales Dolecek <ales dot dolecek at centrum dot cz>
+  active, maintained
+
+it, Italian:
+  Gabriele Stilli <superenzima at libero dot it>
+  Massimo Danieli
+  active, maintained
+
+ja, Japanese:
+  Katsumi Ikeda <ikeda at webmasters dot gr dot jp>
+  active, maintained
+
+pl, Polish
+  Piotr Wajnberg <petevine at plusnet dot pl>
+  active, maintained
+
+fr, French
+  Pierre Boulenguez <pierre_boulenguez at yahoo dot fr>
+  active, maintained
+
+hu, Hungarian
+  Bajusz Tamás <btami at enternet.hu>
+  active, maintained
+

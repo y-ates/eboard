@@ -1,0 +1,49 @@
+Description: Fix a invalid conversion compilation error
+ Fix a compilation error due to invalid conversion from 'const char*' to
+ 'char*'. This is achieved by copying the string before modifying it.
+Author: Fabrice Coutadeur <fabricesp@ubuntu.com>
+Bug-Debian: http://bugs.debian.org/551718
+
+Index: eboard/ntext.cc
+===================================================================
+--- eboard.orig/ntext.cc	2011-12-18 17:37:44.166511955 +0100
++++ eboard/ntext.cc	2011-12-18 17:44:54.378523803 +0100
+@@ -33,6 +33,7 @@
+ #include <gtk/gtkselection.h>
+ #include "ntext.h"
+ #include "global.h"
++#include <assert.h>
+ 
+ NLine::NLine() {
+   Text = NULL;
+@@ -238,23 +239,27 @@
+   int i;
+   NLine *nl;
+   char *p;
++  char *s;
+ 
+   if (len < 0) {
+     discardExcess();
+     return;
+   }
+ 
+-  p = strchr(text, '\n');
++  s = strdup(text);
++  assert(s !=  NULL);
++  p = strchr(s, '\n');
+   if (p!=NULL) {
+     *p = 0;
+-    i = strlen(text);
+-    nl = new NLine(text, color);
++    i = strlen(s);
++    nl = new NLine(s, color);
+     *p = '\n';
+     lines.push_back(nl);
+     formatLine(lines.size()-1);
+     append(&p[1], len-(i+1), color);
+     return;
+   }
++  free (s);
+ 
+   // if search for \n failed, this is a single line
+   nl = new NLine(text, color);

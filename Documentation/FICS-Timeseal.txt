@@ -1,0 +1,84 @@
+
+FICS-Timeseal
+
+This document describes the configuration of FICS's timeseal
+program to work with eboard.
+
+Felipe Bergo <bergo@seul.org>
+
+1. What is FICS timeseal ?
+2. Getting timeseal
+3. Naming and Location
+
+---
+
+1. What is FICS timeseal ?
+
+It is a program that attaches timestamps to line-oriented
+communcations over a TCP stream to reduce the impact
+of network-lag on the chess clocks when playing on an
+ICS server. FICS timeseal is the program related to
+FICS <http://www.freechess.org>
+
+You can play without timeseal, but you will have transmission
+time accounted and be in disadvantage against timesealed players
+(almost all). In fact, playing anything faster than 5 0 without
+timeseal is foolish.
+
+2. Getting timeseal
+
+The Linux Timeseal is available from the FICS Download page
+(http://www.freechess.org => Download)
+
+People on X86_64 can use the 32-bit timeseal without problems.
+
+3. Naming and Location
+
+eboard will only use timeseal if it finds it (d'oh), and the
+timeseal must be named and located strictly. Also, the timeseal
+file must have execution permission (x).
+
+Locations (pick one!):
+
+. (current directory)
+~/.eboard
+~/share/eboard
+<prefix>/share/eboard
+/usr/local/share/eboard
+/usr/share/eboard
+
+(prefix is configured with --prefix in the configure script,
+the default is /usr/local)
+
+Naming:
+
+timeseal.YOURSYSTEMNAME
+
+where YOURSYSTEMNAME is the EXACT string returned by
+
+uname -s
+
+Also, uname must be in the path when eboard is run.
+For GNU/Linux systems, the timeseal program should be
+named
+
+timeseal.Linux
+
+for FreeBSD:
+
+timeseal.FreeBSD
+
+and so on. 
+This allows you to place timeseals for different OSs in a
+NFS-mounted /home and have eboard run the correct one
+automatically.
+
+Remember to set its permission so that eboard can run it:
+
+chmod u+x timeseal.YOURSYSTEM
+
+(if installing for a single user)
+
+chmod uog+x timeseal.YOURSYSTEM
+
+(if installing one copy of timeseal for all system users)

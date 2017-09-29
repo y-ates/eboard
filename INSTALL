@@ -1,0 +1,23 @@
+
+INSTALLATION INSTRUCTIONS:
+==========================
+
+from this directory, do
+
+./configure
+make
+(become root)
+make install
+
+if ./configure won't work (maybe because your perl installation isn't
+in /usr/bin), try 
+
+perl ./configure
+
+The configure script provides some command line options that control
+how eboard is built and where it is installed, see './configure --help'.
+
+By default, eboard is installed to /usr/local/bin , and its data
+files are installed in /usr/local/share/eboard.
+
+

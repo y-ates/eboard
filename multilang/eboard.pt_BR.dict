@@ -1,0 +1,1627 @@
+L72 83
+ ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n
+ ** LEITURA PNG FALHOU: usando tema interno de baixa resolução. Vai ficar feio.\n
+L11 13
+ Browse... 
+ Procurar... 
+L15 19
+ Play Selected 
+ Jogar Selecionado 
+L9 11
+ Refresh 
+ Atualizar 
+L14 15
+ Remove Field 
+ Remover Campo 
+L5 9
+ Set 
+ Alterar 
+L1543 1603
+#L#Getting Started\n#M#Common Tasks in eboard\n\nPlaying against the computer\n#S#eboard does not "play chess" itself, but rather is works as interface to programs that do,\ncalled "engines", which don't have a graphical interface themselves. You need an engine to\nplay against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\nno cost.\nOnce you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\nengine#K# submenu, and select the appropriate option depending on which engine you have\ninstalled.\n\n#M#Playing Chess on the Internet\n#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\nUS Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\nTo connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\nother servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\nWhile you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\nis done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n\n#M#Browsing PGN Games\n#S#PGN is the most common file format to store chess games. It can store moves and comments\n(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\ngame, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\nwith the game.#L#
+#L#Introdução\n#M#Tarefas Comuns no eboard\n\nJogando contra o Computador\n#S#eboard não joga xadrez, mas serve de interface para programas que jogam, chamados de\nengines ou simplesmente programas de xadrez, que não possuem interface gráfica.\nVocê precisa de um programa de xadrez para jogar com o computador. GNU Chess, Crafty e\nSjeng são programas gratuitos que jogam xadrez. Uma vez instalados, abra o menu\n#B#Parceiro#K# e o submenu em #B#Jogar contra um Programa#K#, e escolha a opção apropriada ao\nprograma que você instalou.\n\n#M#Jogando Xadrez na Internet\n#S#Eboard suporta o protocolo FICS. O serviço FICS funciona no endereço freechess.org,\nmas outros servidores que usam o software do FICS, como o US Chess Live devem funcionar\ncom o eboard também. O ICC não é suportado.\nPara conectar ao FICS, abra o menu #B#Parceiro#K# e clique em #B#Conectar ao FICS#K#.\nPara conectar a outro servidor, use a opção #B#Conectar a Outro Servidor...#K# do menu #B#Parceiro#K#.\nEmbora você possa entrar no FICS como convidado (guest), você aproveitará melhor o servidor\ncomo usuário registrado. O registro é feito no site #B#http://www.freechess.org#K#,\ne é totalmente gratuito.\n\n#M#Abrindo Jogos no Formato PGN\n#S#PGN é o formato mais comum para armazenar jogos de xadrez. Ele pode armazenar\nas jogadas e comentários (anotações). Para abrir este tipo de arquivo no eboard,\nclique a opção #B#Jogos no Cliente#K# do menu #B#Janelas#K#, e então clique em #B#Ler PGN...#K#\nPara mostrar um jogo em um tabuleiro, selecione-o na lista e clique em #B#Exibir Jogo#K#.
+L30 32
+%d %s to %s, %d Hz for %d msec
+%d %s para %s, %d Hz por %d mseg
+L13 14
+%d games read
+%d jogos lidos
+L14 16
+%d moves in %s
+%d jogadas em %s
+L25 25
+%d. Connect to %s:%d (%s)
+%d. Conectar a %s:%d (%s)
+L41 44
+%s (white) vs. %s (black)\n%s\n%d:%.2d %d
+%s (brancas) vs. %s (pretas)\n%s\n%d:%.2d %d
+L31 32
+%s accepted your game proposal.
+%s aceitou sua proposta de jogo.
+L18 21
+%s engine started.
+Programa %s iniciado.
+L17 21
+%s offers a draw.
+%s oferece um empate.
+L11 13
+%s per move
+%s por jogada
+L7 9
+%s/move
+%s/jogada
+L33 38
+(Wrapped) Match Found at Line %d.
+(Passou do fim) Encontrou na Linha %d.
+L64 65
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (Nome no FICS: Pulga)
+L39 37
+(message obfuscated -- password mode ?)
+(mensagem omitida -- modo de senha ?)
+L14 15
+(no bookmarks)
+(nenhum atalho)
+L6 8
+(none)
+(nenhum)
+L13 19
+(time period)
+(período de tempo)
+L18 24
+* game not found: 
+* jogo não encontrado: 
+L47 43
+** [eboard] bad engine protocol # in bookmark: 
+** [eboard] protocolo inválido em atalho: 
+L57 50
+** eboard ** warning: HOME environment variable not set\n
+** eboard ** aviso: variável HOME não definida\n
+L26 29
+--- %s game to PGN file %s
+--- %s jogo no arquivo PGN %s
+L16 16
+--- Disconnected
+--- Desconectado
+L14 12
+/Game/Ad_journ
+/Jogo/A_diar
+L19 20
+/Game/Retract _Move
+/Game/_Voltar Jogada
+L12 14
+/Game/_Abort
+/Jogo/A_bortar
+L17 22
+/Game/_Offer Draw
+/Jogo/_Oferecer Empate
+L13 16
+/Game/_Resign
+/Jogo/_Abandonar
+L22 25
+/Help/_About eboard...
+/Ajuda/_Sobre o eboard...
+L17 30
+/Help/_Debug Info
+/Ajuda/_Dados para Depuração
+L22 20
+/Help/_Getting Started
+/Ajuda/_Introdução
+L11 14
+/Help/_Keys
+/Ajuda/_Teclas
+L10 11
+/Help/sep4
+/Ajuda/sep4
+L22 27
+/Peer/Connect to _FICS
+/Parceiro/Conectar ao _FICS
+L43 47
+/Peer/Direct connect with _Remote eboard...
+/Parceiro/Conexão direta com eboard _Remoto...
+L23 31
+/Peer/Engine B_ookmarks
+/Parceiro/Atal_hos de Programas
+L20 25
+/Peer/ICS _Bookmarks
+/Parceiro/_Atalhos de ICS
+L36 46
+/Peer/Play against Engine/Cr_afty...
+/Parceiro/Jogar contra um _Programa/Cr_afty...
+L41 51
+/Peer/Play against Engine/GNU Chess _4...
+/Parceiro/Jogar contra um _Programa/GNU Chess _4...
+L44 58
+/Peer/Play against Engine/_Generic Engine...
+/Parceiro/Jogar contra um _Programa/Programa _Genérico...
+L35 45
+/Peer/Play against Engine/_Sjeng...
+/Parceiro/Jogar contra um _Programa/_Sjeng...
+L30 40
+/Peer/Play against Engine/sep1
+/Parceiro/Jogar contra um _Programa/sep1
+L26 35
+/Peer/Play against _Engine
+/Parceiro/Jogar contra um _Programa
+L33 39
+/Peer/_Connect to Other Server...
+/Parceiro/_Conectar a Outro Servidor...
+L17 22
+/Peer/_Disconnect
+/Parceiro/_Desconectar
+L26 38
+/Peer/_Empty Scratch Board
+/Parceiro/Tabuleiro de Rascunho _Vazio
+L11 15
+/Peer/_Quit
+/Parceiro/Sai_r
+L42 53
+/Peer/_Scratch Board with Initial Position
+/Parceiro/Tabuleiro de Rascunho em Posição _Inicial
+L10 14
+/Peer/sep2
+/Parceiro/sep2
+L10 14
+/Peer/sep3
+/Parceiro/sep3
+L10 14
+/Peer/sep4
+/Parceiro/sep4
+L48 48
+/Settings/Bitmapped Piece Sets/Load _Pieces Only
+/Opções/Peças _Bitmap/Carregar _Peças Apenas
+L49 51
+/Settings/Bitmapped Piece Sets/Load _Squares Only
+/Opções/Peças _Bitmap/Carregar _Tabuleiro Apenas
+L42 39
+/Settings/Bitmapped Piece Sets/Load _Theme
+/Opções/Peças _Bitmap/Carregar _Tema
+L31 24
+/Settings/Bitmapped Piece _Sets
+/Opções/Peças _Bitmap
+L35 31
+/Settings/Enable Legality _Checking
+/Opções/Verificar _Legalidade
+L55 70
+/Settings/ICS Behavior/Popup Board Panes _Upon Creation
+/Opções/Comportamento _ICS/Ir Automaticamente para Novos _Tabuleiros
+L69 73
+/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends
+/Opções/Comportamento _ICS/_Descartar Jogos Observados em Segundo Plano
+L18 29
+/Settings/Pre_move
+/Opções/Habilitar Pré_move
+L27 30
+/Settings/Sho_w Coordinates
+/Opções/M_ostrar Coordenadas
+L24 25
+/Settings/_Animate Moves
+/Opções/_Animar Jogadas
+L33 37
+/Settings/_Beep on Opponent Moves
+/Opções/Som _quando o oponente move
+L30 32
+/Settings/_Enable Other Sounds
+/Opções/Habilitar _outros sons
+L30 34
+/Settings/_Highlight Last Move
+/Opções/_Destacar última Jogada
+L23 28
+/Settings/_ICS Behavior
+/Opções/Comportamento _ICS
+L25 27
+/Settings/_Preferences...
+/Opções/_Preferências...
+L47 43
+/Settings/_Vectorized Pieces (Faster Rendering)
+/Opções/Peças _Vetoriais (Mais Rápidas)
+L14 14
+/Settings/sep3
+/Opções/sep3
+L23 27
+/Windows/Find _Previous
+/Janelas/Encontrar de _Novo
+L28 29
+/Windows/Games on _Client...
+/Janelas/Jogos no _Cliente...
+L31 38
+/Windows/Save Desktop _Geometry
+/Janelas/Salvar _Geometria das Janelas
+L29 40
+/Windows/Save _Text Buffer...
+/Janelas/Salvar Con_teúdo do Console...
+L26 34
+/Windows/_Ads on Server...
+/Janelas/_Anúncios no Servidor...
+L26 27
+/Windows/_Detached Console
+/Janelas/Console A_dicional
+L32 28
+/Windows/_Find Text (upwards)...
+/Janelas/_Encontrar Texto...
+L28 30
+/Windows/_Games on Server...
+/Janelas/_Jogos no Servidor...
+L23 28
+/Windows/_Run Script...
+/Janelas/Executar Scri_pt...
+L13 13
+/Windows/sep1
+/Janelas/sep1
+L13 13
+/Windows/sep2
+/Janelas/sep2
+L13 13
+/Windows/sep3
+/Janelas/sep3
+L6 6
+/_Game
+/_Jogo
+L6 7
+/_Help
+/_Ajuda
+L6 10
+/_Peer
+/_Parceiro
+L10 10
+/_Settings
+/_Opções
+L9 9
+/_Windows
+/Ja_nelas
+L106 120
+<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<AdListDialog::AdListDialog> Aviso: fonte fixed não pode ser carregada, o conteúdo desta janela vai ficar horrível.\n
+L41 52
+<BareBoard::BareBoard> can't load font.\n
+<BareBoard::BareBoard> impossível carregar fonte.\n
+L124 154
+<Board::Board> ** failed to load one or more board fonts - install X11 75 dpi and 100 dpi fonts, restart X, and try again.\n
+<Board::Board> ** uma ou mais fontes do tabuleiro não puderam ser carregadas -instale as fontes de 75 e 100 dpi do X11, reinicie o X e tente novemente.\n
+L58 78
+<Board::Board> ** failed to load one or more board fonts\n
+<Board::Board> ** uma ou mais fontes do tabuleiro nao puderam ser carregadas\n
+L34 47
+<Fics Protocol> abort request sent
+<Protocolo Fics> pedido de cancelamento enviado
+L36 44
+<Fics Protocol> adjourn request sent
+<Protocolo Fics> pedido de adiamento enviado
+L33 43
+<Fics Protocol> draw request sent
+<Protocolo Fics> proposta de empate enviada
+L110 124
+<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<GameListDialog::GameListDialog> Aviso: fonte fixed não pode ser carregada, o conteúdo desta janela vai ficar horrível.\n
+L45 41
+<PatternMatcher::set> ** bad pattern string: 
+<PatternMatcher::set> ** padrão ilegal: 
+L40 49
+<PieceSet::PieceSet> ** file not found: 
+<PieceSet::PieceSet> ** arquivo não encontrado: 
+L39 42
+<SeekGraph::updatefont> failed to load 
+<SeekGraph::updatefont> falha ao carregar 
+L112 126
+<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<StockListDialog::StockListDialog> Aviso: fonte fixed não pode ser carregada, o conteúdo desta janela vai ficar horrível.\n
+L34 37
+<Text::updateFont> failed to load 
+<Text::updateFont> falha ao carregar 
+L42 43
+<XBoard Protocol> Adjourning not supported
+<Protocolo XBoard> adiamento não suportado
+L46 42
+<XBoard Protocol> Incompatible Engine Protocol
+<Protocolo XBoard> Protocolo Incompatível
+L33 36
+<XBoard Protocol> Session Aborted
+<Protocolo XBoard> Sessão Cancelada
+L35 41
+<XBoard Protocol> draw request sent
+<Procolo XBoard> pedido de empate enviado
+L9 10
+<editing>
+<editando>
+L17 17
+> (password sent)
+> (senha enviada)
+L23 23
+> [issued from menu] %s
+> [a partir de menu] %s
+L25 26
+> [issued from shortcut] 
+> [executado de um atalho]
+L31 33
+> [script run from shortcut] %s
+> [script executado de atalho] %s
+L12 14
+About eboard
+Sobre o eboard
+L6 7
+Accept
+Aceitar
+L36 28
+Accepted incoming connection from %s
+Conexão aceita, vindo de %s
+L14 11
+Ad Description
+Descrição
+L7 18
+Ad List
+Lista de Anúncios
+L23 35
+Ad List (refreshing...)
+Lista de Anúncios (atualizando...)
+L33 28
+Add to Peer/Engine Bookmarks menu
+Adicionar ao menu de Atalhos
+L22 16
+Address already in use
+Endereço em uso
+L3 9
+Ads
+Anúncios
+L21 23
+Already connected ?!?
+Já está conectado ?!?
+L675 699
+Anywhere:\nF3: Go to previous pane.\nF4: Go to next pane.\nF5: Go to the main board pane.\nF6: Go to the console pane.\nF7: Go to the seek graph pane (if available).\nF8: Toggle Shortcut Bar visilibity.\nPage Up/Page Down: scrolls the text console (must be visible)\nCtrl+(Left Arrow): Backward 1 halfmove\nCtrl+(Right Arrow): Forward 1 halfmove\nCtrl+F: Find Upwards(main console buffer)\nCtrl+G: Find Previous\n\nInput box:\nUp/Down (arrows): move thru input history\nEnter: send text line\nEsc: switch Chat/Command Mode\n\nSyntaxisms:\nIn main window's input box:\n.. entering %prefix text will set the chat prefix to text.\n.. entering %do scriptname will run scriptname.
+Em qualquer lugar:\nF3: Ir para a aba anterior.\nF4: Ir para a próxima aba.\nF5: Ir para o tabuleiro principal.\nF6: Ir para o console.\nF7: Ir para a tabela de seeks.\nF8: Alternar barra de atalhos.\nPage Up/Page Down: rola o texto do console.\nCtrl+Esquerda: move uma jogada para trás.\nCtrl+Direira: move uma jogada à frente.\nCtrl+F: Busca de texto no console principal.\nCtrl+G: Repete busca.\n\nCampo de entrada:\nPara cima/para baixo (setas): move no histórico de comandos.\nEnter: envia linha.\nEsc: alterna modo Chat/modo Comando.\n\nSintaxismos:\nNo campo de entrada principal:\n.. %prefix texto muda o prefixo do modo chat para texto.\n.. %do algumscript executa o script algumscript.
+L10 10
+Appearance
+Aparência
+L8 9
+Appended
+Adicionei
+L5 7
+Apply
+Aplicar
+L13 7
+Apply Changes
+Aplicar
+L24 28
+Auto-save observed games
+Auto-gravar jogos observados
+L22 25
+Auto-save played games
+Auto-gravar jogos jogados
+L8 14
+Autosave
+Autogravação
+L14 15
+Axis & Buttons
+Eixos & Botões
+L10 5
+Background
+Fundo
+L14 19
+Bad descriptor
+Descritor inválido
+L45 52
+Beep (need Pitch, Duration, Count and Device)
+Bipe (requer Tom, Duração, Contagem e Dispositivo)
+L10 10
+Bishop  %d
+Bispo   %d
+L5 6
+Black
+Pretas
+L14 15
+Black: %s - %s
+Pretas: %s - %s
+L119 167
+Board Cursor Axis: %d\nBoard Select Button: %d\nBoard Browsing Axis: %d\nPrevious Tab Button: %d\nNext Tab Button: %d\n
+Eixo do Cursor do Tabuleiro: %d\nBotão de Seleção do Tabuleiro: %d\nEixo de Navegação de Jogadas: %d\nBotão para Aba Anterior: %d\nBotão para Próxima Aba: %d\n
+L17 24
+Board version :%s
+Versão do Tabuleiro: %s
+L17 18
+Bookmark Caption:
+Título do Atalho:
+L6 6
+Bottom
+Abaixo
+L11 11
+Bright Text
+Texto Claro
+L6 8
+Browse
+Procurar
+L19 28
+Buffer Save failed.
+Escrita do conteúdo falhou.
+L8 8
+Bughouse
+Bughouse
+L22 26
+Bughouse: Partner Game
+Bughouse: Jogo do Parceiro
+L15 27
+Bus address :%s
+Endereço do Barramento: %s
+L14 15
+Button Caption
+Texto do Botão
+L11 16
+Button Icon
+ícone do Botão
+L6 8
+Cancel
+Cancelar
+L29 35
+Cancel Joystick Configuration
+Cancelar Configuração do Joystick
+L26 30
+Cancelled connection wait.
+Espera por conexão cancelada.
+L9 11
+Change...
+Escolher...
+L13 18
+Channel Tells
+Conversa em Canais
+L9 10
+Checkmate
+Xeque-Mate
+L14 19
+Chess Programs
+Programas de Xadrez
+L11 14
+Choose Font
+Escolher Fonte
+L9 11
+Choose...
+Escolher...
+L10 17
+Clock Font
+Fonte do Relógio
+L5 6
+Close
+Fechar
+L5 3
+Color
+Cor
+L15 18
+Color Selection
+Seleção de Cores
+L6 5
+Colors
+Cores
+L7 7
+Command
+Comando
+L13 17
+Command Line:
+Linha de Comando:
+L8 10
+Computer
+Computador
+L30 44
+Computer White vs. Human Black
+Computador com Brancas vs. Humano com Pretas
+L24 26
+Configure Axis & Buttons
+Configurar Eixos & Botões
+L23 29
+Configured Sound Files:
+Arquivos de Som Configurados:
+L7 8
+Connect
+Conectar
+L21 23
+Connect to ICS Server
+Conectar a Servidor ICS
+L20 19
+Connected to %s (%s)
+Conectado a %s (%s)
+L19 18
+Connecting to %s...
+Conectando a %s...
+L18 17
+Connection refused
+Conexão Recusada
+L28 27
+Connection to %s:%d failed: 
+Conexão com %s:%d falhou: 
+L7 7
+Console
+Console
+L12 15
+Console Beep
+Bipe de Console
+L12 16
+Console Font
+Fonte do Console
+L21 27
+Console buffer saved.
+Conteúdo do console salvo.
+L6 9
+Count:
+Contagem:
+L10 10
+Crazyhouse
+Crazyhouse
+L27 37
+DGT board found on port %s.
+Tabuleiro DGT encontrado na porta %s.
+L29 35
+DGT support error: wrong page
+Erro no suporte DGT: página errada
+L60 63
+DGT warning: position mismatch between eboard and DGT board.
+Alerta DGT: posições diferentes no eboard e no tabuleiro DGT.
+L31 38
+DGT: unrecognized code: %c (%d)
+DGT: código não reconhecido: %c (%d)
+L15 15
+Dark Squares...
+Casas Pretas...
+L18 13
+Delete All Entries
+Remover Todos
+L17 19
+Delete This Entry
+Remover este Atalho
+L12 23
+Depth Limit:
+Limite de Profundidade:
+L11 11
+Description
+Descrição
+L7 12
+Device:
+Dispositivo:
+L50 27
+Directory to run from (e.g., where book files are)
+Diretório de onde executar
+L10 11
+Directory:
+Diretório:
+L11 14
+Discard All
+Descartar Tudo
+L12 14
+Discard Game
+Descartar Jogo
+L7 6
+Dismiss
+Fechar
+L12 11
+Display Game
+Exibir Jogo
+L9 7
+Displayed
+Exibido
+L81 83
+Distributed under the terms of the GNU General Public License, version 2 or later
+Distribuído sob os termos da GNU General Public License, versão 2 ou mais recente
+L12 18
+Draw Offered
+Proposta de Empate
+L16 27
+Draw offer sent.
+Proposta de empate enviada.
+L18 17
+Drawn by agreement
+Empate por acordo
+L11 13
+Drop Piece:
+Soltar Peça:
+L16 17
+Duration (msec):
+Duração (mseg):
+L18 31
+Dynamic Seek Graph
+Gráfico Dinâmico de Anúncios
+L18 28
+Dynamic Seek Table
+Lista dinâmica de anúncios
+L17 17
+Edit Bookmarks...
+Editar Atalhos...
+L21 27
+Edit Engine Bookmarks
+Editar Atalhos de Programas
+L14 20
+Edit Game Info
+Editar Informações
+L17 17
+Edit Time Control
+Controle de Tempo
+L5 6
+Empty
+Limpar
+L16 20
+Engine Bookmarks
+Atalhos de Programas
+L14 17
+Engine Command
+Dados do Programa
+L12 17
+Engine Type:
+Tipo de Programa:
+L28 37
+Engine Type: %s (uneditable)
+Tipo de Programa: %s (não editável)
+L43 37
+Engine asked more time to startup, waiting.
+Programa pediu mais tempo, esperando.
+L19 28
+Engine command line
+Linha de comando do programa
+L14 19
+Engine loaded.
+Programa carregado.
+L14 19
+Engine running
+Programa executando
+L30 40
+Engine started (2 sec timeout)
+Programa iniciado (espera de 2 segundos)
+L18 21
+Enter FEN Position
+Entre a Posição FEN
+L10 14
+Event Type
+Tipo de Evento
+L13 13
+Exam.Game #%d
+Jogo Exam.#%d
+L20 24
+Failed command line:
+Linha de comando falhou:
+L21 16
+Failed to run engine.
+Programa falhou.
+L28 32
+Failed to run helper program
+Não conseguiu executar programa
+L30 38
+File to play / Program to run:
+Arquivo a tocar / Programa a executar:
+L8 8
+Filter: 
+Filtro: 
+L14 16
+Filter: (none)
+Filtro: (nenhum)
+L36 34
+Finish the current connection first.
+Termine primeiro a conexão atual.
+L30 30
+Finish the current game first.
+Termine o jogo atual primeiro.
+L5 8
+Flags
+Títulos
+L5 6
+Fonts
+Fontes
+L22 25
+From Elsewhere (%d %s)
+De Outros Lugares (%d %s)
+L20 20
+From Engines (%d %s)
+De Programas (%d %s)
+L8 6
+From FEN
+Do FEN
+L16 14
+From ICS (%d %s)
+Do ICS (%d %s)
+L22 23
+From PGN Files (%d %s)
+De Arquivos PGN (%d %s)
+L6 6
+Game #
+Jogo #
+L8 8
+Game #%d
+Jogo #%d
+L19 19
+Game #%d - %d %d %s
+Jogo #%d - %d %d %s
+L13 13
+Game #%d - %s
+Jogo #%d - %s
+L18 18
+Game #%d - %s - %s
+Jogo #%d - %s - %s
+L20 20
+Game #%d - %s vs. %s
+Jogo #%d - %s vs. %s
+L21 26
+Game #%d - untimed %s
+Jogo #%d - sem relógio %s
+L12 12
+Game #%d: %s
+Jogo #%d: %s
+L12 14
+Game Aborted
+Jogo Cancelado
+L16 19
+Game Description
+Descrição do Jogo
+L21 30
+Game Information Font
+Fonte de Informações do Jogo
+L9 14
+Game List
+Lista de Jogos
+L25 31
+Game List (refreshing...)
+Lista de Jogos (atualizando...)
+L9 12
+Game Lost
+Jogo Perdido
+L12 14
+Game Started
+Jogo iniciado!
+L8 12
+Game Won
+Jogo Vencido
+L19 20
+Game appended to %s
+Jogo adicionado a %s
+L17 18
+Game in progress.
+Jogo em andamento.
+L13 18
+Game over: %s
+Jogo terminado: %s
+L19 23
+Game proposal sent.
+Oferta de jogo enviada.
+L13 14
+Game started!
+Jogo iniciado!
+L12 16
+Game/Board: 
+Jogo/Tabuleiro: 
+L5 5
+Games
+Jogos
+L24 28
+Generic XBoard Engine...
+Programa XBoard Genérico...
+L8 8
+Giveaway
+Giveaway
+L46 53
+Graphic representation of crazy/bughouse stock
+Representação gráfica do estoque de crazy/bughouse
+L16 29
+Help: Debug Info
+Ajuda: Dados para Depuração
+L22 20
+Help: Getting Started 
+Ajuda: Introdução 
+L10 13
+Help: Keys
+Ajuda: Teclas
+L24 33
+Helper program not found
+Programa auxiliar não encontrado
+L5 9
+Hide!
+Esconder!
+L18 28
+Host not found: %s
+Servidor não encontrado: %s
+L8 8
+Hostname
+Hostname
+L23 29
+Hostname or IP address:
+Nome do host ou endereço IP:
+L5 6
+Human
+Humano
+L30 44
+Human White vs. Computer Black
+Humano com Brancas vs. Computador com Pretas
+L17 26
+Human plays white
+Humano joga com as Brancas
+L13 14
+ICS Challenge
+Desafio no ICS
+L25 29
+IPC pipe creation failed.
+Criação de pipe IPC falhou.
+L2 2
+Id
+Id
+L104 97
+If you pick a bookmark, the engine\nwill play the next move, ignoring\nthe side setting in the bookmark.
+Escolhendo um atalho, o programa\njogará no lado a jogar, ignorando a\nconfiguração do atalho.
+L43 58
+Illegal Drop on %c%d (Legality Checking On)
+Jogada Ilegal em %c%d (Verificação de Legalidade Ligada)
+L44 59
+Illegal Move %c%d%c%d (Legality Checking On)
+Jogada Ilegal %c%d%c%d (Verificação de Legalidade Ligada)
+L23 28
+Illegal move, not sent.
+Jogada ilegal, não enviada.
+L17 18
+Increment (secs):
+Incremento (segs):
+L10 11
+Increment:
+Incremento:
+L55 59
+Inhibit seek lines on console when Seek Graph is active
+Inibir anúncios no console quando o gráfico estiver ativo
+L55 57
+Inhibit seek lines on console when Seek Table is active
+Inibir anúncios no console quando a tabela estiver ativa
+L16 12
+Initial Position
+Pos. Inicial
+L23 24
+Initial time ([mm:]ss):
+Tempo inicial ([mm:]ss):
+L19 19
+Initializing engine
+Preparando programa
+L46 53
+Invalid answer to DGT_SEND_BRD on port %s: %s 
+Resposta inválida para DGT_SEND_BRD na porta %s: %s 
+L8 8
+Joystick
+Joystick
+L3 5
+Key
+Chave
+L4 6
+Key:
+Chave:
+L17 17
+Kibitzes/Whispers
+Kibitzes/Whispers
+L4 5
+Kill
+Parar
+L10 10
+Knight  %d
+Cavalo  %d
+L22 25
+Last Proposal Received
+Última Proposta Recebida
+L4 8
+Left
+Esquerda
+L43 58
+Left click to play, right click to refresh.
+Clique esquerdo para jogar, clique direito para atualizar.
+L16 16
+Light Squares...
+Casas Brancas...
+L8 7
+Load PGN
+Ler PGN
+L11 10
+Load PGN...
+Ler PGN...
+L5 5
+Local
+Local
+L15 20
+Local Game List
+Lista Local de Jogos
+L21 25
+Looking up host %s...
+Procurando servidor %s...
+L6 6
+Losers
+Losers
+L10 9
+Main Board
+Tabuleiro
+L13 11
+Mamer and TDs
+Mamer e TDs
+L14 15
+Manual/Formula
+Manual/Fórmula
+L23 22
+Match Found at Line %d.
+Encontrou na Linha %d.
+L15 15
+Match Pattern: 
+Casar Padrão: 
+L17 17
+Material: %d - %d
+Material: %d - %d
+L8 21
+Max Ply:
+Profundidade Máxima:
+L30 31
+Move made (Obs'vd/Exm'd Games)
+Movimento (Jogos Observ./Exam.)
+L76 66
+Move the axis to be used for moving back and forth\nthrough moves of a game.
+Mova o eixo a ser usado para navegar pelos movimentos\nde um jogo.
+L46 47
+Move the axis to be used for selecting pieces.
+Mova o eixo a ser usado para selecionar peças.
+L5 7
+Moves
+Jogadas
+L22 18
+Network is unreachable
+Rede inalcançavel
+L18 19
+News/Notifications
+News/Notificações
+L2 4
+No
+Não
+L9 9
+No error.
+Sem erro.
+L19 31
+No material to mate
+Material insuficiente para mate
+L23 27
+No output from program.
+Nenhuma saída do programa.
+L8 13
+No peer.
+Sem parceiro.
+L19 24
+No previous search.
+Não há busca anterior.
+L18 19
+No proposals left.
+Não há propostas.
+L22 25
+No proposals received.
+Nenhuma proposta recebida
+L43 47
+No response to DGT_SEND_BRD on port %s: %s.
+Sem resposta para DGT_SEND_BRD na porta %s: %s.
+L29 34
+Non-ASCII Character Filtering
+Filtragem de Caracteres Não-ASCII
+L4 6
+None
+Nenhum
+L12 13
+Normal Chess
+Xadrez Normal
+L11 12
+Normal Text
+Texto Normal
+L16 21
+Not a socket ?!?
+Não é um socket ?!?
+L2 2
+OK
+OK
+L17 19
+Obs'vd Game Ended
+Fim de Jogo Observ.
+L7 8
+Observe
+Observar
+L2 2
+Ok
+Ok
+L160 190
+Once you connect to a host from this dialog, it will be added to\nthe Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\nto modify or remove entries.
+Conectando uma vez a partir desta caixa de diálogo, o servidor\nserá adicionado à lista de atalhos de servidores. Edite o\narquivo ~/.eboard/eboard.conf para modificar ou remover atalhos.
+L293 304
+Only lines that match the above pattern will be added\nto this text pane. Patterns can be OR'ed with the | (pipe)\ncharacter. A * (star) can be used to match anything.\nExamples:\n'(20)|(22)' shows only lines from channels 20 and 22\n'blik * bored' shows lines containing 'blik '(...)' bored'.
+Apenas linhas que casem o padrão acima aparecerão\nneste console. Padrões podem ser combinados (OU lógico)\ncom o caractere | (pipe). Um asterisco (*) casa qualquer\nsequência.\nExemplos:\n'(20)|(22)' mostra apenas linhas dos canais 20 e 22\n'blik * bored' mostra apenas linhas 'blik '(...)' bored'.
+L14 21
+Opponent Moved
+Movimento do Oponente
+L7 8
+Options
+Opções
+L11 15
+PGN Headers
+Cabeçalhos PGN
+L13 12
+PGN filename:
+Arquivo PGN:
+L14 22
+Partner Tells:
+Mensagens do Parceiro:
+L10 11
+Pawn    %d
+Peão    %d
+L11 9
+Pitch (Hz):
+Tom (Hz):
+L4 5
+Play
+Jogar
+L56 55
+Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)
+Jogar %s de %s vs. %s (%s, prof. %d, pensar sempre: %s)
+L58 60
+Play WAV (need Device and Filename, sox must be installed)
+Tocar WAV (requer Dispositivo e Nome de arquivo, requer sox)
+L19 21
+Play against Crafty
+Jogar contra o Crafty
+L19 21
+Play against Engine
+Jogar contra Programa
+L24 26
+Play against GNU Chess 4
+Jogar contra o GNU Chess 4
+L18 20
+Play against Sjeng
+Jogar contra o Sjeng
+L6 7
+Player
+Jogador
+L14 17
+Player resigns
+Jogador abandonou
+L22 25
+Player/Color Name Font
+Fonte do Nome Jogador/Cor
+L14 14
+Pos: %s vs. %s
+Pos: %s vs. %s
+L11 13
+Preferences
+Preferências
+L54 55
+Press the button to be used for going to the next tab.
+Pressione o botão a ser usado para ir à próxima aba.
+L58 59
+Press the button to be used for going to the previous tab.
+Pressione o botão a ser usado para voltar à aba anterior.
+L51 54
+Press the button to be used for selecting a square.
+Pressione o botão a ser usado para selecionar peças.
+L12 16
+Private Tell
+Mensagem Pessoal
+L13 18
+Private Tells
+Mensagens Pessoais
+L23 28
+Program exited too soon
+Programa saiu muito depressa
+L8 9
+Progress
+Progresso
+L17 15
+Promotion Piece  
+Promover para  
+L7 6
+Propose
+Propor
+L12 11
+Propose Game
+Propor Jogo
+L8 9
+Protocol
+Protocolo
+L33 33
+Protocol mismatch, disconnecting.
+Erro de protocolo, desconectando.
+L10 10
+Queen   %d
+Dama    %d
+L5 5
+Rated
+Rated
+L6 6
+Rating
+Rating
+L12 15
+Rating Range
+Faixa de Rating
+L24 28
+Read error from program.
+Erro de leitura do programa.
+L33 32
+Received a game proposal from %s.
+Proposta de jogo recebida de %s.
+L12 19
+Recent Hosts
+Servidores Recentes
+L12 15
+Refresh List
+Atualizar Lista
+L19 21
+Replied to seek #%d
+Respondeu ao seek #%d
+L9 9
+Resigned.
+Abadonam.
+L6 9
+Result
+Resultado
+L20 30
+Retracted last move.
+A última jogada foi desfeita.
+L45 48
+Retrieve ICS Channel Lists from eboard.sf.net
+Obter listas de nomes de canais de eboard.sf.net
+L18 15
+Revert to Defaults
+Cores Originais
+L18 16
+Revert to defaults
+Fontes Originais
+L5 7
+Right
+Direita
+L10 10
+Rook    %d
+Torre   %d
+L3 8
+Run
+Executar
+L13 11
+Run Engine...
+Programa...
+L27 42
+Run Program (need Filename)
+Executar Programa (requer Nome de arquivo)
+L47 43
+Run autofics.pl script after connecting to FICS
+Executar autofics.pl após conectar ao FICS
+L17 24
+Save Buffer As...
+Salvar Conteúdo Como...
+L12 14
+Save Game...
+Salvar Jogo...
+L11 15
+Save as PGN
+Salvar como PGN
+L10 11
+Scratch %d
+Rascunho %d
+L6 6
+Script
+Script
+L11 16
+Script List
+Lista de Scripts
+L34 38
+Scrollback limit (0 = unlimited) :
+Limite de scrollback (0 = ilimitado) :
+L11 12
+Search Text
+Buscar Texto
+L12 14
+Search for: 
+Procurar por: 
+L22 22
+Search text not found.
+Texto não encontrado.
+L8 9
+Seek Ads
+Anúncios
+L10 9
+Seek Graph
+Anúncios
+L15 9
+Seek Graph Font
+Anúncios
+L10 9
+Seek Table
+Anúncios
+L15 9
+Seek Table Font
+Anúncios
+L10 10
+Serial :%s
+Serial: %s
+L10 11
+Set Filter
+Usar Filtro
+L13 14
+Set Filter...
+Usar Filtro...
+L49 66
+Set depth limit to 0 to use the engine's default.
+Coloque os valores em zero para\nusar o valor padrão do programa.
+L13 18
+Setup Buttons
+Configurar Botões
+L21 35
+Shortcut Button Setup
+Configuração de Botões de Atalho
+L6 6
+Shouts
+Shouts
+L42 35
+Show channel tells in one pane per channel
+Mostrar canais em uma aba por canal
+L63 72
+Show channel tells on console too (when above option is active)
+Mostrar canais no console também (quando a opção acima estiver ativa)
+L31 41
+Show rating next to player name
+Mostrar rating ao lado do nome do jogador
+L33 45
+Show shortcut buttons below board
+Mostrar botões de atalho abaixo do tabuleiro
+L30 32
+Show timestamps for text lines
+Mostrar hora nas linhas de texto
+L11 12
+Side & Time
+Lado & Tempo
+L14 15
+Side Selection
+Escolha de Lado
+L14 14
+Side to move: 
+Lado a jogar: 
+L22 28
+Smooth joystick cursor
+Cursor suave para o joystick
+L29 39
+Smooth joystick cursor speed:
+Velocidade do cursor suave do joystick:
+L34 38
+Smoother animation (eats more CPU)
+Animação mais suave (gasta mais CPU)
+L14 11
+Soft translate
+Simplificar
+L76 76
+Sorry, this protocol does not allow to retract a move thru this menu option.
+Desculpe, este protocolo não permite voltar uma jogada através deste menu.
+L11 13
+Sound Event
+Evento Sonoro
+L12 15
+Sound Events
+Eventos Sonoros
+L6 4
+Sounds
+Sons
+L54 58
+Source code available at http://eboard.sourceforge.net
+Código-fonte disponível em http://eboard.sourceforge.net
+L9 11
+Stalemate
+Rei afogado
+L18 20
+Start a connection
+Iniciar uma conexão
+L14 14
+Starting Time:
+Tempo Inicial:
+L7 7
+Suicide
+Suicide
+L8 9
+TCP Port
+Porta TCP
+L9 10
+TCP Port:
+Porta TCP:
+L12 18
+Tab Position
+Posição das Abas
+L4 6
+Test
+Testar
+L52 49
+The checkbox on the left enables/disables the sound.
+O controle à esquerda habilita/desabilita o som.
+L69 77
+The engine will be run with\n/bin/sh -c 'cd directory ; command line'
+O programa será executado com\n/bin/sh -c 'cd diretório ; linha de comando'
+L12 13
+Think Always
+Pensar Sempre
+L24 27
+Think on opponent's time
+Pensar no tempo do oponente
+L4 5
+Time
+Tempo
+L12 17
+Time Control
+Controle de Tempo
+L15 20
+Time Control...
+Controle de Tempo...
+L13 17
+Time Control:
+Controle de Tempo
+L16 15
+Time Running Out
+Tempo Esgotando
+L7 13
+Timeout
+Tempo Expirou
+L44 50
+Times can be given as hh:mm:ss , mm:ss or ss
+Tempos podem ser dados como hh:mm:ss , mm:ss ou ss
+L180 116
+To run multiple commands with one shortcut, separate the commands with ; (semicolon).\nTo run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl .
+Para executar vários comandos, separe-os com ; (ponto-e-vírgula)\nPara executar um script, use script.nomedoscript
+L3 5
+Top
+Acima
+L13 9
+Trademark :%s
+Marca: %s
+L8 7
+Truncate
+Truncar
+L30 28
+Type: Fischer Clock (ICS-like)
+Tipo: Relógio Fischer (ICS)
+L25 27
+Type: Fixed Time per Move
+Tipo: Tempo Fixo por Jogada
+L34 32
+Type: Use engine's default setting
+Tipo: Usar o padrão do programa
+L29 28
+Type: X Moves per Time Period
+Tipo: X Jogadas por Período
+L26 33
+Unable to bind on port %d.
+Impossível associar à porta %d.
+L24 25
+Unable to create socket.
+Impossível criar socket.
+L40 32
+Unable to find the DGT board on port %s.
+DGT não encontrado na porta %s.
+L44 46
+Unable to find the DGT board on port %s: %s.
+Tabuleiro DGT não encontrado na porta %s: %s.
+L39 49
+Unable to load dgtnix library symbol.\n
+Erro ao carregar símbolo da biblioteca dgtnix.\n
+L32 39
+Unable to load dgtnix library.\n
+Erro ao carregar a biblioteca dgtnix.\n
+L13 18
+Unknown error
+Erro desconhecido.
+L14 22
+Unknown result
+Resultado desconhecido
+L23 26
+Use plain color squares
+Usar cores lisas nas casas
+L15 14
+Use underscores
+Usar sublinhas
+L5 5
+Value
+Valor
+L6 6
+Value:
+Valor:
+L7 8
+Variant
+Variante
+L8 9
+Variant:
+Variante:
+L24 29
+Variant: %s (uneditable)
+Variante: %s (não editável)
+L4 7
+Wait
+Esperar
+L21 24
+Wait for a connection
+Esperar por uma conexão
+L34 31
+Waiting for connection on port %d.
+Esperando conexão na porta %d.
+L30 53
+Warn when own clock is below: 
+Avisar quando o próprio relógio estiver abaixo de: 
+L18 20
+Welcome to eboard.
+Bem-vindo ao eboard.
+L5 7
+White
+Brancas
+L14 16
+White: %s - %s
+Brancas: %s - %s
+L10 10
+Working...
+Aguarde...
+L16 19
+Write to Console
+Escrever no Console
+L19 19
+Wrong address space
+Endereço inválido
+L5 7
+Wrote
+Escrevi
+L3 3
+Yes
+Sim
+L49 46
+You can only retract when it's your turn to move.
+Você pode voltar apenas quando for a sua vez.
+L11 8
+Your color:
+Sua cor:
+L10 9
+Your name:
+Seu nome:
+L6 6
+[chat]
+[chat]
+L5 5
+[cmd]
+[cmd]
+L29 30
+[eboard] ** $HOME is too long
+[eboard] ** $HOME longo demais
+L39 48
+[eboard] ** failed to create directory 
+[eboard] ** não foi possível criar diretório 
+L20 21
+[eboard] ** no $HOME
+[eboard] ** sem $HOME
+L22 44
+[eboard] bad RC line\n
+[eboard] linha de configuração inválida\n
+L6 10
+[find]
+[procurar]
+L4 4
+beep
+bipe
+L5 5
+beeps
+bipes
+L5 6
+black
+pretas
+L53 53
+can't load PGN move text from %s (error opening file)
+impossível carregar PGN de %s (erro abrindo arquivo)
+L30 42
+can't seek to offset %lu of %s
+impossível deslocar para offset %lu de %s
+L26 30
+dgtnix driver version %.1f
+biblioteca dgtnix versão %.1f
+L25 25
+dgtnix driver version: %s
+driver dgtnix versão: %s
+L41 42
+dgtnix version too old: %f, must be >= %f
+dgtnix muito antigo: %f, precisa ser >= %f
+L14 18
+discards board
+descarta tabuleiro
+L32 40
+eboard Direct Connection Manager
+Gerenciador de Conexão Direta do eboard
+L22 22
+eboard version %s (%s)
+eboard versão %s (%s)
+L343 344
+eboard version %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nThis program is free software; you can redistribute\nit and/or modify it under the terms of the GNU General\nPublic License as published by the Free Software\nFoundation; either version 2 of the License, or\n(at your option) any later version.\n
+eboard versão %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nEste programa é software livre; você pode redistribui-lo\ne/ou modificá-lo sob os termos da GNU General Public\nLicense tal como publicada pela Free Software Foundation;\nversão 2 da licença ou (sua opção) qualquer versão\nmais recente.\n
+L19 19
+eboard: Console #%d
+eboard: Console #%d
+L60 68
+engine claimed illegal move but we didn't move, ignoring it.
+programa reclamou de jogada ilegal mas não houve jogada, ignorando.
+L22 28
+error parsing PGN data
+erro interpretando dados PGN
+L11 17
+flips board
+inverte tabuleiro
+L4 4
+game
+jogo
+L5 5
+games
+jogos
+L17 19
+generic xboard v2
+xboard genérico v2
+L20 17
+goes back 1 halfmove
+volta meia jogada
+L26 24
+goes back to start of game
+volta ao início do jogo
+L23 19
+goes forward 1 halfmove
+avança meia jogada
+L27 22
+goes forward to end of game
+avança ao fim do jogo
+L13 14
+illegal move!
+jogada ilegal!
+L11 12
+in progress
+em andamento
+L29 31
+initial time %s, increment %s
+tempo inicial %s, incremento %s
+L8 7
+moves in
+Jogadas
+L2 4
+no
+não
+L14 18
+no such game: 
+jogo inexistente: 
+L19 17
+no time control set
+Controle de Tempo
+L4 4
+none
+nada
+L7 4
+nothing
+nada
+L37 47
+opens new scratch board with position
+abre novo tabuleiro rascunho com esta posição
+L8 10
+per move
+por jogada
+L18 15
+plain console beep
+bipe de console
+L12 16
+play file %s
+tocar arquivo %s
+L21 23
+pops up the move list
+abre a lista de jogadas
+L24 29
+process creation failed.
+Criação de processo falhou.
+L5 5
+rated
+rated
+L6 11
+run %s
+executar %s
+L10 10
+running %s
+rodando %s
+L18 18
+savePGN failed: %s
+savePGN falhou: %s
+L54 58
+savePGN failed: Won't save game with less than 2 moves
+savePGN falhou: Não grava jogos com menos de 2 movimentos
+L8 9
+seconds.
+segundos.
+L7 7
+unrated
+unrated
+L7 12
+untimed
+sem relógio
+L5 7
+white
+brancas
+L3 3
+yes
+sim
+E 542

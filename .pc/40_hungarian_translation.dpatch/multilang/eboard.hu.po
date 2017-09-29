@@ -1,0 +1,2217 @@
+onzol leka# (2) 
+msgid  " ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n"
+msgstr " ** PNG betöltés sikertelen: kis felbontású saját figurák használata. Rosszabbul fog kinézni."
+
+# (1) 
+msgid  " Browse... "
+msgstr " Tallóz... "
+
+# (1) 
+msgid  " Play Selected "
+msgstr " Játék a kiválasztottal "
+
+# (1) 
+msgid  " Refresh "
+msgstr " Frissít "
+
+# (1) 
+msgid  " Remove Field "
+msgstr " Mező eltávolítása "
+
+# (1) 
+msgid  " Set "
+msgstr " Beállít "
+
+# (1) 
+msgid  ""
+"#L#Getting Started\n"
+"#M#Common Tasks in eboard\n"
+"\nPlaying against the computer\n"
+"#S#eboard does not \"play chess\" itself, but rather is works as interface to programs that do,\n"
+"called \"engines\", which don't have a graphical interface themselves. You need an engine to\n"
+"play against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\n"
+"no cost.\n"
+"Once you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\n"
+"engine#K# submenu, and select the appropriate option depending on which engine you have\n"
+"installed.\n"
+"\n#M#Playing Chess on the Internet\n"
+"#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\n"
+"US Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\n"
+"To connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\n"
+"other servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\n"
+"While you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\n"
+"is done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n"
+"\n#M#Browsing PGN Games\n"
+"#S#PGN is the most common file format to store chess games. It can store moves and comments\n"
+"(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n"
+"#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\n"
+"game, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\n"
+"with the game.#L#"
+msgstr ""
+"#L#Bevezető\n"
+"#M#Lehetőségek az eboard-ban\n"
+"\nJáték a számítógép ellen\n"
+"#S#Az eboard program maga \"nem tud sakkozni\", csak egy grafikus felület, viszont futtatni tud\n"
+"más sakkprogramokat, úgynevezett \"gépeket\", melyek nem rendelkeznek grafikus felülettel.\n"
+"Ahhoz, hogy a számítógéppel sakkozz, szükség van egy ilyen programra (gépre).\n"
+"A GNU Chess, Crafty és Sjeng ilyen ingyenesen elérhető gépek. Ha ezek közül már telepítve\n"
+"van valamelyik, nyisd meg a #B#Partner#K# menüt, aztán a #B#Gép elleni játék#K# almenüt, és\n"
+"a gépek közül válaszd azt, amelyik telepítve van a számítógépeden.\n"
+"\n#M#Játék az Interneten\n"
+"#S#Az eboard támogatja a FICS protokollt. A FICS a freechess.org szerverén fut, de más\n"
+"szerverek, mint például a US Chess Live is a FICS szoftverét használják, így szintén működnek\n"
+"az eboard-dal. Az ICC nem támogatott.\n"
+"A FICS-hez kapcsolódáshoz nyisd meg a #B#Partner#K# menüt, majd válaszd a \n"
+"#B#Kapcsolódás a FICS-hez#K# almenüt. Más szerverekhez való kapcsolódáshoz nyisd meg a #B#Partner#K#\n"
+"menüt, majd válaszd a #B#Kapcsolódás másik szerverhez...#K# almenüt.\n"
+"Bejelentkezhetsz a FICS-re vendégként is (guest néven), de jobban fogod élvezi azt regisztrált\n"
+"felhasználóként. Regisztrálni ingyen lehet a FICS honlapján: #B#http://www.freechess.org#K#.\n"
+"\n#M#PGN játszmák tallózása\n"
+"#S#A PGN a legelterjedtebb fájlformátum sakkjátszmák tárolására. Ebben megjegyzések is\n"
+"tárolhatók. Ilyen fájlok megnyitásához válaszd az #B#Ablakok#K# menüt, majd kattints a\n"
+"#B#Játszmák a kliensen#K# almenüre. A helyi lista ablakban kattints a #B#PGN betöltése...#K#\n"
+"gombra. Egy játszma megtekintéséhez #B#válaszd ki#K# azt, majd kattints a #B#megjelenít#K# gombra.\n"
+"Egy új panel jön majd létre a fő ablakban a betöltött játszmával.#L#"
+
+# (1) 
+msgid  "%d %s to %s, %d Hz for %d msec"
+msgstr "%d %s to %s, %d Hz %d emp -hez"
+
+# (1) 
+msgid  "%d games read"
+msgstr "%d játszma beolvasása"
+
+# (2) 
+msgid  "%d moves in %s"
+msgstr "%s lépés %d alatt"
+
+# (1) 
+msgid  "%d. Connect to %s:%d (%s)"
+msgstr ""
+
+# (1) 
+msgid  "%s (white) vs. %s (black)\n%s\n%d:%.2d %d"
+msgstr "%s (világos) vs. %s (sötét)\n%s\n%d:%.2d %d"
+
+# (1) 
+msgid  "%s accepted your game proposal."
+msgstr "%s elfogadta a játszma ajánlatodat."
+
+# (1) 
+msgid  "%s engine started."
+msgstr "%s gép elindítva."
+
+# (2) 
+msgid  "%s offers a draw."
+msgstr "%s döntetlent ajánl."
+
+# (1) 
+msgid  "%s per move"
+msgstr "%s lépésenként"
+
+# (1) 
+msgid  "%s/move"
+msgstr "%s/lépés"
+
+# (1) 
+msgid  "(Wrapped) Match Found at Line %d."
+msgstr "(Wrapped) egyezés a %d sorban."
+
+# (1) 
+msgid  "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)"
+msgstr "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS név: Pulga)"
+
+# (1) 
+msgid  "(message obfuscated -- password mode ?)"
+msgstr "(összezavart üzenet -- jelszó mód ?)"
+
+# (2) 
+msgid  "(no bookmarks)"
+msgstr "(nincs könyvjelző)"
+
+# (2) 
+msgid  "(none)"
+msgstr "(üres)"
+
+# (1) 
+msgid  "(time period)"
+msgstr "(időtartam)"
+
+# (1) 
+msgid  "* game not found: "
+msgstr "* játszma nem található: "
+
+# (1) 
+msgid  "** [eboard] bad engine protocol # in bookmark: "
+msgstr "** [eboard] hibás gép protocol # a könyvjelzőben: "
+
+# (1) 
+msgid  "** eboard ** warning: HOME environment variable not set\n"
+msgstr "** eboard ** figyelmeztetés: a HOME környezeti változó nincs beállítva\n"
+
+# (1) 
+msgid  "--- %s game to PGN file %s"
+msgstr "--- %s játszma a %s PGN fájlba"
+
+# (1) 
+msgid  "--- Disconnected"
+msgstr "--- Kapcsolat megszakítva"
+
+# (1) 
+msgid  "/Game/Ad_journ"
+msgstr "/Játszma/_Elhalaszt"
+
+# (1) 
+msgid  "/Game/Retract _Move"
+msgstr "/Játszma/Lépést _visszavon"
+
+# (1) 
+msgid  "/Game/_Abort"
+msgstr "/Játszma/_Megszakít"
+
+# (1) 
+msgid  "/Game/_Offer Draw"
+msgstr "/Játszma/_Döntetlent ajánl"
+
+# (1) 
+msgid  "/Game/_Resign"
+msgstr "/Játszma/_Felad"
+
+# (1) 
+msgid  "/Help/_About eboard..."
+msgstr "/Súgó/_Névjegy"
+
+# (1) 
+msgid  "/Help/_Debug Info"
+msgstr "/Súgó/_Információk hibakereséshez"
+
+# (1) 
+msgid  "/Help/_Getting Started"
+msgstr "/Súgó/_Bevezető"
+
+# (1) 
+msgid  "/Help/_Keys"
+msgstr "/Súgó/_Gyorsbillentyűk"
+
+# (1) 
+msgid  "/Help/sep4"
+msgstr "/Súgó/sep4"
+
+# (1) 
+msgid  "/Peer/Connect to _FICS"
+msgstr "/Partner/Kapcsolódás a _FICS-hez"
+
+# (1) 
+msgid  "/Peer/Direct connect with _Remote eboard..."
+msgstr "/Partner/Közvetlen kapcsolódás _távoli eboard-hoz"
+
+# (1) 
+msgid  "/Peer/Engine B_ookmarks"
+msgstr "/Partner/Gép könyv_jelzők"
+
+# (1) 
+msgid  "/Peer/ICS _Bookmarks"
+msgstr "/Partner/ICS _könyvjelzők"
+
+# (1) 
+msgid  "/Peer/Play against Engine/Cr_afty..."
+msgstr "/Partner/Gép elleni játék/_Crafty..."
+
+# (1) 
+msgid  "/Peer/Play against Engine/GNU Chess..."
+msgstr "/Partner/Gép elleni játék/_GNU Chess..."
+
+# (1) 
+msgid  "/Peer/Play against Engine/_Generic Engine..."
+msgstr "/Partner/Gép elleni játék/_Általános gép"
+
+# (1) 
+msgid  "/Peer/Play against Engine/_Sjeng..."
+msgstr "/Partner/Gép elleni játék/_Sjeng..."
+
+# (1) 
+msgid  "/Peer/Play against Engine/sep1"
+msgstr "/Partner/Gép elleni játék/sep1"
+
+# (1) 
+msgid  "/Peer/Play against _Engine"
+msgstr "/Partner/_Gép elleni játék"
+
+# (1) 
+msgid  "/Peer/_Connect to Other Server..."
+msgstr "/Partner/Kapcsolódás másik szerverhez..."
+
+# (1) 
+msgid  "/Peer/_Disconnect"
+msgstr "/Partner/Kapcsolat _vége"
+
+# (1) 
+msgid  "/Peer/_Empty Scratch Board"
+msgstr "/Partner/Állás felállítása _üres táblán"
+
+# (1) 
+msgid  "/Peer/_Quit"
+msgstr "/Partner/_Kilépés"
+
+# (1) 
+msgid  "/Peer/_Scratch Board with Initial Position"
+msgstr "/Partner/Állás felállítása _alapállással"
+
+# (1) 
+msgid  "/Peer/sep2"
+msgstr "/Partner/sep2"
+
+# (2) 
+msgid  "/Peer/sep3"
+msgstr "/Partner/sep3"
+
+# (1) 
+msgid  "/Peer/sep4"
+msgstr "/Partner/sep4"
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece Sets/Load _Pieces Only"
+msgstr "/Beállítások/Bittérképes készlet/Csak _figurák betöltése"
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece Sets/Load _Squares Only"
+msgstr "/Beállítások/Bittérképes készlet/Csak _tábla betöltése"
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece Sets/Load _Theme"
+msgstr "/Beállítások/Bittérképes készlet/_Téma betöltése"
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece _Sets"
+msgstr "/Beállítások/Bittérképes készlet"
+
+# (1) 
+msgid  "/Settings/Enable Legality _Checking"
+msgstr "/Beállítások/Szabályok _ellenőrzése"
+
+# (1) 
+msgid  "/Settings/ICS Behavior/Popup Board Panes _Upon Creation"
+msgstr "/Beállítások/ICS tulajdonságok/Tábla panel _létrehozáskor"
+
+# (1) 
+msgid  "/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends"
+msgstr "/Beállítások/ICS tulajdonságok/Vizsgált állások bezárása ha a játszma befejeződött"
+
+# (1) 
+msgid  "/Settings/Pre_move"
+msgstr "/Beállítások/Lépések _előjelzése"
+
+# (1) 
+msgid  "/Settings/Sho_w Coordinates"
+msgstr "/Beállítások/_Kordináták mutatása"
+
+# (1) 
+msgid  "/Settings/_Animate Moves"
+msgstr "/Beállítások/_Lépések animálása"
+
+# (1) 
+msgid  "/Settings/_Beep on Opponent Moves"
+msgstr "/Beállítások/_Csipogás az ellenfél lépésekor"
+
+# (1) 
+msgid  "/Settings/_Enable Other Sounds"
+msgstr "/Beállítások/Egyéb hangok _engedélyezése"
+
+# (1) 
+msgid  "/Settings/_Highlight Last Move"
+msgstr "/Beállítások/_Utolsó lépés kijelzése"
+
+# (1) 
+msgid  "/Settings/_ICS Behavior"
+msgstr "/Beállítások/_ICS tulajdonságok"
+
+# (1) 
+msgid  "/Settings/_Preferences..."
+msgstr "/Beállítások/_Beállítások"
+
+# (1) 
+msgid  "/Settings/_Vectorized Pieces (Faster Rendering)"
+msgstr "/Beállítások/_Vektorizált figurák (gyorsabb megjelenítés)"
+
+# (5) 
+msgid  "/Settings/sep3"
+msgstr "/Beállítások/sep3"
+
+# (1) 
+msgid  "/Windows/Find _Previous"
+msgstr "/Ablakok/_Előző"
+
+# (1) 
+msgid  "/Windows/Games on _Client..."
+msgstr "/Ablakok/Játszmák a _helyi gépen..."
+
+# (1) 
+msgid  "/Windows/Save Desktop _Geometry"
+msgstr "/Ablakok/_Elrendezés mentése"
+
+# (1) 
+msgid  "/Windows/Save _Text Buffer..."
+msgstr "/Ablakok/Szöveges _puffer mentése..."
+
+# (1) 
+msgid  "/Windows/_Ads on Server..."
+msgstr "/Ablakok/_Hirdetések a szerveren..."
+
+# (1) 
+msgid  "/Windows/_Detached Console"
+msgstr "/Ablakok/Konzol _külön ablakban"
+
+# (1) 
+msgid  "/Windows/_Find Text (upwards)..."
+msgstr "/Ablakok/Szöveg keresése (előre)"
+
+# (1) 
+msgid  "/Windows/_Games on Server..."
+msgstr "/Ablakok/_Játszmák a szerveren..."
+
+# (1) 
+msgid  "/Windows/_Run Script..."
+msgstr "/Ablakok/_Szkript futtatása..."
+
+# (1) 
+msgid  "/Windows/sep1"
+msgstr "/Ablakok/sep1"
+
+# (1) 
+msgid  "/Windows/sep2"
+msgstr "/Ablakok/sep2"
+
+# (3) 
+msgid  "/Windows/sep3"
+msgstr "/Ablakok/sep3"
+
+# (1) 
+msgid  "/_Game"
+msgstr "/_Játszma"
+
+# (1) 
+msgid  "/_Help"
+msgstr "/_Súgó"
+
+# (1) 
+msgid  "/_Peer"
+msgstr "/_Partner"
+
+# (1) 
+msgid  "/_Settings"
+msgstr "/_Beállítások"
+
+# (1) 
+msgid  "/_Windows"
+msgstr "/_Ablakok"
+
+# (1) 
+msgid  ""
+"<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<AdListDialog::AdListDialog> Figyelmeztetés: nem lehet a fontot betölteni, ez az ablaknak borzasztóan fog kinézni.\n"
+"\n"
+
+# (1) 
+msgid  "<Fics Protocol> abort request sent"
+msgstr "<Fics Protocol> elvet üzenet elküldve"
+
+# (1) 
+msgid  "<Fics Protocol> adjourn request sent"
+msgstr "<Fics Protocol> elhalaszt üzenet elküldve"
+
+# (1) 
+msgid  "<Fics Protocol> draw request sent"
+msgstr "<Fics Protocol> döntetlen üzenet elküldve"
+
+# (1) 
+msgid  ""
+"<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<GameListDialog::GameListDialog> Figyelmeztetés: nem lehet a fontot betölteni, ez az ablaknak borzasztóan fog kinézni.\n"
+"\n"
+
+# (2) 
+msgid  "<PatternMatcher::set> ** bad pattern string: "
+msgstr "<PatternMatcher::set> ** hibás minta sztring: "
+
+# (2) 
+msgid  "<PieceSet::PieceSet> ** file not found: "
+msgstr "<PieceSet::PieceSet> ** nincs ilyen fájl: "
+
+# (1) 
+msgid  "<SeekGraph::updatefont> failed to load "
+msgstr "<SeekGraph::updatefont> sikertelen betöltés "
+
+# (1) 
+msgid  ""
+"<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<StockListDialog::StockListDialog> Figyelmeztetés: nem lehet a fontot betölteni, ez az ablaknak borzasztóan fog kinézni.\n"
+
+# (1) 
+msgid  "<XBoard Protocol> Adjourning not supported"
+msgstr "<XBoard Protocol> elhalasztás nem támogatott"
+
+# (1) 
+msgid  "<XBoard Protocol> Incompatible Engine Protocol"
+msgstr "<XBoard Protocol> nem kompatibilis gép protokoll"
+
+# (1) 
+msgid  "<XBoard Protocol> Session Aborted"
+msgstr "<XBoard Protocol> menet megszakítva"
+
+# (1) 
+msgid  "<XBoard Protocol> draw request sent"
+msgstr "<XBoard Protocol> döntetlen üzenet elküldve"
+
+# (1) 
+msgid  "<editing>"
+msgstr "<szerkesztés>"
+
+# (1) 
+msgid  "> (password sent)"
+msgstr "> (jelszó elküldve)"
+
+# (2) 
+msgid  "> [issued from menu] %s"
+msgstr "> [menüből indítva] %s"
+
+# (1) 
+msgid  "> [issued from shortcut] "
+msgstr "> [gyorsbillentyűvel indítva] "
+
+# (1) 
+msgid  "> [script run from shortcut] %s"
+msgstr "> [gyorsbillentyűvel indított szkript] %s"
+
+# (1) 
+msgid  "About eboard"
+msgstr "Névjegy"
+
+# (1) 
+msgid  "Accept"
+msgstr "Elfogad"
+
+# (1) 
+msgid  "Accepted incoming connection from %s"
+msgstr "%s Bejövő kapcsolódási kéreleme elfogadva"
+
+# (1) 
+msgid  "Ad Description"
+msgstr "Hirdetés leírása"
+
+# (2) 
+msgid  "Ad List"
+msgstr "Hirdetés lista"
+
+# (1) 
+msgid  "Ad List (refreshing...)"
+msgstr "Hirdetés lista (frissítés...)"
+
+# (1) 
+msgid  "Add to Peer/Engine Bookmarks menu"
+msgstr "Hozzáadás a Partner/Gép menühöz"
+
+# (1) 
+msgid  "Address already in use"
+msgstr "A cím már foglalt"
+
+# (1) 
+msgid  "Ads"
+msgstr "Hirdetések"
+
+# (1) 
+msgid  "Already connected ?!?"
+msgstr "Már csatlakozott ?!?"
+
+# (1) 
+msgid  ""
+"Anywhere:\n"
+"F3: Go to previous pane.\n"
+"F4: Go to next pane.\n"
+"F5: Go to the main board pane.\n"
+"F6: Go to the console pane.\n"
+"F7: Go to the seek graph pane (if available).\n"
+"F8: Toggle Shortcut Bar visilibity.\n"
+"Page Up/Page Down: scrolls the text console (must be visible)\n"
+"Ctrl+(Left Arrow): Backward 1 halfmove\n"
+"Ctrl+(Right Arrow): Forward 1 halfmove\n"
+"Ctrl+F: Find Upwards(main console buffer)\n"
+"Ctrl+G: Find Previous\n"
+"\nInput box:\n"
+"Up/Down (arrows): move thru input history\n"
+"Enter: send text line\n"
+"Esc: switch Chat/Command Mode\n"
+"\nSyntaxisms:\n"
+"In main window's input box:\n"
+".. entering %prefix text will set the chat prefix to text.\n"
+".. entering %do scriptname will run scriptname."
+msgstr ""
+"Mindenhol érvényes:\n"
+"F3: Előző panel.\n"
+"F4: Következő panel.\n"
+"F5: Fő tábla panel.\n"
+"F6: Konzol panel.\n"
+"F7: Keresés grafikon panel (ha elérhető).\n"
+"F8: Nyomógombok láthatósága kapcsoló.\n"
+"Page Up/Page Down: szöveges konzol görgetése\n"
+"Ctrl+(Balra nyíl): 1 lépés vissza\n"
+"Ctrl+(Jobbra nyíl): 1 lépés előre\n"
+"Ctrl+F: Keresés előre (fő konzol puffer)\n"
+"Ctrl+G: Előző keresése\n"
+"\nBeviteli mezőben:\n"
+"Fel/Le (nyilak): mozgás a beviteli előzményekben\n"
+"Enter: szöveg elküldése\n"
+"Esc: Cset/Parancs mód kapcsoló\n"
+"\nSzintaxis:\n"
+"A fő ablak beviteli mezőjében:\n"
+".. %prefix szöveg beállítja a cset prefixet szöveg -re.\n"
+".. %do szkriptneve futtatja a szkriptneve szkriptet."
+
+# (1) 
+msgid  "Appearance"
+msgstr "Megjelenés"
+
+# (1) 
+msgid  "Appended"
+msgstr "Hozzáadva"
+
+# (1) 
+msgid  "Apply"
+msgstr "Alkalmaz"
+
+# (1) 
+msgid  "Apply Changes"
+msgstr "Változások alkalmazása"
+
+# (1) 
+msgid  "Auto-save observed games"
+msgstr "Vizsgált játszmák automatikus mentése"
+
+# (1) 
+msgid  "Auto-save played games"
+msgstr "Játszott partik automatikus mentése"
+
+# (1) 
+msgid  "Autosave"
+msgstr "Automatikus mentés"
+
+# (1) 
+msgid  "Axis & Buttons"
+msgstr "Koordináták és Gombok"
+
+# (1) 
+msgid  "Background"
+msgstr "Háttér"
+
+# (1) 
+msgid  "Bad descriptor"
+msgstr "Hibás leíró"
+
+# (1) 
+msgid  "Beep (need Pitch, Duration, Count and Device)"
+msgstr "Csipogás"
+
+# (1) 
+msgid  "Bishop  %d"
+msgstr "Futó %d"
+
+# (5) 
+msgid  "Black"
+msgstr "Sötét"
+
+# (1) 
+msgid  "Black: %s - %s"
+msgstr "Sötét: %s - %s"
+
+# (1) 
+msgid  ""
+"Board Cursor Axis: %d\n"
+"Board Select Button: %d\n"
+"Board Browsing Axis: %d\n"
+"Previous Tab Button: %d\n"
+"Next Tab Button: %d\n"
+msgstr ""
+"Tábla kurzor irány: %d\n"
+"Tábla kiválasztó gomb: %d\n"
+"Tábla tallózás irány: %d\n"
+"Előző fül gomb: %d\n"
+"Következő fül gomb: %d\n"
+
+# (1) 
+msgid  "Board version :%s"
+msgstr "Tábla verzió: %s"
+
+# (1) 
+msgid  "Bookmark Caption:"
+msgstr "Könyvjelző szövege:"
+
+# (1) 
+msgid  "Bottom"
+msgstr "Alul"
+
+# (1) 
+msgid  "Bright Text"
+msgstr "Fényes szöveg"
+
+# (1) 
+msgid  "Browse"
+msgstr "Tallóz"
+
+# (1) 
+msgid  "Buffer Save failed."
+msgstr "Puffer mentése sikertelen."
+
+# (1) 
+msgid  "Bughouse"
+msgstr "Négykezes"
+
+# (2) 
+msgid  "Bughouse: Partner Game"
+msgstr "Négykezes: a partner játszmája"
+
+# (1) 
+msgid  "Bus address :%s"
+msgstr "Busz cím :%s"
+
+# (1) 
+msgid  "Button Caption"
+msgstr "Nyomógomb felirata"
+
+# (1) 
+msgid  "Button Icon"
+msgstr "Nyomógomb ikonja"
+
+# (10) 
+msgid  "Cancel"
+msgstr "Mégsem"
+
+# (1) 
+msgid  "Cancel Joystick Configuration"
+msgstr "Joystick beállítás megszakítása"
+
+# (1) 
+msgid  "Cancelled connection wait."
+msgstr "Várakozás megszakítva."
+
+# (1) 
+msgid  "Change..."
+msgstr "Változtat..."
+
+# (2) 
+msgid  "Channel Tells"
+msgstr "Csatorna mondások"
+
+# (2) 
+msgid  "Checkmate"
+msgstr "Matt"
+
+# (1) 
+msgid  "Chess Programs"
+msgstr "Sakkprogramok"
+
+# (1) 
+msgid  "Choose Font"
+msgstr "Válassz betűkészletet"
+
+# (5) 
+msgid  "Choose..."
+msgstr "Választ..."
+
+# (1) 
+msgid  "Clock Font"
+msgstr "Óra betűkészlete"
+
+# (7) 
+msgid  "Close"
+msgstr "Bezár"
+
+# (1) 
+msgid  "Color"
+msgstr "Szín"
+
+# (1) 
+msgid  "Color Selection"
+msgstr "Szín kiválasztása"
+
+# (1) 
+msgid  "Colors"
+msgstr "Színek"
+
+# (1) 
+msgid  "Command"
+msgstr "Parancs"
+
+# (1) 
+msgid  "Command Line:"
+msgstr "Parancssor:"
+
+# (1) 
+msgid  "Computer"
+msgstr "Számítógép"
+
+# (1) 
+msgid  "Computer White vs. Human Black"
+msgstr "Számítógép világos vs. Ember sötét"
+
+# (3) 
+msgid  "Configure Axis & Buttons"
+msgstr "Tengelyek és gombok beállítása"
+
+# (1) 
+msgid  "Configured Sound Files:"
+msgstr "Hangfájlok beállítása:"
+
+# (2) 
+msgid  "Connect"
+msgstr "Csatlakozás"
+
+# (1) 
+msgid  "Connect to ICS Server"
+msgstr "Csatlakozás ICS szerverhez"
+
+# (2) 
+msgid  "Connected to %s (%s)"
+msgstr "Csatlakozás %s (%s)"
+
+# (2) 
+msgid  "Connecting to %s..."
+msgstr "Csatlakozás %s..."
+
+# (1) 
+msgid  "Connection refused"
+msgstr "Csatlakozás visszautasítva"
+
+# (1) 
+msgid  "Connection to %s:%d failed: "
+msgstr "Csatlakozás ehhez: %s:%d sikertelen: "
+
+# (3) 
+msgid  "Console"
+msgstr "Konzol"
+
+# (1) 
+msgid  "Console Beep"
+msgstr "Konzol csipogás"
+
+# (1) 
+msgid  "Console Font"
+msgstr "Konzol betűkészlete"
+
+# (1) 
+msgid  "Console buffer saved."
+msgstr "Konzol puffer elmentve."
+
+# (1) 
+msgid  "Count:"
+msgstr "Számláló:"
+
+# (1) 
+msgid  "Crazyhouse"
+msgstr "Őrültek háza"
+
+# (1) 
+msgid  "DGT board found on port %s."
+msgstr "A %s porton DGT táblát találtam."
+
+# (1) 
+msgid  "DGT support error: wrong page"
+msgstr "DGT hiba: hibás lap"
+
+# (1) 
+msgid  "DGT warning: position mismatch between eboard and DGT board."
+msgstr "DGT figyelmeztetés: nem egyezik a pozíció az eboard és a DGT között."
+
+# (1) 
+msgid  "DGT: unrecognized code: %c (%d)"
+msgstr "DGT: ismeretlen kód: %c (%d)"
+
+# (1) 
+msgid  "Dark Squares..."
+msgstr "Sötét mezők..."
+
+# (1) 
+msgid  "Delete All Entries"
+msgstr "Összes bejegyzés törlése"
+
+# (1) 
+msgid  "Delete This Entry"
+msgstr "Bejegyzés törlése"
+
+# (1) 
+msgid  "Depth Limit:"
+msgstr "Mélység korlát:"
+
+# (1) 
+msgid  "Description"
+msgstr "Leírás"
+
+# (1) 
+msgid  "Device:"
+msgstr "Eszköz:"
+
+# (1) 
+msgid  "Directory to run from (e.g., where book files are)"
+msgstr "Könyvtár, ahonnan futtat (ahol a megnyitástár fájlok vannak)"
+
+# (1) 
+msgid  "Directory:"
+msgstr "Könyvtár:"
+
+# (1) 
+msgid  "Discard All"
+msgstr "Minden játszma abbahagyása"
+
+# (1) 
+msgid  "Discard Game"
+msgstr "Játszma abbahagyása"
+
+# (1) 
+msgid  "Dismiss"
+msgstr "Elutasítás"
+
+# (1) 
+msgid  "Display Game"
+msgstr "Játszma mutatása"
+
+# (1) 
+msgid  "Displayed"
+msgstr "Mutatott"
+
+# (1) 
+msgid  ""
+"Distributed under the terms of the GNU General Public License, version 2 or later"
+msgstr ""
+"Distributed under the terms of the GNU General Public License, version 2 or later"
+
+# (1) 
+msgid  "Draw Offered"
+msgstr "Döntetlen ajánlat"
+
+# (1) 
+msgid  "Draw offer sent."
+msgstr "Döntetlen ajánlat elküldve"
+
+# (2) 
+msgid  "Drawn by agreement"
+msgstr "Döntetlen megegyezéssel"
+
+# (1) 
+msgid  "Drop Piece:"
+msgstr "Figura lerakása:"
+
+# (1) 
+msgid  "Duration (msec):"
+msgstr "Időtartam (msec)"
+
+# (1) 
+msgid  "Dynamic Seek Table"
+msgstr "Dinamikus keresési tábla"
+
+# (1) 
+msgid  "Edit Bookmarks..."
+msgstr "Könyvjelzők szerkesztése..."
+
+# (1) 
+msgid  "Edit Engine Bookmarks"
+msgstr "Gép könyvjelzők szerkesztése"
+
+# (1) 
+msgid  "Edit Game Info"
+msgstr "Játszma információk szerkesztése"
+
+# (1) 
+msgid  "Edit Time Control"
+msgstr "Időkontrol szerkesztése"
+
+# (1) 
+msgid  "Empty"
+msgstr "Üres"
+
+# (1) 
+msgid  "Engine Bookmarks"
+msgstr "Gép könyvjelzők"
+
+# (1) 
+msgid  "Engine Command"
+msgstr "Gép parancs"
+
+# (2) 
+msgid  "Engine Type:"
+msgstr "Gép típusa:"
+
+# (1) 
+msgid  "Engine Type: %s (uneditable)"
+msgstr "Gép típusa: %s (nem szerkeszthető)"
+
+# (1) 
+msgid  "Engine asked more time to startup, waiting."
+msgstr "Gép indítása többször kérve, várakozás."
+
+# (1) 
+msgid  "Engine command line"
+msgstr "Gép parancssora"
+
+# (1) 
+msgid  "Engine loaded."
+msgstr "Gép betöltve."
+
+# (1) 
+msgid  "Engine running"
+msgstr "Gép fut"
+
+# (1) 
+msgid  "Engine started (2 sec timeout)"
+msgstr "Gép elindítva (2 mp timeout)"
+
+# (1) 
+msgid  "Enter FEN Position"
+msgstr "Írd be a FEN állást"
+
+# (1) 
+msgid  "Event Type"
+msgstr "Esemény típusa"
+
+# (1) 
+msgid  "Exam.Game #%d"
+msgstr "#%d játszma végrehajtása"
+
+# (1) 
+msgid  "Failed to run engine."
+msgstr "Gép indítása sikertelen."
+
+# (1) 
+msgid  "Failed to run helper program"
+msgstr "A segédprogram futtatása sikertelen"
+
+# (1) 
+msgid  "File to play / Program to run:"
+msgstr "Lejátszandó fájl / Futtatandó program:"
+
+# (4) 
+msgid  "Filter: "
+msgstr "Szűrő"
+
+# (1) 
+msgid  "Filter: (none)"
+msgstr "Szűrő: (üres)"
+
+# (1) 
+msgid  "Finish the current connection first."
+msgstr "Először az aktuális kapcsolat befejezése."
+
+# (1) 
+msgid  "Finish the current game first."
+msgstr "Először az aktuális játszma befejezése."
+
+# (1) 
+msgid  "Flags"
+msgstr "Zászlók"
+
+# (1) 
+msgid  "Fonts"
+msgstr "Betűkészletek"
+
+# (1) 
+msgid  "From Elsewhere (%d %s)"
+msgstr "Valahonnan (%d %s)"
+
+# (1) 
+msgid  "From Engines (%d %s)"
+msgstr "Gépekből (%d %s)"
+
+# (1) 
+msgid  "From FEN"
+msgstr "FEN-ből"
+
+# (1) 
+msgid  "From ICS (%d %s)"
+msgstr "ICS-ből (%d %s)"
+
+# (1) 
+msgid  "From PGN Files (%d %s)"
+msgstr "PGN fájlokból (%d %s)"
+
+# (1) 
+msgid  "Game #"
+msgstr "Játszma #"
+
+# (2) 
+msgid  "Game #%d"
+msgstr "Játszma #%d"
+
+# (1) 
+msgid  "Game #%d - %s"
+msgstr "Játszma #%d - %s"
+
+# (1) 
+msgid  "Game #%d - %s - %s"
+msgstr "Játszma #%d - %s  %s"
+
+# (1) 
+msgid  "Game #%d - %s vs. %s"
+msgstr "Játszma #%d - %s vs. %s"
+
+# (1) 
+msgid  "Game #%d: %s"
+msgstr "Játszma #%d: %s"
+
+# (2) 
+msgid  "Game Aborted"
+msgstr "Játszma megszakítva"
+
+# (1) 
+msgid  "Game Description"
+msgstr "Játszma leírása"
+
+# (1) 
+msgid  "Game Information Font"
+msgstr "Játszma információk betűkészlete"
+
+# (2) 
+msgid  "Game List"
+msgstr "Játszma lista"
+
+# (1) 
+msgid  "Game List (refreshing...)"
+msgstr "Játszma lista (frissítés...)"
+
+# (1) 
+msgid  "Game Lost"
+msgstr "Játszma elveszítve"
+
+# (1) 
+msgid  "Game Started"
+msgstr "Játszma elkezdve"
+
+# (1) 
+msgid  "Game Won"
+msgstr "Játszma megnyerve"
+
+# (4) 
+msgid  "Game appended to %s"
+msgstr "Játszma hozzáadva ehhez: %s"
+
+# (1) 
+msgid  "Game in progress."
+msgstr "Játszma folyamatban."
+
+# (1) 
+msgid  "Game over: %s"
+msgstr "Játszma vége: %s"
+
+# (1) 
+msgid  "Game proposal sent."
+msgstr "Játszma javaslat elküldve."
+
+# (2) 
+msgid  "Game started!"
+msgstr "A játszma elkezdődött."
+
+# (1) 
+msgid  "Game/Board: "
+msgstr "Játszma/Állás"
+
+# (1) 
+msgid  "Games"
+msgstr "Játszmák"
+
+# (1) 
+msgid  "Generic XBoard Engine..."
+msgstr "Általános XBoard gép..."
+
+# (1) 
+msgid  "Giveaway"
+msgstr "Elárul(?)"
+
+# (1) 
+msgid  "Graphic representation of crazy/bughouse stock"
+msgstr "Őrültek háza/négykezes grafikus ábrázolása"
+
+# (1) 
+msgid  "Help: Debug Info"
+msgstr "Súgó: Információk hibakereséshez"
+
+# (1) 
+msgid  "Help: Getting Started "
+msgstr "Súgó: Bevezető"
+
+# (1) 
+msgid  "Help: Keys"
+msgstr "Súgó: Gyorsbillentyűk"
+
+# (1) 
+msgid  "Hide!"
+msgstr "Elrejt!"
+
+# (2) 
+msgid  "Host not found: %s"
+msgstr "Gépnév nem található: %s"
+
+# (1) 
+msgid  "Hostname"
+msgstr "Gépnév"
+
+# (1) 
+msgid  "Hostname or IP address:"
+msgstr "Gépnév, vagy IP cím"
+
+# (1) 
+msgid  "Human"
+msgstr "Ember"
+
+# (1) 
+msgid  "Human White vs. Computer Black"
+msgstr "Ember Világos vs. Számítógép Sötét"
+
+# (1) 
+msgid  "Human plays white"
+msgstr "Az ember játszik világossal"
+
+# (1) 
+msgid  "ICS Challenge"
+msgstr "ICS kihívás"
+
+# (1) 
+msgid  "IPC pipe creation failed."
+msgstr "IPC cső létrehozási hiba."
+
+# (1) 
+msgid  "Id"
+msgstr "Id"
+
+# (1) 
+msgid  ""
+"If you pick a bookmark, the engine\n"
+"will play the next move, ignoring\n"
+"the side setting in the bookmark."
+msgstr ""
+"Amikor kiválasztasz egy könyvjelzőt,\n"
+"mindíg a gép következik majd lépésre,\n"
+"függetlenül a könyvjelzőben leírtaktól."
+
+# (1) 
+msgid  "Illegal Drop on %c%d (Legality Checking On)"
+msgstr "Szabálytalan lerakás:  %c%d (szabályok ellenőrzése bekapcsolva)"
+
+# (1) 
+msgid  "Illegal Move %c%d%c%d (Legality Checking On)"
+msgstr "Szabálytalan lépés %c%d%c%d (szabályok ellenőrzése bekapcsolva)"
+
+# (1) 
+msgid  "Illegal move, not sent."
+msgstr "Szabálytalan lépés, nem küldhető el."
+
+# (1) 
+msgid  "Increment (secs):"
+msgstr "Növekmény (mp):"
+
+# (1) 
+msgid  "Increment:"
+msgstr "Növekmény:"
+
+# (1) 
+msgid  "Inhibit seek lines on console when Seek Table is active"
+msgstr "Keresési sorok tiltása amíg a keresési tábla aktív"
+
+# (1) 
+msgid  "Initial Position"
+msgstr "Kiinduló állás"
+
+# (1) 
+msgid  "Initial time ([mm:]ss):"
+msgstr "Kezdő idő ([perc:]mp):"
+
+# (1) 
+msgid  "Initializing engine"
+msgstr "Gép inicializálása"
+
+# (1) 
+msgid  "Invalid answer to DGT_SEND_BRD on port %s: %s "
+msgstr "Érvénytelen DGT_SEND_BRD válasz (port %s): %s "
+
+# (1) 
+msgid  "Joystick"
+msgstr "Joystick"
+
+# (1) 
+msgid  "Key"
+msgstr "Kulcs"
+
+# (1) 
+msgid  "Key:"
+msgstr "Kulcs:"
+
+# (1) 
+msgid  "Kibitzes/Whispers"
+msgstr "Kibicek/Súgók"
+
+# (1) 
+msgid  "Kill"
+msgstr "Megöl"
+
+# (1) 
+msgid  "Knight  %d"
+msgstr "Huszár:"
+
+# (1) 
+msgid  "Last Proposal Received"
+msgstr "Utolsó javaslat elfogadva"
+
+# (1) 
+msgid  "Left"
+msgstr "Bal"
+
+# (1) 
+msgid  "Light Squares..."
+msgstr "Világos mezők..."
+
+# (1) 
+msgid  "Load PGN"
+msgstr "PGN betöltése"
+
+# (1) 
+msgid  "Load PGN..."
+msgstr "PGN betöltése..."
+
+# (1) 
+msgid  "Local"
+msgstr "Helyi"
+
+# (1) 
+msgid  "Local Game List"
+msgstr "Helyi játszma lista"
+
+# (2) 
+msgid  "Looking up host %s..."
+msgstr "%s gép keresése..."
+
+# (1) 
+msgid  "Losers"
+msgstr "Pancserek"
+
+# (1) 
+msgid  "Main Board"
+msgstr "Fő tábla"
+
+# (1) 
+msgid  "Mamer and TDs"
+msgstr "Mamer és TD-k"
+
+# (1) 
+msgid  "Manual/Formula"
+msgstr "Kézi/Képlet"
+
+# (1) 
+msgid  "Match Found at Line %d."
+msgstr "Találat a %d sorban."
+
+# (1) 
+msgid  "Match Pattern: "
+msgstr "Minta: "
+
+# (1) 
+msgid  "Material: %d - %d"
+msgstr "Anyag: %d - %d"
+
+# (1) 
+msgid  "Max Ply:"
+msgstr "Max féllépés:"
+
+# (1) 
+msgid  "Move made (Obs'vd/Exm'd Games)"
+msgstr "Megtett lépések (Vizsgált/Játszott partik)"
+
+# (1) 
+msgid  ""
+"Move the axis to be used for moving back and forth\n"
+"through moves of a game."
+msgstr ""
+
+# (1) 
+msgid  "Move the axis to be used for selecting pieces."
+msgstr ""
+
+# (1) 
+msgid  "Moves"
+msgstr "Lépések"
+
+# (1) 
+msgid  "Network is unreachable"
+msgstr "A hálózat nem érthető el"
+
+# (1) 
+msgid  "News/Notifications"
+msgstr "Hírek/Értesítések"
+
+# (1) 
+msgid  "No"
+msgstr "Nem"
+
+# (3) 
+msgid  "No error."
+msgstr "Nincs hiba."
+
+# (2) 
+msgid  "No material to mate"
+msgstr "Nincs elég anyag a mattadáshoz"
+
+# (1) 
+msgid  "No output from program."
+msgstr "Nincs kimenet a program számára."
+
+# (1) 
+msgid  "No peer."
+msgstr "Nincs partner."
+
+# (1) 
+msgid  "No previous search."
+msgstr "Nincs előző keresés."
+
+# (1) 
+msgid  "No proposals left."
+msgstr "Nincs több javaslat."
+
+# (1) 
+msgid  "No proposals received."
+msgstr "Nem érkezett javaslat."
+
+# (1) 
+msgid  "No response to DGT_SEND_BRD on port %s: %s."
+msgstr "Nincs DGT_SEND_BRD válasz (port %s): %s."
+
+# (4) 
+msgid  "None"
+msgstr "Semmi"
+
+# (1) 
+msgid  "Normal Chess"
+msgstr "Hagyományos sakk"
+
+# (1) 
+msgid  "Normal Text"
+msgstr "Normál szöveg"
+
+# (1) 
+msgid  "Not a socket ?!?"
+msgstr "Nem socket ?!?"
+
+# (2) 
+msgid  "OK"
+msgstr "Ok"
+
+# (1) 
+msgid  "Obs'vd Game Ended"
+msgstr "A megtekintett játszma befejeződött"
+
+# (1) 
+msgid  "Observe"
+msgstr "Megnéz"
+
+# (6) 
+msgid  "Ok"
+msgstr "Ok"
+
+# (1) 
+msgid  ""
+"Once you connect to a host from this dialog, it will be added to\n"
+"the Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\n"
+"to modify or remove entries."
+msgstr ""
+"Ha egyszer már kapcsolódtál innen egy géphez, az hozzáadódik a\n"
+"Partner/ICS könyvjelzők menühöz. Módosíthatod vagy törölheted a \n"
+"~/.eboard/eboard.conf fájban."
+
+# (1) 
+msgid  ""
+"Only lines that match the above pattern will be added\n"
+"to this text pane. Patterns can be OR'ed with the | (pipe)\n"
+"character. A * (star) can be used to match anything.\n"
+"Examples:\n"
+"'(20)|(22)' shows only lines from channels 20 and 22\n"
+"'blik * bored' shows lines containing 'blik '(...)' bored'."
+msgstr ""
+
+# (1) 
+msgid  "Opponent Moved"
+msgstr "Az ellenfél lépett"
+
+# (1) 
+msgid  "Options"
+msgstr "Opciók"
+
+# (1) 
+msgid  "PGN Headers"
+msgstr "PGN fejlécek"
+
+# (1) 
+msgid  "PGN filename:"
+msgstr "PGN fájlév:"
+
+# (1) 
+msgid  "Partner Tells:"
+msgstr "Parter üzenetek:"
+
+# (1) 
+msgid  "Pawn    %d"
+msgstr "Gyalog  %d"
+
+# (1) 
+msgid  "Pitch (Hz):"
+msgstr "Pitch (Hz)"
+
+# (1) 
+msgid  "Play"
+msgstr "Lejátszás"
+
+# (1) 
+msgid  "Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)"
+msgstr "%s, %s vs. %s (%s, max számítási mélység %d, mindíg gondolkodik: %s)"
+
+# (1) 
+msgid  "Play WAV (need Device and Filename, sox must be installed)"
+msgstr "WAV lejátszása"
+
+# (1) 
+msgid  "Play against Crafty"
+msgstr "Crafty elleni játék"
+
+# (1) 
+msgid  "Play against Engine"
+msgstr "Gép elleni játék"
+
+# (1) 
+msgid  "Play against GNU Chess"
+msgstr "GNU Chess elleni játék"
+
+# (1) 
+msgid  "Play against Sjeng"
+msgstr "Sjeng elleni játék"
+
+# (1) 
+msgid  "Player"
+msgstr "Játékos"
+
+# (2) 
+msgid  "Player resigns"
+msgstr "A játékos feladta"
+
+# (1) 
+msgid  "Player/Color Name Font"
+msgstr "Játékos/szín név betűkészlete"
+
+# (1) 
+msgid  "Pos: %s vs. %s"
+msgstr "Poz: %s vs. %s"
+
+# (1) 
+msgid  "Preferences"
+msgstr "Beállítások"
+
+# (1) 
+msgid  "Press the button to be used for going to the next tab."
+msgstr ""
+
+# (1) 
+msgid  "Press the button to be used for going to the previous tab."
+msgstr ""
+
+# (1) 
+msgid  "Press the button to be used for selecting a square."
+msgstr ""
+
+# (1) 
+msgid  "Private Tell"
+msgstr "Magán mondás"
+
+# (1) 
+msgid  "Private Tells"
+msgstr "Magán mondások"
+
+# (1) 
+msgid  "Program exited too soon"
+msgstr "A program túl gyakran kilépett"
+
+# (1) 
+msgid  "Progress"
+msgstr "Haladás"
+
+# (1) 
+msgid  "Promotion Piece  "
+msgstr "Figurák gyalogátváltozáshoz  "
+
+# (1) 
+msgid  "Propose"
+msgstr "Ajánlat"
+
+# (1) 
+msgid  "Propose Game"
+msgstr "Játszma ajánlat"
+
+# (1) 
+msgid  "Protocol"
+msgstr "Protokoll"
+
+# (2) 
+msgid  "Protocol mismatch, disconnecting."
+msgstr "Nem egyező protokoll, kapcsolat vége."
+
+# (1) 
+msgid  "Queen   %d"
+msgstr "Vezér   %d"
+
+# (1) 
+msgid  "Rated"
+msgstr "Értékelt"
+
+# (1) 
+msgid  "Rating"
+msgstr "Értékszám"
+
+# (1) 
+msgid  "Rating Range"
+msgstr "Értékszám tartomány"
+
+# (1) 
+msgid  "Read error from program."
+msgstr "Olvasási hiba a programtól."
+
+# (1) 
+msgid  "Received a game proposal from %s."
+msgstr "Játszma javaslat érkezett innen: %s."
+
+# (1) 
+msgid  "Recent Hosts"
+msgstr "Előző gépnév"
+
+# (4) 
+msgid  "Refresh List"
+msgstr "Lista frissítése"
+
+# (1) 
+msgid  "Replied to seek #%d"
+msgstr "#%d keresés visszajátszása"
+
+# (2) 
+msgid  "Resigned."
+msgstr "Feladva."
+
+# (1) 
+msgid  "Result"
+msgstr "Eredmény"
+
+# (1) 
+msgid  "Retracted last move."
+msgstr "Utolsó lépés visszavonása."
+
+# (1) 
+msgid  "Retrieve ICS Channel Lists from eboard.sf.net"
+msgstr "ICS csatornák listájának letöltése az eboard.sf.net címről"
+
+# (1) 
+msgid  "Revert to Defaults"
+msgstr "Kiinduló állás visszaállítása"
+
+# (1) 
+msgid  "Revert to defaults"
+msgstr "Kiinduló állás visszaállítása"
+
+# (1) 
+msgid  "Right"
+msgstr "Jobb"
+
+# (1) 
+msgid  "Rook    %d"
+msgstr "Bástya  %d"
+
+# (1) 
+msgid  "Run"
+msgstr "Futtat"
+
+# (1) 
+msgid  "Run Engine..."
+msgstr "Gép futtatása..."
+
+# (1) 
+msgid  "Run Program (need Filename)"
+msgstr "Program futtatása (fájlév szükséges)"
+
+# (1) 
+msgid  "Run autofics.pl script after connecting to FICS"
+msgstr "Az autofics.pl szkript futtatása miután kapcsolódott a FICS-hez"
+
+# (1) 
+msgid  "Save Buffer As..."
+msgstr "Puffer mentése mint..."
+
+# (1) 
+msgid  "Save Game..."
+msgstr "Játszma mentése..."
+
+# (1) 
+msgid  "Save as PGN"
+msgstr "Mentés PNG-be"
+
+# (2) 
+msgid  "Scratch %d"
+msgstr "Felállít %d"
+
+# (1) 
+msgid  "Script"
+msgstr "Szkript"
+
+# (1) 
+msgid  "Script List"
+msgstr "Szkript lista"
+
+# (1) 
+msgid  "Scrollback limit (0 = unlimited) :"
+msgstr "Visszagörgetési korlát (0=végtelen)"
+
+# (1) 
+msgid  "Search Text"
+msgstr "Szöveg keresése"
+
+# (1) 
+msgid  "Search for: "
+msgstr "Keresett szöveg: "
+
+# (1) 
+msgid  "Search text not found."
+msgstr "A keresett szöveg nem található."
+
+# (1) 
+msgid  "Seek Ads"
+msgstr "Hirdetések keresése"
+
+# (2) 
+msgid  "Seek Table"
+msgstr "Állás keresése"
+
+# (1) 
+msgid  "Seek Table Font"
+msgstr "Keresőtábla betűkészlete"
+
+# (1) 
+msgid  "Serial :%s"
+msgstr "Soros :%s"
+
+# (1) 
+msgid  "Set Filter"
+msgstr "Szűrő beállítása"
+
+# (1) 
+msgid  "Set Filter..."
+msgstr "Szűrő beállítása..."
+
+# (1) 
+msgid  "Set depth limit to 0 to use the engine's default."
+msgstr "Állítsd a számítási mélység korlátját 0-ra a gép alapbeállításaihoz."
+
+# (1) 
+msgid  "Setup Buttons"
+msgstr "Nyomógombok beállítása"
+
+# (1) 
+msgid  "Shortcut Button Setup"
+msgstr "Nyomógombok beállítása"
+
+# (1) 
+msgid  "Shouts"
+msgstr "Bekiabálások"
+
+# (1) 
+msgid  "Show channel tells in one pane per channel"
+msgstr "Csatorna mondások mutatása csatornánként külön panelen"
+
+# (1) 
+msgid  "Show channel tells on console too (when above option is active)"
+msgstr "Csatorna mondások mutatása a konzolon is (amikor a fenti opció aktív)"
+
+# (1) 
+msgid  "Show rating next to player name"
+msgstr "Értékszám mutatása a játékos neve mellett"
+
+# (1) 
+msgid  "Show shortcut buttons below board"
+msgstr "Nyomógombok mutatása a tábla alatt"
+
+# (1) 
+msgid  "Side & Time"
+msgstr "Szín és idő"
+
+# (1) 
+msgid  "Side Selection"
+msgstr "Szín választása"
+
+# (2) 
+msgid  "Side to move: "
+msgstr "Lépésre következik: "
+
+# (1) 
+msgid  "Smooth joystick cursor"
+msgstr "Sima joystick kurzor"
+
+# (1) 
+msgid  "Smooth joystick cursor speed:"
+msgstr "Sima joystick kurzor sebesség:"
+
+# (1) 
+msgid  "Smoother animation (eats more CPU)"
+msgstr "Simább animáció (több CPU használat)"
+
+# (1) 
+msgid  ""
+"Sorry, this protocol does not allow to retract a move thru this menu option."
+msgstr ""
+"Sajnálom, de ez a protokoll nem teszi lehetővé a lépések visszavonását."
+
+# (1) 
+msgid  "Sound Event"
+msgstr "Hang esemény"
+
+# (1) 
+msgid  "Sound Events"
+msgstr "Hang események"
+
+# (1) 
+msgid  "Sounds"
+msgstr "Hangok"
+
+# (1) 
+msgid  "Source code available at http://eboard.sourceforge.net"
+msgstr "A forráskód elérhető itt: http://eboard.sourceforge.net"
+
+# (2) 
+msgid  "Stalemate"
+msgstr "Patt"
+
+# (1) 
+msgid  "Start a connection"
+msgstr "Kapcsolat kezdeményezése"
+
+# (1) 
+msgid  "Starting Time:"
+msgstr "Kezdő idő:"
+
+# (1) 
+msgid  "Suicide"
+msgstr "Franciasakk"
+
+# (1) 
+msgid  "TCP Port"
+msgstr "TCP port"
+
+# (2) 
+msgid  "TCP Port:"
+msgstr "TCP Port:"
+
+# (1) 
+msgid  "Tab Position"
+msgstr "Fülek pozíciója"
+
+# (1) 
+msgid  "Test"
+msgstr "Teszt"
+
+# (1) 
+msgid  "The checkbox on the left enables/disables the sound."
+msgstr "A baloldali jelölőnégyzet engedélyezi/tiltja a hangokat."
+
+# (1) 
+msgid  "The engine will be run with\n/bin/sh -c 'cd directory ; command line'"
+msgstr ""
+
+# (1) 
+msgid  "Think Always"
+msgstr "Állandó gondolkodás"
+
+# (1) 
+msgid  "Think on opponent's time"
+msgstr "Gondolkodás az ellenfél gondolkodási ideje alatt"
+
+# (1) 
+msgid  "Time"
+msgstr "Idő"
+
+# (1) 
+msgid  "Time Control"
+msgstr "Idő kontrol"
+
+# (1) 
+msgid  "Time Control..."
+msgstr "Idő kontrol..."
+
+# (1) 
+msgid  "Time Control:"
+msgstr "Idő kontrol:"
+
+# (1) 
+msgid  "Time Running Out"
+msgstr "Időtúllépés"
+
+# (1) 
+msgid  "Timeout"
+msgstr "Időtúllépés"
+
+# (1) 
+msgid  "Times can be given as hh:mm:ss , mm:ss or ss"
+msgstr "Időt megadni a következőképpen lehet  óó:pp:mm vagy mm"
+
+# (1) 
+msgid  ""
+"To run multiple commands with one shortcut, separate the commands with ; (semicolon).\n"
+"To run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl ."
+msgstr ""
+"Ha egy nyomógombbal több parancsot akarsz futtatni, akkor a parancsokat válszd el ; -vel.\n"
+"Ha egy szkriptet akarsz futatni egy nyomógombbal, akkor írd be a szkript nevét pl.: script.myscript.pl ."
+
+# (1) 
+msgid  "Top"
+msgstr "Fönt"
+
+# (1) 
+msgid  "Trademark :%s"
+msgstr "Védjegy :%s"
+
+# (1) 
+msgid  "Type: Fischer Clock (ICS-like)"
+msgstr "Típus: Fischer óra (ICS-szerű)"
+
+# (1) 
+msgid  "Type: Fixed Time per Move"
+msgstr "Típus: lépésenként azonos idő"
+
+# (1) 
+msgid  "Type: Use engine's default setting"
+msgstr "Típus: a gép alapbeállításainak használata"
+
+# (1) 
+msgid  "Type: X Moves per Time Period"
+msgstr "Típus: X lépés adott idő alatt"
+
+# (1) 
+msgid  "Unable to bind on port %d."
+msgstr "Nem lehet kapcsolódni a %d porton."
+
+# (1) 
+msgid  "Unable to create socket."
+msgstr "Nem lehet létrehozni socket-et."
+
+# (1) 
+msgid  "Unable to find the DGT board on port %s: %s."
+msgstr "Nem található DGT tábla %s porton: %s"
+
+# (1) 
+msgid  "Unknown error"
+msgstr "Ismeretlen hiba"
+
+# (1) 
+msgid  "Unknown result"
+msgstr "Ismeretlen eredmény"
+
+# (1) 
+msgid  "Use plain color squares"
+msgstr "Egyszerű színes mezők használata"
+
+# (1) 
+msgid  "Value"
+msgstr "Érték"
+
+# (1) 
+msgid  "Value:"
+msgstr "Érték:"
+
+# (4) 
+msgid  "Variant"
+msgstr "Változat"
+
+# (2) 
+msgid  "Variant:"
+msgstr "Változat:"
+
+# (1) 
+msgid  "Variant: %s (uneditable)"
+msgstr "Változat: %s (nem szerkeszthető)"
+
+# (1) 
+msgid  "Wait"
+msgstr "Várakozás"
+
+# (1) 
+msgid  "Wait for a connection"
+msgstr "Várakozás a kapcsolódásra"
+
+# (1) 
+msgid  "Waiting for connection on port %d."
+msgstr "Várakozás a kapcsolódásra a %d porton."
+
+# (1) 
+msgid  "Warn when own clock is below: "
+msgstr "Figyelmeztetés, ha saját idő kevesebb mint:"
+
+# (1) 
+msgid  "Welcome to eboard."
+msgstr "Üdvözöllek az eboard-ban!"
+
+# (5) 
+msgid  "White"
+msgstr "Világos"
+
+# (1) 
+msgid  "White: %s - %s"
+msgstr "Világos: %s - %s"
+
+# (1) 
+msgid  "Working..."
+msgstr "Dolgozom..."
+
+# (1) 
+msgid  "Write to Console"
+msgstr "Írás a konzolra"
+
+# (1) 
+msgid  "Wrong address space"
+msgstr "Hibás címtartomány"
+
+# (1) 
+msgid  "Wrote"
+msgstr "Írt"
+
+# (1) 
+msgid  "Yes"
+msgstr "Igen"
+
+# (1) 
+msgid  "You can only retract when it's your turn to move."
+msgstr "Csak akkor vonhatod vissza a lépést, amikor te következel."
+
+# (1) 
+msgid  "Your color:"
+msgstr "Szín:"
+
+# (1) 
+msgid  "Your name:"
+msgstr "Név:"
+
+# (1) 
+msgid  "[chat]"
+msgstr "[cset]"
+
+# (2) 
+msgid  "[cmd]"
+msgstr "[parancs]"
+
+# (1) 
+msgid  "[eboard] ** $HOME is too long"
+msgstr "[eboard] ** a $HOME túl hosszú"
+
+# (1) 
+msgid  "[eboard] ** failed to create directory "
+msgstr "[eboard] ** nem sikerült a könyvtárat létrehozni "
+
+# (1) 
+msgid  "[eboard] ** no $HOME"
+msgstr "[eboard] ** nincs beállítva a $HOME"
+
+# (1) 
+msgid  "[eboard] bad RC line\n"
+msgstr "[eboard] hibás RC sor\n"
+
+# (1) 
+msgid  "beep"
+msgstr "csipogás"
+
+# (1) 
+msgid  "beeps"
+msgstr "csipogások"
+
+# (1) 
+msgid  "black"
+msgstr "sötét"
+
+# (1) 
+msgid  "can't load PGN move text from %s (error opening file)"
+msgstr "nem sikerült betölteni a lépést a %s PGN-ből (fájl megnyitási hiba)"
+
+# (1) 
+msgid  "can't seek to offset %lu of %s"
+msgstr ""
+
+# (1) 
+msgid  "dgtnix driver version %.1f"
+msgstr "dgtnix meghajtó verzió %.1f"
+
+# (1) 
+msgid  "discards board"
+msgstr "tábla bezárása"
+
+# (1) 
+msgid  "eboard Direct Connection Manager"
+msgstr "eboard direkt kapcsolat kezelő"
+
+# (1) 
+msgid  "eboard version %s (%s)"
+msgstr "eboard verzió %s (%s)"
+
+# (1) 
+msgid  ""
+"eboard version %s\n"
+"(c) 2000-%d Felipe Bergo\n"
+"<fbergo@gmail.com>\n"
+"http://eboard.sourceforge.net\n"
+"\nThis program is free software; you can redistribute\n"
+"it and/or modify it under the terms of the GNU General\n"
+"Public License as published by the Free Software\n"
+"Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+msgstr ""
+
+# (1) 
+msgid  "eboard: Console #%d"
+msgstr "eboard: Konzol #%d"
+
+# (1) 
+msgid  "engine claimed illegal move but we didn't move, ignoring it."
+msgstr "a gép szabálytalan lépést jelzett, de mi nem léptünk, no problem."
+
+# (1) 
+msgid  "error parsing PGN data"
+msgstr "hiba a PNG olvasása közben"
+
+# (1) 
+msgid  "flips board"
+msgstr "fordított tábla"
+
+# (5) 
+msgid  "game"
+msgstr "játszma"
+
+# (5) 
+msgid  "games"
+msgstr "játszma"
+
+# (1) 
+msgid  "generic xboard v2"
+msgstr "általános xboard v2"
+
+# (1) 
+msgid  "goes back 1 halfmove"
+msgstr "egy lépés vissza"
+
+# (1) 
+msgid  "goes back to start of game"
+msgstr "játszma elejére"
+
+# (1) 
+msgid  "goes forward 1 halfmove"
+msgstr "egy lépés előre"
+
+# (1) 
+msgid  "goes forward to end of game"
+msgstr "játszma végére"
+
+# (1) 
+msgid  "illegal move!"
+msgstr "szabálytalan lépés!"
+
+# (1) 
+msgid  "in progress"
+msgstr "folyamatban"
+
+# (1) 
+msgid  "initial time %s, increment %s"
+msgstr "kezdeti idő %s, növekmény %s"
+
+# (1) 
+msgid  "moves in"
+msgstr "lépés"
+
+# (1) 
+msgid  "no"
+msgstr "nem"
+
+# (2) 
+msgid  "no such game: "
+msgstr "nincs ilyen játszma:"
+
+# (1) 
+msgid  "no time control set"
+msgstr "nincs beállítva időkontrol"
+
+# (2) 
+msgid  "none"
+msgstr "üres"
+
+# (1) 
+msgid  "nothing"
+msgstr "semmi"
+
+# (1) 
+msgid  "opens new scratch board with position"
+msgstr "új "
+
+# (1) 
+msgid  "per move"
+msgstr "lépésenként"
+
+# (1) 
+msgid  "plain console beep"
+msgstr "egyszerű konzol csipogás"
+
+# (1) 
+msgid  "play file %s"
+msgstr "%s fájl lejátszása"
+
+# (1) 
+msgid  "pops up the move list"
+msgstr "előhozza a lépéslistát"
+
+# (1) 
+msgid  "process creation failed."
+msgstr "sikertelen processz létrehozás."
+
+# (2) 
+msgid  "rated"
+msgstr "értékelt"
+
+# (1) 
+msgid  "run %s"
+msgstr "%s futtatása"
+
+# (1) 
+msgid  "running %s"
+msgstr "%s futtatása"
+
+# (1) 
+msgid  "savePGN failed: %s"
+msgstr "%s PGN fájl mentése sikertelen"
+
+# (1) 
+msgid  "savePGN failed: Won't save game with less than 2 moves"
+msgstr "PGN fájl mentése sikertelen: nem lehet 2-nél kevesebb lépést menteni"
+
+# (1) 
+msgid  "seconds."
+msgstr "másodperc."
+
+# (2) 
+msgid  "unrated"
+msgstr "nem értékelt"
+
+# (1) 
+msgid  "untimed"
+msgstr "időkontrol nélkül"
+
+# (1) 
+msgid  "white"
+msgstr "világos"
+
+# (1) 
+msgid  "yes"
+msgstr "igen"
+

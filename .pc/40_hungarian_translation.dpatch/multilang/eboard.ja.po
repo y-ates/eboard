@@ -1,0 +1,2790 @@
+# state: translated
+# (2) pieces.cc:70,157
+msgid   " ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n"
+msgstr  " ** PNG の読込に失敗: 内蔵の低解像度の駒セットを使います。見ため悪いけどね。"
+
+# state: translated
+# (1) sound.cc:383
+msgid   " Browse... "
+msgstr  " 閲覧... "
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:191
+msgid   " Play Selected "
+msgstr  " プレイ選択 "
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:192
+msgid   " Refresh "
+msgstr  " 更新 "
+
+# state: translated
+# (1) chess.cc:1490
+msgid   " Remove Field "
+msgstr  " フィールド削除 "
+
+# state: translated
+# (1) chess.cc:1500
+msgid   " Set "
+msgstr  " 設定 "
+
+# state: untranslated
+# (1) help.cc:343
+msgid  ""
+"#L#Getting Started\n"
+"#M#Common Tasks in eboard\n"
+"\nPlaying against the computer\n"
+"#S#eboard does not \"play chess\" itself, but rather is works as interface to programs that do,\n"
+"called \"engines\", which don't have a graphical interface themselves. You need an engine to\n"
+"play against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\n"
+"no cost.\n"
+"Once you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\n"
+"engine#K# submenu, and select the appropriate option depending on which engine you have\n"
+"installed.\n"
+"\n#M#Playing Chess on the Internet\n"
+"#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\n"
+"US Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\n"
+"To connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\n"
+"other servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\n"
+"While you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\n"
+"is done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n"
+"\n#M#Browsing PGN Games\n"
+"#S#PGN is the most common file format to store chess games. It can store moves and comments\n"
+"(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n"
+"#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\n"
+"game, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\n"
+"with the game.#L#"
+msgstr ""
+
+# state: translated
+# (1) sound.cc:312
+msgid   "%d %s to %s, %d Hz for %d msec"
+msgstr  "%d %s を %s へ, %d Hz を %d msec"
+
+# state: translated
+# (1) chess.cc:1292
+msgid   "%d games read"
+msgstr  "%d のゲームを読みました"
+
+# state: translated
+# (2) clock.cc:324,346
+msgid   "%d moves in %s"
+msgstr  "%d は %s に移動しました"
+
+# state: translated
+# (1) mainwindow.cc:647
+msgid   "%d. Connect to %s:%d (%s)"
+msgstr  "%d. %s:%d (%s) に繋ぎます"
+
+# state: translated
+# (1) proto_p2p.cc:619
+msgid   "%s (white) vs. %s (black)\n%s\n%d:%.2d %d"
+msgstr  "%s (白) 対 %s (黒)\n%s\n%d:%.2d %d"
+
+# state: translated
+# (1) proto_p2p.cc:248
+msgid   "%s accepted your game proposal."
+msgstr  "%s はゲームの申込を断りました。"
+
+# state: translated
+# (1) proto_xboard.cc:548
+msgid   "%s engine started."
+msgstr  "%s エンジンを起動しました。"
+
+# state: translated
+# (2) proto_p2p.cc:261,635
+msgid   "%s offers a draw."
+msgstr  "%s は引き分けを提案してきました。"
+
+# state: untranslated
+# (1) clock.cc:337
+msgid   "%s per move"
+msgstr  ""
+
+# state: untranslated
+# (1) clock.cc:317
+msgid   "%s/move"
+msgstr  ""
+
+# state: translated
+# (1) text.cc:90
+msgid   "(Wrapped) Match Found at Line %d."
+msgstr  "(Wrapped) %d 行に一致する文字列を見つけました。 "
+
+# state: translated
+# (1) mainwindow.cc:792
+msgid   "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)"
+msgstr  "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)"
+
+# state: translated
+# (1) global.cc:826
+msgid   "(message obfuscated -- password mode ?)"
+msgstr  "(メッセージが不明瞭です -- パスワードモード ?)"
+
+# state: translated
+# (2) mainwindow.cc:659,704
+msgid   "(no bookmarks)"
+msgstr  "(ブックマークなし)"
+
+# state: translated
+# (2) text.cc:362,506
+msgid   "(none)"
+msgstr  "(なし)"
+
+# state: translated
+# (1) clock.cc:481
+msgid   "(time period)"
+msgstr  "(時間区切り)"
+
+# state: translated
+# (1) proto_xboard.cc:436
+msgid   "* game not found: "
+msgstr  "* ゲームがみつかりません: "
+
+# state: translated
+# (1) mainwindow.cc:1031
+msgid   "** [eboard] bad engine protocol # in bookmark: "
+msgstr  "** [eboard] 不正なエンジンのプロトコル # in ブックマーク: "
+
+# state: translated
+# (1) global.cc:1479
+msgid   "** eboard ** warning: HOME environment variable not set\n"
+msgstr  "** eboard ** 警告: 環境変数 HOME が設定されていません\n"
+
+# state: translated
+# (1) chess.cc:888
+msgid   "--- %s game to PGN file %s"
+msgstr  "--- ゲーム %s を PGN ファイル %s へ"
+
+# state: translated
+# (1) mainwindow.cc:1124
+msgid   "--- Disconnected"
+msgstr  "--- 接続を切りました"
+
+# state: translated
+# (1) mainwindow.cc:86
+msgid   "/Game/Ad_journ"
+msgstr  "/ゲーム/延期(_d)"
+
+# state: translated
+# (1) mainwindow.cc:87
+msgid   "/Game/Retract _Move"
+msgstr  "/ゲーム/待った(_M)"
+
+# state: translated
+# (1) mainwindow.cc:85
+msgid   "/Game/_Abort"
+msgstr  "/ゲーム/中断(_A)"
+
+# state: translated
+# (1) mainwindow.cc:84
+msgid   "/Game/_Offer Draw"
+msgstr  "/ゲーム/引き分け提案(_O)"
+
+# state: translated
+# (1) mainwindow.cc:83
+msgid   "/Game/_Resign"
+msgstr  "/ゲーム/投了(_R)"
+
+# state: translated
+# (1) mainwindow.cc:130
+msgid   "/Help/_About eboard..."
+msgstr  "/ヘルプ/eboard について(_A)..."
+
+# state: translated
+# (1) mainwindow.cc:128
+msgid   "/Help/_Debug Info"
+msgstr  "/ヘルプ/デバッグ情報(_D)"
+
+# state: translated
+# (1) mainwindow.cc:126
+msgid   "/Help/_Getting Started"
+msgstr  "/ヘルプ/はじめに(_G)"
+
+# state: translated
+# (1) mainwindow.cc:127
+msgid   "/Help/_Keys"
+msgstr  "/ヘルプ/キー入力(_K)"
+
+# state: translated
+# (1) mainwindow.cc:129
+msgid   "/Help/sep4"
+msgstr  "/Help/sep4"
+
+# state: translated
+# (1) mainwindow.cc:63
+msgid   "/Peer/Connect to _FICS"
+msgstr  "/接続/FICSに接続(_F)"
+
+# state: translated
+# (1) mainwindow.cc:66
+msgid   "/Peer/Direct connect with _Remote eboard..."
+msgstr  "/接続/別のeboardに直接接続(_R)"
+
+# state: translated
+# (1) mainwindow.cc:74
+msgid   "/Peer/Engine B_ookmarks"
+msgstr  "/接続/エンジンのブックマーク(_o)"
+
+# state: translated
+# (1) mainwindow.cc:64
+msgid   "/Peer/ICS _Bookmarks"
+msgstr  "/接続/ICSのブックマーク(_B)"
+
+# state: translated
+# (1) mainwindow.cc:71
+msgid   "/Peer/Play against Engine/Cr_afty..."
+msgstr  "/接続/コンピュータと対戦/Cr_afty..."
+
+# state: translated
+# (1) mainwindow.cc:69
+msgid   "/Peer/Play against Engine/GNU Chess _4..."
+msgstr  "/接続/コンピュータと対戦/GNU CHess _4..."
+
+# state: translated
+# (1) mainwindow.cc:73
+msgid   "/Peer/Play against Engine/_Generic Engine..."
+msgstr  "/接続/コンピュータと対戦/_Generic Engine..."
+
+# state: translated
+# (1) mainwindow.cc:70
+msgid   "/Peer/Play against Engine/_Sjeng..."
+msgstr  "/接続/コンピュータと対戦/_Sjeng..."
+
+# state: translated
+# (1) mainwindow.cc:72
+msgid   "/Peer/Play against Engine/sep1"
+msgstr  "/接続/コンピュータと対戦/sep1"
+
+# state: translated
+# (1) mainwindow.cc:68
+msgid   "/Peer/Play against _Engine"
+msgstr  "/接続/コンピュータと対戦"
+
+# state: translated
+# (1) mainwindow.cc:65
+msgid   "/Peer/_Connect to Other Server..."
+msgstr  "/接続/他のサーバに接続(_C)"
+
+# state: translated
+# (1) mainwindow.cc:79
+msgid   "/Peer/_Disconnect"
+msgstr  "/接続/接続を切る(_D)"
+
+# state: translated
+# (1) mainwindow.cc:76
+msgid   "/Peer/_Empty Scratch Board"
+msgstr  "/接続/空の編集用ボード(_E)"
+
+# state: translated
+# (1) mainwindow.cc:81
+msgid   "/Peer/_Quit"
+msgstr  "/接続/終了(_Q)"
+
+# state: translated
+# (1) mainwindow.cc:77
+msgid   "/Peer/_Scratch Board with Initial Position"
+msgstr  "/接続/駒が初期位置に並んだ編集用ボード(_S)"
+
+# state: translated
+# (1) mainwindow.cc:80
+msgid   "/Peer/sep2"
+msgstr  "/接続/sep2"
+
+# state: translated
+# (2) mainwindow.cc:75,78
+msgid   "/Peer/sep3"
+msgstr  "/接続/sep3"
+
+# state: translated
+# (1) mainwindow.cc:67
+msgid   "/Peer/sep4"
+msgstr  "/接続/sep4"
+
+# state: translated
+# (1) mainwindow.cc:106
+msgid   "/Settings/Bitmapped Piece Sets/Load _Pieces Only"
+msgstr  "/設定/ビットマップ駒セット/駒だけ読み込む(_P)"
+
+# state: translated
+# (1) mainwindow.cc:107
+msgid   "/Settings/Bitmapped Piece Sets/Load _Squares Only"
+msgstr  "/設定/ビットマップ駒セット/ボードだけ読み込む(_S)"
+
+# state: translated
+# (1) mainwindow.cc:105
+msgid   "/Settings/Bitmapped Piece Sets/Load _Theme"
+msgstr  "/設定/ビットマップ駒セット/テーマを読み込む(_T)"
+
+# state: translated
+# (1) mainwindow.cc:104
+msgid   "/Settings/Bitmapped Piece _Sets"
+msgstr  "/設定/ビットマップ駒セット"
+
+# state: translated
+# (1) mainwindow.cc:101
+msgid   "/Settings/Enable Legality _Checking"
+msgstr  "/設定/正当性のチェックを有効に(_C)"
+
+# state: translated
+# (1) mainwindow.cc:98
+msgid   "/Settings/ICS Behavior/Popup Board Panes _Upon Creation"
+msgstr  "/設定/ICS の振舞/ボードを他よりも手前にポップアップ"
+
+# state: translated
+# (1) mainwindow.cc:99
+msgid   "/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends"
+msgstr  "/設定/ICS の振舞/ゲーム終了後に観察していたボードをすぐに破棄(_D)"
+
+# state: translated
+# (1) mainwindow.cc:91
+msgid   "/Settings/Pre_move"
+msgstr  "/設定/プレムーブ(_m)"
+
+# state: translated
+# (1) mainwindow.cc:92
+msgid   "/Settings/Sho_w Coordinates"
+msgstr  "/設定/座標を表示(_w)"
+
+# state: translated
+# (1) mainwindow.cc:90
+msgid   "/Settings/_Animate Moves"
+msgstr  "/設定/移動をアニメーション(_A)"
+
+# state: translated
+# (1) mainwindow.cc:94
+msgid   "/Settings/_Beep on Opponent Moves"
+msgstr  "/設定/相手の移動でビープ音(_B)"
+
+# state: translated
+# (1) mainwindow.cc:95
+msgid   "/Settings/_Enable Other Sounds"
+msgstr  "/設定/他の効果音を有効に(_E)"
+
+# state: translated
+# (1) mainwindow.cc:89
+msgid   "/Settings/_Highlight Last Move"
+msgstr  "/設定/最後の移動をハイライト(_H)"
+
+# state: translated
+# (1) mainwindow.cc:97
+msgid   "/Settings/_ICS Behavior"
+msgstr  "/設定/_ICS の振舞"
+
+# state: translated
+# (1) mainwindow.cc:109
+msgid   "/Settings/_Preferences..."
+msgstr  "/設定/設定(_P)..."
+
+# state: translated
+# (1) mainwindow.cc:103
+msgid   "/Settings/_Vectorized Pieces (Faster Rendering)"
+msgstr  "/設定/_駒のベクター化(レンダリングが速い)(_V)"
+
+# state: translated
+# (5) mainwindow.cc:93,96,100,102,108
+msgid   "/Settings/sep3"
+msgstr  "/設定/sep3"
+
+# state: translated
+# (1) mainwindow.cc:121
+msgid   "/Windows/Find _Previous"
+msgstr  "/ウィンドウ/前を探す(_P)"
+
+# state: translated
+# (1) mainwindow.cc:114
+msgid   "/Windows/Games on _Client..."
+msgstr  "/ウィンドウ/クライアントのゲーム表示(_C)..."
+
+# state: translated
+# (1) mainwindow.cc:124
+msgid   "/Windows/Save Desktop _Geometry"
+msgstr  "/ウィンドウ/デスクップの位置を保存(_G)"
+
+# state: translated
+# (1) mainwindow.cc:122
+msgid   "/Windows/Save _Text Buffer..."
+msgstr  "/ウィンドウ/テキストバッファを保存する(_T)..."
+
+# state: translated
+# (1) mainwindow.cc:112
+msgid   "/Windows/_Ads on Server..."
+msgstr  "/ウィンドウ/_サーバの ad 表示..."
+
+# state: translated
+# (1) mainwindow.cc:118
+msgid   "/Windows/_Detached Console"
+msgstr  "/ウィンドウ/コンソールを切断(_D)"
+
+# state: translated
+# (1) mainwindow.cc:120
+msgid   "/Windows/_Find Text (upwards)..."
+msgstr  "/ウィンドウ/テキスト検索(上方向に)(_F)..."
+
+# state: translated
+# (1) mainwindow.cc:111
+msgid   "/Windows/_Games on Server..."
+msgstr  "/ウィンドウ/サーバのゲーム表示(_G)..."
+
+# state: translated
+# (1) mainwindow.cc:116
+msgid   "/Windows/_Run Script..."
+msgstr  "/ウィンドウ/スクリプトを実行(_R)..."
+
+# state: translated
+# (1) mainwindow.cc:113
+msgid   "/Windows/sep1"
+msgstr  "/ウィンドウ/sep1"
+
+# state: translated
+# (1) mainwindow.cc:115
+msgid   "/Windows/sep2"
+msgstr  "/ウィンドウ/sep2"
+
+# state: translated
+# (3) mainwindow.cc:117,119,123
+msgid   "/Windows/sep3"
+msgstr  "/ウィンドウ/sep3"
+
+# state: translated
+# (1) mainwindow.cc:82
+msgid   "/_Game"
+msgstr  "/ゲーム(_G)"
+
+# state: translated
+# (1) mainwindow.cc:125
+msgid   "/_Help"
+msgstr  "/ヘルプ(_H)"
+
+# state: translated
+# (1) mainwindow.cc:62
+msgid   "/_Peer"
+msgstr  "/接続(_P)"
+
+# state: translated
+# (1) mainwindow.cc:88
+msgid   "/_Settings"
+msgstr  "/設定(_S)"
+
+# state: translated
+# (1) mainwindow.cc:110
+msgid   "/_Windows"
+msgstr  "/ウィンドウ(_W)"
+
+# state: translated
+# (1) dlg_gamelist.cc:820
+msgid  ""
+"<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<AdListDialog::AdListDialog> 警告: 固定幅フォントを読み込めませんでした。このダイアログの内容も汚く見えているでしょう。"
+
+# state: lost (deprecated key)
+# (1) bugpane.cc:40
+msgid   "<BareBoard::BareBoard> can't load font.\n"
+msgstr  "<BareBoard::BareBoard> フォントをロードできませんでした。.\n"
+
+# state: lost (deprecated key)
+# (1) board.cc:84
+msgid  ""
+"<Board::Board> ** failed to load one or more board fonts - install X11 75 dpi and 100 dpi fonts, restart X, and try again.\n"
+msgstr ""
+"<Board::Board> ** ボードのフォント読み込みに失敗 - X11 の 75dip と 100 dip のフォントをインストールして、X を再起動し、また挑戦して下さい。\n"
+
+# state: lost (deprecated key)
+# (1) board.cc:169
+msgid   "<Board::Board> ** failed to load one or more board fonts\n"
+msgstr  "<Board::Board> ** ボードのフォント読み込みに失敗\n"
+
+# state: translated
+# (1) proto_fics.cc:1623
+msgid   "<Fics Protocol> abort request sent"
+msgstr  "<Fics Protocol> 中断リクエスト送信"
+
+# state: translated
+# (1) proto_fics.cc:1618
+msgid   "<Fics Protocol> adjourn request sent"
+msgstr  "<Fics Protocol> 延期リクエスト送信"
+
+# state: translated
+# (1) proto_fics.cc:1613
+msgid   "<Fics Protocol> draw request sent"
+msgstr  "<Fics Protocol> 引き分けリクエスト送信"
+
+# state: translated
+# (1) dlg_gamelist.cc:86
+msgid  ""
+"<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<GameListDialog::GameListDialog> 警告: 固定幅フォントを読み込めませんでした。このダイアログの内容も汚く見えているでしょう。"
+
+# state: translated
+# (2) util.cc:575,627
+msgid   "<PatternMatcher::set> ** bad pattern string: "
+msgstr  "<PatternMatcher::set> ** 正しくないパターン文字列:"
+
+# state: translated
+# (2) pieces.cc:60,77
+msgid   "<PieceSet::PieceSet> ** file not found: "
+msgstr  "<PieceSet::PieceSet> ** ファイルがみつかりません: "
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:264
+msgid   "<SeekGraph::updatefont> failed to load "
+msgstr  "<SeekGraph::updatefont> 読み込みに失敗 "
+
+# state: translated
+# (1) dlg_gamelist.cc:310
+msgid  ""
+"<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<StockListDialog::StockListDialog> 警告: 固定幅フォントを読み込めませんでした。このダイアログの内容も汚く見えているでしょう。"
+
+# state: lost (deprecated key)
+# (1) text.cc:139
+msgid   "<Text::updateFont> failed to load "
+msgstr  "<Text::updateFont> 読み込みに失敗 "
+
+# state: translated
+# (1) proto_xboard.cc:400
+msgid   "<XBoard Protocol> Adjourning not supported"
+msgstr  "<XBoard Protocol>"
+
+# state: untranslated
+# (1) proto_xboard.cc:151
+msgid   "<XBoard Protocol> Incompatible Engine Protocol"
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:405
+msgid   "<XBoard Protocol> Session Aborted"
+msgstr  "<XBoard Protocol> セッションを中断"
+
+# state: translated
+# (1) proto_xboard.cc:396
+msgid   "<XBoard Protocol> draw request sent"
+msgstr  "<XBoard Protocol> 引き分けリクエスト送信"
+
+# state: translated
+# (1) mainwindow.cc:1186
+msgid   "<editing>"
+msgstr  "<editing>"
+
+# state: translated
+# (1) mainwindow.cc:890
+msgid   "> (password sent)"
+msgstr  "> (パスワード送信)"
+
+# state: translated
+# (2) proto_fics.cc:1969,1986
+msgid   "> [issued from menu] %s"
+msgstr  "> [メニューからの発行] %s"
+
+# state: translated
+# (1) quickbar.cc:127
+msgid   "> [issued from shortcut] "
+msgstr  "[ショートカットからの発行]"
+
+# state: translated
+# (1) quickbar.cc:117
+msgid   "> [script run from shortcut] %s"
+msgstr  "> [ショートカットから実行のスクリプト] %s"
+
+# state: translated
+# (1) help.cc:54
+msgid   "About eboard"
+msgstr  "eboard を中断"
+
+# state: translated
+# (1) proto_p2p.cc:598
+msgid   "Accept"
+msgstr  "受け入れる"
+
+# state: translated
+# (1) network.cc:507
+msgid   "Accepted incoming connection from %s"
+msgstr  "%s からの次の接続を受け入れました"
+
+# state: translated
+# (1) dlg_gamelist.cc:827
+msgid   "Ad Description"
+msgstr  "Ad の詳細"
+
+# state: translated
+# (2) dlg_gamelist.cc:801,884
+msgid   "Ad List"
+msgstr  "Ad の一覧"
+
+# state: translated
+# (1) dlg_gamelist.cc:897
+msgid   "Ad List (refreshing...)"
+msgstr  "Ad の一覧 (更新中...)"
+
+# state: translated
+# (1) proto_xboard.cc:851
+msgid   "Add to Peer/Engine Bookmarks menu"
+msgstr  "接続/エンジンをブックマークメニューに追加"
+
+# state: translated
+# (1) network.cc:373
+msgid   "Address already in use"
+msgstr  "アドレスはすでに使用しています"
+
+# state: translated
+# (1) dlg_gamelist.cc:854
+msgid   "Ads"
+msgstr  "Ad"
+
+# state: translated
+# (1) network.cc:369
+msgid   "Already connected ?!?"
+msgstr  "すでに接続しています ?!?"
+
+# state: translated
+# (1) help.cc:117
+msgid  ""
+"Anywhere:\n"
+"F3: Go to previous pane.\n"
+"F4: Go to next pane.\n"
+"F5: Go to the main board pane.\n"
+"F6: Go to the console pane.\n"
+"F7: Go to the seek graph pane (if available).\n"
+"F8: Toggle Shortcut Bar visilibity.\n"
+"Page Up/Page Down: scrolls the text console (must be visible)\n"
+"Ctrl+(Left Arrow): Backward 1 halfmove\n"
+"Ctrl+(Right Arrow): Forward 1 halfmove\n"
+"Ctrl+F: Find Upwards(main console buffer)\n"
+"Ctrl+G: Find Previous\n"
+"\nInput box:\n"
+"Up/Down (arrows): move thru input history\n"
+"Enter: send text line\n"
+"Esc: switch Chat/Command Mode\n"
+"\nSyntaxisms:\n"
+"In main window's input box:\n"
+".. entering %prefix text will set the chat prefix to text.\n"
+".. entering %do scriptname will run scriptname."
+msgstr ""
+"すべての場所:\n"
+"F3: 前のページに移動。\n"
+"F4: 次のページに移動。\n"
+"F5: メインボードに移動。\n"
+"F6: コンソールに移動。\n"
+"F7: (もし可能なら) 探索グラフに移動。\n"
+"F8: ショートカットバーの表示/非表示の切替え。\n"
+"Page Up/Page Down: (表示している)テキストコンソールのスクロール。\n"
+"Ctrl+(Left Arrow): 半画面スクロール分戻る。\n"
+"Ctrl+(Right Arrow): 半画面分スクロール進む。\n"
+"Ctrl+F: 上方向に検索 (main console buffer)\n"
+"Ctrl+G: 前を検索\n"
+"\n入力ボックス:\n"
+"Up/下矢印: 入力履歴に移動\n"
+"Enter: 一行入力を送る\n"
+"Esc: チャット/コマンド モードの切替え\n"
+"\nシンタックス:\n"
+"メインウィンドウの入力ボックスでは:\n"
+".. 「%prefix」 の入力はチャットの「prefix」にテキストを設定します。\n"
+".. 「%do スクリプト名」の入力は「スクリプト名」を実行します。"
+
+# state: translated
+# (1) dlg_prefs.cc:120
+msgid   "Appearance"
+msgstr  "外観"
+
+# state: translated
+# (1) chess.cc:889
+msgid   "Appended"
+msgstr  "追加"
+
+# state: translated
+# (1) dlg_prefs.cc:570
+msgid   "Apply"
+msgstr  "適用"
+
+# state: translated
+# (1) dlg_connect.cc:329
+msgid   "Apply Changes"
+msgstr  "変更を適用"
+
+# state: translated
+# (1) dlg_prefs.cc:495
+msgid   "Auto-save observed games"
+msgstr  "観察していたゲームを自動保存"
+
+# state: translated
+# (1) dlg_prefs.cc:494
+msgid   "Auto-save played games"
+msgstr  "プレイしたゲームを自動保存"
+
+# state: translated
+# (1) dlg_prefs.cc:488
+msgid   "Autosave"
+msgstr  "自動保存"
+
+# state: untranslated
+# (1) dlg_prefs.cc:525
+msgid   "Axis & Buttons"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:321
+msgid   "Background"
+msgstr  ""
+
+# state: translated
+# (1) network.cc:366
+msgid   "Bad descriptor"
+msgstr  "不正な記述"
+
+# state: translated
+# (1) sound.cc:359
+msgid   "Beep (need Pitch, Duration, Count and Device)"
+msgstr  "ビープ (ピッチ、継続時間、カウント、デバイスが必要)"
+
+# state: translated
+# (1) board.cc:1009
+msgid   "Bishop  %d"
+msgstr  "ビショップ %d"
+
+# state: untranslated
+# (5) board.cc:418; dlg_gamelist.cc:321; movelist.cc:66; proto_p2p.cc:551; proto_xboard.cc:1004
+msgid   "Black"
+msgstr  ""
+
+# state: translated
+# (1) bugpane.cc:241
+msgid   "Black: %s - %s"
+msgstr  "黒: %s - %s"
+
+# state: untranslated
+# (1) dlg_prefs.cc:947
+msgid  ""
+"Board Cursor Axis: %d\n"
+"Board Select Button: %d\n"
+"Board Browsing Axis: %d\n"
+"Previous Tab Button: %d\n"
+"Next Tab Button: %d\n"
+msgstr ""
+
+# state: untranslated
+# (1) dgtboard.cc:417
+msgid   "Board version :%s"
+msgstr  ""
+
+# state: translated
+# (1) dlg_connect.cc:288
+msgid   "Bookmark Caption:"
+msgstr  "ブックマークの見出し"
+
+# state: translated
+# (1) dlg_prefs.cc:134
+msgid   "Bottom"
+msgstr  "下"
+
+# state: untranslated
+# (1) dlg_prefs.cc:311
+msgid   "Bright Text"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:529
+msgid   "Browse"
+msgstr  "閲覧"
+
+# state: translated
+# (1) text.cc:110
+msgid   "Buffer Save failed."
+msgstr  "バッファの保存に失敗しました。"
+
+# state: translated
+# (1) mainwindow.cc:265
+msgid   "Bughouse"
+msgstr  "バグハウス"
+
+# state: translated
+# (2) bugpane.cc:217,218
+msgid   "Bughouse: Partner Game"
+msgstr  "バグハウス: パートナーのゲーム"
+
+# state: untranslated
+# (1) dgtboard.cc:415
+msgid   "Bus address :%s"
+msgstr  ""
+
+# state: translated
+# (1) quickbar.cc:220
+msgid   "Button Caption"
+msgstr  "ボタンの見出し"
+
+# state: translated
+# (1) quickbar.cc:219
+msgid   "Button Icon"
+msgstr  "ボタンのアイコン"
+
+# state: translated
+# (9) board.cc:2541; clock.cc:507; dlg_connect.cc:145; dlg_prefs.cc:572; p2p.cc:110; proto_xboard.cc:904; quickbar.cc:268; sound.cc:464; text.cc:479
+msgid   "Cancel"
+msgstr  "取消"
+
+# state: untranslated
+# (1) dlg_prefs.cc:987
+msgid   "Cancel Joystick Configuration"
+msgstr  ""
+
+# state: translated
+# (1) p2p.cc:262
+msgid   "Cancelled connection wait."
+msgstr  "接続待ちを取消しました。"
+
+# state: translated
+# (1) dlg_connect.cc:302
+msgid   "Change..."
+msgstr  "変更..."
+
+# state: translated
+# (2) dlg_prefs.cc:195,319
+msgid   "Channel Tells"
+msgstr  "チャンネルの表示"
+
+# state: translated
+# (2) proto_p2p.cc:283,448
+msgid   "Checkmate"
+msgstr  "チェックメイト"
+
+# state: untranslated
+# (1) dlg_prefs.cc:320
+msgid   "Chess Programs"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:870
+msgid   "Choose Font"
+msgstr  "フォントを選択"
+
+# state: translated
+# (5) dlg_prefs.cc:368,372,376,380,384
+msgid   "Choose..."
+msgstr  "選択..."
+
+# state: translated
+# (1) dlg_prefs.cc:366
+msgid   "Clock Font"
+msgstr  "クロックのフォント"
+
+# state: translated
+# (7) chess.cc:1517; dlg_connect.cc:349; help.cc:100,152,244,322; p2p.cc:159
+msgid   "Close"
+msgstr  "閉じる"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:145
+msgid   "Color"
+msgstr  "色"
+
+# state: translated
+# (1) widgetproxy.cc:343
+msgid   "Color Selection"
+msgstr  "色の選択"
+
+# state: translated
+# (1) dlg_prefs.cc:304
+msgid   "Colors"
+msgstr  "色"
+
+# state: translated
+# (1) quickbar.cc:221
+msgid   "Command"
+msgstr  "コマンド"
+
+# state: translated
+# (1) dlg_connect.cc:290
+msgid   "Command Line:"
+msgstr  "コマンドライン":"
+
+# state: translated
+# (1) proto_xboard.cc:66
+msgid   "Computer"
+msgstr  "コンピュータ"
+
+# state: translated
+# (1) proto_xboard.cc:811
+msgid   "Computer White vs. Human Black"
+msgstr  "コンピュータ 白 対 人間 黒"
+
+# state: untranslated
+# (3) dlg_prefs.cc:530,971,992
+msgid   "Configure Axis & Buttons"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:413
+msgid   "Configured Sound Files:"
+msgstr  "サウンドファイル編集:"
+
+# state: translated
+# (2) dlg_connect.cc:143; p2p.cc:85
+msgid   "Connect"
+msgstr  "接続"
+
+# state: translated
+# (1) dlg_connect.cc:60
+msgid   "Connect to ICS Server"
+msgstr  "ICS サーバに接続"
+
+# state: translated
+# (2) network.cc:383,824
+msgid   "Connected to %s (%s)"
+msgstr  "%s (%s) に接続"
+
+# state: translated
+# (2) network.cc:358,695
+msgid   "Connecting to %s..."
+msgstr  "%s に接続中..."
+
+# state: translated
+# (1) network.cc:370
+msgid   "Connection refused"
+msgstr  "接続を拒否されました"
+
+# state: translated
+# (1) network.cc:364
+msgid   "Connection to %s:%d failed: "
+msgstr  "%s:%d への接続を失敗: "
+
+# state: translated
+# (3) mainwindow.cc:250,288; text.cc:290
+msgid   "Console"
+msgstr  "コンソール"
+
+# state: translated
+# (1) sound.cc:365
+msgid   "Console Beep"
+msgstr  "コンソール ブザー"
+
+# state: translated
+# (1) dlg_prefs.cc:378
+msgid   "Console Font"
+msgstr  "コンソールのフォント"
+
+# state: translated
+# (1) text.cc:108
+msgid   "Console buffer saved."
+msgstr  "コンソールバッファ保存"
+
+# state: translated
+# (1) sound.cc:381
+msgid   "Count:"
+msgstr  "カウント:"
+
+# state: translated
+# (1) proto_xboard.cc:1196
+msgid   "Crazyhouse"
+msgstr  "クレージーハウス"
+
+# state: untranslated
+# (1) dgtboard.cc:411
+msgid   "DGT board found on port %s."
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:250
+msgid   "DGT support error: wrong page"
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:350
+msgid   "DGT warning: position mismatch between eboard and DGT board."
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:383
+msgid   "DGT: unrecognized code: %c (%d)"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:148
+msgid   "Dark Squares..."
+msgstr  ""
+
+# state: translated
+# (1) dlg_connect.cc:331
+msgid   "Delete All Entries"
+msgstr  "すべてのエントリーを削除"
+
+# state: translated
+# (1) dlg_connect.cc:330
+msgid   "Delete This Entry"
+msgstr  "この項目を削除"
+
+# state: translated
+# (1) proto_xboard.cc:838
+msgid   "Depth Limit:"
+msgstr  "思考の深さの制限:"
+
+# state: translated
+# (1) script.cc:63
+msgid   "Description"
+msgstr  "詳細"
+
+# state: translated
+# (1) sound.cc:379
+msgid   "Device:"
+msgstr  "デバイス:"
+
+# state: translated
+# (1) proto_xboard.cc:875
+msgid   "Directory to run from (e.g., where book files are)"
+msgstr  "実行するディレクトリ (例えば、ブックファイルのある所)"
+
+# state: translated
+# (1) dlg_connect.cc:289
+msgid   "Directory:"
+msgstr  "ディレクトリ:"
+
+# state: translated
+# (1) dlg_gamelist.cc:280
+msgid   "Discard All"
+msgstr  "すべて破棄"
+
+# state: translated
+# (1) dlg_gamelist.cc:289
+msgid   "Discard Game"
+msgstr  "ゲームを破棄"
+
+# state: translated
+# (1) script.cc:81
+msgid   "Dismiss"
+msgstr  "やめる"
+
+# state: translated
+# (1) dlg_gamelist.cc:283
+msgid   "Display Game"
+msgstr  "ゲームを表示"
+
+# state: translated
+# (1) dlg_gamelist.cc:319
+msgid   "Displayed"
+msgstr  "表示"
+
+# state: untranslated
+# (1) mainwindow.cc:794
+msgid  ""
+"Distributed under the terms of the GNU General Public License, version 2 or later"
+msgstr ""
+
+# state: translated
+# (1) dlg_prefs.cc:71
+msgid   "Draw Offered"
+msgstr  "引き分けを提案"
+
+# state: translated
+# (1) proto_p2p.cc:501
+msgid   "Draw offer sent."
+msgstr  "引き分けの提案を送信。"
+
+# state: translated
+# (2) proto_p2p.cc:292,496
+msgid   "Drawn by agreement"
+msgstr  "合意により引き分け"
+
+# state: untranslated
+# (1) board.cc:993
+msgid   "Drop Piece:"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:378
+msgid   "Duration (msec):"
+msgstr  "継続時間 (msec):"
+
+# state: untranslated
+# (1) dlg_prefs.cc:241
+msgid   "Dynamic Seek Graph"
+msgstr  ""
+
+# state: lost (deprecated key)
+# (1) dlg_prefs.cc:213
+msgid   "Dynamic Seek Table"
+msgstr  "動的探索表"
+
+# state: translated
+# (1) mainwindow.cc:675
+msgid   "Edit Bookmarks..."
+msgstr  "ブックマークを編集..."
+
+# state: translated
+# (1) dlg_connect.cc:254
+msgid   "Edit Engine Bookmarks"
+msgstr  "エンジンのブックマークを編集"
+
+# state: translated
+# (1) dlg_gamelist.cc:292
+msgid   "Edit Game Info"
+msgstr  "ゲーム情報を編集"
+
+# state: translated
+# (1) clock.cc:421
+msgid   "Edit Time Control"
+msgstr  "時間制御を編集"
+
+# state: translated
+# (1) board.cc:2455
+msgid   "Empty"
+msgstr  "空"
+
+# state: translated
+# (1) dlg_connect.cc:276
+msgid   "Engine Bookmarks"
+msgstr  "エンジンのブックマーク"
+
+# state: translated
+# (1) proto_xboard.cc:863
+msgid   "Engine Command"
+msgstr  "エンジンのコマンド"
+
+# state: translated
+# (2) dlg_connect.cc:308,473
+msgid   "Engine Type:"
+msgstr  "エンジンの種類:"
+
+# state: translated
+# (1) dlg_connect.cc:456
+msgid   "Engine Type: %s (uneditable)"
+msgstr  "エンジンの種類: %s (編集不可)"
+
+# state: translated
+# (1) proto_xboard.cc:743
+msgid   "Engine asked more time to startup, waiting."
+msgstr  "エンジンの起動にもう少し時間がかかります、お待ち下さい。"
+
+# state: translated
+# (1) proto_xboard.cc:866
+msgid   "Engine command line"
+msgstr  "エンジンのコマンドライン"
+
+# state: translated
+# (1) proto_xboard.cc:763
+msgid   "Engine loaded."
+msgstr  "エンジンを読み込み。"
+
+# state: translated
+# (1) network.cc:822
+msgid   "Engine running"
+msgstr  "エンジン実行中"
+
+# state: translated
+# (1) proto_xboard.cc:494
+msgid   "Engine started (2 sec timeout)"
+msgstr  "エンジン開始しました (2 秒タイムアウト)"
+
+# state: translated
+# (1) board.cc:2516
+msgid   "Enter FEN Position"
+msgstr  "FEN の場所を入力して下さい"
+
+# state: translated
+# (1) sound.cc:352
+msgid   "Event Type"
+msgstr  "イベント種類"
+
+# state: translated
+# (1) proto_fics.cc:863
+msgid   "Exam.Game #%d"
+msgstr  "ゲーム検証 #%d"
+
+# state: untranslated
+# (1) proto_xboard.cc:512
+msgid   "Failed command line:"
+msgstr  ""
+
+# state: translated
+# (2) proto_xboard.cc:508,510
+msgid   "Failed to run engine."
+msgstr  "エンジンの実行に失敗。"
+
+# state: translated
+# (1) network.cc:806
+msgid   "Failed to run helper program"
+msgstr  "補助プログラムの実行に失敗"
+
+# state: translated
+# (1) sound.cc:380
+msgid   "File to play / Program to run:"
+msgstr  "プレイするファイル / 実行するプログラム"
+
+# state: translated
+# (4) text.cc:359,361,503,505
+msgid   "Filter: "
+msgstr  "フィルタ: "
+
+# state: translated
+# (1) text.cc:267
+msgid   "Filter: (none)"
+msgstr  "フィルタ: (なし)"
+
+# state: translated
+# (1) p2p.cc:199
+msgid   "Finish the current connection first."
+msgstr  "まず現在の接続を終了させてください。"
+
+# state: translated
+# (1) proto_p2p.cc:123
+msgid   "Finish the current game first."
+msgstr  "まず現在のゲームを終了させて下さい。"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:141
+msgid   "Flags"
+msgstr  "フラグ"
+
+# state: translated
+# (1) dlg_prefs.cc:354
+msgid   "Fonts"
+msgstr  "フォント"
+
+# state: untranslated
+# (1) dlg_gamelist.cc:527
+msgid   "From Elsewhere (%d %s)"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_gamelist.cc:521
+msgid   "From Engines (%d %s)"
+msgstr  ""
+
+# state: translated
+# (1) board.cc:2464
+msgid   "From FEN"
+msgstr  "FEN から"
+
+# state: untranslated
+# (1) dlg_gamelist.cc:509
+msgid   "From ICS (%d %s)"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_gamelist.cc:515
+msgid   "From PGN Files (%d %s)"
+msgstr  ""
+
+# state: translated
+# (1) dlg_gamelist.cc:318
+msgid   "Game #"
+msgstr  "ゲーム #"
+
+# state: translated
+# (2) dlg_gamelist.cc:559; proto_fics.cc:1037
+msgid   "Game #%d"
+msgstr  "ゲーム #%d"
+
+# state: lost (deprecated key)
+# (1) chess.cc:189
+msgid   "Game #%d - %d %d %s"
+msgstr  "ゲーム #%d - %d %d %s"
+
+# state: untranslated
+# (1) chess.cc:186
+msgid   "Game #%d - %s"
+msgstr  ""
+
+# state: untranslated
+# (1) chess.cc:190
+msgid   "Game #%d - %s - %s"
+msgstr  ""
+
+# state: translated
+# (1) movelist.cc:47
+msgid   "Game #%d - %s vs. %s"
+msgstr  "ゲーム #%d - %s 対 %s"
+
+# state: lost (deprecated key)
+# (1) chess.cc:195
+msgid   "Game #%d - untimed %s"
+msgstr  "ゲーム"
+
+# state: translated
+# (1) board.cc:1091
+msgid   "Game #%d: %s"
+msgstr  "ゲーム #%d: %s"
+
+# state: translated
+# (2) proto_p2p.cc:289,515
+msgid   "Game Aborted"
+msgstr  "ゲーム中断"
+
+# state: translated
+# (1) dlg_gamelist.cc:93
+msgid   "Game Description"
+msgstr  "ゲームの詳細"
+
+# state: translated
+# (1) dlg_prefs.cc:374
+msgid   "Game Information Font"
+msgstr  "ゲーム情報フォント"
+
+# state: translated
+# (2) dlg_gamelist.cc:67,150
+msgid   "Game List"
+msgstr  "ゲームリスト"
+
+# state: translated
+# (1) dlg_gamelist.cc:176
+msgid   "Game List (refreshing...)"
+msgstr  "ゲームのリスト (更新中...)"
+
+# state: translated
+# (1) dlg_prefs.cc:76
+msgid   "Game Lost"
+msgstr  "ゲーム敗退"
+
+# state: translated
+# (1) dlg_prefs.cc:77
+msgid   "Game Started"
+msgstr  "ゲーム開始"
+
+# state: translated
+# (1) dlg_prefs.cc:75
+msgid   "Game Won"
+msgstr  "ゲーム勝利"
+
+# state: translated
+# (4) proto_fics.cc:1573; proto_p2p.cc:467; proto_xboard.cc:362,386
+msgid   "Game appended to %s"
+msgstr  "%s にゲームを追加"
+
+# state: translated
+# (1) movelist.cc:157
+msgid   "Game in progress."
+msgstr  "ゲーム中。"
+
+# state: translated
+# (1) proto_p2p.cc:461
+msgid   "Game over: %s"
+msgstr  "ゲームオーバー: %s"
+
+# state: translated
+# (1) proto_p2p.cc:108
+msgid   "Game proposal sent."
+msgstr  "ゲーム申込を送りました。"
+
+# state: translated
+# (2) proto_fics.cc:1003; proto_p2p.cc:357
+msgid   "Game started!"
+msgstr  "ゲーム開始!"
+
+# state: translated
+# (1) mainwindow.cc:502
+msgid   "Game/Board: "
+msgstr  "ゲーム/ボード: "
+
+# state: translated
+# (1) dlg_gamelist.cc:120
+msgid   "Games"
+msgstr  "ゲーム"
+
+# state: translated
+# (1) board.cc:2376
+msgid   "Generic XBoard Engine..."
+msgstr  "汎用 XBoard エンジン..."
+
+# state: translated
+# (1) proto_xboard.cc:1202
+msgid   "Giveaway"
+msgstr  "ギブアウェイ"
+
+# state: translated
+# (1) dlg_prefs.cc:165
+msgid   "Graphic representation of crazy/bughouse stock"
+msgstr  "クレージー/バグハウスの画面画像"
+
+# state: translated
+# (1) help.cc:162
+msgid   "Help: Debug Info"
+msgstr  "ヘルプ: デバッグ情報"
+
+# state: translated
+# (1) help.cc:299
+msgid   "Help: Getting Started "
+msgstr  "ヘルプ: はじめに "
+
+# state: translated
+# (1) help.cc:109
+msgid   "Help: Keys"
+msgstr  "ヘルプ: キー入力"
+
+# state: untranslated
+# (1) network.cc:670
+msgid   "Helper program not found"
+msgstr  ""
+
+# state: translated
+# (1) quickbar.cc:68
+msgid   "Hide!"
+msgstr  "隠す!"
+
+# state: translated
+# (2) network.cc:332,685
+msgid   "Host not found: %s"
+msgstr  "ホストがみつかりません: %s"
+
+# state: translated
+# (1) dlg_connect.cc:104
+msgid   "Hostname"
+msgstr  "ホスト名"
+
+# state: translated
+# (1) p2p.cc:71
+msgid   "Hostname or IP address:"
+msgstr  "ホスト名または IP アドレス:"
+
+# state: translated
+# (1) global.cc:1486
+msgid   "Human"
+msgstr  "人間"
+
+# state: translated
+# (1) proto_xboard.cc:809
+msgid   "Human White vs. Computer Black"
+msgstr  "人間 白 対 コンピュータ 黒"
+
+# state: translated
+# (1) dlg_connect.cc:304
+msgid   "Human plays white"
+msgstr  "人間が白でプレイ"
+
+# state: translated
+# (1) dlg_prefs.cc:73
+msgid   "ICS Challenge"
+msgstr  "ICS チャレンジ"
+
+# state: translated
+# (1) network.cc:709
+msgid   "IPC pipe creation failed."
+msgstr  "IPC パイプ生成に失敗しました。"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:138
+msgid   "Id"
+msgstr  "Id"
+
+# state: untranslated
+# (1) board.cc:2385
+msgid  ""
+"If you pick a bookmark, the engine\n"
+"will play the next move, ignoring\n"
+"the side setting in the bookmark."
+msgstr ""
+
+# state: untranslated
+# (1) board.cc:956
+msgid   "Illegal Drop on %c%d (Legality Checking On)"
+msgstr  ""
+
+# state: untranslated
+# (1) board.cc:762
+msgid   "Illegal Move %c%d%c%d (Legality Checking On)"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:382
+msgid   "Illegal move, not sent."
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:548
+msgid   "Increment (secs):"
+msgstr  ""
+
+# state: untranslated
+# (1) clock.cc:490
+msgid   "Increment:"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:244
+msgid   "Inhibit seek lines on console when Seek Graph is active"
+msgstr  ""
+
+# state: lost (deprecated key)
+# (1) dlg_prefs.cc:216
+msgid   "Inhibit seek lines on console when Seek Table is active"
+msgstr  "探索表が有効な時、コンソールの探索行を抑制"
+
+# state: untranslated
+# (1) board.cc:2459
+msgid   "Initial Position"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:547
+msgid   "Initial time ([mm:]ss):"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_xboard.cc:471
+msgid   "Initializing engine"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:515
+msgid   "Joystick"
+msgstr  ""
+
+# state: untranslated
+# (1) chess.cc:1478
+msgid   "Key"
+msgstr  ""
+
+# state: untranslated
+# (1) chess.cc:1495
+msgid   "Key:"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:315
+msgid   "Kibitzes/Whispers"
+msgstr  ""
+
+# state: translated
+# (1) script.cc:258
+msgid   "Kill"
+msgstr  "中断"
+
+# state: untranslated
+# (1) board.cc:1005
+msgid   "Knight  %d"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:581
+msgid   "Last Proposal Received"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:130
+msgid   "Left"
+msgstr  "左"
+
+# state: untranslated
+# (1) seekgraph.cc:493
+msgid   "Left click to play, right click to refresh."
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:147
+msgid   "Light Squares..."
+msgstr  ""
+
+# state: translated
+# (1) dlg_gamelist.cc:700
+msgid   "Load PGN"
+msgstr  "PGN 読み込み"
+
+# state: translated
+# (1) dlg_gamelist.cc:274
+msgid   "Load PGN..."
+msgstr  "PGN 読み込み..."
+
+# state: translated
+# (1) dlg_gamelist.cc:355
+msgid   "Local"
+msgstr  "ローカル"
+
+# state: translated
+# (1) dlg_gamelist.cc:237
+msgid   "Local Game List"
+msgstr  "ローカルのゲーム一覧"
+
+# state: untranslated
+# (2) network.cc:327,680
+msgid   "Looking up host %s..."
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:1200
+msgid   "Losers"
+msgstr  "ルーザーズ"
+
+# state: untranslated
+# (1) mainwindow.cc:274
+msgid   "Main Board"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:314
+msgid   "Mamer and TDs"
+msgstr  ""
+
+# state: translated
+# (1) text.cc:88
+msgid   "Match Found at Line %d."
+msgstr  "%d 行に一致しました。"
+
+# state: translated
+# (1) text.cc:453
+msgid   "Match Pattern: "
+msgstr  "一致パターン"
+
+# state: untranslated
+# (1) position.cc:1087
+msgid   "Material: %d - %d"
+msgstr  ""
+
+# state: translated
+# (1) dlg_connect.cc:292
+msgid   "Max Ply:"
+msgstr  "最大プライ"
+
+# state: translated
+# (1) dlg_prefs.cc:79
+msgid   "Move made (Obs'vd/Exm'd Games)"
+msgstr  "手番が移動 (観察/検査していたゲーム)"
+
+# state: untranslated
+# (1) dlg_prefs.cc:938
+msgid  ""
+"Move the axis to be used for moving back and forth\n"
+"through moves of a game."
+msgstr ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:932
+msgid   "Move the axis to be used for selecting pieces."
+msgstr  ""
+
+# state: untranslated
+# (1) movelist.cc:81
+msgid   "Moves"
+msgstr  ""
+
+# state: untranslated
+# (1) network.cc:372
+msgid   "Network is unreachable"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:313
+msgid   "News/Notifications"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_gamelist.cc:428
+msgid   "No"
+msgstr  ""
+
+# state: untranslated
+# (3) network.cc:314,438,503
+msgid   "No error."
+msgstr  ""
+
+# state: untranslated
+# (2) proto_p2p.cc:280,442
+msgid   "No material to mate"
+msgstr  ""
+
+# state: untranslated
+# (1) network.cc:781
+msgid   "No output from program."
+msgstr  ""
+
+# state: translated
+# (1) mainwindow.cc:1131
+msgid   "No peer."
+msgstr  "接続なし。"
+
+# state: translated
+# (1) text.cc:74
+msgid   "No previous search."
+msgstr  "前方にはありません。"
+
+# state: untranslated
+# (1) proto_p2p.cc:650
+msgid   "No proposals left."
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:589
+msgid   "No proposals received."
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:197
+msgid   "Non-ASCII Character Filtering"
+msgstr  ""
+
+# state: untranslated
+# (5) bugpane.cc:38,39,359,360; dlg_prefs.cc:224
+msgid   "None"
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:1194
+msgid   "Normal Chess"
+msgstr  "通常のチェス"
+
+# state: untranslated
+# (1) dlg_prefs.cc:310
+msgid   "Normal Text"
+msgstr  ""
+
+# state: untranslated
+# (1) network.cc:368
+msgid   "Not a socket ?!?"
+msgstr  ""
+
+# state: translated
+# (2) clock.cc:505; proto_xboard.cc:902
+msgid   "OK"
+msgstr  "実行"
+
+# state: translated
+# (1) dlg_prefs.cc:78
+msgid   "Obs'vd Game Ended"
+msgstr  "観察していたゲームが終了"
+
+# state: translated
+# (1) dlg_gamelist.cc:111
+msgid   "Observe"
+msgstr  "観察"
+
+# state: translated
+# (5) board.cc:2539; dlg_prefs.cc:568; quickbar.cc:266; sound.cc:460; text.cc:477
+msgid   "Ok"
+msgstr  "実行"
+
+# state: untranslated
+# (1) dlg_connect.cc:129
+msgid  ""
+"Once you connect to a host from this dialog, it will be added to\n"
+"the Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\n"
+"to modify or remove entries."
+msgstr ""
+
+# state: translated
+# (1) text.cc:454
+msgid  ""
+"Only lines that match the above pattern will be added\n"
+"to this text pane. Patterns can be OR'ed with the | (pipe)\n"
+"character. A * (star) can be used to match anything.\n"
+"Examples:\n"
+"'(20)|(22)' shows only lines from channels 20 and 22\n"
+"'blik * bored' shows lines containing 'blik '(...)' bored'."
+msgstr ""
+"上のパターンに一致する行のみが、このテキストに追加されます。\n"
+"パターンは、| (パイプ) 文字で 「または」を表せます。\n"
+"* (アスタリスク) はすべてに一致します。\n"
+"例:\n"
+"'(20)|(22)' は、チャンネル 20 と 22 の行のみを表示します。\n"
+"'blk * bored' は、'blk '(...)' bored' を含む行を表示します。"
+
+# state: translated
+# (1) dlg_prefs.cc:70
+msgid   "Opponent Moved"
+msgstr  "相手の移動"
+
+# state: untranslated
+# (1) p2p.cc:149
+msgid   "Options"
+msgstr  ""
+
+# state: untranslated
+# (1) chess.cc:1459
+msgid   "PGN Headers"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:491
+msgid   "PGN filename:"
+msgstr  "PGN ファイル名"
+
+# state: untranslated
+# (1) bugpane.cc:274
+msgid   "Partner Tells:"
+msgstr  ""
+
+# state: untranslated
+# (1) board.cc:997
+msgid   "Pawn    %d"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:377
+msgid   "Pitch (Hz):"
+msgstr  "ピッチ (Hz)"
+
+# state: translated
+# (1) dlg_gamelist.cc:845
+msgid   "Play"
+msgstr  "プレイ"
+
+# state: translated
+# (1) proto_xboard.cc:1001
+msgid   "Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)"
+msgstr  "プレイ %s, %s 対 %s (%s, 最高深度 %d, 常時思考: %s)"
+
+# state: translated
+# (1) sound.cc:361
+msgid   "Play WAV (need Device and Filename, sox must be installed)"
+msgstr  "WAV を再生 (デバイスとファイル名が必要です。sox がインストールされている必要があります)"
+
+# state: translated
+# (1) proto_xboard.cc:1078
+msgid   "Play against Crafty"
+msgstr  "Crafty とプレイ"
+
+# state: translated
+# (1) proto_xboard.cc:769
+msgid   "Play against Engine"
+msgstr  "エンジンとプレイ"
+
+# state: translated
+# (1) proto_xboard.cc:1319
+msgid   "Play against GNU Chess 4"
+msgstr  "GNU Chess 4 とプレイ"
+
+# state: translated
+# (1) proto_xboard.cc:1234
+msgid   "Play against Sjeng"
+msgstr  "Sjeng とプレイ"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:139
+msgid   "Player"
+msgstr  "プレイヤー"
+
+# state: untranslated
+# (2) proto_p2p.cc:286,489
+msgid   "Player resigns"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:370
+msgid   "Player/Color Name Font"
+msgstr  "プレイヤーの名前のフォント "
+
+# state: untranslated
+# (1) proto_fics.cc:926
+msgid   "Pos: %s vs. %s"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:51
+msgid   "Preferences"
+msgstr  "設定"
+
+# state: untranslated
+# (1) dlg_prefs.cc:944
+msgid   "Press the button to be used for going to the next tab."
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:941
+msgid   "Press the button to be used for going to the previous tab."
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:935
+msgid   "Press the button to be used for selecting a square."
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:72
+msgid   "Private Tell"
+msgstr  "電話番号"
+
+# state: untranslated
+# (1) dlg_prefs.cc:312
+msgid   "Private Tells"
+msgstr  ""
+
+# state: translated
+# (1) network.cc:798
+msgid   "Program exited too soon"
+msgstr  "プログラムはすぐに終了します"
+
+# state: translated
+# (1) widgetproxy.cc:224
+msgid   "Progress"
+msgstr  "進捗"
+
+# state: translated
+# (1) promote.cc:57
+msgid   "Promotion Piece  "
+msgstr  "昇進する駒"
+
+# state: untranslated
+# (1) proto_p2p.cc:572
+msgid   "Propose"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:539
+msgid   "Propose Game"
+msgstr  ""
+
+# state: translated
+# (1) dlg_connect.cc:106
+msgid   "Protocol"
+msgstr  "プロトコル"
+
+# state: translated
+# (2) proto_p2p.cc:189,199
+msgid   "Protocol mismatch, disconnecting."
+msgstr  "プロトコルの不一致、切断します。"
+
+# state: translated
+# (1) board.cc:1013
+msgid   "Queen   %d"
+msgstr  "クイーン %d"
+
+# state: untranslated
+# (1) network.cc:788
+msgid   "Read error from program."
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:242
+msgid   "Received a game proposal from %s."
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_connect.cc:80
+msgid   "Recent Hosts"
+msgstr  ""
+
+# state: translated
+# (4) dlg_gamelist.cc:110,277,844; script.cc:79
+msgid   "Refresh List"
+msgstr  "一覧を更新"
+
+# state: untranslated
+# (1) seekgraph.cc:260
+msgid   "Replied to seek #%d"
+msgstr  ""
+
+# state: untranslated
+# (2) proto_fics.cc:1608; proto_xboard.cc:382
+msgid   "Resigned."
+msgstr  ""
+
+# state: translated
+# (1) dlg_gamelist.cc:323
+msgid   "Result"
+msgstr  "結果"
+
+# state: untranslated
+# (1) proto_xboard.cc:426
+msgid   "Retracted last move."
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:255
+msgid   "Retrieve ICS Channel Lists from eboard.sf.net"
+msgstr  "ICS チャンネル一覧を eboard.sf.net から引き出す"
+
+# state: translated
+# (1) dlg_prefs.cc:342
+msgid   "Revert to Defaults"
+msgstr  "デフォルトに戻す"
+
+# state: translated
+# (1) dlg_prefs.cc:393
+msgid   "Revert to defaults"
+msgstr  "デフォルトに戻す"
+
+# state: translated
+# (1) dlg_prefs.cc:128
+msgid   "Right"
+msgstr  "右"
+
+# state: untranslated
+# (1) board.cc:1001
+msgid   "Rook    %d"
+msgstr  ""
+
+# state: translated
+# (1) script.cc:80
+msgid   "Run"
+msgstr  "実行"
+
+# state: untranslated
+# (1) board.cc:2471
+msgid   "Run Engine..."
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:363
+msgid   "Run Program (need Filename)"
+msgstr  "プログラムを実行 (ファイル名が必要)"
+
+# state: translated
+# (1) dlg_prefs.cc:209
+msgid   "Run autofics.pl script after connecting to FICS"
+msgstr  "FICS に接続した後、autofics.pl スクリプトを実行"
+
+# state: translated
+# (1) text.cc:104
+msgid   "Save Buffer As..."
+msgstr  "ゲームを名前をつけて保存..."
+
+# state: translated
+# (1) dlg_gamelist.cc:286
+msgid   "Save Game..."
+msgstr  "ゲームを保存..."
+
+# state: translated
+# (1) dlg_gamelist.cc:682
+msgid   "Save as PGN"
+msgstr  "PGN として保存"
+
+# state: untranslated
+# (2) mainwindow.cc:1151,1176
+msgid   "Scratch %d"
+msgstr  ""
+
+# state: translated
+# (1) script.cc:62
+msgid   "Script"
+msgstr  "スクリプト"
+
+# state: translated
+# (1) script.cc:44
+msgid   "Script List"
+msgstr  "スクリプト一覧"
+
+# state: translated
+# (1) dlg_prefs.cc:260
+msgid   "Scrollback limit (0 = unlimited) :"
+msgstr  "スクロールバック範囲 (0 = 無制限) :"
+
+# state: lost (deprecated key)
+# (1) text.cc:605
+msgid   "Search Text"
+msgstr  "テキスト検索"
+
+# state: lost (deprecated key)
+# (1) text.cc:615
+msgid   "Search for: "
+msgstr  "検索するテキスト: "
+
+# state: translated
+# (1) text.cc:96
+msgid   "Search text not found."
+msgstr  "検索テキストは見つかりませんでした。"
+
+# state: untranslated
+# (1) dlg_prefs.cc:318
+msgid   "Seek Ads"
+msgstr  ""
+
+# state: untranslated
+# (2) dlg_prefs.cc:193; proto_fics.cc:1861
+msgid   "Seek Graph"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:382
+msgid   "Seek Graph Font"
+msgstr  ""
+
+# state: lost (deprecated key)
+# (2) dlg_prefs.cc:187; proto_fics.cc:1848
+msgid   "Seek Table"
+msgstr  "探索表"
+
+# state: lost (deprecated key)
+# (1) dlg_prefs.cc:348
+msgid   "Seek Table Font"
+msgstr  "探索表フォントを探す"
+
+# state: untranslated
+# (1) dgtboard.cc:413
+msgid   "Serial :%s"
+msgstr  ""
+
+# state: translated
+# (1) text.cc:442
+msgid   "Set Filter"
+msgstr  "フィルタを設定"
+
+# state: translated
+# (1) text.cc:269
+msgid   "Set Filter..."
+msgstr  "フィルタを設定..."
+
+# state: translated
+# (1) proto_xboard.cc:844
+msgid   "Set depth limit to 0 to use the engine's default."
+msgstr  "思考の深さの制限を 0 にすると、エンジンのデフォルトが使用されます。"
+
+# state: translated
+# (1) quickbar.cc:67
+msgid   "Setup Buttons"
+msgstr  "ボタンを設定"
+
+# state: translated
+# (1) quickbar.cc:207
+msgid   "Shortcut Button Setup"
+msgstr  "ショートカットボタンを設定"
+
+# state: untranslated
+# (1) dlg_prefs.cc:317
+msgid   "Shouts"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:249
+msgid   "Show channel tells in one pane per channel"
+msgstr  "表示チャンネルはチャンネル毎に一つずつ表示"
+
+# state: translated
+# (1) dlg_prefs.cc:252
+msgid   "Show channel tells on console too (when above option is active)"
+msgstr  "表示チャンネルはコンソールにも表示 (上のオプションが有効な時)"
+
+# state: translated
+# (1) dlg_prefs.cc:206
+msgid   "Show rating next to player name"
+msgstr  "プレイヤー名の隣にレーティングを表示"
+
+# state: translated
+# (1) dlg_prefs.cc:168
+msgid   "Show shortcut buttons below board"
+msgstr  "ショートカットボタンをボードの下に表示"
+
+# state: untranslated
+# (1) dlg_prefs.cc:212
+msgid   "Show timestamps for text lines"
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:802
+msgid   "Side & Time"
+msgstr  "手番と時間"
+
+# state: translated
+# (1) proto_xboard.cc:804
+msgid   "Side Selection"
+msgstr  "手番の選択"
+
+# state: untranslated
+# (2) board.cc:2476,2481
+msgid   "Side to move: "
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:532
+msgid   "Smooth joystick cursor"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:533
+msgid   "Smooth joystick cursor speed:"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:162
+msgid   "Smoother animation (eats more CPU)"
+msgstr  "滑らかなアニメーション (多くの CPU パワーを消費)"
+
+# state: untranslated
+# (1) dlg_prefs.cc:230
+msgid   "Soft translate"
+msgstr  ""
+
+# state: untranslated
+# (1) protocol.cc:84
+msgid  ""
+"Sorry, this protocol does not allow to retract a move thru this menu option."
+msgstr ""
+
+# state: untranslated
+# (1) sound.cc:337
+msgid   "Sound Event"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:422
+msgid   "Sound Events"
+msgstr  "サウンドイベント"
+
+# state: translated
+# (1) dlg_prefs.cc:420
+msgid   "Sounds"
+msgstr  "サウンド"
+
+# state: untranslated
+# (1) mainwindow.cc:796
+msgid   "Source code available at http://eboard.sourceforge.net"
+msgstr  ""
+
+# state: untranslated
+# (2) proto_p2p.cc:277,436
+msgid   "Stalemate"
+msgstr  ""
+
+# state: untranslated
+# (1) p2p.cc:147
+msgid   "Start a connection"
+msgstr  ""
+
+# state: untranslated
+# (1) clock.cc:488
+msgid   "Starting Time:"
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:1198
+msgid   "Suicide"
+msgstr  "スーサイド"
+
+# state: untranslated
+# (1) dlg_connect.cc:105
+msgid   "TCP Port"
+msgstr  ""
+
+# state: untranslated
+# (2) p2p.cc:72,96
+msgid   "TCP Port:"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:123
+msgid   "Tab Position"
+msgstr  "タブ位置"
+
+# state: translated
+# (1) sound.cc:462
+msgid   "Test"
+msgstr  "テスト"
+
+# state: translated
+# (1) dlg_prefs.cc:436
+msgid   "The checkbox on the left enables/disables the sound."
+msgstr  "左のチェックボックスでサウンドの有効/無効を設定"
+
+# state: translated
+# (1) proto_xboard.cc:884
+msgid   "The engine will be run with\n/bin/sh -c 'cd directory ; command line'"
+msgstr  "エンジンは /bin/sh -c 'cd directory ; command line'\nで実行されます。"
+
+# state: untranslated
+# (1) dlg_connect.cc:305
+msgid   "Think Always"
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:847
+msgid   "Think on opponent's time"
+msgstr  "相手の時間のときも考える"
+
+# state: translated
+# (1) proto_xboard.cc:816
+msgid   "Time Control"
+msgstr  "時間設定"
+
+# state: translated
+# (1) proto_xboard.cc:829
+msgid   "Time Control..."
+msgstr  "時間設定..."
+
+# state: translated
+# (1) dlg_connect.cc:291
+msgid   "Time Control:"
+msgstr  "時間設定:"
+
+# state: translated
+# (1) dlg_prefs.cc:74
+msgid   "Time Running Out"
+msgstr  "時間切れ"
+
+# state: translated
+# (1) network.cc:371
+msgid   "Timeout"
+msgstr  "時間切れ"
+
+# state: translated
+# (1) clock.cc:498
+msgid   "Times can be given as hh:mm:ss , mm:ss or ss"
+msgstr  "時間は hh:mm:ss、mm:ss、ss のいずれかで設定できます。"
+
+# state: untranslated
+# (1) quickbar.cc:253
+msgid  ""
+"To run multiple commands with one shortcut, separate the commands with ; (semicolon).\n"
+"To run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl ."
+msgstr ""
+
+# state: translated
+# (1) dlg_prefs.cc:132
+msgid   "Top"
+msgstr  "上"
+
+# state: untranslated
+# (1) dgtboard.cc:419
+msgid   "Trademark :%s"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_prefs.cc:226
+msgid   "Truncate"
+msgstr  ""
+
+# state: translated
+# (1) clock.cc:446
+msgid   "Type: Fischer Clock (ICS-like)"
+msgstr  "タイプ: フィッシャークロック (ICS のようなもの)"
+
+# state: translated
+# (1) clock.cc:444
+msgid   "Type: Fixed Time per Move"
+msgstr  "タイプ: 固定時間で動く"
+
+# state: translated
+# (1) clock.cc:447
+msgid   "Type: Use engine's default setting"
+msgstr  "タイプ: エンジンのデフォルトの設定を使う"
+
+# state: translated
+# (1) clock.cc:445
+msgid   "Type: X Moves per Time Period"
+msgstr  "タイプ: X は時間区切りごとに動く"
+
+# state: untranslated
+# (1) network.cc:467
+msgid   "Unable to bind on port %d."
+msgstr  ""
+
+# state: untranslated
+# (1) network.cc:457
+msgid   "Unable to create socket."
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:403
+msgid   "Unable to find the DGT board on port %s."
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:119
+msgid   "Unable to load dgtnix library symbol.\n"
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:114
+msgid   "Unable to load dgtnix library.\n"
+msgstr  ""
+
+# state: untranslated
+# (1) network.cc:376
+msgid   "Unknown error"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_p2p.cc:295
+msgid   "Unknown result"
+msgstr  ""
+
+# state: translated
+# (1) dlg_prefs.cc:144
+msgid   "Use plain color squares"
+msgstr  "装飾のない色の目を使用"
+
+# state: untranslated
+# (1) dlg_prefs.cc:228
+msgid   "Use underscores"
+msgstr  ""
+
+# state: untranslated
+# (1) chess.cc:1479
+msgid   "Value"
+msgstr  ""
+
+# state: untranslated
+# (1) chess.cc:1496
+msgid   "Value:"
+msgstr  ""
+
+# state: translated
+# (3) dlg_gamelist.cc:322; proto_xboard.cc:1189,1211
+msgid   "Variant"
+msgstr  "変種"
+
+# state: translated
+# (2) dlg_connect.cc:307,472
+msgid   "Variant:"
+msgstr  "変種:"
+
+# state: translated
+# (1) dlg_connect.cc:445
+msgid   "Variant: %s (uneditable)"
+msgstr  "変種: %s (編集不可)"
+
+# state: translated
+# (1) p2p.cc:109
+msgid   "Wait"
+msgstr  "待つ"
+
+# state: translated
+# (1) p2p.cc:148
+msgid   "Wait for a connection"
+msgstr  "接続を待っています"
+
+# state: translated
+# (1) p2p.cc:244
+msgid   "Waiting for connection on port %d."
+msgstr  "ポート %d の接続を待っています。"
+
+# state: translated
+# (1) dlg_prefs.cc:268
+msgid   "Warn when own clock is below: "
+msgstr  "自分のクロックが次の秒数未満になったら警告: "
+
+# state: translated
+# (1) status.cc:43
+msgid   "Welcome to eboard."
+msgstr  "eboard へようこそ"
+
+# state: untranslated
+# (5) board.cc:430; dlg_gamelist.cc:320; movelist.cc:65; proto_p2p.cc:550; proto_xboard.cc:1003
+msgid   "White"
+msgstr  ""
+
+# state: translated
+# (1) bugpane.cc:228
+msgid   "White: %s - %s"
+msgstr  "白: %s - %s"
+
+# state: translated
+# (1) widgetproxy.cc:238
+msgid   "Working..."
+msgstr  "思考中..."
+
+# state: translated
+# (1) help.cc:245
+msgid   "Write to Console"
+msgstr  "コンソールに書き出す"
+
+# state: translated
+# (1) network.cc:367
+msgid   "Wrong address space"
+msgstr  "間違ったアドレス空間"
+
+# state: translated
+# (1) chess.cc:890
+msgid   "Wrote"
+msgstr  "書いた"
+
+# state: untranslated
+# (1) dlg_gamelist.cc:427
+msgid   "Yes"
+msgstr  ""
+
+# state: untranslated
+# (1) proto_xboard.cc:414
+msgid   "You can only retract when it's your turn to move."
+msgstr  ""
+
+# state: translated
+# (1) proto_p2p.cc:546
+msgid   "Your color:"
+msgstr  "あなたの色:"
+
+# state: translated
+# (1) p2p.cc:135
+msgid   "Your name:"
+msgstr  "あなたの名前:"
+
+# state: translated
+# (1) mainwindow.cc:2015
+msgid   "[chat]"
+msgstr  "[チャット]"
+
+# state: translated
+# (2) mainwindow.cc:1973,2016
+msgid   "[cmd]"
+msgstr  "[コマンド]"
+
+# state: untranslated
+# (1) global.cc:385
+msgid   "[eboard] ** $HOME is too long"
+msgstr  ""
+
+# state: translated
+# (1) global.cc:412
+msgid   "[eboard] ** failed to create directory "
+msgstr  "[eboard] ** ディレクトリの作成に失敗しました "
+
+# state: translated
+# (1) global.cc:382
+msgid   "[eboard] ** no $HOME"
+msgstr  "[eboard} ** $HOME は存在しません"
+
+# state: translated
+# (1) sound.cc:149
+msgid   "[eboard] bad RC line\n"
+msgstr  "[eboard] 間違った RC ラインです\n"
+
+# state: untranslated
+# (1) mainwindow.cc:2005
+msgid   "[find]"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:314
+msgid   "beep"
+msgstr  "ブザー"
+
+# state: translated
+# (1) sound.cc:313
+msgid   "beeps"
+msgstr  "ブザー"
+
+# state: translated
+# (1) proto_fics.cc:1914
+msgid   "black"
+msgstr  "黒"
+
+# state: translated
+# (1) chess.cc:1254
+msgid   "can't load PGN move text from %s (error opening file)"
+msgstr  "%s から PGN 移動テキストを読み込めませんでした (ファイルオープンエラー)"
+
+# state: translated
+# (1) chess.cc:1260
+msgid   "can't seek to offset %lu of %s"
+msgstr  "オフセット %lu を %s から探せませんでした"
+
+# state: untranslated
+# (1) dgtboard.cc:397
+msgid   "dgtnix driver version: %s"
+msgstr  ""
+
+# state: untranslated
+# (1) dgtboard.cc:146
+msgid   "dgtnix version too old: %f, must be >= %f"
+msgstr  ""
+
+# state: untranslated
+# (1) mainwindow.cc:525
+msgid   "discards board"
+msgstr  ""
+
+# state: translated
+# (1) p2p.cc:33
+msgid   "eboard Direct Connection Manager"
+msgstr  "eboard ダイレクト接続マネージャー"
+
+# state: untranslated
+# (1) mainwindow.cc:790
+msgid   "eboard version %s (%s)"
+msgstr  ""
+
+# state: translated
+# (1) help.cc:76
+msgid  ""
+"eboard version %s\n"
+"(c) 2000-%d Felipe Bergo\n"
+"<fbergo@gmail.com>\n"
+"http://eboard.sourceforge.net\n"
+"\nThis program is free software; you can redistribute\n"
+"it and/or modify it under the terms of the GNU General\n"
+"Public License as published by the Free Software\n"
+"Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+msgstr ""
+"eboard バージョン %s\n"
+"(c) 2000-%d Felipe Bergo\n"
+"<fbergo@gmail.com>\n"
+"http://eboard.sourceforge.net\n"
+"\nThis program is free software; you can redistribute\n"
+"it and/or modify it under the terms of the GNU General\n"
+"Public License as published by the Free Software\n"
+"Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n[参考日本語訳]\n"
+"このプログラムはフリーソフトウェアです; Free Software\n"
+"Foundation の GNU General Public License バージョン 2 または\n"
+"それ以降のライセンスのもとで、自由に改変・再配布できます。\n"
+
+# state: translated
+# (1) text.cc:239
+msgid   "eboard: Console #%d"
+msgstr  "eboard: コンソール #%d"
+
+# state: untranslated
+# (1) proto_xboard.cc:161
+msgid   "engine claimed illegal move but we didn't move, ignoring it."
+msgstr  ""
+
+# state: translated
+# (1) chess.cc:1267
+msgid   "error parsing PGN data"
+msgstr  "PGN データの解析エラー"
+
+# state: translated
+# (1) mainwindow.cc:524
+msgid   "flips board"
+msgstr  "ボードをひっくり返す"
+
+# state: untranslated
+# (5) dlg_gamelist.cc:499,510,516,522,528
+msgid   "game"
+msgstr  ""
+
+# state: untranslated
+# (5) dlg_gamelist.cc:500,511,517,523,529
+msgid   "games"
+msgstr  ""
+
+# state: untranslated
+# (1) dlg_connect.cc:450
+msgid   "generic xboard v2"
+msgstr  ""
+
+# state: translated
+# (1) mainwindow.cc:520
+msgid   "goes back 1 halfmove"
+msgstr  "一手戻る"
+
+# state: translated
+# (1) mainwindow.cc:519
+msgid   "goes back to start of game"
+msgstr  "ゲーム開始に戻る"
+
+# state: translated
+# (1) mainwindow.cc:521
+msgid   "goes forward 1 halfmove"
+msgstr  "一手進む"
+
+# state: translated
+# (1) mainwindow.cc:522
+msgid   "goes forward to end of game"
+msgstr  "ゲーム終了に進む"
+
+# state: translated
+# (1) proto_xboard.cc:177
+msgid   "illegal move!"
+msgstr  "正しくない動き!"
+
+# state: untranslated
+# (1) dlg_gamelist.cc:436
+msgid   "in progress"
+msgstr  ""
+
+# state: untranslated
+# (1) clock.cc:342
+msgid   "initial time %s, increment %s"
+msgstr  ""
+
+# state: untranslated
+# (1) clock.cc:479
+msgid   "moves in"
+msgstr  ""
+
+# state: translated
+# (1) proto_xboard.cc:1009
+msgid   "no"
+msgstr  "いいえ"
+
+# state: translated
+# (2) proto_fics.cc:1541,1728
+msgid   "no such game: "
+msgstr  "そんなゲームはありません"
+
+# state: untranslated
+# (1) clock.cc:333
+msgid   "no time control set"
+msgstr  ""
+
+# state: untranslated
+# (2) movelist.cc:127,128
+msgid   "none"
+msgstr  ""
+
+# state: untranslated
+# (1) sound.cc:326
+msgid   "nothing"
+msgstr  ""
+
+# state: translated
+# (1) mainwindow.cc:526
+msgid   "opens new scratch board with position"
+msgstr  "現在の駒位置で編集用のボードを作る"
+
+# state: untranslated
+# (1) clock.cc:473
+msgid   "per move"
+msgstr  ""
+
+# state: untranslated
+# (1) sound.cc:323
+msgid   "plain console beep"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:317
+msgid   "play file %s"
+msgstr  "ファイル %s を実行"
+
+# state: translated
+# (1) mainwindow.cc:523
+msgid   "pops up the move list"
+msgstr  "棋譜を表示"
+
+# state: translated
+# (1) network.cc:716
+msgid   "process creation failed."
+msgstr  "プロセス生成に失敗。"
+
+# state: untranslated
+# (2) chess.cc:192; seekgraph.cc:549
+msgid   "rated"
+msgstr  ""
+
+# state: translated
+# (1) sound.cc:320
+msgid   "run %s"
+msgstr  "実行 %s"
+
+# state: translated
+# (1) script.cc:256
+msgid   "running %s"
+msgstr  "実行中 %s"
+
+# state: translated
+# (1) chess.cc:834
+msgid   "savePGN failed: %s"
+msgstr  "PGN の保存に失敗: %s"
+
+# state: translated
+# (1) chess.cc:819
+msgid   "savePGN failed: Won't save game with less than 2 moves"
+msgstr  "PGN の保存に失敗: Won't save game with less than 2 moves"
+
+# state: translated
+# (1) dlg_prefs.cc:272
+msgid   "seconds."
+msgstr  "秒。"
+
+# state: untranslated
+# (2) chess.cc:193; seekgraph.cc:550
+msgid   "unrated"
+msgstr  ""
+
+# state: untranslated
+# (1) clock.cc:313
+msgid   "untimed"
+msgstr  ""
+
+# state: translated
+# (1) proto_fics.cc:1913
+msgid   "white"
+msgstr  "白"
+
+# state: translated
+# (1) proto_xboard.cc:1008
+msgid   "yes"
+msgstr  "はい"
+

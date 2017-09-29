@@ -1,0 +1,1477 @@
+L72 88
+ ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n
+ ** PNG laden fehlgeschlagen: benutze internen Figurenset. Es wird häßlich aussehen.\n
+L11 13
+ Browse... 
+Übersicht...
+L15 14
+ Play Selected 
+Spiel anbieten
+L9 13
+ Refresh 
+Aktualisieren
+L14 13
+ Remove Field 
+Entferne Feld
+L5 5
+ Set 
+ Set 
+L1543 2003
+#L#Getting Started\n#M#Common Tasks in eboard\n\nPlaying against the computer\n#S#eboard does not "play chess" itself, but rather is works as interface to programs that do,\ncalled "engines", which don't have a graphical interface themselves. You need an engine to\nplay against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\nno cost.\nOnce you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\nengine#K# submenu, and select the appropriate option depending on which engine you have\ninstalled.\n\n#M#Playing Chess on the Internet\n#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\nUS Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\nTo connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\nother servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\nWhile you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\nis done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n\n#M#Browsing PGN Games\n#S#PGN is the most common file format to store chess games. It can store moves and comments\n(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\ngame, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\nwith the game.#L#
+#L#Erste Schritte#M#\n\nGegen den Computer spielen\n#S#eboard kann nicht selbst "Schach spielen": es bietet eine Schnittstelle zu Schachprogrammen\nohne eigene graphische Benutzeroberfläche, den sogenannten"Enginen" d.h. Schachmotore.\nGNUChess, Crafty und Sjeng sind frei erhältliche Engines.Sind die Engines installiert, öffne das\n#B#Partner#K# Menü, dann im #B#Spiel gegen Engine#K# Untermenü wähle die entsprechende Engine,\ngegen die gespielt werden soll. Weitere starke Engines,die man einbinden kann, sind Yace, \nComet, Amy, TCB und Phalanx XXII. Diese kann man einbinden über das Menü #B#Partner#K#/#B#Spiel\ngegen Engine#K#/#B#Generische Engine#K#\n\n#M#Schachspielen im Internet\n#S#Eboard unterstützt das FICS-Protokoll. FICS- Server sind z.B. www.freechess.org, aber auch\nandere "Schachserver" wie US Chess Live benutzten die FICS-Software und sollten mit\neboard problemlos erreichbar sein. ICS wird nicht unterstützt. Um eine Verbindung zu FICS\naufzubauen, öffne das #B#Partner#K#-Menü dann #B#Verbinde mit FICS#K#. Um eine Verbindung zum\nanderen Server aufzubauen öffne das #B#Partner#K#-Menü, dann #B#Verbinde mit anderem Server#K#.\nObwohl man sich als Gast (Guest) am FICS-Server einloggen kann,hat man als registrierter\nBenutzer mehr Spaß. Die Registrierung kann auf der FICS-Seite #B#http://www.freechess.org#K#\nkostenlos durchgeführt werden.\n\n#M#PGN-Datenbanken\n#S#PGN ist ein weitverbreitetes Dateiformat zur Speicherung von Schachpartien. Es können Züge,\nKommentare und Varianten gespeichert werden Der Zugriff auf PGN-Dateien von eboard aus\ngeschieht über das #B#Fenster#K#-Menü. Dann #B#Partien auf dem Client#K# auswählen. In dem\nnachfolgendem Fenster #B#Partie laden#K# wählen. Die in der PGN-Datei enthaltenen Partien werden\nnun gelistet. Mit der Maus die die gewünschte Partie auswählen und #B#Partie ansehen#K# drücken. Die\nPartie erscheint in eboard in einem eigenem Schirm, erreichbar über den neuen Tabulator im\nHauptfenster.#L#
+L30 31
+%d %s to %s, %d Hz for %d msec
+%d %s to %s, %d Hz für %d msec
+L13 18
+%d games read
+%d Partien gelesen
+L14 14
+%d moves in %s
+%d Züge in %s
+L25 27
+%d. Connect to %s:%d (%s)
+%d. Verbinde mit %s:%d (%s)
+L41 43
+%s (white) vs. %s (black)\n%s\n%d:%.2d %d
+%s (Weiss) vs. %s (Schwarz)\n%s\n%d:%.2d %d
+L31 33
+%s accepted your game proposal.
+%s hat Spielvorschlag akzeptiert.
+L18 20
+%s engine started.
+%s Engine gestartet.
+L17 19
+%s offers a draw.
+%s bietet Remis an.
+L11 10
+%s per move
+%s pro Zug
+L33 43
+(Wrapped) Match Found at Line %d.
+(Umgebrochen) Übereinstimmung in Zeile %d 
+L64 62
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)
+(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS-Name: Pulga)
+L39 39
+(message obfuscated -- password mode ?)
+(Nachricht verworren-- Passwort-Modus?)
+L14 19
+(no bookmarks)
+(keine Lesezeichen)
+L6 6
+(none)
+(kein)
+L13 12
+(time period)
+(Zeitspanne)
+L18 25
+* game not found: 
+* Partie nicht gefunden: 
+L47 55
+** [eboard] bad engine protocol # in bookmark: 
+** [eboard] falsches Engine protocol # in Lesezeichen: 
+L57 60
+** eboard ** warning: HOME environment variable not set\n
+** eboard ** Warnung: HOME-Umgebungsvariable nicht gesetzt\n
+L26 30
+--- %s game to PGN file %s
+--- %s Partie zur PGN-Datei %s
+L16 15
+--- Disconnected
+---Unterbrochen
+L14 17
+/Game/Ad_journ
+/Partie/_Vertagen
+L19 18
+/Game/Retract _Move
+_Zug zurücknehmen
+L12 18
+/Game/_Abort
+/Partie/Ab_brechen
+L17 23
+/Game/_Offer Draw
+/Partie/_Remis anbieten
+L13 17
+/Game/_Resign
+/Partie/_Aufgeben
+L22 23
+/Help/_About eboard...
+/Hilfe/Über _eboard...
+L17 18
+/Help/_Debug Info
+/Hilfe/_Debug Info
+L22 22
+/Help/_Getting Started
+/Hilfe/Erste _Schritte
+L11 14
+/Help/_Keys
+/Hilfe/_Tasten
+L10 11
+/Help/sep4
+/Hilfe/sep4
+L22 27
+/Peer/Connect to _FICS
+/Partner/Verbinde mit _FICS
+L43 40
+/Peer/Direct connect with _Remote eboard...
+/Partner/Verbinde mit eboard im _Netz...
+L23 28
+/Peer/Engine B_ookmarks
+/Partner/Engine _Lesezeichen
+L20 25
+/Peer/ICS _Bookmarks
+/Partner/_ICS Lesezeichen
+L36 38
+/Peer/Play against Engine/Cr_afty...
+/Partner/Spiel gegen Engine/Cr_afty...
+L41 42
+/Peer/Play against Engine/GNU Chess _4...
+/Partner/Spiel gegen Engine/GNUChess _4...
+L44 49
+/Peer/Play against Engine/_Generic Engine...
+/Partner/Spiel gegen Engine/_Generische Engine...
+L35 37
+/Peer/Play against Engine/_Sjeng...
+/Partner/Spiel gegen Engine/_Sjeng...
+L30 32
+/Peer/Play against Engine/sep1
+/Partner/Spiel gegen Engine/sep1
+L26 28
+/Peer/Play against _Engine
+/Partner/Spiel gegen _Engine
+L33 40
+/Peer/_Connect to Other Server...
+/Partner/_Verbinde mit anderem Server...
+L17 21
+/Peer/_Disconnect
+Partner/_Unterbrechen
+L26 38
+/Peer/_Empty Scratch Board
+Partner/_Stellungseingabe-Leeres Brett
+L11 16
+/Peer/_Quit
+Partner/_Beenden
+L42 41
+/Peer/_Scratch Board with Initial Position
+Partner/Stellungseingabe-_Anfangsstellung
+L10 12
+/Peer/sep2
+Partner/sep2
+L10 13
+/Peer/sep3
+/Partner/sep3
+L10 13
+/Peer/sep4
+/Partner/sep4
+L48 54
+/Settings/Bitmapped Piece Sets/Load _Pieces Only
+/Einstellungen/Figurensets (Bitmaps)/Lade nur _Figuren
+L49 52
+/Settings/Bitmapped Piece Sets/Load _Squares Only
+/Einstellungen/Figurensets (Bitmaps)/Lade nur _Brett
+L42 46
+/Settings/Bitmapped Piece Sets/Load _Theme
+/Einstellungen/Figurensets (Bitmaps)/Lade _Set
+L31 37
+/Settings/Bitmapped Piece _Sets
+/Einstellungen/_Figurensets (Bitmaps)
+L35 44
+/Settings/Enable Legality _Checking
+/Einstellungen/Aktiviere _Legalitätprüfung
+L55 59
+/Settings/ICS Behavior/Popup Board Panes _Upon Creation
+/Einstellungen/ICS Verhalten/Öffne Schirme nach _Erzeugung
+L69 76
+/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends
+/Einstellungen/ICS Verhalten/Smartes _schließen von Schirmen nach Spielende
+L18 32
+/Settings/Pre_move
+/Einstellungen/Ziehen i_m Voraus
+L27 33
+/Settings/Sho_w Coordinates
+/Einstellungen/Zeige _Koordinaten
+L24 31
+/Settings/_Animate Moves
+/Einstellungen/_Züge animieren
+L33 40
+/Settings/_Beep on Opponent Moves
+/Einstellungen/_Ton beim Zug des Gegners
+L30 39
+/Settings/_Enable Other Sounds
+/Einstellungen/_Andere Töne aktivieren
+L30 39
+/Settings/_Highlight Last Move
+/Einstellungen/Letzten Zug _hervorheben
+L23 29
+/Settings/_ICS Behavior
+/Einstellungen/_ICS Verhalten
+L25 24
+/Settings/_Preferences...
+/Einstellungen/_Optionen
+L47 59
+/Settings/_Vectorized Pieces (Faster Rendering)
+/Einstellungen/_Vektorgraphik-Figuren (Schnelleres rendern)
+L14 19
+/Settings/sep3
+/Einstellungen/sep3
+L23 24
+/Windows/Find _Previous
+Fenster/Finde _vorherige
+L28 31
+/Windows/Games on _Client...
+Fenster/Partien auf dem _Client
+L31 34
+/Windows/Save Desktop _Geometry
+Fenster/Desktop-_Geometrie sichern
+L29 32
+/Windows/Save _Text Buffer...
+Fenster/_Textspeicher sichern...
+L26 31
+/Windows/_Ads on Server...
+Fenster/_Anzeigen auf Server...
+L26 29
+/Windows/_Detached Console
+Fenster/_Freistehende Konsole
+L32 31
+/Windows/_Find Text (upwards)...
+Fenster/Finde Text (auf_wärts)
+L28 30
+/Windows/_Games on Server...
+Fenster/_Partien auf Server...
+L23 25
+/Windows/_Run Script...
+Fenster/_Starte Skript...
+L13 12
+/Windows/sep1
+Fenster/sep1
+L13 12
+/Windows/sep2
+Fenster/sep2
+L13 12
+/Windows/sep3
+Fenster/sep3
+L6 8
+/_Game
+/Par_tie
+L6 7
+/_Help
+/_Hilfe
+L6 9
+/_Peer
+/_Partner
+L10 15
+/_Settings
+/_Einstellungen
+L9 8
+/_Windows
+_Fenster
+L106 118
+<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<AdListDialog::AdListDialog> Warnung: konnte festen Font nicht laden. Dieser Dialoginhalt wird häßlich aussehen.\n\n
+L41 47
+<BareBoard::BareBoard> can't load font.\n
+<BareBoard::BareBoard> kann Font nicht laden.\n
+L124 152
+<Board::Board> ** failed to load one or more board fonts - install X11 75 dpi and 100 dpi fonts, restart X, and try again.\n
+<Board::Board> ** Laden von einem oder mehreren Fonts fehlgeschlagen - X11 75 dpi und 100 dpi Fonts installieren, X neu starten und nochmal versuchen.\n
+L58 76
+<Board::Board> ** failed to load one or more board fonts\n
+<Board::Board> ** Laden von einem oder mehreren Brett-Fonts fehlgeschlagen\n
+L34 45
+<Fics Protocol> abort request sent
+<Fics Protocol> Abbruch-Anforderung gesendet 
+L36 45
+<Fics Protocol> adjourn request sent
+<Fics Protocol> Vertagen-Anforderung gesendet
+L33 42
+<Fics Protocol> draw request sent
+<Fics Protocol> Remis-Anforderung gesendet
+L110 120
+<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<GameListDialog::GameListDialog> Warnung: konnte festen Font nicht laden, DieserDialoginhalt  wird häßlich aussehen.\n
+L45 42
+<PatternMatcher::set> ** bad pattern string: 
+<PatternMatcher::set> ** falsches Muster: 
+L40 46
+<PieceSet::PieceSet> ** file not found: 
+<PieceSet::PieceSet> ** Datei nicht gefunden: 
+L39 40
+<SeekGraph::updatefont> failed to load 
+<Text::updateFont> laden fehlgeschlagen 
+L112 124
+<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n\n
+<StockListDialog::StockListDialog> Warnung: konnte festen Font nicht laden. Dieser Dialoginhalt wird häßlich aussehen.\n\n
+L34 40
+<Text::updateFont> failed to load 
+<Text::updateFont> laden fehlgeschlagen 
+L42 45
+<XBoard Protocol> Adjourning not supported
+<XBoard Protocol> Vertagen nicht unterstützt
+L33 38
+<XBoard Protocol> Session Aborted
+<XBoard Protocol> Sitztung abgebrochen
+L35 44
+<XBoard Protocol> draw request sent
+<XBoard Protocol> Remis-Anforderung gesendet
+L9 11
+<editing>
+<editieren>
+L17 21
+> (password sent)
+> (Passwort gesendet)
+L23 26
+> [issued from menu] %s
+> [Ausgegeben vom Menu] %s
+L25 27
+> [issued from shortcut] 
+> [gestartet vom Kurztaste]
+L31 34
+> [script run from shortcut] %s
+> [Starte Skript vom Kurztaste] %s
+L12 12
+About eboard
+Über eboard
+L6 11
+Accept
+Akzeptieren
+L36 39
+Accepted incoming connection from %s
+Eingehende Verbindung von %s akzeptiert
+L14 21
+Ad Description
+Anzeigen-Beschreibung
+L7 13
+Ad List
+Anzeigenliste
+L23 31
+Ad List (refreshing...)
+Anzeigenliste (aktualisiere...)
+L33 48
+Add to Peer/Engine Bookmarks menu
+Zum Partner/Engine-Lesezeichen Menü hinzufügen
+L22 22
+Address already in use
+Adresse bereits belegt
+L3 8
+Ads
+Anzeigen
+L21 21
+Already connected ?!?
+Bereits verbunden ?!?
+L675 781
+Anywhere:\nF3: Go to previous pane.\nF4: Go to next pane.\nF5: Go to the main board pane.\nF6: Go to the console pane.\nF7: Go to the seek graph pane (if available).\nF8: Toggle Shortcut Bar visilibity.\nPage Up/Page Down: scrolls the text console (must be visible)\nCtrl+(Left Arrow): Backward 1 halfmove\nCtrl+(Right Arrow): Forward 1 halfmove\nCtrl+F: Find Upwards(main console buffer)\nCtrl+G: Find Previous\n\nInput box:\nUp/Down (arrows): move thru input history\nEnter: send text line\nEsc: switch Chat/Command Mode\n\nSyntaxisms:\nIn main window's input box:\n.. entering %prefix text will set the chat prefix to text.\n.. entering %do scriptname will run scriptname.
+Überall:\nF3: Geht zum  vorherigen Schirm.\nF4: Geht zum nächsten Schirm.\nF5: Geht zum Spielbrett-Schirm.\nF6: Geht zum Konsolen-Schirm.\nF7: Geht zum Anzeigentafel-Schirm (wenn verfügbar).\nF8: Umschaltung Kurzbefehl-Bar sichtbar/unsichtbar.\nBild hoch/Bild runter: scrollt die Textkonsole (mus sichtbar sein\nStrg+(Linkspfeil): 1 Halbzug Rückwärts\nStrg+(Rechtspfeil): 1 Halbzug Vorwärts\nStrg+F: Finde vorangehende(Hauptkonsolen-Puffer)\nStrg+G: Finde Vorherige\n\nEingabe box:\nPfeil nach Oben/Unten : durch die Eingabe-Historie gehen\nEnter: Textzeile senden\nEsc: Umschalten Chat-/Befehls-Modus\n\nSyntax:\nIn der Eingabe-Box des Hauptfensters:\n.. Eingabe des %prefix Text setzt den Chat-Prefix auf Text.\n.. Eingabe von %do Skriptname startet das  Skript Skriptname.
+L10 11
+Appearance
+Erscheinung
+L8 10
+Appended
+angehangen
+L5 11
+Apply
+Übernehmen
+L13 23
+Apply Changes
+Änderungen übernehmen
+L24 36
+Auto-save observed games
+Beobachtete Partien autom. speichern
+L22 34
+Auto-save played games
+Gespielte Partien autom. speichern
+L8 16
+Autosave
+Autom. speichern
+L10 11
+Background
+Hintergrund
+L14 19
+Bad descriptor
+Falscher Descriptor
+L45 59
+Beep (need Pitch, Duration, Count and Device)
+Geräusch (benötigt Tonhöhe, Tondauer, Zähler und Gerät
+L10 12
+Bishop  %d
+Läufer   %d
+L5 7
+Black
+Schwarz
+L14 16
+Black: %s - %s
+Schwarz: %s - %s
+L17 27
+Bookmark Caption:
+Lesezeichen Kurzbezeichnung
+L6 5
+Bottom
+Unten
+L11 12
+Bright Text
+Breiter Text
+L6 10
+Browse
+Übersicht
+L19 39
+Buffer Save failed.
+Zwischenspeicher sichern fehlgeschlagen
+L8 8
+Bughouse
+Bughouse
+L22 23
+Bughouse: Partner Game
+Bughouse: Partner Spiel
+L14 12
+Button Caption
+Tasten- Name
+L11 11
+Button Icon
+Tasten-Icon
+L6 9
+Cancel
+Abbrechen
+L26 30
+Cancelled connection wait.
+Abgebrochene Verbindung wartet
+L9 10
+Change...
+Ändern...
+L13 15
+Channel Tells
+Kanal-Nachricht
+L9 4
+Checkmate
+Matt
+L14 15
+Chess Programs
+Schachprogramme
+L11 11
+Choose Font
+Wähle Font
+L9 6
+Choose...
+Wähle
+L10 8
+Clock Font
+Uhr Font
+L5 10
+Close
+Schließen
+L5 5
+Color
+Farbe
+L15 11
+Color Selection
+Farbauswahl
+L6 6
+Colors
+Farben
+L7 6
+Command
+Befehl
+L13 13
+Command Line:
+Kommandozeile
+L8 8
+Computer
+Computer
+L30 35
+Computer White vs. Human Black
+Computer Weiß gegen Mensch Schwarz
+L23 26
+Configured Sound Files:
+Konigurierte Klang-Dateien
+L7 8
+Connect
+Verbinde
+L21 23
+Connect to ICS Server
+Verbinde mit ICS Server
+L20 21
+Connected to %s (%s)
+Verbunden mit %s (%s)
+L19 18
+Connecting to %s...
+Verbinde mit %s...
+L18 20
+Connection refused
+Verbindung abgelehnt
+L28 37
+Connection to %s:%d failed: 
+Verbindung mit %s:%d fehlgeschlagen: 
+L7 7
+Console
+Konsole
+L12 18
+Console Beep
+Konsolen-Geräusch
+L12 13
+Console Font
+Konsolen-Font
+L21 37
+Console buffer saved.
+Konsole - Zwischenspeicher gesichert.
+L6 7
+Count:
+Zähler
+L10 10
+Crazyhouse
+Crazyhouse
+L15 15
+Dark Squares...
+Schwarze Felder
+L18 23
+Delete All Entries
+Alle Einträge löschen
+L17 23
+Delete This Entry
+Diesen Eintrag löschen
+L12 16
+Depth Limit:
+Max. Rechentiefe
+L11 12
+Description
+Beschreibung
+L7 7
+Device:
+Gerät:
+L50 58
+Directory to run from (e.g., where book files are)
+Start-Verzeichnis (d.h. da wo die Eröffnungsbücher sind)
+L10 11
+Directory:
+Verzeichnis
+L11 14
+Discard All
+Alle verwerfen
+L12 16
+Discard Game
+Partie verwerfen
+L7 10
+Dismiss
+Abgewiesen
+L12 14
+Display Game
+Partie ansehen
+L9 7
+Displayed
+Gesehen
+L81 90
+Distributed under the terms of the GNU General Public License, version 2 or later
+Veröffentlicht unter den Bedingungen der GNU General Public Lizenz, Version 2 oder höher
+L12 15
+Draw Offered
+Remis angeboten
+L16 21
+Draw offer sent.
+Remisangebot gesendet
+L18 16
+Drawn by agreement
+Remis vereinbart
+L11 11
+Drop Piece:
+Ziehe Stein
+L16 12
+Duration (msec):
+Dauer (msec)
+L18 24
+Dynamic Seek Table
+Dynamische Anzeigentafel
+L17 24
+Edit Bookmarks...
+Lesezeichen editieren...
+L21 28
+Edit Engine Bookmarks
+Engine Lesezeichen editieren
+L14 20
+Edit Game Info
+Partieinfo editieren
+L17 20
+Edit Time Control
+Zeitmodus einstellen
+L5 4
+Empty
+Leer
+L16 18
+Engine Bookmarks
+Engine Lesezeichen
+L14 13
+Engine Command
+Engine Befehl
+L12 10
+Engine Type:
+Engine Typ
+L28 33
+Engine Type: %s (uneditable)
+Engine Typ: %s (nicht editierbar)
+L43 48
+Engine asked more time to startup, waiting.
+Engine forderte mehr Zeit zum starten an, warten
+L19 19
+Engine command line
+Engine Befehlszeile
+L14 14
+Engine loaded.
+Engine geladen
+L14 17
+Engine running
+Engine in Betrieb
+L30 33
+Engine started (2 sec timeout)
+Engine gestartet (2 sek. timeout)
+L18 21
+Enter FEN Position
+FEN-Position eingeben
+L10 12
+Event Type
+Ereignis-Typ
+L13 17
+Exam.Game #%d
+Analys.Partie #%d
+L21 31
+Failed to run engine.
+Start der Engine fehlgeschlagen
+L28 39
+Failed to run helper program
+Start des Hilfsprogramms fehlgeschlagen
+L30 42
+File to play / Program to run:
+Datei zum Abspielen / Programm zum Starten
+L8 8
+Filter: 
+Filter: 
+L14 14
+Filter: (none)
+Filter: (kein)
+L36 41
+Finish the current connection first.
+Die bestehende Verbindung zuerst beenden.
+L30 35
+Finish the current game first.
+Zuerst die laufende Partie beenden.
+L5 5
+Flags
+Flags
+L5 5
+Fonts
+Fonts
+L22 20
+From Elsewhere (%d %s)
+Von Irgendwo (%d %s)
+L20 26
+From Engines (%d %s)
+Von Engine-Spielen (%d %s)
+L8 3
+From FEN
+FEN
+L16 15
+From ICS (%d %s)
+Vom ICS (%d %s)
+L22 23
+From PGN Files (%d %s)
+Aus PGN-Dateien (%d %s)
+L6 6
+Game #
+Partie
+L8 10
+Game #%d
+Partie #%d
+L19 21
+Game #%d - %d %d %s
+Partie #%d - %d %d %s
+L20 22
+Game #%d - %s vs. %s
+Partie #%d - %s vs. %s
+L21 34
+Game #%d - untimed %s
+Partie #%d - ohne Zeitkontrolle %s
+L12 14
+Game #%d: %s
+Partie #%d: %s
+L12 18
+Game Aborted
+Partie abgebrochen
+L16 18
+Game Description
+Partiebeschreibung
+L21 24
+Game Information Font
+Partie Informations Font
+L9 11
+Game List
+Partieliste
+L25 30
+Game List (refreshing...)
+Partieliste (aktualisieren...)
+L9 15
+Game Lost
+Partie verloren
+L12 16
+Game Started
+Partie gestarted
+L8 15
+Game Won
+Partie gewonnen
+L19 22
+Game appended to %s
+Partie angefügt an %s
+L17 13
+Game in progress.
+Partie läuft
+L13 17
+Game over: %s
+Partie zu Ende %s
+L19 26
+Game proposal sent.
+Spielaufforderung gesendet
+L13 16
+Game started!
+Partie gestartet
+L12 14
+Game/Board: 
+Partie/Brett: 
+L5 7
+Games
+Partien
+L24 27
+Generic XBoard Engine...
+Generische XBoard Engine...
+L8 8
+Giveaway
+Giveaway
+L46 47
+Graphic representation of crazy/bughouse stock
+Grafische Darstellung von crazy/bughouse Vorrat
+L16 10
+Help: Debug Info
+Debug Info
+L22 14
+Help: Getting Started 
+Erste Schritte
+L10 13
+Help: Keys
+Hilfe: Tasten
+L5 10
+Hide!
+Verdecken!
+L18 23
+Host not found: %s
+Host nicht gefunden: %s
+L8 8
+Hostname
+Hostname
+L23 25
+Hostname or IP address:
+Hostname oder IP-Adresse:
+L5 6
+Human
+Mensch
+L30 35
+Human White vs. Computer Black
+Mensch Weiß gegen Computer Schwarz
+L17 23
+Human plays white
+Mensch spielt mit Weiß
+L13 13
+ICS Challenge
+ICS Challenge
+L25 34
+IPC pipe creation failed.
+IPC -Pipe-Erzeugung fehlgeschlagen
+L2 3
+Id
+Nr.
+L104 126
+If you pick a bookmark, the engine\nwill play the next move, ignoring\nthe side setting in the bookmark.
+Wenn man ein Lesezeichen anklickt, spielt die Engine\n den nächsten Zug, die Seite-Einstellungen\nim Lesezeichen ignorierend.
+L43 53
+Illegal Drop on %c%d (Legality Checking On)
+Illegaler Zug zum Feld %c%d (Legalitätsprüfung Ein)
+L44 48
+Illegal Move %c%d%c%d (Legality Checking On)
+Illegaler Zug %c%d%c%d (Legalitätsprüfung Ein)
+L23 29
+Illegal move, not sent.
+Illegaler Zug, nicht gesendet
+L17 17
+Increment (secs):
+Inkrement (sek): 
+L10 9
+Increment:
+Inkrement
+L55 64
+Inhibit seek lines on console when Seek Table is active
+Verhindere Anzeigen auf der Konsole wenn Anzeigentafel aktiv ist
+L16 16
+Initial Position
+Ausgangsstellung
+L23 19
+Initial time ([mm:]ss):
+Startzeit (mm:ss): 
+L19 20
+Initializing engine
+Initialisiere Engine
+L3 5
+Key
+Taste
+L4 5
+Key:
+Taste
+L17 20
+Kibitzes/Whispers
+Kibitze/Zuflüsterer
+L4 7
+Kill
+Beenden
+L10 11
+Knight  %d
+Springer %d
+L22 26
+Last Proposal Received
+Letzten Vorschlag erhalten
+L4 5
+Left
+Links
+L16 13
+Light Squares...
+Weisse Felder
+L8 9
+Load PGN
+PGN laden
+L11 12
+Load PGN...
+PGN laden...
+L5 5
+Local
+Lokal
+L15 18
+Local Game List
+Lokale Partieliste
+L21 16
+Looking up host %s...
+Suche Host %s...
+L6 6
+Losers
+Losers
+L10 10
+Main Board
+Spielbrett
+L13 14
+Mamer and TDs
+Admins und TDs
+L14 16
+Manual/Formula
+Manuell/Formular
+L23 38
+Match Found at Line %d.
+Übereinstimmung gefunden in Zeile %d 
+L15 24
+Match Pattern: 
+Übereinstimmung Muster:
+L17 17
+Material: %d - %d
+Material: %d - %d
+L8 13
+Max Ply:
+Max Suchtiefe
+L30 29
+Move made (Obs'vd/Exm'd Games)
+Zug! (Beob./Nachgesp.Partien)
+L5 5
+Moves
+Züge
+L22 29
+Network is unreachable
+Netzwerk ist nicht erreichbar
+L18 19
+News/Notifications
+Neuigkeiten/Notizen
+L2 4
+No
+Nein
+L9 11
+No error.
+Kein Fehler
+L19 31
+No material to mate
+Zuwenig Material zum Mattsetzen
+L8 12
+No peer.
+Kein Partner
+L19 21
+No previous search.
+Keine vorherige Suche
+L18 27
+No proposals left.
+Keine Vorschläge vorhanden
+L22 26
+No proposals received.
+Keine Vorschläge erhalten
+L4 5
+None
+Keine
+L12 12
+Normal Chess
+Normalschach
+L11 13
+Normal Text
+Normaler Text
+L16 20
+Not a socket ?!?
+Nicht ein Socket ?!?
+L2 2
+OK
+OK
+L17 26
+Obs'vd Game Ended
+Beobachtete Partie beendet
+L7 10
+Observe
+Beobachten
+L2 2
+Ok
+OK
+L160 232
+Once you connect to a host from this dialog, it will be added to\nthe Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\nto modify or remove entries.
+Wenn Sie -aus diesem Dialog- eine Verbindung zu einem Host aufbauen,wird\neine entsprechendes Lesezeichen in das Peer/ICS Menü eingefügt. Editieren Sie\ndie ~/.eboard/eboard.conf Datei um das Lesezeichen zu ändern oder entfernen.
+L293 355
+Only lines that match the above pattern will be added\nto this text pane. Patterns can be OR'ed with the | (pipe)\ncharacter. A * (star) can be used to match anything.\nExamples:\n'(20)|(22)' shows only lines from channels 20 and 22\n'blik * bored' shows lines containing 'blik '(...)' bored'.
+Nur Zeilen, die mit dem oben gezeigetn Muster übereinstimmen, werden\nzu diesem Text-Schirm hinzugefügt. Muster können geODERt werden mit dem Zeichen | \nEin * (Stern) kann benutzt werden als sog. Joker.\nBeispiele:\n'(20 | (22)' zeigen nur Zeilen aus den Kanälen 20 und 22\n'blik * bored zeigt Zeilen welche das Muster 'blik '(...)' bored' enthalten.
+L14 18
+Opponent Moved
+Gegner hat gezogen
+L7 8
+Options
+Optionen
+L11 15
+PGN Headers
+PGN Partiedaten
+L13 13
+PGN filename:
+PGN-Dateiname
+L14 12
+Partner Tells:
+Partner sagt
+L10 11
+Pawn    %d
+Bauer    %d
+L11 13
+Pitch (Hz):
+Tonhöhe (Hz)
+L4 6
+Play
+Spiele
+L56 62
+Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)
+Spiele %s als %s gegen %s (%s, max.Tiefe %d, Rechne immer: %s)
+L58 69
+Play WAV (need Device and Filename, sox must be installed)
+Spiele WAV (benötigt Gerät und Dateiname, sox muß installiert sein
+L19 18
+Play against Crafty
+Spiel gegen Crafty
+L19 18
+Play against Engine
+Spiel gegen Engine
+L24 23
+Play against GNU Chess 4
+Spiel gegen GNU Chess 4
+L18 17
+Play against Sjeng
+Spiel gegen Sjeng
+L6 7
+Player
+Spieler
+L14 16
+Player resigns
+Spieler gibt auf
+L22 23
+Player/Color Name Font
+Spieler/Farbe Name Font
+L14 14
+Pos: %s vs. %s
+Pos: %s vs. %s
+L11 8
+Preferences
+Optionen
+L12 17
+Private Tell
+Private Nachricht
+L13 19
+Private Tells
+Private Nachrichten
+L23 27
+Program exited too soon
+Programm zu schnell beendet
+L8 11
+Progress
+Fortschritt
+L17 17
+Promotion Piece  
+Verwandlung in:  
+L7 9
+Propose
+Vorschlag
+L12 14
+Propose Game
+Spielvorschlag
+L8 9
+Protocol
+Protokoll
+L33 39
+Protocol mismatch, disconnecting.
+Falsches Protokoll, Verbindungsabbruch.
+L10 11
+Queen   %d
+Dame     %d
+L5 9
+Rated
+Bewertung
+L6 7
+Rating
+Wertung
+L12 16
+Rating Range
+Bewertungsspanne
+L33 34
+Received a game proposal from %s.
+Spielaufforderung von %s empfangen
+L12 12
+Recent Hosts
+Letzte Hosts
+L12 19
+Refresh List
+Liste aktualisieren
+L19 25
+Replied to seek #%d
+Geantworted auf Suche #%d
+L9 10
+Resigned.
+Aufgegeben
+L6 8
+Result
+Ergebnis
+L20 25
+Retracted last move.
+Letzten Zug zurücknehmen
+L45 47
+Retrieve ICS Channel Lists from eboard.sf.net
+ICS Channel List von eboard.sf.net zurückholen
+L18 34
+Revert to Defaults
+Rückkehr zu Standardeinstellungen
+L18 34
+Revert to defaults
+Rückkehr zu Standardeinstellungen
+L5 6
+Right
+Rechts
+L10 11
+Rook    %d
+Turm     %d
+L3 7
+Run
+Starten
+L13 16
+Run Engine...
+Starte Engine...
+L27 36
+Run Program (need Filename)
+Starte Programm (benötigt Dateiname
+L47 61
+Run autofics.pl script after connecting to FICS
+Starte das Script autofics.pl nach Verbindungsaufbau zum FICS
+L17 31
+Save Buffer As...
+Zwischenspeicher sichern als...
+L12 16
+Save Game...
+Partie speichern
+L11 16
+Save as PGN
+In PGN speichern
+L10 8
+Scratch %d
+Brett %d
+L6 6
+Script
+Skript
+L11 12
+Script List
+Skript-Liste
+L34 46
+Scrollback limit (0 = unlimited) :
+Limit fürs zurückscrollen (0 = unbegrenzt) :
+L11 10
+Search Text
+Suche Text
+L12 12
+Search for: 
+Suche nach: 
+L22 29
+Search text not found.
+Gesuchten Text nicht gefunden
+L8 15
+Seek Ads
+Such - Anzeigen
+L10 13
+Seek Table
+Anzeigentafel
+L15 13
+Seek Table Font
+Anzeigentafel
+L10 17
+Set Filter
+Filter einstellen
+L13 20
+Set Filter...
+Filter einstellen...
+L49 94
+Set depth limit to 0 to use the engine's default.
+Setzte irgendeines von diesen Feldern zu Null\num die Default-Einstellung der Engine zu nutzen
+L13 16
+Setup Buttons
+Setup von Tasten
+L21 16
+Shortcut Button Setup
+Kurztasten-Setup
+L6 7
+Shouts
+Schreie
+L42 49
+Show channel tells in one pane per channel
+Zeige Kanal-Nachrichten in einem Schirm pro Kanal
+L63 73
+Show channel tells on console too (when above option is active)
+Zeige Kanal-Nachrichten auch auf der Konsole (Wenn o.g. Option aktiv ist)
+L31 41
+Show rating next to player name
+Zeige Wertungszahl neben den Spielernamen
+L33 40
+Show shortcut buttons below board
+Zeige Tasten-Kurzbefehle unter dem Brett
+L11 12
+Side & Time
+Farbe & Zeit
+L14 8
+Side Selection
+Farbwahl
+L14 13
+Side to move: 
+Seite am Zug:
+L34 51
+Smoother animation (eats more CPU)
+Flüssigere Animation (benötigt mehr CPU-Leistung)
+L76 75
+Sorry, this protocol does not allow to retract a move thru this menu option.
+Dieses Protokoll erlaubt keine Rücknahme der Züge durch diese Menüoption
+L11 14
+Sound Event
+Klang-Ereignis
+L12 15
+Sound Events
+Klangereignisse
+L6 7
+Sounds
+Klänge
+L54 55
+Source code available at http://eboard.sourceforge.net
+Quellkode vefügbar unter http://eboard.sourceforge.net
+L9 4
+Stalemate
+Patt
+L18 18
+Start a connection
+Verbindung starten
+L14 11
+Starting Time:
+Anfangszeit
+L7 7
+Suicide
+Suicide
+L8 8
+TCP Port
+TCP Port
+L9 8
+TCP Port:
+TCP Port
+L12 12
+Tab Position
+Tab Position
+L4 4
+Test
+Test
+L52 58
+The checkbox on the left enables/disables the sound.
+Die Box auf der linken Seite aktiviert/deaktiviert den Ton
+L69 83
+The engine will be run with\n/bin/sh -c 'cd directory ; command line'
+Die Engine wird gestartet mit dem Befehl\n/bin/sh-c 'cd Verzeichnis ; Befehlszeile'
+L12 21
+Think Always
+Immer Züge berechnen
+L24 36
+Think on opponent's time
+Rechne während der Zeit des Gegners
+L4 4
+Time
+Zeit
+L12 9
+Time Control
+Zeitmodus
+L15 12
+Time Control...
+Zeitmodus...
+L13 13
+Time Control:
+Zeitkontrolle
+L16 14
+Time Running Out
+Zeit läuft ab
+L7 7
+Timeout
+Timeout
+L44 45
+Times can be given as hh:mm:ss , mm:ss or ss
+Zeit als hh:mm:ss oder mm:ss oder ss eingeben
+L180 235
+To run multiple commands with one shortcut, separate the commands with ; (semicolon).\nTo run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl .
+Um mehrere Befehle über eine Kurztaste zu starten, sind die Befehlemit einem ; (semikolon) zu trennen.\nUm ein Skript über eine Kurztaste zu starten, ist der Befehl in der Form script.Skriptname einzugeben z.B. script.Meinskript.pl .
+L3 4
+Top
+Oben
+L30 16
+Type: Fischer Clock (ICS-like)
+Typ: Fischer-Uhr
+L25 23
+Type: Fixed Time per Move
+Typ: Feste Zeit pro Zug
+L34 32
+Type: Use engine's default setting
+Typ: Grundeinstellung der Engine
+L29 30
+Type: X Moves per Time Period
+Typ: X-Züge in der Zeitspanne
+L26 30
+Unable to bind on port %d.
+Kann an Port %d nicht anbinden
+L24 26
+Unable to create socket.
+Kann Socket nicht erzeugen
+L13 18
+Unknown error
+Unbekannter Fehler
+L14 20
+Unknown result
+Unbekanntes Ergebnis
+L23 26
+Use plain color squares
+Einfarbige Felder benutzen
+L5 4
+Value
+Wert
+L6 5
+Value:
+Wert:
+L7 8
+Variant
+Variante
+L8 8
+Variant:
+Variante
+L24 31
+Variant: %s (uneditable)
+Variante: %s (nicht editierbar)
+L4 5
+Wait
+Warte
+L21 21
+Wait for a connection
+Auf Verbindung warten
+L34 31
+Waiting for connection on port %d.
+Warte auf Verbindung am Port %d
+L30 47
+Warn when own clock is below: 
+Warnen, wenn eigene Zeit unterhalb von .. ist: 
+L18 20
+Welcome to eboard.
+Wilkommen bei eboard
+L5 5
+White
+Weiss
+L14 14
+White: %s - %s
+Weiss: %s - %s
+L10 12
+Working...
+Arbeitend...
+L16 19
+Write to Console
+Schreibe in Konsole
+L19 19
+Wrong address space
+Falscher Adressraum
+L5 11
+Wrote
+geschrieben
+L3 2
+Yes
+Ja
+L49 52
+You can only retract when it's your turn to move.
+Man kann nur Züge zurücknehmen wenn man am Zug ist
+L11 11
+Your color:
+Ihre Farbe:
+L10 8
+Your name:
+Ihr Name
+L6 6
+[chat]
+[chat]
+L5 5
+[cmd]
+[cmd]
+L39 48
+[eboard] ** failed to create directory 
+[eboard] ** Verzeichniserstellung fehlgeschlagen
+L20 22
+[eboard] ** no $HOME
+[eboard] ** kein $HOME
+L22 34
+[eboard] bad RC line\n
+[eboard] schlechte RC-Verbindung\n
+L4 9
+beep
+Geräusch
+L5 10
+beeps
+Geräusche
+L5 7
+black
+Schwarz
+L53 65
+can't load PGN move text from %s (error opening file)
+kann PGN Züge nicht laden von %s (Fehler beim Öffnen der Datei)
+L30 31
+can't seek to offset %lu of %s
+Dateifehler ab offset %lu of %s
+L14 19
+discards board
+Schließt das Brett
+L32 30
+eboard Direct Connection Manager
+eboard Netzverbindungs-Manager
+L22 22
+eboard version %s (%s)
+Eboard Version %s (%s)
+L343 356
+eboard version %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nThis program is free software; you can redistribute\nit and/or modify it under the terms of the GNU General\nPublic License as published by the Free Software\nFoundation; either version 2 of the License, or\n(at your option) any later version.\n
+eboard version %s\n(c) 2000-%d Felipe Bergo\n<fbergo@gmail.com>\nhttp://eboard.sourceforge.net\n\nDieses Program ist freie Software; Sie können es verteilen\nund/oder modifizieren unter den Bedingungen der GNU General\nPublic License publiziert durch die Free Software\nFoundation; entweder Version 2 der Lizenz, oder\n(wahlweise) eine spätere Version.\n
+L19 11
+eboard: Console #%d
+Konsole #%d
+L60 76
+engine claimed illegal move but we didn't move, ignoring it.
+Engine beanstandete illegalen Zug, aber wir haben nicht gezogen, Ignorieren.
+L22 37
+error parsing PGN data
+Fehler beim analysieren von PGN-Daten
+L11 14
+flips board
+Brett umdrehen
+L4 6
+game
+Partie
+L5 7
+games
+Partien
+L17 17
+generic xboard v2
+Generic XBoard V2
+L20 22
+goes back 1 halfmove
+Geht 1 Halbzug zurück
+L26 29
+goes back to start of game
+Geht zurück zum Partieanfang
+L23 28
+goes forward 1 halfmove
+Geht einen Halbzug vorwärts
+L27 29
+goes forward to end of game
+Geht vorwärts zum Partieende
+L13 14
+illegal move!
+Illegaler Zug!
+L11 9
+in progress
+in Arbeit
+L29 28
+initial time %s, increment %s
+Anfangszeit %s, Inkrement %s
+L8 8
+moves in
+Züge in
+L2 4
+no
+Nein
+L14 21
+no such game: 
+keine solche Partie: 
+L19 26
+no time control set
+kein Zeitmodus eingestellt
+L4 5
+none
+keine
+L7 6
+nothing
+Nichts
+L37 49
+opens new scratch board with position
+Öffnet neues Stellungseingabe-Brett mit Position
+L8 7
+per move
+pro Zug
+L18 28
+plain console beep
+Einfaches Konsolen-Geräusch
+L12 15
+play file %s
+Spiele Datei %s
+L21 28
+pops up the move list
+Öffnet das Zugliste-Fenster
+L24 32
+process creation failed.
+Prozess-Erzeugung fehlgeschlagen
+L5 8
+rated
+bewertet
+L6 9
+run %s
+Starte %s
+L10 17
+running %s
+Ausführen von %s
+L18 26
+savePGN failed: %s
+savePGN fehlgeschlagen: %s
+L54 76
+savePGN failed: Won't save game with less than 2 moves
+savePGN fehlgeschlagen: Kann Spiele mit weniger als 2 Zügen nicht speichern
+L8 8
+seconds.
+Sekunden
+L7 14
+unrated
+nicht bewertet
+L5 5
+white
+Weiß
+L3 2
+yes
+Ja
+E 492

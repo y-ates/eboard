@@ -1,0 +1,2137 @@
+# (2) 
+msgid  " ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n"
+msgstr ""
+
+# (1) 
+msgid  " Browse... "
+msgstr ""
+
+# (1) 
+msgid  " Remove Field "
+msgstr ""
+
+# (1) 
+msgid  " Set "
+msgstr ""
+
+# (1) 
+msgid  ""
+"#L#Getting Started\n"
+"#M#Common Tasks in eboard\n"
+"\nPlaying against the computer\n"
+"#S#eboard does not \"play chess\" itself, but rather is works as interface to programs that do,\n"
+"called \"engines\", which don't have a graphical interface themselves. You need an engine to\n"
+"play against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\n"
+"no cost.\n"
+"Once you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\n"
+"engine#K# submenu, and select the appropriate option depending on which engine you have\n"
+"installed.\n"
+"\n#M#Playing Chess on the Internet\n"
+"#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\n"
+"US Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\n"
+"To connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\n"
+"other servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\n"
+"While you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\n"
+"is done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n"
+"\n#M#Browsing PGN Games\n"
+"#S#PGN is the most common file format to store chess games. It can store moves and comments\n"
+"(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n"
+"#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\n"
+"game, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\n"
+"with the game.#L#"
+msgstr ""
+
+# (1) 
+msgid  "%d %s to %s, %d Hz for %d msec"
+msgstr ""
+
+# (1) 
+msgid  "%d games read"
+msgstr ""
+
+# (2) 
+msgid  "%d moves in %s"
+msgstr ""
+
+# (1) 
+msgid  "%d. Connect to %s:%d (%s)"
+msgstr ""
+
+# (1) 
+msgid  "%s (white) vs. %s (black)\n%s\n%d:%.2d %d"
+msgstr ""
+
+# (1) 
+msgid  "%s accepted your game proposal."
+msgstr ""
+
+# (1) 
+msgid  "%s engine started."
+msgstr ""
+
+# (2) 
+msgid  "%s offers a draw."
+msgstr ""
+
+# (1) 
+msgid  "%s per move"
+msgstr ""
+
+# (1) 
+msgid  "%s/move"
+msgstr ""
+
+# (1) 
+msgid  "(Wrapped) Match Found at Line %d."
+msgstr ""
+
+# (1) 
+msgid  "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)"
+msgstr ""
+
+# (1) 
+msgid  "(message obfuscated -- password mode ?)"
+msgstr ""
+
+# (2) 
+msgid  "(no bookmarks)"
+msgstr ""
+
+# (2) 
+msgid  "(none)"
+msgstr ""
+
+# (1) 
+msgid  "(time period)"
+msgstr ""
+
+# (1) 
+msgid  "* game not found: "
+msgstr ""
+
+# (1) 
+msgid  "** [eboard] bad engine protocol # in bookmark: "
+msgstr ""
+
+# (1) 
+msgid  "** eboard ** warning: HOME environment variable not set\n"
+msgstr ""
+
+# (1) 
+msgid  "--- %s game to PGN file %s"
+msgstr ""
+
+# (1) 
+msgid  "--- Disconnected"
+msgstr ""
+
+# (1) 
+msgid  "/Game/Ad_journ"
+msgstr ""
+
+# (1) 
+msgid  "/Game/Retract _Move"
+msgstr ""
+
+# (1) 
+msgid  "/Game/_Abort"
+msgstr ""
+
+# (1) 
+msgid  "/Game/_Offer Draw"
+msgstr ""
+
+# (1) 
+msgid  "/Game/_Resign"
+msgstr ""
+
+# (1) 
+msgid  "/Help/_About eboard..."
+msgstr ""
+
+# (1) 
+msgid  "/Help/_Debug Info"
+msgstr ""
+
+# (1) 
+msgid  "/Help/_Getting Started"
+msgstr ""
+
+# (1) 
+msgid  "/Help/_Keys"
+msgstr ""
+
+# (1) 
+msgid  "/Help/sep4"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Connect to _FICS"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Direct connect with _Remote eboard..."
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Engine B_ookmarks"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/ICS _Bookmarks"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Play against Engine/Cr_afty..."
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Play against Engine/GNU Chess _4..."
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Play against Engine/_Generic Engine..."
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Play against Engine/_Sjeng..."
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Play against Engine/sep1"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/Play against _Engine"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/_Connect to Other Server..."
+msgstr ""
+
+# (1) 
+msgid  "/Peer/_Disconnect"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/_Empty Scratch Board"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/_Quit"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/_Scratch Board with Initial Position"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/sep2"
+msgstr ""
+
+# (2) 
+msgid  "/Peer/sep3"
+msgstr ""
+
+# (1) 
+msgid  "/Peer/sep4"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece Sets/Load _Pieces Only"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece Sets/Load _Squares Only"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece Sets/Load _Theme"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Bitmapped Piece _Sets"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Enable Legality _Checking"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/ICS Behavior/Popup Board Panes _Upon Creation"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Pre_move"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/Sho_w Coordinates"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_Animate Moves"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_Beep on Opponent Moves"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_Enable Other Sounds"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_Highlight Last Move"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_ICS Behavior"
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_Preferences..."
+msgstr ""
+
+# (1) 
+msgid  "/Settings/_Vectorized Pieces (Faster Rendering)"
+msgstr ""
+
+# (5) 
+msgid  "/Settings/sep3"
+msgstr ""
+
+# (1) 
+msgid  "/Windows/Find _Previous"
+msgstr ""
+
+# (1) 
+msgid  "/Windows/Games on _Client..."
+msgstr ""
+
+# (1) 
+msgid  "/Windows/Save Desktop _Geometry"
+msgstr ""
+
+# (1) 
+msgid  "/Windows/Save _Text Buffer..."
+msgstr ""
+
+# (1) 
+msgid  "/Windows/_Ads on Server..."
+msgstr ""
+
+# (1) 
+msgid  "/Windows/_Detached Console"
+msgstr ""
+
+# (1) 
+msgid  "/Windows/_Find Text (upwards)..."
+msgstr ""
+
+# (1) 
+msgid  "/Windows/_Games on Server..."
+msgstr ""
+
+# (1) 
+msgid  "/Windows/_Run Script..."
+msgstr ""
+
+# (1) 
+msgid  "/Windows/sep1"
+msgstr ""
+
+# (1) 
+msgid  "/Windows/sep2"
+msgstr ""
+
+# (3) 
+msgid  "/Windows/sep3"
+msgstr ""
+
+# (1) 
+msgid  "/_Game"
+msgstr ""
+
+# (1) 
+msgid  "/_Help"
+msgstr ""
+
+# (1) 
+msgid  "/_Peer"
+msgstr ""
+
+# (1) 
+msgid  "/_Settings"
+msgstr ""
+
+# (1) 
+msgid  "/_Windows"
+msgstr ""
+
+# (1) 
+msgid  ""
+"<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+
+# (1) 
+msgid  "<Fics Protocol> abort request sent"
+msgstr ""
+
+# (1) 
+msgid  "<Fics Protocol> adjourn request sent"
+msgstr ""
+
+# (1) 
+msgid  "<Fics Protocol> draw request sent"
+msgstr ""
+
+# (1) 
+msgid  ""
+"<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+
+# (2) 
+msgid  "<PatternMatcher::set> ** bad pattern string: "
+msgstr ""
+
+# (2) 
+msgid  "<PieceSet::PieceSet> ** file not found: "
+msgstr ""
+
+# (1) 
+msgid  ""
+"<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+
+# (1) 
+msgid  "<XBoard Protocol> Adjourning not supported"
+msgstr ""
+
+# (1) 
+msgid  "<XBoard Protocol> Incompatible Engine Protocol"
+msgstr ""
+
+# (1) 
+msgid  "<XBoard Protocol> Session Aborted"
+msgstr ""
+
+# (1) 
+msgid  "<XBoard Protocol> draw request sent"
+msgstr ""
+
+# (1) 
+msgid  "<editing>"
+msgstr ""
+
+# (1) 
+msgid  "> (password sent)"
+msgstr ""
+
+# (2) 
+msgid  "> [issued from menu] %s"
+msgstr ""
+
+# (1) 
+msgid  "> [issued from shortcut] "
+msgstr ""
+
+# (1) 
+msgid  "> [script run from shortcut] %s"
+msgstr ""
+
+# (1) 
+msgid  "About eboard"
+msgstr ""
+
+# (1) 
+msgid  "Accept"
+msgstr ""
+
+# (1) 
+msgid  "Accepted incoming connection from %s"
+msgstr ""
+
+# (1) 
+msgid  "Ad Description"
+msgstr ""
+
+# (2) 
+msgid  "Ad List"
+msgstr ""
+
+# (1) 
+msgid  "Ad List (refreshing...)"
+msgstr ""
+
+# (1) 
+msgid  "Add to Peer/Engine Bookmarks menu"
+msgstr ""
+
+# (1) 
+msgid  "Address already in use"
+msgstr ""
+
+# (1) 
+msgid  "Ads"
+msgstr ""
+
+# (1) 
+msgid  "Already connected ?!?"
+msgstr ""
+
+# (1) 
+msgid  ""
+"Anywhere:\n"
+"F3: Go to previous pane.\n"
+"F4: Go to next pane.\n"
+"F5: Go to the main board pane.\n"
+"F6: Go to the console pane.\n"
+"F7: Go to the seek graph pane (if available).\n"
+"F8: Toggle Shortcut Bar visilibity.\n"
+"Page Up/Page Down: scrolls the text console (must be visible)\n"
+"Ctrl+(Left Arrow): Backward 1 halfmove\n"
+"Ctrl+(Right Arrow): Forward 1 halfmove\n"
+"Ctrl+F: Find Upwards(main console buffer)\n"
+"Ctrl+G: Find Previous\n"
+"\nInput box:\n"
+"Up/Down (arrows): move thru input history\n"
+"Enter: send text line\n"
+"Esc: switch Chat/Command Mode\n"
+"\nSyntaxisms:\n"
+"In main window's input box:\n"
+".. entering %prefix text will set the chat prefix to text.\n"
+".. entering %do scriptname will run scriptname."
+msgstr ""
+
+# (1) 
+msgid  "Appearance"
+msgstr ""
+
+# (1) 
+msgid  "Appended"
+msgstr ""
+
+# (1) 
+msgid  "Apply"
+msgstr ""
+
+# (1) 
+msgid  "Apply Changes"
+msgstr ""
+
+# (1) 
+msgid  "Auto-save observed games"
+msgstr ""
+
+# (1) 
+msgid  "Auto-save played games"
+msgstr ""
+
+# (1) 
+msgid  "Autosave"
+msgstr ""
+
+# (1) 
+msgid  "Axis & Buttons"
+msgstr ""
+
+# (1) 
+msgid  "Background"
+msgstr ""
+
+# (1) 
+msgid  "Bad descriptor"
+msgstr ""
+
+# (1) 
+msgid  "Beep (need Pitch, Duration, Count and Device)"
+msgstr ""
+
+# (1) 
+msgid  "Bishop  %d"
+msgstr ""
+
+# (5) 
+msgid  "Black"
+msgstr ""
+
+# (1) 
+msgid  "Black: %s - %s"
+msgstr ""
+
+# (1) 
+msgid  ""
+"Board Cursor Axis: %d\n"
+"Board Select Button: %d\n"
+"Board Browsing Axis: %d\n"
+"Previous Tab Button: %d\n"
+"Next Tab Button: %d\n"
+msgstr ""
+
+# (1) 
+msgid  "Board version :%s"
+msgstr ""
+
+# (1) 
+msgid  "Bookmark Caption:"
+msgstr ""
+
+# (1) 
+msgid  "Bottom"
+msgstr ""
+
+# (1) 
+msgid  "Bright Text"
+msgstr ""
+
+# (1) 
+msgid  "Browse"
+msgstr ""
+
+# (1) 
+msgid  "Buffer Save failed."
+msgstr ""
+
+# (1) 
+msgid  "Bughouse"
+msgstr ""
+
+# (2) 
+msgid  "Bughouse: Partner Game"
+msgstr ""
+
+# (1) 
+msgid  "Bus address :%s"
+msgstr ""
+
+# (1) 
+msgid  "Button Caption"
+msgstr ""
+
+# (1) 
+msgid  "Button Icon"
+msgstr ""
+
+# (9) 
+msgid  "Cancel"
+msgstr ""
+
+# (1) 
+msgid  "Cancel Joystick Configuration"
+msgstr ""
+
+# (1) 
+msgid  "Cancelled connection wait."
+msgstr ""
+
+# (1) 
+msgid  "Change..."
+msgstr ""
+
+# (2) 
+msgid  "Channel Tells"
+msgstr ""
+
+# (2) 
+msgid  "Checkmate"
+msgstr ""
+
+# (1) 
+msgid  "Chess Programs"
+msgstr ""
+
+# (1) 
+msgid  "Choose Font"
+msgstr ""
+
+# (5) 
+msgid  "Choose..."
+msgstr ""
+
+# (1) 
+msgid  "Clock Font"
+msgstr ""
+
+# (7) 
+msgid  "Close"
+msgstr ""
+
+# (1) 
+msgid  "Color Selection"
+msgstr ""
+
+# (1) 
+msgid  "Colors"
+msgstr ""
+
+# (1) 
+msgid  "Command"
+msgstr ""
+
+# (1) 
+msgid  "Command Line:"
+msgstr ""
+
+# (1) 
+msgid  "Computer"
+msgstr ""
+
+# (1) 
+msgid  "Computer White vs. Human Black"
+msgstr ""
+
+# (3) 
+msgid  "Configure Axis & Buttons"
+msgstr ""
+
+# (1) 
+msgid  "Configured Sound Files:"
+msgstr ""
+
+# (2) 
+msgid  "Connect"
+msgstr ""
+
+# (1) 
+msgid  "Connect to ICS Server"
+msgstr ""
+
+# (2) 
+msgid  "Connected to %s (%s)"
+msgstr ""
+
+# (2) 
+msgid  "Connecting to %s..."
+msgstr ""
+
+# (1) 
+msgid  "Connection refused"
+msgstr ""
+
+# (1) 
+msgid  "Connection to %s:%d failed: "
+msgstr ""
+
+# (3) 
+msgid  "Console"
+msgstr ""
+
+# (1) 
+msgid  "Console Beep"
+msgstr ""
+
+# (1) 
+msgid  "Console Font"
+msgstr ""
+
+# (1) 
+msgid  "Console buffer saved."
+msgstr ""
+
+# (1) 
+msgid  "Count:"
+msgstr ""
+
+# (1) 
+msgid  "Crazyhouse"
+msgstr ""
+
+# (1) 
+msgid  "DGT board found on port %s."
+msgstr ""
+
+# (1) 
+msgid  "DGT support error: wrong page"
+msgstr ""
+
+# (1) 
+msgid  "DGT warning: position mismatch between eboard and DGT board."
+msgstr ""
+
+# (1) 
+msgid  "DGT: unrecognized code: %c (%d)"
+msgstr ""
+
+# (1) 
+msgid  "Dark Squares..."
+msgstr ""
+
+# (1) 
+msgid  "Delete All Entries"
+msgstr ""
+
+# (1) 
+msgid  "Delete This Entry"
+msgstr ""
+
+# (1) 
+msgid  "Depth Limit:"
+msgstr ""
+
+# (1) 
+msgid  "Description"
+msgstr ""
+
+# (1) 
+msgid  "Device:"
+msgstr ""
+
+# (1) 
+msgid  "Directory to run from (e.g., where book files are)"
+msgstr ""
+
+# (1) 
+msgid  "Directory:"
+msgstr ""
+
+# (1) 
+msgid  "Discard All"
+msgstr ""
+
+# (1) 
+msgid  "Discard Game"
+msgstr ""
+
+# (1) 
+msgid  "Dismiss"
+msgstr ""
+
+# (1) 
+msgid  "Display Game"
+msgstr ""
+
+# (1) 
+msgid  "Displayed"
+msgstr ""
+
+# (1) 
+msgid  ""
+"Distributed under the terms of the GNU General Public License, version 2 or later"
+msgstr ""
+
+# (1) 
+msgid  "Draw Offered"
+msgstr ""
+
+# (1) 
+msgid  "Draw offer sent."
+msgstr ""
+
+# (2) 
+msgid  "Drawn by agreement"
+msgstr ""
+
+# (1) 
+msgid  "Drop Piece:"
+msgstr ""
+
+# (1) 
+msgid  "Duration (msec):"
+msgstr ""
+
+# (1) 
+msgid  "Dynamic Seek Graph"
+msgstr ""
+
+# (1) 
+msgid  "Edit Bookmarks..."
+msgstr ""
+
+# (1) 
+msgid  "Edit Engine Bookmarks"
+msgstr ""
+
+# (1) 
+msgid  "Edit Game Info"
+msgstr ""
+
+# (1) 
+msgid  "Edit Time Control"
+msgstr ""
+
+# (1) 
+msgid  "Empty"
+msgstr ""
+
+# (1) 
+msgid  "Engine Bookmarks"
+msgstr ""
+
+# (1) 
+msgid  "Engine Command"
+msgstr ""
+
+# (2) 
+msgid  "Engine Type:"
+msgstr ""
+
+# (1) 
+msgid  "Engine Type: %s (uneditable)"
+msgstr ""
+
+# (1) 
+msgid  "Engine asked more time to startup, waiting."
+msgstr ""
+
+# (1) 
+msgid  "Engine command line"
+msgstr ""
+
+# (1) 
+msgid  "Engine loaded."
+msgstr ""
+
+# (1) 
+msgid  "Engine running"
+msgstr ""
+
+# (1) 
+msgid  "Engine started (2 sec timeout)"
+msgstr ""
+
+# (1) 
+msgid  "Enter FEN Position"
+msgstr ""
+
+# (1) 
+msgid  "Event Type"
+msgstr ""
+
+# (1) 
+msgid  "Exam.Game #%d"
+msgstr ""
+
+# (1) 
+msgid  "Failed command line:"
+msgstr ""
+
+# (2) 
+msgid  "Failed to run engine."
+msgstr ""
+
+# (1) 
+msgid  "Failed to run helper program"
+msgstr ""
+
+# (1) 
+msgid  "File to play / Program to run:"
+msgstr ""
+
+# (4) 
+msgid  "Filter: "
+msgstr ""
+
+# (1) 
+msgid  "Filter: (none)"
+msgstr ""
+
+# (1) 
+msgid  "Finish the current connection first."
+msgstr ""
+
+# (1) 
+msgid  "Finish the current game first."
+msgstr ""
+
+# (1) 
+msgid  "Fonts"
+msgstr ""
+
+# (1) 
+msgid  "From Elsewhere (%d %s)"
+msgstr ""
+
+# (1) 
+msgid  "From Engines (%d %s)"
+msgstr ""
+
+# (1) 
+msgid  "From FEN"
+msgstr ""
+
+# (1) 
+msgid  "From ICS (%d %s)"
+msgstr ""
+
+# (1) 
+msgid  "From PGN Files (%d %s)"
+msgstr ""
+
+# (1) 
+msgid  "Game #"
+msgstr ""
+
+# (2) 
+msgid  "Game #%d"
+msgstr ""
+
+# (1) 
+msgid  "Game #%d - %s"
+msgstr ""
+
+# (1) 
+msgid  "Game #%d - %s - %s"
+msgstr ""
+
+# (1) 
+msgid  "Game #%d - %s vs. %s"
+msgstr ""
+
+# (1) 
+msgid  "Game #%d: %s"
+msgstr ""
+
+# (2) 
+msgid  "Game Aborted"
+msgstr ""
+
+# (1) 
+msgid  "Game Description"
+msgstr ""
+
+# (1) 
+msgid  "Game Information Font"
+msgstr ""
+
+# (2) 
+msgid  "Game List"
+msgstr ""
+
+# (1) 
+msgid  "Game List (refreshing...)"
+msgstr ""
+
+# (1) 
+msgid  "Game Lost"
+msgstr ""
+
+# (1) 
+msgid  "Game Started"
+msgstr ""
+
+# (1) 
+msgid  "Game Won"
+msgstr ""
+
+# (4) 
+msgid  "Game appended to %s"
+msgstr ""
+
+# (1) 
+msgid  "Game in progress."
+msgstr ""
+
+# (1) 
+msgid  "Game over: %s"
+msgstr ""
+
+# (1) 
+msgid  "Game proposal sent."
+msgstr ""
+
+# (2) 
+msgid  "Game started!"
+msgstr ""
+
+# (1) 
+msgid  "Game/Board: "
+msgstr ""
+
+# (1) 
+msgid  "Games"
+msgstr ""
+
+# (1) 
+msgid  "Generic XBoard Engine..."
+msgstr ""
+
+# (1) 
+msgid  "Giveaway"
+msgstr ""
+
+# (1) 
+msgid  "Graphic representation of crazy/bughouse stock"
+msgstr ""
+
+# (1) 
+msgid  "Help: Debug Info"
+msgstr ""
+
+# (1) 
+msgid  "Help: Getting Started "
+msgstr ""
+
+# (1) 
+msgid  "Help: Keys"
+msgstr ""
+
+# (1) 
+msgid  "Helper program not found"
+msgstr ""
+
+# (1) 
+msgid  "Hide!"
+msgstr ""
+
+# (2) 
+msgid  "Host not found: %s"
+msgstr ""
+
+# (1) 
+msgid  "Hostname"
+msgstr ""
+
+# (1) 
+msgid  "Hostname or IP address:"
+msgstr ""
+
+# (1) 
+msgid  "Human"
+msgstr ""
+
+# (1) 
+msgid  "Human White vs. Computer Black"
+msgstr ""
+
+# (1) 
+msgid  "Human plays white"
+msgstr ""
+
+# (1) 
+msgid  "ICS Challenge"
+msgstr ""
+
+# (1) 
+msgid  "IPC pipe creation failed."
+msgstr ""
+
+# (1) 
+msgid  ""
+"If you pick a bookmark, the engine\n"
+"will play the next move, ignoring\n"
+"the side setting in the bookmark."
+msgstr ""
+
+# (1) 
+msgid  "Illegal Drop on %c%d (Legality Checking On)"
+msgstr ""
+
+# (1) 
+msgid  "Illegal Move %c%d%c%d (Legality Checking On)"
+msgstr ""
+
+# (1) 
+msgid  "Illegal move, not sent."
+msgstr ""
+
+# (1) 
+msgid  "Increment (secs):"
+msgstr ""
+
+# (1) 
+msgid  "Increment:"
+msgstr ""
+
+# (1) 
+msgid  "Inhibit seek lines on console when Seek Graph is active"
+msgstr ""
+
+# (1) 
+msgid  "Initial Position"
+msgstr ""
+
+# (1) 
+msgid  "Initial time ([mm:]ss):"
+msgstr ""
+
+# (1) 
+msgid  "Initializing engine"
+msgstr ""
+
+# (1) 
+msgid  "Joystick"
+msgstr ""
+
+# (1) 
+msgid  "Key"
+msgstr ""
+
+# (1) 
+msgid  "Key:"
+msgstr ""
+
+# (1) 
+msgid  "Kibitzes/Whispers"
+msgstr ""
+
+# (1) 
+msgid  "Kill"
+msgstr ""
+
+# (1) 
+msgid  "Knight  %d"
+msgstr ""
+
+# (1) 
+msgid  "Last Proposal Received"
+msgstr ""
+
+# (1) 
+msgid  "Left"
+msgstr ""
+
+# (1) 
+msgid  "Left click to play, right click to refresh."
+msgstr ""
+
+# (1) 
+msgid  "Light Squares..."
+msgstr ""
+
+# (1) 
+msgid  "Load PGN"
+msgstr ""
+
+# (1) 
+msgid  "Load PGN..."
+msgstr ""
+
+# (1) 
+msgid  "Local"
+msgstr ""
+
+# (1) 
+msgid  "Local Game List"
+msgstr ""
+
+# (2) 
+msgid  "Looking up host %s..."
+msgstr ""
+
+# (1) 
+msgid  "Losers"
+msgstr ""
+
+# (1) 
+msgid  "Main Board"
+msgstr ""
+
+# (1) 
+msgid  "Mamer and TDs"
+msgstr ""
+
+# (1) 
+msgid  "Match Found at Line %d."
+msgstr ""
+
+# (1) 
+msgid  "Match Pattern: "
+msgstr ""
+
+# (1) 
+msgid  "Material: %d - %d"
+msgstr ""
+
+# (1) 
+msgid  "Max Ply:"
+msgstr ""
+
+# (1) 
+msgid  "Move made (Obs'vd/Exm'd Games)"
+msgstr ""
+
+# (1) 
+msgid  ""
+"Move the axis to be used for moving back and forth\n"
+"through moves of a game."
+msgstr ""
+
+# (1) 
+msgid  "Move the axis to be used for selecting pieces."
+msgstr ""
+
+# (1) 
+msgid  "Moves"
+msgstr ""
+
+# (1) 
+msgid  "Network is unreachable"
+msgstr ""
+
+# (1) 
+msgid  "News/Notifications"
+msgstr ""
+
+# (1) 
+msgid  "No"
+msgstr ""
+
+# (3) 
+msgid  "No error."
+msgstr ""
+
+# (2) 
+msgid  "No material to mate"
+msgstr ""
+
+# (1) 
+msgid  "No output from program."
+msgstr ""
+
+# (1) 
+msgid  "No peer."
+msgstr ""
+
+# (1) 
+msgid  "No previous search."
+msgstr ""
+
+# (1) 
+msgid  "No proposals left."
+msgstr ""
+
+# (1) 
+msgid  "No proposals received."
+msgstr ""
+
+# (1) 
+msgid  "Non-ASCII Character Filtering"
+msgstr ""
+
+# (5) 
+msgid  "None"
+msgstr ""
+
+# (1) 
+msgid  "Normal Chess"
+msgstr ""
+
+# (1) 
+msgid  "Normal Text"
+msgstr ""
+
+# (1) 
+msgid  "Not a socket ?!?"
+msgstr ""
+
+# (2) 
+msgid  "OK"
+msgstr ""
+
+# (1) 
+msgid  "Obs'vd Game Ended"
+msgstr ""
+
+# (1) 
+msgid  "Observe"
+msgstr ""
+
+# (5) 
+msgid  "Ok"
+msgstr ""
+
+# (1) 
+msgid  ""
+"Once you connect to a host from this dialog, it will be added to\n"
+"the Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\n"
+"to modify or remove entries."
+msgstr ""
+
+# (1) 
+msgid  ""
+"Only lines that match the above pattern will be added\n"
+"to this text pane. Patterns can be OR'ed with the | (pipe)\n"
+"character. A * (star) can be used to match anything.\n"
+"Examples:\n"
+"'(20)|(22)' shows only lines from channels 20 and 22\n"
+"'blik * bored' shows lines containing 'blik '(...)' bored'."
+msgstr ""
+
+# (1) 
+msgid  "Opponent Moved"
+msgstr ""
+
+# (1) 
+msgid  "Options"
+msgstr ""
+
+# (1) 
+msgid  "PGN Headers"
+msgstr ""
+
+# (1) 
+msgid  "PGN filename:"
+msgstr ""
+
+# (1) 
+msgid  "Partner Tells:"
+msgstr ""
+
+# (1) 
+msgid  "Pawn    %d"
+msgstr ""
+
+# (1) 
+msgid  "Pitch (Hz):"
+msgstr ""
+
+# (1) 
+msgid  "Play"
+msgstr ""
+
+# (1) 
+msgid  "Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)"
+msgstr ""
+
+# (1) 
+msgid  "Play WAV (need Device and Filename, sox must be installed)"
+msgstr ""
+
+# (1) 
+msgid  "Play against Crafty"
+msgstr ""
+
+# (1) 
+msgid  "Play against Engine"
+msgstr ""
+
+# (1) 
+msgid  "Play against GNU Chess 4"
+msgstr ""
+
+# (1) 
+msgid  "Play against Sjeng"
+msgstr ""
+
+# (2) 
+msgid  "Player resigns"
+msgstr ""
+
+# (1) 
+msgid  "Player/Color Name Font"
+msgstr ""
+
+# (1) 
+msgid  "Pos: %s vs. %s"
+msgstr ""
+
+# (1) 
+msgid  "Preferences"
+msgstr ""
+
+# (1) 
+msgid  "Press the button to be used for going to the next tab."
+msgstr ""
+
+# (1) 
+msgid  "Press the button to be used for going to the previous tab."
+msgstr ""
+
+# (1) 
+msgid  "Press the button to be used for selecting a square."
+msgstr ""
+
+# (1) 
+msgid  "Private Tell"
+msgstr ""
+
+# (1) 
+msgid  "Private Tells"
+msgstr ""
+
+# (1) 
+msgid  "Program exited too soon"
+msgstr ""
+
+# (1) 
+msgid  "Progress"
+msgstr ""
+
+# (1) 
+msgid  "Promotion Piece  "
+msgstr ""
+
+# (1) 
+msgid  "Propose"
+msgstr ""
+
+# (1) 
+msgid  "Propose Game"
+msgstr ""
+
+# (1) 
+msgid  "Protocol"
+msgstr ""
+
+# (2) 
+msgid  "Protocol mismatch, disconnecting."
+msgstr ""
+
+# (1) 
+msgid  "Queen   %d"
+msgstr ""
+
+# (1) 
+msgid  "Read error from program."
+msgstr ""
+
+# (1) 
+msgid  "Received a game proposal from %s."
+msgstr ""
+
+# (1) 
+msgid  "Recent Hosts"
+msgstr ""
+
+# (4) 
+msgid  "Refresh List"
+msgstr ""
+
+# (1) 
+msgid  "Replied to seek #%d"
+msgstr ""
+
+# (2) 
+msgid  "Resigned."
+msgstr ""
+
+# (1) 
+msgid  "Result"
+msgstr ""
+
+# (1) 
+msgid  "Retracted last move."
+msgstr ""
+
+# (1) 
+msgid  "Retrieve ICS Channel Lists from eboard.sf.net"
+msgstr ""
+
+# (1) 
+msgid  "Revert to Defaults"
+msgstr ""
+
+# (1) 
+msgid  "Revert to defaults"
+msgstr ""
+
+# (1) 
+msgid  "Right"
+msgstr ""
+
+# (1) 
+msgid  "Rook    %d"
+msgstr ""
+
+# (1) 
+msgid  "Run"
+msgstr ""
+
+# (1) 
+msgid  "Run Engine..."
+msgstr ""
+
+# (1) 
+msgid  "Run Program (need Filename)"
+msgstr ""
+
+# (1) 
+msgid  "Run autofics.pl script after connecting to FICS"
+msgstr ""
+
+# (1) 
+msgid  "Save Buffer As..."
+msgstr ""
+
+# (1) 
+msgid  "Save Game..."
+msgstr ""
+
+# (1) 
+msgid  "Save as PGN"
+msgstr ""
+
+# (2) 
+msgid  "Scratch %d"
+msgstr ""
+
+# (1) 
+msgid  "Script"
+msgstr ""
+
+# (1) 
+msgid  "Script List"
+msgstr ""
+
+# (1) 
+msgid  "Scrollback limit (0 = unlimited) :"
+msgstr ""
+
+# (1) 
+msgid  "Search text not found."
+msgstr ""
+
+# (1) 
+msgid  "Seek Ads"
+msgstr ""
+
+# (2) 
+msgid  "Seek Graph"
+msgstr ""
+
+# (1) 
+msgid  "Seek Graph Font"
+msgstr ""
+
+# (1) 
+msgid  "Serial :%s"
+msgstr ""
+
+# (1) 
+msgid  "Set Filter"
+msgstr ""
+
+# (1) 
+msgid  "Set Filter..."
+msgstr ""
+
+# (1) 
+msgid  "Set depth limit to 0 to use the engine's default."
+msgstr ""
+
+# (1) 
+msgid  "Setup Buttons"
+msgstr ""
+
+# (1) 
+msgid  "Shortcut Button Setup"
+msgstr ""
+
+# (1) 
+msgid  "Shouts"
+msgstr ""
+
+# (1) 
+msgid  "Show channel tells in one pane per channel"
+msgstr ""
+
+# (1) 
+msgid  "Show channel tells on console too (when above option is active)"
+msgstr ""
+
+# (1) 
+msgid  "Show rating next to player name"
+msgstr ""
+
+# (1) 
+msgid  "Show shortcut buttons below board"
+msgstr ""
+
+# (1) 
+msgid  "Show timestamps for text lines"
+msgstr ""
+
+# (1) 
+msgid  "Side & Time"
+msgstr ""
+
+# (1) 
+msgid  "Side Selection"
+msgstr ""
+
+# (2) 
+msgid  "Side to move: "
+msgstr ""
+
+# (1) 
+msgid  "Smooth joystick cursor"
+msgstr ""
+
+# (1) 
+msgid  "Smooth joystick cursor speed:"
+msgstr ""
+
+# (1) 
+msgid  "Smoother animation (eats more CPU)"
+msgstr ""
+
+# (1) 
+msgid  "Soft translate"
+msgstr ""
+
+# (1) 
+msgid  ""
+"Sorry, this protocol does not allow to retract a move thru this menu option."
+msgstr ""
+
+# (1) 
+msgid  "Sound Event"
+msgstr ""
+
+# (1) 
+msgid  "Sound Events"
+msgstr ""
+
+# (1) 
+msgid  "Sounds"
+msgstr ""
+
+# (1) 
+msgid  "Source code available at http://eboard.sourceforge.net"
+msgstr ""
+
+# (2) 
+msgid  "Stalemate"
+msgstr ""
+
+# (1) 
+msgid  "Start a connection"
+msgstr ""
+
+# (1) 
+msgid  "Starting Time:"
+msgstr ""
+
+# (1) 
+msgid  "Suicide"
+msgstr ""
+
+# (1) 
+msgid  "TCP Port"
+msgstr ""
+
+# (2) 
+msgid  "TCP Port:"
+msgstr ""
+
+# (1) 
+msgid  "Tab Position"
+msgstr ""
+
+# (1) 
+msgid  "Test"
+msgstr ""
+
+# (1) 
+msgid  "The checkbox on the left enables/disables the sound."
+msgstr ""
+
+# (1) 
+msgid  "The engine will be run with\n/bin/sh -c 'cd directory ; command line'"
+msgstr ""
+
+# (1) 
+msgid  "Think Always"
+msgstr ""
+
+# (1) 
+msgid  "Think on opponent's time"
+msgstr ""
+
+# (1) 
+msgid  "Time Control"
+msgstr ""
+
+# (1) 
+msgid  "Time Control..."
+msgstr ""
+
+# (1) 
+msgid  "Time Control:"
+msgstr ""
+
+# (1) 
+msgid  "Time Running Out"
+msgstr ""
+
+# (1) 
+msgid  "Timeout"
+msgstr ""
+
+# (1) 
+msgid  "Times can be given as hh:mm:ss , mm:ss or ss"
+msgstr ""
+
+# (1) 
+msgid  ""
+"To run multiple commands with one shortcut, separate the commands with ; (semicolon).\n"
+"To run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl ."
+msgstr ""
+
+# (1) 
+msgid  "Top"
+msgstr ""
+
+# (1) 
+msgid  "Trademark :%s"
+msgstr ""
+
+# (1) 
+msgid  "Truncate"
+msgstr ""
+
+# (1) 
+msgid  "Type: Fischer Clock (ICS-like)"
+msgstr ""
+
+# (1) 
+msgid  "Type: Fixed Time per Move"
+msgstr ""
+
+# (1) 
+msgid  "Type: Use engine's default setting"
+msgstr ""
+
+# (1) 
+msgid  "Type: X Moves per Time Period"
+msgstr ""
+
+# (1) 
+msgid  "Unable to bind on port %d."
+msgstr ""
+
+# (1) 
+msgid  "Unable to create socket."
+msgstr ""
+
+# (1) 
+msgid  "Unable to find the DGT board on port %s."
+msgstr ""
+
+# (1) 
+msgid  "Unable to load dgtnix library symbol.\n"
+msgstr ""
+
+# (1) 
+msgid  "Unable to load dgtnix library.\n"
+msgstr ""
+
+# (1) 
+msgid  "Unknown error"
+msgstr ""
+
+# (1) 
+msgid  "Unknown result"
+msgstr ""
+
+# (1) 
+msgid  "Use plain color squares"
+msgstr ""
+
+# (1) 
+msgid  "Use underscores"
+msgstr ""
+
+# (1) 
+msgid  "Value"
+msgstr ""
+
+# (1) 
+msgid  "Value:"
+msgstr ""
+
+# (3) 
+msgid  "Variant"
+msgstr ""
+
+# (2) 
+msgid  "Variant:"
+msgstr ""
+
+# (1) 
+msgid  "Variant: %s (uneditable)"
+msgstr ""
+
+# (1) 
+msgid  "Wait"
+msgstr ""
+
+# (1) 
+msgid  "Wait for a connection"
+msgstr ""
+
+# (1) 
+msgid  "Waiting for connection on port %d."
+msgstr ""
+
+# (1) 
+msgid  "Warn when own clock is below: "
+msgstr ""
+
+# (1) 
+msgid  "Welcome to eboard."
+msgstr ""
+
+# (5) 
+msgid  "White"
+msgstr ""
+
+# (1) 
+msgid  "White: %s - %s"
+msgstr ""
+
+# (1) 
+msgid  "Working..."
+msgstr ""
+
+# (1) 
+msgid  "Write to Console"
+msgstr ""
+
+# (1) 
+msgid  "Wrong address space"
+msgstr ""
+
+# (1) 
+msgid  "Wrote"
+msgstr ""
+
+# (1) 
+msgid  "Yes"
+msgstr ""
+
+# (1) 
+msgid  "You can only retract when it's your turn to move."
+msgstr ""
+
+# (1) 
+msgid  "Your color:"
+msgstr ""
+
+# (1) 
+msgid  "Your name:"
+msgstr ""
+
+# (1) 
+msgid  "[chat]"
+msgstr ""
+
+# (2) 
+msgid  "[cmd]"
+msgstr ""
+
+# (1) 
+msgid  "[eboard] ** $HOME is too long"
+msgstr ""
+
+# (1) 
+msgid  "[eboard] ** failed to create directory "
+msgstr ""
+
+# (1) 
+msgid  "[eboard] ** no $HOME"
+msgstr ""
+
+# (1) 
+msgid  "[eboard] bad RC line\n"
+msgstr ""
+
+# (1) 
+msgid  "[find]"
+msgstr ""
+
+# (1) 
+msgid  "beep"
+msgstr ""
+
+# (1) 
+msgid  "beeps"
+msgstr ""
+
+# (1) 
+msgid  "black"
+msgstr ""
+
+# (1) 
+msgid  "can't load PGN move text from %s (error opening file)"
+msgstr ""
+
+# (1) 
+msgid  "can't seek to offset %lu of %s"
+msgstr ""
+
+# (1) 
+msgid  "dgtnix driver version: %s"
+msgstr ""
+
+# (1) 
+msgid  "dgtnix version too old: %f, must be >= %f"
+msgstr ""
+
+# (1) 
+msgid  "discards board"
+msgstr ""
+
+# (1) 
+msgid  "eboard Direct Connection Manager"
+msgstr ""
+
+# (1) 
+msgid  "eboard version %s (%s)"
+msgstr ""
+
+# (1) 
+msgid  ""
+"eboard version %s\n"
+"(c) 2000-%d Felipe Bergo\n"
+"<fbergo@gmail.com>\n"
+"http://eboard.sourceforge.net\n"
+"\nThis program is free software; you can redistribute\n"
+"it and/or modify it under the terms of the GNU General\n"
+"Public License as published by the Free Software\n"
+"Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+msgstr ""
+
+# (1) 
+msgid  "eboard: Console #%d"
+msgstr ""
+
+# (1) 
+msgid  "engine claimed illegal move but we didn't move, ignoring it."
+msgstr ""
+
+# (1) 
+msgid  "error parsing PGN data"
+msgstr ""
+
+# (1) 
+msgid  "flips board"
+msgstr ""
+
+# (5) 
+msgid  "game"
+msgstr ""
+
+# (5) 
+msgid  "games"
+msgstr ""
+
+# (1) 
+msgid  "generic xboard v2"
+msgstr ""
+
+# (1) 
+msgid  "goes back 1 halfmove"
+msgstr ""
+
+# (1) 
+msgid  "goes back to start of game"
+msgstr ""
+
+# (1) 
+msgid  "goes forward 1 halfmove"
+msgstr ""
+
+# (1) 
+msgid  "goes forward to end of game"
+msgstr ""
+
+# (1) 
+msgid  "illegal move!"
+msgstr ""
+
+# (1) 
+msgid  "in progress"
+msgstr ""
+
+# (1) 
+msgid  "initial time %s, increment %s"
+msgstr ""
+
+# (1) 
+msgid  "moves in"
+msgstr ""
+
+# (1) 
+msgid  "no"
+msgstr ""
+
+# (2) 
+msgid  "no such game: "
+msgstr ""
+
+# (1) 
+msgid  "no time control set"
+msgstr ""
+
+# (2) 
+msgid  "none"
+msgstr ""
+
+# (1) 
+msgid  "nothing"
+msgstr ""
+
+# (1) 
+msgid  "opens new scratch board with position"
+msgstr ""
+
+# (1) 
+msgid  "per move"
+msgstr ""
+
+# (1) 
+msgid  "plain console beep"
+msgstr ""
+
+# (1) 
+msgid  "play file %s"
+msgstr ""
+
+# (1) 
+msgid  "pops up the move list"
+msgstr ""
+
+# (1) 
+msgid  "process creation failed."
+msgstr ""
+
+# (2) 
+msgid  "rated"
+msgstr ""
+
+# (1) 
+msgid  "run %s"
+msgstr ""
+
+# (1) 
+msgid  "running %s"
+msgstr ""
+
+# (1) 
+msgid  "savePGN failed: %s"
+msgstr ""
+
+# (1) 
+msgid  "savePGN failed: Won't save game with less than 2 moves"
+msgstr ""
+
+# (1) 
+msgid  "seconds."
+msgstr ""
+
+# (2) 
+msgid  "unrated"
+msgstr ""
+
+# (1) 
+msgid  "untimed"
+msgstr ""
+
+# (1) 
+msgid  "white"
+msgstr ""
+
+# (1) 
+msgid  "yes"
+msgstr ""
+

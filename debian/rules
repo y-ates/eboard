@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS=hardening=-format
+
+include /usr/share/dpkg/buildflags.mk
+export CPPFLAGS CXXFLAGS LDFLAGS
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--prefix=/usr \
+		--data-prefix=/usr/share/games \
+		--man-prefix=/usr/share/man \
+		--extra-flags=-fsigned-char
+
+override_dh_auto_install:
+	cp -f icon-eboard.xpm eboard.xpm
+	dh_auto_install
+	mv debian/eboard/usr/bin/eboard debian/eboard/usr/games/eboard

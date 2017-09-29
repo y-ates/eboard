@@ -1,0 +1,42 @@
+
+GNU Chess 5
+
+This document discusses the issues related to running the
+GNU Chess 5.0 (or newer) engine together with eboard.
+
+Felipe Bergo <bergo@seul.org>
+
+1. What is GNU Chess 5 ?
+2. Getting GNU Chess 5
+3. Compiling and Installing
+4. Playing
+
+---
+
+1. What is GNU Chess 5 ?
+
+GNU Chess 5 is a Free Software chess engine, that
+can be modified under the terms of the GNU
+General Public License. 
+
+I strongly recommend version 5.04 or later.
+
+2. Getting GNU Chess
+
+Go to any GNU ftp repository, like ftp.gnu.org and
+look for the 'chess' directory.
+
+3. Compiling and Installing
+
+Just build it as instructed in the documentation
+and copy the resulting 'gnuchess' binary to
+anywhere in your PATH (e.g.: /usr/local/bin).
+
+4. Playing
+
+For GNU Chess 5, use the
+Peer -> Play against Engine -> Generic Engine command.
+The "GNU Chess 4" command is meant and optimized for
+GNU Chess 4.x only.
+
+

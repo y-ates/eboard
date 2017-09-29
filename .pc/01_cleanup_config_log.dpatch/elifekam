@@ -1,0 +1,101 @@
+
+### here starts the fixed Makefile section
+
+DIST = eboard-$(version)
+
+INSTALL = install
+
+SRCS = board.cc bugpane.cc chess.cc cimg.cc clock.cc dgtboard.cc dlg_connect.cc dlg_gamelist.cc dlg_prefs.cc global.cc help.cc history.cc main.cc mainwindow.cc movelist.cc network.cc notebook.cc ntext.cc p2p.cc pieces.cc position.cc promote.cc proto_fics.cc proto_p2p.cc proto_xboard.cc protocol.cc quickbar.cc script.cc seekgraph.cc sound.cc status.cc text.cc tstring.cc util.cc widgetproxy.cc langs.cc
+
+OBJS = board.o bugpane.o chess.o cimg.o clock.o dgtboard.o dlg_connect.o dlg_gamelist.o dlg_prefs.o global.o help.o history.o main.o mainwindow.o movelist.o network.o notebook.o ntext.o p2p.o pieces.o position.o promote.o proto_fics.o proto_p2p.o proto_xboard.o protocol.o quickbar.o script.o seekgraph.o sound.o status.o text.o tstring.o util.o widgetproxy.o langs.o
+
+HEADERS = board.h bugpane.h chess.h cimg.h clock.h config.h dgtboard.h dlg_connect.h dlg_gamelist.h dlg_prefs.h eboard.h global.h help.h history.h mainwindow.h movelist.h network.h notebook.h ntext.h p2p.h pieces.h position.h promote.h proto_fics.h proto_p2p.h proto_xboard.h protocol.h quickbar.h script.h seekgraph.h sound.h status.h stl.h text.h tstring.h util.h widgetproxy.h langs.h
+
+XPMS = addcons.xpm goc_open.xpm qb1.xpm spiral1.xpm b18.xpm goc_refresh.xpm qb2.xpm spiral2.xpm back1.xpm goc_save.xpm qb3.xpm spiral3.xpm backn.xpm hammer.xpm qb4.xpm toscratch.xpm dead.xpm icon-ads.xpm qb5.xpm trash.xpm fallback.xpm icon-console.xpm qb6.xpm trash2.xpm flip.xpm icon-eboard.xpm qbl.xpm treeeng.xpm forward1.xpm icon-games.xpm qbr.xpm treegam.xpm forwardn.xpm icon-local.xpm r18.xpm treeics.xpm gnupiece.xpm icon-moves.xpm sealoff.xpm treeoth.xpm goc_discard.xpm k18.xpm sealon.xpm treepgn.xpm goc_discardall.xpm movelist.xpm snd_edit.xpm treepgnf.xpm goc_display.xpm n18.xpm snd_test.xpm goc_edit.xpm q18.xpm spiral0.xpm
+
+MANS = eboard.6 eboard-addtheme.1 eboard-config.1
+
+DATA = classic.png plastic.png ghouls.png NAG.en.txt eboard_themes.conf
+
+BUILDTOOLS = configure elifekam eboard-config.in eboard.spec.in eboard-addtheme
+
+TEXT = ChangeLog README INSTALL AUTHORS COPYING TODO
+
+all: eboard nls-dicts
+
+eboard: $(OBJS)
+	$(CXX) $(LDFLAGS) -o eboard $(OBJS)
+
+.cc.o: $< $(HEADERS) $(XPMS)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+nls-dicts:
+	$(MAKE) -C multilang dicts
+
+clean:
+	rm -f $(OBJS) eboard *~
+
+distclean:
+	rm -f $(OBJS) eboard *~ config.h config.make Makefile $(DIST).tar.gz $(DIST).tar.bz2 eboard.spec eboard-config
+
+install: install-bin install-man install-data install-nls
+
+install-bin: eboard
+	$(INSTALL) -d $(bindir)
+	$(INSTALL) -m 0755 eboard $(bindir)/eboard
+	$(INSTALL) -m 0755 eboard-config   $(bindir)/eboard-config
+	$(INSTALL) -m 0755 eboard-addtheme $(bindir)/eboard-addtheme
+
+install-man:
+	$(INSTALL) -d $(mandir)/man1
+	$(INSTALL) -d $(mandir)/man6
+	$(INSTALL) -m 0644 eboard.6 $(mandir)/man6
+	$(INSTALL) -m 0644 eboard-addtheme.1 $(mandir)/man1
+	$(INSTALL) -m 0644 eboard-config.1 $(mandir)/man1
+
+install-data:
+	$(INSTALL) -d $(datadir)
+	$(INSTALL) -m 0644 classic.png $(datadir)/classic.png
+	$(INSTALL) -m 0644 ghouls.png $(datadir)/ghouls.png
+	$(INSTALL) -m 0644 plastic.png $(datadir)/plastic.png
+	$(INSTALL) -m 0644 eboard_themes.conf $(datadir)/eboard_themes.conf
+	$(INSTALL) -m 0644 NAG.en.txt  $(datadir)/NAG.en.txt
+
+install-nls:
+	$(MAKE) -C multilang install-nls INSTALL=$(INSTALL) datadir=$(datadir)
+
+uninstall:
+	rm -f $(bindir)/eboard 
+	rm -f $(bindir)/eboard-config
+	rm -f $(bindir)/eboard-addtheme
+	rm -f $(mandir)/man1/eboard-addtheme.1
+	rm -f $(mandir)/man1/eboard-config.1
+	rm -f $(mandir)/man6/eboard.6
+	rm -f $(datadir)/classic.png
+	rm -f $(datadir)/ghouls.png
+	rm -f $(datadir)/plastic.png
+	rm -f $(datadir)/eboard_themes.conf
+	rm -f $(datadir)/NAG.en.txt
+	$(MAKE) -C multilang uninstall-nls datadir=$(datadir)
+
+dist:
+	rm -rf $(DIST) $(DIST).tar.bz2 $(DIST).tar.gz
+	mkdir $(DIST)
+	mkdir $(DIST)/Documentation
+	mkdir $(DIST)/multilang
+	cp -f $(SRCS)       $(DIST)
+	cp -f $(HEADERS)    $(DIST)
+	cp -f $(XPMS)       $(DIST)
+	cp -f $(MANS)       $(DIST)
+	cp -f $(DATA)       $(DIST)
+	cp -f $(BUILDTOOLS) $(DIST)
+	cp -f $(TEXT)       $(DIST)
+	$(MAKE) -C multilang     dist DIST=$(DIST)	
+	$(MAKE) -C Documentation dist DIST=$(DIST)	
+	tar cf $(DIST).tar $(DIST)
+	gzip $(DIST).tar
+	tar cf $(DIST).tar $(DIST)
+	bzip2 -9 $(DIST).tar
+	rm -rf $(DIST)
+	@echo wrote $(DIST).tar.gz and $(DIST).tar.bz2
+

@@ -1,0 +1,41 @@
+#!/bin/sh
+
+#
+# configuration script for eboard
+#
+# syntax: eboard-config --prefix
+#         eboard-config --bindir
+#         eboard-config --datadir
+#         eboard-config --version
+#
+# author: Felipe Bergo <fbergo@gmail.com>
+# with patches from Han Boetes
+# loosely based on gtk-config
+#
+
+#HERE
+
+usage() 
+{
+	cat >&2 <<EOF
+Usage: eboard-config --prefix
+       eboard-config --datadir
+       eboard-config --bindir
+       eboard-config --version
+EOF
+	exit 1;
+}
+
+if test $# -ne 1; then
+	usage
+fi
+
+case "$1" in
+	--prefix)  echo $prefix;;
+	--bindir)  echo $bindir;;
+	--datadir) echo $datadir/$package;;
+	--version) echo $version;;
+	*) usage;;
+esac
+
+exit 0

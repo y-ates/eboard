@@ -1,0 +1,751 @@
+#!/usr/bin/perl
+
+use IO::Handle;
+
+my $prefix      = "/usr/local";
+my $package     = "eboard";
+my $version     = "1.1.1";
+my $cxx         = "g++";
+my @cxxflags    = map { split } join(" ",$ENV{CXXFLAGS}," ",$ENV{CPPFLAGS});
+my @ldflags     = map { split } join(" -lpthread ",$ENV{LDFLAGS});
+my @libs        = ();
+my $configh     = "config.h";
+my $configmake  = "config.make";
+my $nls         = 1;
+my $dataprefix  = '';
+my $manprefix   = '';
+#my $dgt         = 1;
+
+# ------------
+
+sub usage;
+sub run_cmd;
+sub cplusplus_lang;
+sub install_util;
+sub header_check;
+#sub link_check;
+sub header_def;
+sub macro_check;
+sub spaces;
+sub version_cmp;
+sub get_prog;
+sub cppdef;
+sub cppundef;
+sub append_inc;
+sub append_ld;
+sub append_libs;
+sub append_flags;
+sub log_file;
+
+# ------------
+
+sub usage {
+    print "configure options:\n";
+    print "\t--prefix=path        install to given prefix instead of /usr/local\n";
+    print "\t--enable-debug       compile with gdb debugging info\n";
+    print "\t--disable-nls        disable translation support\n";
+#    print "\t--disable-dgt        disable DGT board support\n";
+    print "\t--compiler=prog      use alternative compiler (default: g++)\n";
+    print "\t--extra-inc=list     additional include file search paths, separated by :\n";
+    print "\t--extra-ld=list      additional library search paths, separated by :\n";
+    print "\t--extra-libs=list    additional libraries separated by :\n";
+    print "\t--extra-flags=list   additional compiler flags separated by :\n";
+    print "\t--data-prefix=path   place data in path/eboard [default=prefix/share/eboard]\n";
+    print "\t--man-prefix=path    place man pages under path [default=prefix/man]\n";
+    print "\t--help               show this usage help.\n\n";
+    exit 2;
+    # hidden options: --enable-profile
+}
+
+sub log_file {
+    my ($name) = @_;
+
+    open(LOG,">>config.log");
+    print LOG "-- begin $name --\n";
+    if (open(INP,$name)) {
+	while($ll = <INP>) {
+	    print LOG $ll;
+	}
+	close(INP);
+    }
+    print LOG "-- end $name --\n";
+    close(LOG);
+}
+
+sub run_cmd {
+    my @cmd;
+    my $pid, $r;
+
+    @cmd = @_;
+
+    $pid = fork;
+    if ($pid == 0) {
+        close(STDOUT);
+        close(STDERR);
+        open(STDOUT,">>config.log");
+        open(STDERR,">>config.log");
+	print STDOUT "cmd = @cmd\n";
+	print STDOUT "output:\n";
+        exec @cmd;
+    } else {
+	if ($pid > 0) {
+	    $pid = waitpid($pid, 0);
+	    $r = $? / 256;
+	    open(LOG,">>config.log");
+	    print LOG "return value = $r\n";
+	    close(LOG);
+	    return $r;
+	}
+	open(LOG,">>config.log");
+	print LOG "cmd = @cmd, fork failed\n";
+	close(LOG);
+	return -1;
+    }
+}
+
+sub cplusplus_lang {
+    my @compilers = ( $cxx, 'g++', 'c++' );
+    my $x;
+    my $program = <<EOF;
+#include <list>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char **argv) {
+    vector<int> v;
+    list<char> l;
+
+    v.push_back(1);
+    v.push_back(7);
+    l.push_back(0x30);
+    l.push_front(0x31);
+
+    vector<int>::iterator vi;
+    list<char>::iterator li;
+
+    for(vi=v.begin();vi!=v.end();vi++)
+	cout << (*vi);
+    for(li=l.begin();li!=l.end();li++)
+	cout << (*li);
+    cout << endl;
+    return 0;
+}
+EOF
+
+    print "testing C++ compiler...\n";
+
+    if (!open(TESTCC,">test.cc")) {
+	print "cannot write test program.\n";
+	return 0;	
+    }
+    print TESTCC "$program";
+    close TESTCC;
+
+    $cxx = 'no';
+    for (@compilers) {
+	$x = $_;
+	print "  trying $x ... ";
+
+	unlink('test.o','yytest');
+	log_file("test.cc");
+
+	if (run_cmd($x, '-c', 'test.cc', '-o', 'test.o') != 0) {
+	  print "compilation FAILED\n";
+	  next;
+	}
+
+	if (run_cmd($x, 'test.o', '-o', 'yytest') != 0) {
+	  print "compilation ok, linking FAILED\n";
+	  next;
+	}
+
+	$y = `./yytest`;
+	if ($y ne "1710\n") {
+	  print "compilation ok, linking ok, output FAILED\n";
+	  next;
+	}
+	
+	$cxx = $x;
+	print "it works\n";
+	last;
+    }
+    unlink('test.o','yytest','test.cc');
+
+    if ($cxx eq 'no') {
+	print "FAIL\n";
+	return 0;
+    }
+
+    return 1;
+}
+
+sub install_util {
+    
+    print "checking sanity of install... ";
+    if (run_cmd("sh", "-c", "echo something > xxtest") != 0) {
+	print "FAIL\n";
+	return 0;
+    }
+    if (run_cmd("install -m 0644 xxtest ./yytest") != 0) {
+	print "FAIL\n";
+	unlink("xxtest","yytest");
+	return 0;
+    }
+    if (run_cmd("diff xxtest yytest") != 0) {
+	print "FAIL\n";
+	unlink("xxtest","yytest");
+	return 0;
+    }
+    unlink("xxtest","yytest");
+    print "ok\n";
+    return 1;
+}
+
+sub append_inc {
+    my $x = shift @_;
+    my @y;
+
+    @y = split(/:/, $x);
+    for (@y) {
+	push @cxxflags, "-I$_";
+    }
+}
+
+sub append_ld {
+    my $x = shift @_;
+    my @y;
+
+    @y = split(/:/, $x);
+    for (@y) {
+	push @ldflags, "-L$_";
+    }
+}
+
+sub append_libs {
+    my $x = shift @_;
+    my @y;
+
+    @y = split(/:/, $x);
+    for (@y) {
+	push @libs, "-l$_";
+    }
+}
+
+sub append_flags {
+    my $x = shift @_;
+    my @y;
+
+    @y = split(/:/, $x);
+    for (@y) {
+	push @cxxflags, "$_";
+    }
+}
+
+sub header_def {
+    my $x = shift @_;
+    $x =~ s/\//_/g;
+    $x =~ s/\./_/g;
+    $x =~ tr/a-z/A-Z/;
+    $x = "HAVE_$x";
+    return $x;
+}
+
+sub spaces {
+    my $i, $x = "";
+    for($i=$_[0];$i>0;$i--) {
+	$x = $x.' ';
+    }
+    return $x;
+}
+
+# @_ = ( header macro confighname )
+sub macro_check {
+    my $hdr = shift @_;
+    my $mac = shift @_;
+    my $chn = shift @_;
+    my $program = "#include <$hdr>\n#if !defined($mac)\n#error not there\n#endif\n";
+
+    print "checking for $mac in $hdr... ";
+    if (!open(TESTCC,">test.cc")) {
+	print "cannot write test program, FAIL\n";
+	return 0;
+    }
+    print TESTCC "$program";
+    close TESTCC;
+    log_file("test.cc");
+
+    if (run_cmd($cxx,@cxxflags,"-c","test.cc","-o","xxtest.o") != 0) {
+	print "no\n";
+	print CONFIGH "#undef $chn\n";
+	unlink("test.cc","xxtest.o");
+	return 0;
+    } else {
+	print "yes\n";
+	print CONFIGH "#define $chn 1\n";
+	unlink("test.cc","xxtest.o");
+	return 1;
+    }
+}
+
+sub cppdef {
+    my $macro = shift @_;
+    print CONFIGH "#define $macro 1\n";
+}
+
+sub cppundef {
+    my $macro = shift @_;
+    print CONFIGH "#undef $macro\n";
+}
+
+#sub link_check {
+#  my ($lib,$func,$inc) = @_;
+#  my $result;
+
+#  print "library verification: $func in $lib: ";
+
+#  if (!open(TESTCC,">test.cc")) {
+#    print "cannot write test program, FAIL\n";
+#    return 0;
+#  }
+#  print TESTCC "$inc\n";
+#  print TESTCC "int main(int argc, char **argv) {\n";
+#  print TESTCC "$func;\n}\n\n";
+#  close TESTCC;
+#  if (run_cmd($cxx,@cxxflags,@ldflags,"test.cc","-o","xxtest","-ldgtnix","-lpthread") == 0) {
+#    print "ok\n";
+#    $result = 1;
+#  } else {
+#    print "FAIL\n";
+#    $result = 0;
+#  }
+#  unlink("test.cc","xxtest");
+#  return $result;
+#}
+
+sub header_check {
+    my $x,$y,$fail=0,$z,$bsdbug;
+
+    print "header verification:\n";
+
+    for(@_) {
+	$x = $_;
+	if ($x =~ /BSDBUG(.+)/) {
+	    $z = $1;
+	    $bsdbug=1;
+	} else {
+	    $z = $x;
+	    $bsdbug=0;
+	}
+	print "  $z";
+	$y = spaces(20 - length($z));
+	print "$y";
+	if ($bsdbug != 0) {
+	    $program = "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <unistd.h>\n#include <$z>\nint main() { return 0; }\n";
+	} else {
+	    $program = "#include <$z>\nint main() { return 0; }\n";
+        }
+	if (!open(TESTCC,">test.cc")) {
+	    print "cannot write test program, FAIL\n";
+	    return 0;
+	}
+	print TESTCC "$program";
+	close TESTCC;
+	
+	log_file("test.cc");
+
+	if (run_cmd($cxx,@cxxflags,"-c","test.cc","-o","xxtest.o") != 0) {
+	    print ": no\n";
+	    $y = header_def($x);
+	    print CONFIGH "#undef $y\n";
+	    ++$fail;
+	} else {
+	    $y = header_def($x);
+	    print CONFIGH "#define $y 1\n";
+	    print "\r";
+	    $y = spaces(40);
+	    print "$y\r";
+	}
+	unlink("test.cc","xxtest.o");
+    }
+    
+    if ($fail == 0) {
+	print "  all headers found.\n";
+	return 1;
+    }
+    return 0;
+}
+
+# ver, minver, maxver
+sub version_cmp {
+    my $ver = shift @_;
+    my $minver = shift @_;
+    my $maxver = shift @_;
+    my @av, @minav, @maxav;
+
+    @av    = split(/\./,$ver);
+    @minav = split(/\./,$minver);
+    @maxav = split(/\./,$maxver);
+
+    return 0 if ($av[0]<$minav[0] || $av[0]>$maxav[0]);
+    return 0 if ($av[0]==$minav[0] && $av[1]<$minav[1]);
+    return 0 if ($av[0]==$maxav[0] && $av[1]>$maxav[1]);
+    return 0 if ($av[0]==$minav[0] && $av[1]==$minav[1] && $av[2]<$minav[2]);
+    return 0 if ($av[0]==$maxav[0] && $av[1]==$maxav[1] && $av[2]>$maxav[2]);
+    return 1;
+}
+
+# name
+sub get_prog {
+    my $file = shift @_;
+    my $path = $ENV{PATH};
+    my @path, $x;
+
+    @path = split(/:/,$path);
+    for(@path) {
+	$x = "$_/$file";
+	next unless -x $x && -f $x && -e $x;
+	return $x;
+    }
+    return '';
+}
+
+# -------------
+
+STDOUT->autoflush();
+print "configuring eboard $version...\n";
+unlink("config.log");
+
+# parse command-line options
+for (@ARGV) {
+    if (/--prefix=(.*)/) {
+	$prefix = $1;
+	next;
+    }
+    if ($_ eq '--enable-debug') {
+	push @cxxflags, "-ggdb";
+	next;
+    }
+    if ($_ eq '--enable-profile') {
+	push @cxxflags, "-pg";
+	push @ldflags, "-pg";
+	next;
+    }
+    if ($_ eq '--disable-nls') {
+	$nls = 0;
+	next;
+    }
+#    if ($_ eq '--disable-dgt') {
+#	$dgt = 0;
+#	next;
+#    }
+    if (/--compiler=(.*)/) {
+	$cxx = $1;
+	next;
+    }
+    if (/--extra-libs=(.*)/) {
+        append_libs($1);
+	next;
+    }
+    if (/--data-prefix=(.*)/) {
+        $dataprefix = $1;
+	next;
+    }
+    if (/--man-prefix=(.*)/) {
+        $manprefix = $1;
+	next;
+    }
+    if (/--extra-flags=(.*)/) {
+        append_flags($1);
+	next;
+    }
+    if (/--extra-inc=(.*)/) {
+	append_inc($1);
+	next;
+    }
+    if (/--extra-ld=(.*)/) {
+	append_ld($1);
+	next;
+    }
+    if ($_ eq '-h' || $_ eq '--help') {
+	usage();
+	exit 1;
+    }
+    print "** ignoring unknown parameter $_\n";
+}
+
+if (!open(CONFIGH,">$configh")) {
+    print "** cannot open $configh for writing, GIVING UP.\n";
+    exit 2;
+}
+
+print CONFIGH "#ifndef CONFIG_H\n#define CONFIG_H 1\n\n";
+
+if (!open(CONFIGMAKE,">$configmake")) {
+    print "**cannot open $configmake for writing, GIVING UP.\n";
+    exit 2;
+}
+
+if (!install_util()) {
+    print "** install is not working properly.\n";
+    exit 2;
+}
+
+if (!cplusplus_lang()) {
+    print "** no suitable C++ compiler found.\n";
+    exit 2;
+}
+
+# required headers
+if (!header_check("stdio.h","stdlib.h","string.h","unistd.h",
+		  "time.h","stdarg.h","ctype.h","errno.h",
+		  "fcntl.h","dirent.h","sys/stat.h",
+		  "sys/types.h","sys/wait.h","signal.h",
+		  "math.h","sys/time.h","sys/ioctl.h",
+		  "BSDBUGsys/socket.h", "BSDBUGnetdb.h", "BSDBUGnetinet/in.h",
+		  "BSDBUGarpa/inet.h", "iostream",
+		  "deque","list","vector","stack","string")) {
+    print "** at least one required header is missing.\n";
+    exit 2;
+}
+
+#optional headers
+header_check("strings.h","sys/soundcard.h","sys/audioio.h","linux/joystick.h");
+
+$t1=macro_check("netinet/in.h","IPPROTO_TCP","HAVE_IPPROTO_TCP_ON_IN_H");
+$t2=macro_check("netinet/in.h","TCP_NODELAY","HAVE_TCP_NODELAY_ON_IN_H");
+$t3=macro_check("netinet/in.h","SOL_TCP","HAVE_SOL_TCP_ON_IN_H");
+
+$t4=macro_check("netinet/tcp.h","IPPROTO_TCP","HAVE_IPPROTO_TCP_ON_TCP_H");
+$t5=macro_check("netinet/tcp.h","TCP_NODELAY","HAVE_TCP_NODELAY_ON_TCP_H");
+$t6=macro_check("netinet/tcp.h","SOL_TCP","HAVE_SOL_TCP_ON_TCP_H");
+
+print "  net options: ";
+
+if ($t2 != 0) {
+    cppdef("USE_SOCK_OPTS");
+    if ($t1!=0 && $t3!=0) {
+	cppundef("NEED_TCP_H");
+	cppdef("USE_SOCK_OPTS");
+    }
+    if ($t1!=0) {
+	cppdef("USE_IPPROTO_TCP");
+	print "netinet/tcp.h not required, IPPROTO_TCP present.\n";
+    } else {
+	cppdef("USE_SOL_TCP");
+	print "netinet/tcp.h not required, SOL_TCP present.\n";
+    }
+} else {
+    if ($t5 != 0 && ($t1!=0 || $t4!=0) && ($t3!=0 || $t6!=0) ) {
+	cppdef("NEED_TCP_H");
+	cppdef("USE_SOCK_OPTS");
+	if ($t1!=0 || $t4!=0) {
+	    cppdef("USE_IPPROTO_TCP");
+	    print "netinet/tcp.h required, IPPROTO_TCP present.\n";
+	} else {
+	    cppdef("USE_SOL_TCP");
+	    print "netinet/tcp.h required, SOL_TCP present.\n";
+	}
+    } else {
+	cppundef("USE_SOCK_OPTS");
+	print "TCP macros not found, eboard will not use setsockopt\n";
+    }
+}
+
+# gtk 2.x
+
+print "looking for pkg-config... ";
+$pkgconfig = get_prog("pkg-config");
+
+if ($pkgconfig eq '') {
+    print "NOT FOUND\n";
+    print "** You need pkg-config for your libraries to be found.\n";
+    exit 2;
+}
+
+print "$pkgconfig\n";
+print "looking for GTK+ version... ";
+$gtkversion = `$pkgconfig --modversion gtk+-2.0`;
+chomp($gtkversion);
+
+$gtkversion = "NOT FOUND" if ($gtkversion eq "");
+
+if (version_cmp($gtkversion,"2.0.0","2.99.9")!=0) {
+    print "$gtkversion, ok\n";
+} else {
+    print "$gtkversion, WILL NOT DO (must be >= 2.0.0 and < 2.99.9)\n";
+    print "** The currently installed GTK+ version cannot be used to\n";
+    print "** compile eboard, it is recommended you get the latest one.\n";
+    print "** GTK+'s site: http://www.gtk.org\n";
+    exit 2;
+}
+
+@libpng_names = ('libpng','libpng12','libpng13');
+$pngmodule = '';
+
+print "looking for libpng... ";
+
+for $x (@libpng_names) {
+  $pngversion = `$pkgconfig --modversion $x`;
+  chomp($pngversion);
+
+  if (version_cmp($pngversion, "1.2.0", "7000.0.0")!=0) {
+    print "$pngversion, ok\n";
+    $pngmodule = $x;
+    last;
+  } else {
+    next;
+  }
+}
+
+if ($pngmodule eq '') {
+    print "libpng >= 1.2.0 not found.\n";
+    exit 2;
+}
+
+$x = `$pkgconfig --cflags gtk+-2.0 $pngmodule`;
+chomp($x);
+@x = split(/ /,$x);
+for(@x) {
+    push @cxxflags, $_;
+}
+
+$x = `$pkgconfig --libs gtk+-2.0 $pngmodule`;
+chomp($x);
+@x = split(/ /,$x);
+for(@x) {
+    push @ldflags, $_;
+}
+push @ldflags, @libs;
+
+if (!header_check("gtk/gtk.h","gdk/gdkkeysyms.h"))
+{
+    print "** The compiler did not find GTK/GDK headers,\n";
+    print "** unable to proceed.\n";
+    exit 2;
+}
+
+# dgtnix library
+
+#if ($dgt!=0) {
+#  $dgt=0 if (!header_check("dgtnix.h"));
+#  $dgt=0 if (!link_check("dgtnix","dgtnixQueryDriverVersion()","#include <dgtnix.h>"));
+
+#  if ($dgt==0) {
+#    print "** dgtnix not found, eboard will be compiled without DGT board support.\n";
+#    print CONFIGH "#undef WITH_DGT_BOARD\n";
+#  } else {
+ #    push @ldflags, "-ldgtnix";
+ #   push @ldflags, "-lpthread";
+ #   print CONFIGH "#define WITH_DGT_BOARD 1\n";
+ # }
+#}
+
+
+# end
+
+if ($dataprefix eq '') {
+  $dataprefix = "$prefix/share";
+}
+
+if ($manprefix eq '') {
+  $manprefix = "$prefix/man";
+}
+
+print CONFIGH "#define DATADIR \"$dataprefix\"\n";
+print CONFIGH "#define EBOARD_PREFIX \"$prefix\"\n";
+print CONFIGH "#define VERSION \"$version\"\n";
+
+if ($nls == 0) {
+    print CONFIGH "#undef ENABLE_NLS\n";
+} else {
+    print CONFIGH "#define ENABLE_NLS 1\n";
+}
+
+print CONFIGH "\n#endif\n";
+close CONFIGH;
+print "wrote $configh\n";
+
+print CONFIGMAKE "CXX       = $cxx\n";
+print CONFIGMAKE "CXXFLAGS  = @cxxflags\n";
+print CONFIGMAKE "LDFLAGS   = @ldflags\n";
+
+print CONFIGMAKE "prefix    = \${DESTDIR}$prefix\n";
+print CONFIGMAKE "bindir    = \${DESTDIR}$prefix/bin\n";
+print CONFIGMAKE "mandir    = \${DESTDIR}$manprefix\n";
+print CONFIGMAKE "datadir   = \${DESTDIR}$dataprefix/$package\n";
+print CONFIGMAKE "version   = $version\n";
+
+close CONFIGMAKE;
+print "wrote $configmake\n";
+
+print "writing Makefile... ";
+if (run_cmd("sh","-c","cat $configmake elifekam > Makefile") != 0) {
+    print "error (?!?)\n";
+    exit 2;
+}
+print "ok\n";
+
+print "creating eboard-config... ";
+
+if (!open(ECIN,"<eboard-config.in")) {
+    print "FAILED, eboard-config.in not found.\n";
+    exit 2;
+}
+
+if (!open(ECOUT,">eboard-config")) {
+    print "FAILED, cannot create eboard-config.\n";
+    exit 2;
+}
+
+while($_=<ECIN>) {
+    chomp;
+    if (/^\#HERE/) {
+	print ECOUT "prefix=$prefix\n";
+	print ECOUT "bindir=$prefix/bin\n";
+	print ECOUT "datadir=$dataprefix\n";
+	print ECOUT "package=$package\n";
+	print ECOUT "version=$version\n";
+    } else {
+	print ECOUT "$_\n";
+    }
+}
+
+close(ECIN);
+close(ECOUT);
+print "ok\n";
+
+print "creating eboard.spec... ";
+
+if (!open(ESIN,"<eboard.spec.in")) {
+    print "FAILED, eboard.spec.in not found.\n";
+    exit 2;
+}
+
+if (!open(ESOUT,">eboard.spec")) {
+    print "FAILED, cannot create eboard.spec.\n";
+    exit 2;
+}
+
+while($_=<ESIN>) {
+    chomp;
+    s/THEVERSION/$version/g;
+    print ESOUT "$_\n";
+}
+
+close(ESIN);
+close(ESOUT);
+print "ok\n";
+
+print "\nSummary:\n\n";
+print "$package version $version\n";
+print "binaries  will be installed to    $prefix/bin\n";
+print "man pages will be installed under $manprefix\n";
+print "datafiles will be installed to    $dataprefix/$package\n";
+#print "DGT board support: ";
+#if ($dgt==0) { print "no\n"; } else { print "yes\n"; }
+print "NLS support: ";
+if ($nls==0) { print "no\n"; } else { print "yes\n"; }
+
+print "\ndone.\n";
+

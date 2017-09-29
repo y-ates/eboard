@@ -1,0 +1,37 @@
+Description: Hungarian translation
+Author: Patrik Fimml <patrik@fimml.at>
+
+Index: eboard/multilang/eboard.hu.po
+===================================================================
+--- eboard.orig/multilang/eboard.hu.po	2011-12-19 20:31:11.845811333 +0100
++++ eboard/multilang/eboard.hu.po	2011-12-19 20:35:14.617818018 +0100
+@@ -1,4 +1,4 @@
+-onzol leka# (2) 
++# (2) 
+ msgid  " ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n"
+ msgstr " ** PNG betöltés sikertelen: kis felbontású saját figurák használata. Rosszabbul fog kinézni."
+ 
+Index: eboard/multilang/eboard.ja.po
+===================================================================
+--- eboard.orig/multilang/eboard.ja.po	2011-12-19 20:31:11.837811333 +0100
++++ eboard/multilang/eboard.ja.po	2011-12-19 20:35:14.617818018 +0100
+@@ -900,7 +900,7 @@
+ # state: translated
+ # (1) dlg_connect.cc:290
+ msgid   "Command Line:"
+-msgstr  "コマンドライン":"
++msgstr  "コマンドライン:"
+ 
+ # state: translated
+ # (1) proto_xboard.cc:66
+Index: eboard/multilang/harvest.in
+===================================================================
+--- eboard.orig/multilang/harvest.in	2011-12-19 20:31:11.853811334 +0100
++++ eboard/multilang/harvest.in	2011-12-19 20:35:14.621818019 +0100
+@@ -1,5 +1,5 @@
+ package=eboard
+-langs=cs,de,es,it,ja,pl,pt_BR,fr
++langs=cs,de,es,hu,it,ja,pl,pt_BR,fr
+ ../board.cc
+ ../bugpane.cc
+ ../chess.cc

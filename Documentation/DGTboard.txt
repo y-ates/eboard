@@ -1,0 +1,104 @@
+
+DGT board support
+
+This document describes eboard's DGT board support.
+
+Felipe Bergo <bergo@seul.org>
+
+1. What is a DGT Board ?
+2. Setting Up DGTNIX
+  2.1 Step-by-step Instructions for compiling and installing dgtnix 1.7
+  2.2 Known Issues with dgtnix
+3. Using eboard with the DGT Board
+
+---
+
+1. What is a DGT Board ?
+
+The DGT Board is an electronic chess board that can be connected
+to the computer and can be used for move input, so that you can
+play with real pieces on a real chessboard. It connects to a USB
+or serial port on the PC.
+
+See http://www.dgtprojects.com/eboard.htm for details.
+
+
+2. Setting Up DGTNIX
+
+DGTNIX is an open source driver library for the DGT board, developed
+by Pierre Boulenguez. It can be downloaded from
+http://dgtnix.sourceforge.net.
+
+eboard's DGT support depend on dgtnix, and you need to compile and
+install dgtnix before compiling eboard, otherwise eboard will be
+compiled without DGT board support.
+
+eboard 1.0.3 requires dgtnix 1.7 or later. 
+
+2.1: Step-by-step Instructions for compiling and installing dgtnix 1.7:
+
+- download dgtnix-1.7.tar.gz from http://dgtnix.sourceforge.net
+- to unpack, type in a terminal:          
+
+    tar zxvf dgtnix-1.7.tar.gz
+
+- to enter the unpacked directory, type:  
+
+    cd dgtnix
+
+- to compile dgtnix, type:                
+
+    make
+
+- to install dgtnix, become root (via su) and type these commands:
+
+    cp dgtnix.h /usr/include
+    cp libdgtnix.so* /usr/lib
+    /sbin/ldconfig
+
+2.2 Known Issues with dgtnix
+
+    a) As of dgtnix-1.7, it lacks a "make install" target, requiring
+       the above cp commands for installation.
+
+    b) To compile dgtnix on x86_64 (AMD64) platforms, you need to add
+       -fPIC to CFLAGS, CXXFLAGS and LFLAGS in its Makefile. The lines
+       that define these variables in the Makefile become:
+
+       CFLAGS   = -O2 -Wall -ansi -fPIC
+       CXXFLAGS = -O2 -Wall -ansi -fPIC
+       LFLAGS   = -fPIC -shared -Wall,-soname,libdgtnix.so.1
+
+    dgtnix was released before eboard had DGT board support, so it
+    includes an old version of eboard with patches. It is recommended
+    that you ignore the eboard provided there and use eboard 1.0.3 or
+    later.
+
+3. Using eboard with the DGT board
+
+   To compile eboard >= 1.0.3 with DGT support, just configure and
+   compile it as usual:
+
+   tar jxvf eboard-1.0.3.tar.bz2
+   cd eboard-1.0.3
+   ./configure
+   make
+   (become root)
+   make install
+
+   The configure step will indicate whether dgtnix was found.
+
+   Once eboard is installed, connect the DGT board and run eboard with
+ 
+
+   eboard -dgtport device
+
+   where device is the port the DGT board is attached to. If you are
+   using a serial connection on Linux, it will be something like
+   /dev/ttyS0 ... /dev/ttyS3.
+
+   The output of the "dmesg" command issued right after connecting the
+   board may show the device name to be used.
+
+   The DGT board will be assigned to eboard's main board.
+

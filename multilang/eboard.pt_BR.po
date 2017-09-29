@@ -1,0 +1,2872 @@
+# state: translated
+# (2) pieces.cc:70,157
+msgid   " ** PNG LOAD FAILED: using internal low-res pieceset. It'll look ugly.\n"
+msgstr  " ** LEITURA PNG FALHOU: usando tema interno de baixa resolução. Vai ficar feio.\n"
+
+# state: translated
+# (1) sound.cc:383
+msgid   " Browse... "
+msgstr  " Procurar... "
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:191
+msgid   " Play Selected "
+msgstr  " Jogar Selecionado "
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:192
+msgid   " Refresh "
+msgstr  " Atualizar "
+
+# state: translated
+# (1) chess.cc:1490
+msgid   " Remove Field "
+msgstr  " Remover Campo "
+
+# state: translated
+# (1) chess.cc:1500
+msgid   " Set "
+msgstr  " Alterar "
+
+# state: translated
+# (1) help.cc:343
+msgid  ""
+"#L#Getting Started\n"
+"#M#Common Tasks in eboard\n"
+"\nPlaying against the computer\n"
+"#S#eboard does not \"play chess\" itself, but rather is works as interface to programs that do,\n"
+"called \"engines\", which don't have a graphical interface themselves. You need an engine to\n"
+"play against the computer. GNU Chess, Crafty and Sjeng are chess engines that are available at\n"
+"no cost.\n"
+"Once you have one of them installed, open the #B#Peer#K# menu, then the #B#Play against\n"
+"engine#K# submenu, and select the appropriate option depending on which engine you have\n"
+"installed.\n"
+"\n#M#Playing Chess on the Internet\n"
+"#S#Eboard supports the FICS protocol. FICS runs at freechess.org, but other servers, such as\n"
+"US Chess Live, use FICS's software and should work with eboard too. ICC is not supported.\n"
+"To connect to FICS, open the #B#Peer#K# menu, click #B#Connect to FICS#K#. To connect to\n"
+"other servers, open the #B#Peer#K# menu, click #B#Connect to Other Server...#K#.\n"
+"While you can login as guest on FICS, you'll enjoy it better as a registered user. Registration\n"
+"is done through FICS's site at #B#http://www.freechess.org#K#, and it's free.\n"
+"\n#M#Browsing PGN Games\n"
+"#S#PGN is the most common file format to store chess games. It can store moves and comments\n"
+"(annotations). To open this kind of file within eboard, open the #B#Windows#K# menu, click\n"
+"#B#Games on Client#K#. In the Local Game List dialog, click #B#Load PGN...#K#. To browse a\n"
+"game, #B#select it#K# and click #B#Display#K#. A new tab will be created in the main window\n"
+"with the game.#L#"
+msgstr ""
+"#L#Introdução\n"
+"#M#Tarefas Comuns no eboard\n"
+"\nJogando contra o Computador\n"
+"#S#eboard não joga xadrez, mas serve de interface para programas que jogam, chamados de\n"
+"engines ou simplesmente programas de xadrez, que não possuem interface gráfica.\n"
+"Você precisa de um programa de xadrez para jogar com o computador. GNU Chess, Crafty e\n"
+"Sjeng são programas gratuitos que jogam xadrez. Uma vez instalados, abra o menu\n"
+"#B#Parceiro#K# e o submenu em #B#Jogar contra um Programa#K#, e escolha a opção apropriada ao\n"
+"programa que você instalou.\n"
+"\n#M#Jogando Xadrez na Internet\n"
+"#S#Eboard suporta o protocolo FICS. O serviço FICS funciona no endereço freechess.org,\n"
+"mas outros servidores que usam o software do FICS, como o US Chess Live devem funcionar\n"
+"com o eboard também. O ICC não é suportado.\n"
+"Para conectar ao FICS, abra o menu #B#Parceiro#K# e clique em #B#Conectar ao FICS#K#.\n"
+"Para conectar a outro servidor, use a opção #B#Conectar a Outro Servidor...#K# do menu #B#Parceiro#K#.\n"
+"Embora você possa entrar no FICS como convidado (guest), você aproveitará melhor o servidor\n"
+"como usuário registrado. O registro é feito no site #B#http://www.freechess.org#K#,\n"
+"e é totalmente gratuito.\n"
+"\n#M#Abrindo Jogos no Formato PGN\n"
+"#S#PGN é o formato mais comum para armazenar jogos de xadrez. Ele pode armazenar\n"
+"as jogadas e comentários (anotações). Para abrir este tipo de arquivo no eboard,\n"
+"clique a opção #B#Jogos no Cliente#K# do menu #B#Janelas#K#, e então clique em #B#Ler PGN...#K#\n"
+"Para mostrar um jogo em um tabuleiro, selecione-o na lista e clique em #B#Exibir Jogo#K#."
+
+# state: translated
+# (1) sound.cc:312
+msgid   "%d %s to %s, %d Hz for %d msec"
+msgstr  "%d %s para %s, %d Hz por %d mseg"
+
+# state: translated
+# (1) chess.cc:1292
+msgid   "%d games read"
+msgstr  "%d jogos lidos"
+
+# state: translated
+# (2) clock.cc:324,346
+msgid   "%d moves in %s"
+msgstr  "%d jogadas em %s"
+
+# state: translated
+# (1) mainwindow.cc:647
+msgid   "%d. Connect to %s:%d (%s)"
+msgstr  "%d. Conectar a %s:%d (%s)"
+
+# state: translated
+# (1) proto_p2p.cc:619
+msgid   "%s (white) vs. %s (black)\n%s\n%d:%.2d %d"
+msgstr  "%s (brancas) vs. %s (pretas)\n%s\n%d:%.2d %d"
+
+# state: translated
+# (1) proto_p2p.cc:248
+msgid   "%s accepted your game proposal."
+msgstr  "%s aceitou sua proposta de jogo."
+
+# state: translated
+# (1) proto_xboard.cc:548
+msgid   "%s engine started."
+msgstr  "Programa %s iniciado."
+
+# state: translated
+# (2) proto_p2p.cc:261,635
+msgid   "%s offers a draw."
+msgstr  "%s oferece um empate."
+
+# state: translated
+# (1) clock.cc:337
+msgid   "%s per move"
+msgstr  "%s por jogada"
+
+# state: translated
+# (1) clock.cc:317
+msgid   "%s/move"
+msgstr  "%s/jogada"
+
+# state: translated
+# (1) text.cc:90
+msgid   "(Wrapped) Match Found at Line %d."
+msgstr  "(Passou do fim) Encontrou na Linha %d."
+
+# state: translated
+# (1) mainwindow.cc:792
+msgid   "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)"
+msgstr  "(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (Nome no FICS: Pulga)"
+
+# state: translated
+# (1) global.cc:826
+msgid   "(message obfuscated -- password mode ?)"
+msgstr  "(mensagem omitida -- modo de senha ?)"
+
+# state: translated
+# (2) mainwindow.cc:659,704
+msgid   "(no bookmarks)"
+msgstr  "(nenhum atalho)"
+
+# state: translated
+# (2) text.cc:362,506
+msgid   "(none)"
+msgstr  "(nenhum)"
+
+# state: translated
+# (1) clock.cc:481
+msgid   "(time period)"
+msgstr  "(período de tempo)"
+
+# state: translated
+# (1) proto_xboard.cc:436
+msgid   "* game not found: "
+msgstr  "* jogo não encontrado: "
+
+# state: translated
+# (1) mainwindow.cc:1031
+msgid   "** [eboard] bad engine protocol # in bookmark: "
+msgstr  "** [eboard] protocolo inválido em atalho: "
+
+# state: translated
+# (1) global.cc:1479
+msgid   "** eboard ** warning: HOME environment variable not set\n"
+msgstr  "** eboard ** aviso: variável HOME não definida\n"
+
+# state: translated
+# (1) chess.cc:888
+msgid   "--- %s game to PGN file %s"
+msgstr  "--- %s jogo no arquivo PGN %s"
+
+# state: translated
+# (1) mainwindow.cc:1124
+msgid   "--- Disconnected"
+msgstr  "--- Desconectado"
+
+# state: translated
+# (1) mainwindow.cc:86
+msgid   "/Game/Ad_journ"
+msgstr  "/Jogo/A_diar"
+
+# state: translated
+# (1) mainwindow.cc:87
+msgid   "/Game/Retract _Move"
+msgstr  "/Game/_Voltar Jogada"
+
+# state: translated
+# (1) mainwindow.cc:85
+msgid   "/Game/_Abort"
+msgstr  "/Jogo/A_bortar"
+
+# state: translated
+# (1) mainwindow.cc:84
+msgid   "/Game/_Offer Draw"
+msgstr  "/Jogo/_Oferecer Empate"
+
+# state: translated
+# (1) mainwindow.cc:83
+msgid   "/Game/_Resign"
+msgstr  "/Jogo/_Abandonar"
+
+# state: translated
+# (1) mainwindow.cc:130
+msgid   "/Help/_About eboard..."
+msgstr  "/Ajuda/_Sobre o eboard..."
+
+# state: translated
+# (1) mainwindow.cc:128
+msgid   "/Help/_Debug Info"
+msgstr  "/Ajuda/_Dados para Depuração"
+
+# state: translated
+# (1) mainwindow.cc:126
+msgid   "/Help/_Getting Started"
+msgstr  "/Ajuda/_Introdução"
+
+# state: translated
+# (1) mainwindow.cc:127
+msgid   "/Help/_Keys"
+msgstr  "/Ajuda/_Teclas"
+
+# state: translated
+# (1) mainwindow.cc:129
+msgid   "/Help/sep4"
+msgstr  "/Ajuda/sep4"
+
+# state: translated
+# (1) mainwindow.cc:63
+msgid   "/Peer/Connect to _FICS"
+msgstr  "/Parceiro/Conectar ao _FICS"
+
+# state: translated
+# (1) mainwindow.cc:66
+msgid   "/Peer/Direct connect with _Remote eboard..."
+msgstr  "/Parceiro/Conexão direta com eboard _Remoto..."
+
+# state: translated
+# (1) mainwindow.cc:74
+msgid   "/Peer/Engine B_ookmarks"
+msgstr  "/Parceiro/Atal_hos de Programas"
+
+# state: translated
+# (1) mainwindow.cc:64
+msgid   "/Peer/ICS _Bookmarks"
+msgstr  "/Parceiro/_Atalhos de ICS"
+
+# state: translated
+# (1) mainwindow.cc:71
+msgid   "/Peer/Play against Engine/Cr_afty..."
+msgstr  "/Parceiro/Jogar contra um _Programa/Cr_afty..."
+
+# state: translated
+# (1) mainwindow.cc:69
+msgid   "/Peer/Play against Engine/GNU Chess _4..."
+msgstr  "/Parceiro/Jogar contra um _Programa/GNU Chess _4..."
+
+# state: translated
+# (1) mainwindow.cc:73
+msgid   "/Peer/Play against Engine/_Generic Engine..."
+msgstr  "/Parceiro/Jogar contra um _Programa/Programa _Genérico..."
+
+# state: translated
+# (1) mainwindow.cc:70
+msgid   "/Peer/Play against Engine/_Sjeng..."
+msgstr  "/Parceiro/Jogar contra um _Programa/_Sjeng..."
+
+# state: translated
+# (1) mainwindow.cc:72
+msgid   "/Peer/Play against Engine/sep1"
+msgstr  "/Parceiro/Jogar contra um _Programa/sep1"
+
+# state: translated
+# (1) mainwindow.cc:68
+msgid   "/Peer/Play against _Engine"
+msgstr  "/Parceiro/Jogar contra um _Programa"
+
+# state: translated
+# (1) mainwindow.cc:65
+msgid   "/Peer/_Connect to Other Server..."
+msgstr  "/Parceiro/_Conectar a Outro Servidor..."
+
+# state: translated
+# (1) mainwindow.cc:79
+msgid   "/Peer/_Disconnect"
+msgstr  "/Parceiro/_Desconectar"
+
+# state: translated
+# (1) mainwindow.cc:76
+msgid   "/Peer/_Empty Scratch Board"
+msgstr  "/Parceiro/Tabuleiro de Rascunho _Vazio"
+
+# state: translated
+# (1) mainwindow.cc:81
+msgid   "/Peer/_Quit"
+msgstr  "/Parceiro/Sai_r"
+
+# state: translated
+# (1) mainwindow.cc:77
+msgid   "/Peer/_Scratch Board with Initial Position"
+msgstr  "/Parceiro/Tabuleiro de Rascunho em Posição _Inicial"
+
+# state: translated
+# (1) mainwindow.cc:80
+msgid   "/Peer/sep2"
+msgstr  "/Parceiro/sep2"
+
+# state: translated
+# (2) mainwindow.cc:75,78
+msgid   "/Peer/sep3"
+msgstr  "/Parceiro/sep3"
+
+# state: translated
+# (1) mainwindow.cc:67
+msgid   "/Peer/sep4"
+msgstr  "/Parceiro/sep4"
+
+# state: translated
+# (1) mainwindow.cc:106
+msgid   "/Settings/Bitmapped Piece Sets/Load _Pieces Only"
+msgstr  "/Opções/Peças _Bitmap/Carregar _Peças Apenas"
+
+# state: translated
+# (1) mainwindow.cc:107
+msgid   "/Settings/Bitmapped Piece Sets/Load _Squares Only"
+msgstr  "/Opções/Peças _Bitmap/Carregar _Tabuleiro Apenas"
+
+# state: translated
+# (1) mainwindow.cc:105
+msgid   "/Settings/Bitmapped Piece Sets/Load _Theme"
+msgstr  "/Opções/Peças _Bitmap/Carregar _Tema"
+
+# state: translated
+# (1) mainwindow.cc:104
+msgid   "/Settings/Bitmapped Piece _Sets"
+msgstr  "/Opções/Peças _Bitmap"
+
+# state: translated
+# (1) mainwindow.cc:101
+msgid   "/Settings/Enable Legality _Checking"
+msgstr  "/Opções/Verificar _Legalidade"
+
+# state: translated
+# (1) mainwindow.cc:98
+msgid   "/Settings/ICS Behavior/Popup Board Panes _Upon Creation"
+msgstr  "/Opções/Comportamento _ICS/Ir Automaticamente para Novos _Tabuleiros"
+
+# state: translated
+# (1) mainwindow.cc:99
+msgid   "/Settings/ICS Behavior/Smart _Discard Observed Boards After Game Ends"
+msgstr  "/Opções/Comportamento _ICS/_Descartar Jogos Observados em Segundo Plano"
+
+# state: translated
+# (1) mainwindow.cc:91
+msgid   "/Settings/Pre_move"
+msgstr  "/Opções/Habilitar Pré_move"
+
+# state: translated
+# (1) mainwindow.cc:92
+msgid   "/Settings/Sho_w Coordinates"
+msgstr  "/Opções/M_ostrar Coordenadas"
+
+# state: translated
+# (1) mainwindow.cc:90
+msgid   "/Settings/_Animate Moves"
+msgstr  "/Opções/_Animar Jogadas"
+
+# state: translated
+# (1) mainwindow.cc:94
+msgid   "/Settings/_Beep on Opponent Moves"
+msgstr  "/Opções/Som _quando o oponente move"
+
+# state: translated
+# (1) mainwindow.cc:95
+msgid   "/Settings/_Enable Other Sounds"
+msgstr  "/Opções/Habilitar _outros sons"
+
+# state: translated
+# (1) mainwindow.cc:89
+msgid   "/Settings/_Highlight Last Move"
+msgstr  "/Opções/_Destacar última Jogada"
+
+# state: translated
+# (1) mainwindow.cc:97
+msgid   "/Settings/_ICS Behavior"
+msgstr  "/Opções/Comportamento _ICS"
+
+# state: translated
+# (1) mainwindow.cc:109
+msgid   "/Settings/_Preferences..."
+msgstr  "/Opções/_Preferências..."
+
+# state: translated
+# (1) mainwindow.cc:103
+msgid   "/Settings/_Vectorized Pieces (Faster Rendering)"
+msgstr  "/Opções/Peças _Vetoriais (Mais Rápidas)"
+
+# state: translated
+# (5) mainwindow.cc:93,96,100,102,108
+msgid   "/Settings/sep3"
+msgstr  "/Opções/sep3"
+
+# state: translated
+# (1) mainwindow.cc:121
+msgid   "/Windows/Find _Previous"
+msgstr  "/Janelas/Encontrar de _Novo"
+
+# state: translated
+# (1) mainwindow.cc:114
+msgid   "/Windows/Games on _Client..."
+msgstr  "/Janelas/Jogos no _Cliente..."
+
+# state: translated
+# (1) mainwindow.cc:124
+msgid   "/Windows/Save Desktop _Geometry"
+msgstr  "/Janelas/Salvar _Geometria das Janelas"
+
+# state: translated
+# (1) mainwindow.cc:122
+msgid   "/Windows/Save _Text Buffer..."
+msgstr  "/Janelas/Salvar Con_teúdo do Console..."
+
+# state: translated
+# (1) mainwindow.cc:112
+msgid   "/Windows/_Ads on Server..."
+msgstr  "/Janelas/_Anúncios no Servidor..."
+
+# state: translated
+# (1) mainwindow.cc:118
+msgid   "/Windows/_Detached Console"
+msgstr  "/Janelas/Console A_dicional"
+
+# state: translated
+# (1) mainwindow.cc:120
+msgid   "/Windows/_Find Text (upwards)..."
+msgstr  "/Janelas/_Encontrar Texto..."
+
+# state: translated
+# (1) mainwindow.cc:111
+msgid   "/Windows/_Games on Server..."
+msgstr  "/Janelas/_Jogos no Servidor..."
+
+# state: translated
+# (1) mainwindow.cc:116
+msgid   "/Windows/_Run Script..."
+msgstr  "/Janelas/Executar Scri_pt..."
+
+# state: translated
+# (1) mainwindow.cc:113
+msgid   "/Windows/sep1"
+msgstr  "/Janelas/sep1"
+
+# state: translated
+# (1) mainwindow.cc:115
+msgid   "/Windows/sep2"
+msgstr  "/Janelas/sep2"
+
+# state: translated
+# (3) mainwindow.cc:117,119,123
+msgid   "/Windows/sep3"
+msgstr  "/Janelas/sep3"
+
+# state: translated
+# (1) mainwindow.cc:82
+msgid   "/_Game"
+msgstr  "/_Jogo"
+
+# state: translated
+# (1) mainwindow.cc:125
+msgid   "/_Help"
+msgstr  "/_Ajuda"
+
+# state: translated
+# (1) mainwindow.cc:62
+msgid   "/_Peer"
+msgstr  "/_Parceiro"
+
+# state: translated
+# (1) mainwindow.cc:88
+msgid   "/_Settings"
+msgstr  "/_Opções"
+
+# state: translated
+# (1) mainwindow.cc:110
+msgid   "/_Windows"
+msgstr  "/Ja_nelas"
+
+# state: translated
+# (1) dlg_gamelist.cc:820
+msgid  ""
+"<AdListDialog::AdListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<AdListDialog::AdListDialog> Aviso: fonte fixed não pode ser carregada, o conteúdo desta janela vai ficar horrível.\n"
+
+# state: lost (deprecated key)
+# (1) bugpane.cc:40
+msgid   "<BareBoard::BareBoard> can't load font.\n"
+msgstr  "<BareBoard::BareBoard> impossível carregar fonte.\n"
+
+# state: lost (deprecated key)
+# (1) board.cc:84
+msgid  ""
+"<Board::Board> ** failed to load one or more board fonts - install X11 75 dpi and 100 dpi fonts, restart X, and try again.\n"
+msgstr ""
+"<Board::Board> ** uma ou mais fontes do tabuleiro não puderam ser carregadas -instale as fontes de 75 e 100 dpi do X11, reinicie o X e tente novemente.\n"
+
+# state: lost (deprecated key)
+# (1) board.cc:169
+msgid   "<Board::Board> ** failed to load one or more board fonts\n"
+msgstr  "<Board::Board> ** uma ou mais fontes do tabuleiro nao puderam ser carregadas\n"
+
+# state: translated
+# (1) proto_fics.cc:1623
+msgid   "<Fics Protocol> abort request sent"
+msgstr  "<Protocolo Fics> pedido de cancelamento enviado"
+
+# state: translated
+# (1) proto_fics.cc:1618
+msgid   "<Fics Protocol> adjourn request sent"
+msgstr  "<Protocolo Fics> pedido de adiamento enviado"
+
+# state: translated
+# (1) proto_fics.cc:1613
+msgid   "<Fics Protocol> draw request sent"
+msgstr  "<Protocolo Fics> proposta de empate enviada"
+
+# state: translated
+# (1) dlg_gamelist.cc:86
+msgid  ""
+"<GameListDialog::GameListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<GameListDialog::GameListDialog> Aviso: fonte fixed não pode ser carregada, o conteúdo desta janela vai ficar horrível.\n"
+
+# state: translated
+# (2) util.cc:575,627
+msgid   "<PatternMatcher::set> ** bad pattern string: "
+msgstr  "<PatternMatcher::set> ** padrão ilegal: "
+
+# state: translated
+# (2) pieces.cc:60,77
+msgid   "<PieceSet::PieceSet> ** file not found: "
+msgstr  "<PieceSet::PieceSet> ** arquivo não encontrado: "
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:264
+msgid   "<SeekGraph::updatefont> failed to load "
+msgstr  "<SeekGraph::updatefont> falha ao carregar "
+
+# state: translated
+# (1) dlg_gamelist.cc:310
+msgid  ""
+"<StockListDialog::StockListDialog> Warning: couldn't load fixed font, this dialog's content will look awful.\n"
+"\n"
+msgstr ""
+"<StockListDialog::StockListDialog> Aviso: fonte fixed não pode ser carregada, o conteúdo desta janela vai ficar horrível.\n"
+
+# state: lost (deprecated key)
+# (1) text.cc:139
+msgid   "<Text::updateFont> failed to load "
+msgstr  "<Text::updateFont> falha ao carregar "
+
+# state: translated
+# (1) proto_xboard.cc:400
+msgid   "<XBoard Protocol> Adjourning not supported"
+msgstr  "<Protocolo XBoard> adiamento não suportado"
+
+# state: translated
+# (1) proto_xboard.cc:151
+msgid   "<XBoard Protocol> Incompatible Engine Protocol"
+msgstr  "<Protocolo XBoard> Protocolo Incompatível"
+
+# state: translated
+# (1) proto_xboard.cc:405
+msgid   "<XBoard Protocol> Session Aborted"
+msgstr  "<Protocolo XBoard> Sessão Cancelada"
+
+# state: translated
+# (1) proto_xboard.cc:396
+msgid   "<XBoard Protocol> draw request sent"
+msgstr  "<Procolo XBoard> pedido de empate enviado"
+
+# state: translated
+# (1) mainwindow.cc:1186
+msgid   "<editing>"
+msgstr  "<editando>"
+
+# state: translated
+# (1) mainwindow.cc:890
+msgid   "> (password sent)"
+msgstr  "> (senha enviada)"
+
+# state: translated
+# (2) proto_fics.cc:1969,1986
+msgid   "> [issued from menu] %s"
+msgstr  "> [a partir de menu] %s"
+
+# state: translated
+# (1) quickbar.cc:127
+msgid   "> [issued from shortcut] "
+msgstr  "> [executado de um atalho]"
+
+# state: translated
+# (1) quickbar.cc:117
+msgid   "> [script run from shortcut] %s"
+msgstr  "> [script executado de atalho] %s"
+
+# state: translated
+# (1) help.cc:54
+msgid   "About eboard"
+msgstr  "Sobre o eboard"
+
+# state: translated
+# (1) proto_p2p.cc:598
+msgid   "Accept"
+msgstr  "Aceitar"
+
+# state: translated
+# (1) network.cc:507
+msgid   "Accepted incoming connection from %s"
+msgstr  "Conexão aceita, vindo de %s"
+
+# state: translated
+# (1) dlg_gamelist.cc:827
+msgid   "Ad Description"
+msgstr  "Descrição"
+
+# state: translated
+# (2) dlg_gamelist.cc:801,884
+msgid   "Ad List"
+msgstr  "Lista de Anúncios"
+
+# state: translated
+# (1) dlg_gamelist.cc:897
+msgid   "Ad List (refreshing...)"
+msgstr  "Lista de Anúncios (atualizando...)"
+
+# state: translated
+# (1) proto_xboard.cc:851
+msgid   "Add to Peer/Engine Bookmarks menu"
+msgstr  "Adicionar ao menu de Atalhos"
+
+# state: translated
+# (1) network.cc:373
+msgid   "Address already in use"
+msgstr  "Endereço em uso"
+
+# state: translated
+# (1) dlg_gamelist.cc:854
+msgid   "Ads"
+msgstr  "Anúncios"
+
+# state: translated
+# (1) network.cc:369
+msgid   "Already connected ?!?"
+msgstr  "Já está conectado ?!?"
+
+# state: translated
+# (1) help.cc:117
+msgid  ""
+"Anywhere:\n"
+"F3: Go to previous pane.\n"
+"F4: Go to next pane.\n"
+"F5: Go to the main board pane.\n"
+"F6: Go to the console pane.\n"
+"F7: Go to the seek graph pane (if available).\n"
+"F8: Toggle Shortcut Bar visilibity.\n"
+"Page Up/Page Down: scrolls the text console (must be visible)\n"
+"Ctrl+(Left Arrow): Backward 1 halfmove\n"
+"Ctrl+(Right Arrow): Forward 1 halfmove\n"
+"Ctrl+F: Find Upwards(main console buffer)\n"
+"Ctrl+G: Find Previous\n"
+"\nInput box:\n"
+"Up/Down (arrows): move thru input history\n"
+"Enter: send text line\n"
+"Esc: switch Chat/Command Mode\n"
+"\nSyntaxisms:\n"
+"In main window's input box:\n"
+".. entering %prefix text will set the chat prefix to text.\n"
+".. entering %do scriptname will run scriptname."
+msgstr ""
+"Em qualquer lugar:\n"
+"F3: Ir para a aba anterior.\n"
+"F4: Ir para a próxima aba.\n"
+"F5: Ir para o tabuleiro principal.\n"
+"F6: Ir para o console.\n"
+"F7: Ir para a tabela de seeks.\n"
+"F8: Alternar barra de atalhos.\n"
+"Page Up/Page Down: rola o texto do console.\n"
+"Ctrl+Esquerda: move uma jogada para trás.\n"
+"Ctrl+Direira: move uma jogada à frente.\n"
+"Ctrl+F: Busca de texto no console principal.\n"
+"Ctrl+G: Repete busca.\n"
+"\nCampo de entrada:\n"
+"Para cima/para baixo (setas): move no histórico de comandos.\n"
+"Enter: envia linha.\n"
+"Esc: alterna modo Chat/modo Comando.\n"
+"\nSintaxismos:\n"
+"No campo de entrada principal:\n"
+".. %prefix texto muda o prefixo do modo chat para texto.\n"
+".. %do algumscript executa o script algumscript."
+
+# state: translated
+# (1) dlg_prefs.cc:120
+msgid   "Appearance"
+msgstr  "Aparência"
+
+# state: translated
+# (1) chess.cc:889
+msgid   "Appended"
+msgstr  "Adicionei"
+
+# state: translated
+# (1) dlg_prefs.cc:570
+msgid   "Apply"
+msgstr  "Aplicar"
+
+# state: translated
+# (1) dlg_connect.cc:329
+msgid   "Apply Changes"
+msgstr  "Aplicar"
+
+# state: translated
+# (1) dlg_prefs.cc:495
+msgid   "Auto-save observed games"
+msgstr  "Auto-gravar jogos observados"
+
+# state: translated
+# (1) dlg_prefs.cc:494
+msgid   "Auto-save played games"
+msgstr  "Auto-gravar jogos jogados"
+
+# state: translated
+# (1) dlg_prefs.cc:488
+msgid   "Autosave"
+msgstr  "Autogravação"
+
+# state: translated
+# (1) dlg_prefs.cc:525
+msgid   "Axis & Buttons"
+msgstr  "Eixos & Botões"
+
+# state: translated
+# (1) dlg_prefs.cc:321
+msgid   "Background"
+msgstr  "Fundo"
+
+# state: translated
+# (1) network.cc:366
+msgid   "Bad descriptor"
+msgstr  "Descritor inválido"
+
+# state: translated
+# (1) sound.cc:359
+msgid   "Beep (need Pitch, Duration, Count and Device)"
+msgstr  "Bipe (requer Tom, Duração, Contagem e Dispositivo)"
+
+# state: translated
+# (1) board.cc:1009
+msgid   "Bishop  %d"
+msgstr  "Bispo   %d"
+
+# state: translated
+# (5) board.cc:418; dlg_gamelist.cc:321; movelist.cc:66; proto_p2p.cc:551; proto_xboard.cc:1004
+msgid   "Black"
+msgstr  "Pretas"
+
+# state: translated
+# (1) bugpane.cc:241
+msgid   "Black: %s - %s"
+msgstr  "Pretas: %s - %s"
+
+# state: translated
+# (1) dlg_prefs.cc:947
+msgid  ""
+"Board Cursor Axis: %d\n"
+"Board Select Button: %d\n"
+"Board Browsing Axis: %d\n"
+"Previous Tab Button: %d\n"
+"Next Tab Button: %d\n"
+msgstr ""
+"Eixo do Cursor do Tabuleiro: %d\n"
+"Botão de Seleção do Tabuleiro: %d\n"
+"Eixo de Navegação de Jogadas: %d\n"
+"Botão para Aba Anterior: %d\n"
+"Botão para Próxima Aba: %d\n"
+
+# state: translated
+# (1) dgtboard.cc:417
+msgid   "Board version :%s"
+msgstr  "Versão do Tabuleiro: %s"
+
+# state: translated
+# (1) dlg_connect.cc:288
+msgid   "Bookmark Caption:"
+msgstr  "Título do Atalho:"
+
+# state: translated
+# (1) dlg_prefs.cc:134
+msgid   "Bottom"
+msgstr  "Abaixo"
+
+# state: translated
+# (1) dlg_prefs.cc:311
+msgid   "Bright Text"
+msgstr  "Texto Claro"
+
+# state: translated
+# (1) sound.cc:529
+msgid   "Browse"
+msgstr  "Procurar"
+
+# state: translated
+# (1) text.cc:110
+msgid   "Buffer Save failed."
+msgstr  "Escrita do conteúdo falhou."
+
+# state: translated
+# (1) mainwindow.cc:265
+msgid   "Bughouse"
+msgstr  "Bughouse"
+
+# state: translated
+# (2) bugpane.cc:217,218
+msgid   "Bughouse: Partner Game"
+msgstr  "Bughouse: Jogo do Parceiro"
+
+# state: translated
+# (1) dgtboard.cc:415
+msgid   "Bus address :%s"
+msgstr  "Endereço do Barramento: %s"
+
+# state: translated
+# (1) quickbar.cc:220
+msgid   "Button Caption"
+msgstr  "Texto do Botão"
+
+# state: translated
+# (1) quickbar.cc:219
+msgid   "Button Icon"
+msgstr  "ícone do Botão"
+
+# state: translated
+# (9) board.cc:2541; clock.cc:507; dlg_connect.cc:145; dlg_prefs.cc:572; p2p.cc:110; proto_xboard.cc:904; quickbar.cc:268; sound.cc:464; text.cc:479
+msgid   "Cancel"
+msgstr  "Cancelar"
+
+# state: translated
+# (1) dlg_prefs.cc:987
+msgid   "Cancel Joystick Configuration"
+msgstr  "Cancelar Configuração do Joystick"
+
+# state: translated
+# (1) p2p.cc:262
+msgid   "Cancelled connection wait."
+msgstr  "Espera por conexão cancelada."
+
+# state: translated
+# (1) dlg_connect.cc:302
+msgid   "Change..."
+msgstr  "Escolher..."
+
+# state: translated
+# (2) dlg_prefs.cc:195,319
+msgid   "Channel Tells"
+msgstr  "Conversa em Canais"
+
+# state: translated
+# (2) proto_p2p.cc:283,448
+msgid   "Checkmate"
+msgstr  "Xeque-Mate"
+
+# state: translated
+# (1) dlg_prefs.cc:320
+msgid   "Chess Programs"
+msgstr  "Programas de Xadrez"
+
+# state: translated
+# (1) dlg_prefs.cc:870
+msgid   "Choose Font"
+msgstr  "Escolher Fonte"
+
+# state: translated
+# (5) dlg_prefs.cc:368,372,376,380,384
+msgid   "Choose..."
+msgstr  "Escolher..."
+
+# state: translated
+# (1) dlg_prefs.cc:366
+msgid   "Clock Font"
+msgstr  "Fonte do Relógio"
+
+# state: translated
+# (7) chess.cc:1517; dlg_connect.cc:349; help.cc:100,152,244,322; p2p.cc:159
+msgid   "Close"
+msgstr  "Fechar"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:145
+msgid   "Color"
+msgstr  "Cor"
+
+# state: translated
+# (1) widgetproxy.cc:343
+msgid   "Color Selection"
+msgstr  "Seleção de Cores"
+
+# state: translated
+# (1) dlg_prefs.cc:304
+msgid   "Colors"
+msgstr  "Cores"
+
+# state: translated
+# (1) quickbar.cc:221
+msgid   "Command"
+msgstr  "Comando"
+
+# state: translated
+# (1) dlg_connect.cc:290
+msgid   "Command Line:"
+msgstr  "Linha de Comando:"
+
+# state: translated
+# (1) proto_xboard.cc:66
+msgid   "Computer"
+msgstr  "Computador"
+
+# state: translated
+# (1) proto_xboard.cc:811
+msgid   "Computer White vs. Human Black"
+msgstr  "Computador com Brancas vs. Humano com Pretas"
+
+# state: translated
+# (3) dlg_prefs.cc:530,971,992
+msgid   "Configure Axis & Buttons"
+msgstr  "Configurar Eixos & Botões"
+
+# state: translated
+# (1) sound.cc:413
+msgid   "Configured Sound Files:"
+msgstr  "Arquivos de Som Configurados:"
+
+# state: translated
+# (2) dlg_connect.cc:143; p2p.cc:85
+msgid   "Connect"
+msgstr  "Conectar"
+
+# state: translated
+# (1) dlg_connect.cc:60
+msgid   "Connect to ICS Server"
+msgstr  "Conectar a Servidor ICS"
+
+# state: translated
+# (2) network.cc:383,824
+msgid   "Connected to %s (%s)"
+msgstr  "Conectado a %s (%s)"
+
+# state: translated
+# (2) network.cc:358,695
+msgid   "Connecting to %s..."
+msgstr  "Conectando a %s..."
+
+# state: translated
+# (1) network.cc:370
+msgid   "Connection refused"
+msgstr  "Conexão Recusada"
+
+# state: translated
+# (1) network.cc:364
+msgid   "Connection to %s:%d failed: "
+msgstr  "Conexão com %s:%d falhou: "
+
+# state: translated
+# (3) mainwindow.cc:250,288; text.cc:290
+msgid   "Console"
+msgstr  "Console"
+
+# state: translated
+# (1) sound.cc:365
+msgid   "Console Beep"
+msgstr  "Bipe de Console"
+
+# state: translated
+# (1) dlg_prefs.cc:378
+msgid   "Console Font"
+msgstr  "Fonte do Console"
+
+# state: translated
+# (1) text.cc:108
+msgid   "Console buffer saved."
+msgstr  "Conteúdo do console salvo."
+
+# state: translated
+# (1) sound.cc:381
+msgid   "Count:"
+msgstr  "Contagem:"
+
+# state: translated
+# (1) proto_xboard.cc:1196
+msgid   "Crazyhouse"
+msgstr  "Crazyhouse"
+
+# state: translated
+# (1) dgtboard.cc:411
+msgid   "DGT board found on port %s."
+msgstr  "Tabuleiro DGT encontrado na porta %s."
+
+# state: translated
+# (1) dgtboard.cc:250
+msgid   "DGT support error: wrong page"
+msgstr  "Erro no suporte DGT: página errada"
+
+# state: translated
+# (1) dgtboard.cc:350
+msgid   "DGT warning: position mismatch between eboard and DGT board."
+msgstr  "Alerta DGT: posições diferentes no eboard e no tabuleiro DGT."
+
+# state: translated
+# (1) dgtboard.cc:383
+msgid   "DGT: unrecognized code: %c (%d)"
+msgstr  "DGT: código não reconhecido: %c (%d)"
+
+# state: translated
+# (1) dlg_prefs.cc:148
+msgid   "Dark Squares..."
+msgstr  "Casas Pretas..."
+
+# state: translated
+# (1) dlg_connect.cc:331
+msgid   "Delete All Entries"
+msgstr  "Remover Todos"
+
+# state: translated
+# (1) dlg_connect.cc:330
+msgid   "Delete This Entry"
+msgstr  "Remover este Atalho"
+
+# state: translated
+# (1) proto_xboard.cc:838
+msgid   "Depth Limit:"
+msgstr  "Limite de Profundidade:"
+
+# state: translated
+# (1) script.cc:63
+msgid   "Description"
+msgstr  "Descrição"
+
+# state: translated
+# (1) sound.cc:379
+msgid   "Device:"
+msgstr  "Dispositivo:"
+
+# state: translated
+# (1) proto_xboard.cc:875
+msgid   "Directory to run from (e.g., where book files are)"
+msgstr  "Diretório de onde executar"
+
+# state: translated
+# (1) dlg_connect.cc:289
+msgid   "Directory:"
+msgstr  "Diretório:"
+
+# state: translated
+# (1) dlg_gamelist.cc:280
+msgid   "Discard All"
+msgstr  "Descartar Tudo"
+
+# state: translated
+# (1) dlg_gamelist.cc:289
+msgid   "Discard Game"
+msgstr  "Descartar Jogo"
+
+# state: translated
+# (1) script.cc:81
+msgid   "Dismiss"
+msgstr  "Fechar"
+
+# state: translated
+# (1) dlg_gamelist.cc:283
+msgid   "Display Game"
+msgstr  "Exibir Jogo"
+
+# state: translated
+# (1) dlg_gamelist.cc:319
+msgid   "Displayed"
+msgstr  "Exibido"
+
+# state: translated
+# (1) mainwindow.cc:794
+msgid  ""
+"Distributed under the terms of the GNU General Public License, version 2 or later"
+msgstr ""
+"Distribuído sob os termos da GNU General Public License, versão 2 ou mais recente"
+
+# state: translated
+# (1) dlg_prefs.cc:71
+msgid   "Draw Offered"
+msgstr  "Proposta de Empate"
+
+# state: translated
+# (1) proto_p2p.cc:501
+msgid   "Draw offer sent."
+msgstr  "Proposta de empate enviada."
+
+# state: translated
+# (2) proto_p2p.cc:292,496
+msgid   "Drawn by agreement"
+msgstr  "Empate por acordo"
+
+# state: translated
+# (1) board.cc:993
+msgid   "Drop Piece:"
+msgstr  "Soltar Peça:"
+
+# state: translated
+# (1) sound.cc:378
+msgid   "Duration (msec):"
+msgstr  "Duração (mseg):"
+
+# state: translated
+# (1) dlg_prefs.cc:241
+msgid   "Dynamic Seek Graph"
+msgstr  "Gráfico Dinâmico de Anúncios"
+
+# state: lost (deprecated key)
+# (1) dlg_prefs.cc:213
+msgid   "Dynamic Seek Table"
+msgstr  "Lista dinâmica de anúncios"
+
+# state: translated
+# (1) mainwindow.cc:675
+msgid   "Edit Bookmarks..."
+msgstr  "Editar Atalhos..."
+
+# state: translated
+# (1) dlg_connect.cc:254
+msgid   "Edit Engine Bookmarks"
+msgstr  "Editar Atalhos de Programas"
+
+# state: translated
+# (1) dlg_gamelist.cc:292
+msgid   "Edit Game Info"
+msgstr  "Editar Informações"
+
+# state: translated
+# (1) clock.cc:421
+msgid   "Edit Time Control"
+msgstr  "Controle de Tempo"
+
+# state: translated
+# (1) board.cc:2455
+msgid   "Empty"
+msgstr  "Limpar"
+
+# state: translated
+# (1) dlg_connect.cc:276
+msgid   "Engine Bookmarks"
+msgstr  "Atalhos de Programas"
+
+# state: translated
+# (1) proto_xboard.cc:863
+msgid   "Engine Command"
+msgstr  "Dados do Programa"
+
+# state: translated
+# (2) dlg_connect.cc:308,473
+msgid   "Engine Type:"
+msgstr  "Tipo de Programa:"
+
+# state: translated
+# (1) dlg_connect.cc:456
+msgid   "Engine Type: %s (uneditable)"
+msgstr  "Tipo de Programa: %s (não editável)"
+
+# state: translated
+# (1) proto_xboard.cc:743
+msgid   "Engine asked more time to startup, waiting."
+msgstr  "Programa pediu mais tempo, esperando."
+
+# state: translated
+# (1) proto_xboard.cc:866
+msgid   "Engine command line"
+msgstr  "Linha de comando do programa"
+
+# state: translated
+# (1) proto_xboard.cc:763
+msgid   "Engine loaded."
+msgstr  "Programa carregado."
+
+# state: translated
+# (1) network.cc:822
+msgid   "Engine running"
+msgstr  "Programa executando"
+
+# state: translated
+# (1) proto_xboard.cc:494
+msgid   "Engine started (2 sec timeout)"
+msgstr  "Programa iniciado (espera de 2 segundos)"
+
+# state: translated
+# (1) board.cc:2516
+msgid   "Enter FEN Position"
+msgstr  "Entre a Posição FEN"
+
+# state: translated
+# (1) sound.cc:352
+msgid   "Event Type"
+msgstr  "Tipo de Evento"
+
+# state: translated
+# (1) proto_fics.cc:863
+msgid   "Exam.Game #%d"
+msgstr  "Jogo Exam.#%d"
+
+# state: translated
+# (1) proto_xboard.cc:512
+msgid   "Failed command line:"
+msgstr  "Linha de comando falhou:"
+
+# state: translated
+# (2) proto_xboard.cc:508,510
+msgid   "Failed to run engine."
+msgstr  "Programa falhou."
+
+# state: translated
+# (1) network.cc:806
+msgid   "Failed to run helper program"
+msgstr  "Não conseguiu executar programa"
+
+# state: translated
+# (1) sound.cc:380
+msgid   "File to play / Program to run:"
+msgstr  "Arquivo a tocar / Programa a executar:"
+
+# state: translated
+# (4) text.cc:359,361,503,505
+msgid   "Filter: "
+msgstr  "Filtro: "
+
+# state: translated
+# (1) text.cc:267
+msgid   "Filter: (none)"
+msgstr  "Filtro: (nenhum)"
+
+# state: translated
+# (1) p2p.cc:199
+msgid   "Finish the current connection first."
+msgstr  "Termine primeiro a conexão atual."
+
+# state: translated
+# (1) proto_p2p.cc:123
+msgid   "Finish the current game first."
+msgstr  "Termine o jogo atual primeiro."
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:141
+msgid   "Flags"
+msgstr  "Títulos"
+
+# state: translated
+# (1) dlg_prefs.cc:354
+msgid   "Fonts"
+msgstr  "Fontes"
+
+# state: translated
+# (1) dlg_gamelist.cc:527
+msgid   "From Elsewhere (%d %s)"
+msgstr  "De Outros Lugares (%d %s)"
+
+# state: translated
+# (1) dlg_gamelist.cc:521
+msgid   "From Engines (%d %s)"
+msgstr  "De Programas (%d %s)"
+
+# state: translated
+# (1) board.cc:2464
+msgid   "From FEN"
+msgstr  "Do FEN"
+
+# state: translated
+# (1) dlg_gamelist.cc:509
+msgid   "From ICS (%d %s)"
+msgstr  "Do ICS (%d %s)"
+
+# state: translated
+# (1) dlg_gamelist.cc:515
+msgid   "From PGN Files (%d %s)"
+msgstr  "De Arquivos PGN (%d %s)"
+
+# state: translated
+# (1) dlg_gamelist.cc:318
+msgid   "Game #"
+msgstr  "Jogo #"
+
+# state: translated
+# (2) dlg_gamelist.cc:559; proto_fics.cc:1037
+msgid   "Game #%d"
+msgstr  "Jogo #%d"
+
+# state: lost (deprecated key)
+# (1) chess.cc:189
+msgid   "Game #%d - %d %d %s"
+msgstr  "Jogo #%d - %d %d %s"
+
+# state: translated
+# (1) chess.cc:186
+msgid   "Game #%d - %s"
+msgstr  "Jogo #%d - %s"
+
+# state: translated
+# (1) chess.cc:190
+msgid   "Game #%d - %s - %s"
+msgstr  "Jogo #%d - %s - %s"
+
+# state: translated
+# (1) movelist.cc:47
+msgid   "Game #%d - %s vs. %s"
+msgstr  "Jogo #%d - %s vs. %s"
+
+# state: lost (deprecated key)
+# (1) chess.cc:195
+msgid   "Game #%d - untimed %s"
+msgstr  "Jogo #%d - sem relógio %s"
+
+# state: translated
+# (1) board.cc:1091
+msgid   "Game #%d: %s"
+msgstr  "Jogo #%d: %s"
+
+# state: translated
+# (2) proto_p2p.cc:289,515
+msgid   "Game Aborted"
+msgstr  "Jogo Cancelado"
+
+# state: translated
+# (1) dlg_gamelist.cc:93
+msgid   "Game Description"
+msgstr  "Descrição do Jogo"
+
+# state: translated
+# (1) dlg_prefs.cc:374
+msgid   "Game Information Font"
+msgstr  "Fonte de Informações do Jogo"
+
+# state: translated
+# (2) dlg_gamelist.cc:67,150
+msgid   "Game List"
+msgstr  "Lista de Jogos"
+
+# state: translated
+# (1) dlg_gamelist.cc:176
+msgid   "Game List (refreshing...)"
+msgstr  "Lista de Jogos (atualizando...)"
+
+# state: translated
+# (1) dlg_prefs.cc:76
+msgid   "Game Lost"
+msgstr  "Jogo Perdido"
+
+# state: translated
+# (1) dlg_prefs.cc:77
+msgid   "Game Started"
+msgstr  "Jogo iniciado!"
+
+# state: translated
+# (1) dlg_prefs.cc:75
+msgid   "Game Won"
+msgstr  "Jogo Vencido"
+
+# state: translated
+# (4) proto_fics.cc:1573; proto_p2p.cc:467; proto_xboard.cc:362,386
+msgid   "Game appended to %s"
+msgstr  "Jogo adicionado a %s"
+
+# state: translated
+# (1) movelist.cc:157
+msgid   "Game in progress."
+msgstr  "Jogo em andamento."
+
+# state: translated
+# (1) proto_p2p.cc:461
+msgid   "Game over: %s"
+msgstr  "Jogo terminado: %s"
+
+# state: translated
+# (1) proto_p2p.cc:108
+msgid   "Game proposal sent."
+msgstr  "Oferta de jogo enviada."
+
+# state: translated
+# (2) proto_fics.cc:1003; proto_p2p.cc:357
+msgid   "Game started!"
+msgstr  "Jogo iniciado!"
+
+# state: translated
+# (1) mainwindow.cc:502
+msgid   "Game/Board: "
+msgstr  "Jogo/Tabuleiro: "
+
+# state: translated
+# (1) dlg_gamelist.cc:120
+msgid   "Games"
+msgstr  "Jogos"
+
+# state: translated
+# (1) board.cc:2376
+msgid   "Generic XBoard Engine..."
+msgstr  "Programa XBoard Genérico..."
+
+# state: translated
+# (1) proto_xboard.cc:1202
+msgid   "Giveaway"
+msgstr  "Giveaway"
+
+# state: translated
+# (1) dlg_prefs.cc:165
+msgid   "Graphic representation of crazy/bughouse stock"
+msgstr  "Representação gráfica do estoque de crazy/bughouse"
+
+# state: translated
+# (1) help.cc:162
+msgid   "Help: Debug Info"
+msgstr  "Ajuda: Dados para Depuração"
+
+# state: translated
+# (1) help.cc:299
+msgid   "Help: Getting Started "
+msgstr  "Ajuda: Introdução "
+
+# state: translated
+# (1) help.cc:109
+msgid   "Help: Keys"
+msgstr  "Ajuda: Teclas"
+
+# state: translated
+# (1) network.cc:670
+msgid   "Helper program not found"
+msgstr  "Programa auxiliar não encontrado"
+
+# state: translated
+# (1) quickbar.cc:68
+msgid   "Hide!"
+msgstr  "Esconder!"
+
+# state: translated
+# (2) network.cc:332,685
+msgid   "Host not found: %s"
+msgstr  "Servidor não encontrado: %s"
+
+# state: translated
+# (1) dlg_connect.cc:104
+msgid   "Hostname"
+msgstr  "Hostname"
+
+# state: translated
+# (1) p2p.cc:71
+msgid   "Hostname or IP address:"
+msgstr  "Nome do host ou endereço IP:"
+
+# state: translated
+# (1) global.cc:1486
+msgid   "Human"
+msgstr  "Humano"
+
+# state: translated
+# (1) proto_xboard.cc:809
+msgid   "Human White vs. Computer Black"
+msgstr  "Humano com Brancas vs. Computador com Pretas"
+
+# state: translated
+# (1) dlg_connect.cc:304
+msgid   "Human plays white"
+msgstr  "Humano joga com as Brancas"
+
+# state: translated
+# (1) dlg_prefs.cc:73
+msgid   "ICS Challenge"
+msgstr  "Desafio no ICS"
+
+# state: translated
+# (1) network.cc:709
+msgid   "IPC pipe creation failed."
+msgstr  "Criação de pipe IPC falhou."
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:138
+msgid   "Id"
+msgstr  "Id"
+
+# state: translated
+# (1) board.cc:2385
+msgid  ""
+"If you pick a bookmark, the engine\n"
+"will play the next move, ignoring\n"
+"the side setting in the bookmark."
+msgstr ""
+"Escolhendo um atalho, o programa\n"
+"jogará no lado a jogar, ignorando a\n"
+"configuração do atalho."
+
+# state: translated
+# (1) board.cc:956
+msgid   "Illegal Drop on %c%d (Legality Checking On)"
+msgstr  "Jogada Ilegal em %c%d (Verificação de Legalidade Ligada)"
+
+# state: translated
+# (1) board.cc:762
+msgid   "Illegal Move %c%d%c%d (Legality Checking On)"
+msgstr  "Jogada Ilegal %c%d%c%d (Verificação de Legalidade Ligada)"
+
+# state: translated
+# (1) proto_p2p.cc:382
+msgid   "Illegal move, not sent."
+msgstr  "Jogada ilegal, não enviada."
+
+# state: translated
+# (1) proto_p2p.cc:548
+msgid   "Increment (secs):"
+msgstr  "Incremento (segs):"
+
+# state: translated
+# (1) clock.cc:490
+msgid   "Increment:"
+msgstr  "Incremento:"
+
+# state: translated
+# (1) dlg_prefs.cc:244
+msgid   "Inhibit seek lines on console when Seek Graph is active"
+msgstr  "Inibir anúncios no console quando o gráfico estiver ativo"
+
+# state: lost (deprecated key)
+# (1) dlg_prefs.cc:216
+msgid   "Inhibit seek lines on console when Seek Table is active"
+msgstr  "Inibir anúncios no console quando a tabela estiver ativa"
+
+# state: translated
+# (1) board.cc:2459
+msgid   "Initial Position"
+msgstr  "Pos. Inicial"
+
+# state: translated
+# (1) proto_p2p.cc:547
+msgid   "Initial time ([mm:]ss):"
+msgstr  "Tempo inicial ([mm:]ss):"
+
+# state: translated
+# (1) proto_xboard.cc:471
+msgid   "Initializing engine"
+msgstr  "Preparando programa"
+
+# state: lost (deprecated key)
+# (1) dgtboard.cc:223
+msgid   "Invalid answer to DGT_SEND_BRD on port %s: %s "
+msgstr  "Resposta inválida para DGT_SEND_BRD na porta %s: %s "
+
+# state: translated
+# (1) dlg_prefs.cc:515
+msgid   "Joystick"
+msgstr  "Joystick"
+
+# state: translated
+# (1) chess.cc:1478
+msgid   "Key"
+msgstr  "Chave"
+
+# state: translated
+# (1) chess.cc:1495
+msgid   "Key:"
+msgstr  "Chave:"
+
+# state: translated
+# (1) dlg_prefs.cc:315
+msgid   "Kibitzes/Whispers"
+msgstr  "Kibitzes/Whispers"
+
+# state: translated
+# (1) script.cc:258
+msgid   "Kill"
+msgstr  "Parar"
+
+# state: translated
+# (1) board.cc:1005
+msgid   "Knight  %d"
+msgstr  "Cavalo  %d"
+
+# state: translated
+# (1) proto_p2p.cc:581
+msgid   "Last Proposal Received"
+msgstr  "Última Proposta Recebida"
+
+# state: translated
+# (1) dlg_prefs.cc:130
+msgid   "Left"
+msgstr  "Esquerda"
+
+# state: translated
+# (1) seekgraph.cc:493
+msgid   "Left click to play, right click to refresh."
+msgstr  "Clique esquerdo para jogar, clique direito para atualizar."
+
+# state: translated
+# (1) dlg_prefs.cc:147
+msgid   "Light Squares..."
+msgstr  "Casas Brancas..."
+
+# state: translated
+# (1) dlg_gamelist.cc:700
+msgid   "Load PGN"
+msgstr  "Ler PGN"
+
+# state: translated
+# (1) dlg_gamelist.cc:274
+msgid   "Load PGN..."
+msgstr  "Ler PGN..."
+
+# state: translated
+# (1) dlg_gamelist.cc:355
+msgid   "Local"
+msgstr  "Local"
+
+# state: translated
+# (1) dlg_gamelist.cc:237
+msgid   "Local Game List"
+msgstr  "Lista Local de Jogos"
+
+# state: translated
+# (2) network.cc:327,680
+msgid   "Looking up host %s..."
+msgstr  "Procurando servidor %s..."
+
+# state: translated
+# (1) proto_xboard.cc:1200
+msgid   "Losers"
+msgstr  "Losers"
+
+# state: translated
+# (1) mainwindow.cc:274
+msgid   "Main Board"
+msgstr  "Tabuleiro"
+
+# state: translated
+# (1) dlg_prefs.cc:314
+msgid   "Mamer and TDs"
+msgstr  "Mamer e TDs"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:147
+msgid   "Manual/Formula"
+msgstr  "Manual/Fórmula"
+
+# state: translated
+# (1) text.cc:88
+msgid   "Match Found at Line %d."
+msgstr  "Encontrou na Linha %d."
+
+# state: translated
+# (1) text.cc:453
+msgid   "Match Pattern: "
+msgstr  "Casar Padrão: "
+
+# state: translated
+# (1) position.cc:1087
+msgid   "Material: %d - %d"
+msgstr  "Material: %d - %d"
+
+# state: translated
+# (1) dlg_connect.cc:292
+msgid   "Max Ply:"
+msgstr  "Profundidade Máxima:"
+
+# state: translated
+# (1) dlg_prefs.cc:79
+msgid   "Move made (Obs'vd/Exm'd Games)"
+msgstr  "Movimento (Jogos Observ./Exam.)"
+
+# state: translated
+# (1) dlg_prefs.cc:938
+msgid  ""
+"Move the axis to be used for moving back and forth\n"
+"through moves of a game."
+msgstr ""
+"Mova o eixo a ser usado para navegar pelos movimentos\n"
+"de um jogo."
+
+# state: translated
+# (1) dlg_prefs.cc:932
+msgid   "Move the axis to be used for selecting pieces."
+msgstr  "Mova o eixo a ser usado para selecionar peças."
+
+# state: translated
+# (1) movelist.cc:81
+msgid   "Moves"
+msgstr  "Jogadas"
+
+# state: translated
+# (1) network.cc:372
+msgid   "Network is unreachable"
+msgstr  "Rede inalcançavel"
+
+# state: translated
+# (1) dlg_prefs.cc:313
+msgid   "News/Notifications"
+msgstr  "News/Notificações"
+
+# state: translated
+# (1) dlg_gamelist.cc:428
+msgid   "No"
+msgstr  "Não"
+
+# state: translated
+# (3) network.cc:314,438,503
+msgid   "No error."
+msgstr  "Sem erro."
+
+# state: translated
+# (2) proto_p2p.cc:280,442
+msgid   "No material to mate"
+msgstr  "Material insuficiente para mate"
+
+# state: translated
+# (1) network.cc:781
+msgid   "No output from program."
+msgstr  "Nenhuma saída do programa."
+
+# state: translated
+# (1) mainwindow.cc:1131
+msgid   "No peer."
+msgstr  "Sem parceiro."
+
+# state: translated
+# (1) text.cc:74
+msgid   "No previous search."
+msgstr  "Não há busca anterior."
+
+# state: translated
+# (1) proto_p2p.cc:650
+msgid   "No proposals left."
+msgstr  "Não há propostas."
+
+# state: translated
+# (1) proto_p2p.cc:589
+msgid   "No proposals received."
+msgstr  "Nenhuma proposta recebida"
+
+# state: lost (deprecated key)
+# (1) dgtboard.cc:219
+msgid   "No response to DGT_SEND_BRD on port %s: %s."
+msgstr  "Sem resposta para DGT_SEND_BRD na porta %s: %s."
+
+# state: translated
+# (1) dlg_prefs.cc:197
+msgid   "Non-ASCII Character Filtering"
+msgstr  "Filtragem de Caracteres Não-ASCII"
+
+# state: translated
+# (5) bugpane.cc:38,39,359,360; dlg_prefs.cc:224
+msgid   "None"
+msgstr  "Nenhum"
+
+# state: translated
+# (1) proto_xboard.cc:1194
+msgid   "Normal Chess"
+msgstr  "Xadrez Normal"
+
+# state: translated
+# (1) dlg_prefs.cc:310
+msgid   "Normal Text"
+msgstr  "Texto Normal"
+
+# state: translated
+# (1) network.cc:368
+msgid   "Not a socket ?!?"
+msgstr  "Não é um socket ?!?"
+
+# state: translated
+# (2) clock.cc:505; proto_xboard.cc:902
+msgid   "OK"
+msgstr  "OK"
+
+# state: translated
+# (1) dlg_prefs.cc:78
+msgid   "Obs'vd Game Ended"
+msgstr  "Fim de Jogo Observ."
+
+# state: translated
+# (1) dlg_gamelist.cc:111
+msgid   "Observe"
+msgstr  "Observar"
+
+# state: translated
+# (5) board.cc:2539; dlg_prefs.cc:568; quickbar.cc:266; sound.cc:460; text.cc:477
+msgid   "Ok"
+msgstr  "Ok"
+
+# state: translated
+# (1) dlg_connect.cc:129
+msgid  ""
+"Once you connect to a host from this dialog, it will be added to\n"
+"the Peer/ICS Bookmarks menu. Edit the ~/.eboard/eboard.conf file\n"
+"to modify or remove entries."
+msgstr ""
+"Conectando uma vez a partir desta caixa de diálogo, o servidor\n"
+"será adicionado à lista de atalhos de servidores. Edite o\n"
+"arquivo ~/.eboard/eboard.conf para modificar ou remover atalhos."
+
+# state: translated
+# (1) text.cc:454
+msgid  ""
+"Only lines that match the above pattern will be added\n"
+"to this text pane. Patterns can be OR'ed with the | (pipe)\n"
+"character. A * (star) can be used to match anything.\n"
+"Examples:\n"
+"'(20)|(22)' shows only lines from channels 20 and 22\n"
+"'blik * bored' shows lines containing 'blik '(...)' bored'."
+msgstr ""
+"Apenas linhas que casem o padrão acima aparecerão\n"
+"neste console. Padrões podem ser combinados (OU lógico)\n"
+"com o caractere | (pipe). Um asterisco (*) casa qualquer\n"
+"sequência.\n"
+"Exemplos:\n"
+"'(20)|(22)' mostra apenas linhas dos canais 20 e 22\n"
+"'blik * bored' mostra apenas linhas 'blik '(...)' bored'."
+
+# state: translated
+# (1) dlg_prefs.cc:70
+msgid   "Opponent Moved"
+msgstr  "Movimento do Oponente"
+
+# state: translated
+# (1) p2p.cc:149
+msgid   "Options"
+msgstr  "Opções"
+
+# state: translated
+# (1) chess.cc:1459
+msgid   "PGN Headers"
+msgstr  "Cabeçalhos PGN"
+
+# state: translated
+# (1) dlg_prefs.cc:491
+msgid   "PGN filename:"
+msgstr  "Arquivo PGN:"
+
+# state: translated
+# (1) bugpane.cc:274
+msgid   "Partner Tells:"
+msgstr  "Mensagens do Parceiro:"
+
+# state: translated
+# (1) board.cc:997
+msgid   "Pawn    %d"
+msgstr  "Peão    %d"
+
+# state: translated
+# (1) sound.cc:377
+msgid   "Pitch (Hz):"
+msgstr  "Tom (Hz):"
+
+# state: translated
+# (1) dlg_gamelist.cc:845
+msgid   "Play"
+msgstr  "Jogar"
+
+# state: translated
+# (1) proto_xboard.cc:1001
+msgid   "Play %s as %s vs. %s (%s, maxdepth %d, think always: %s)"
+msgstr  "Jogar %s de %s vs. %s (%s, prof. %d, pensar sempre: %s)"
+
+# state: translated
+# (1) sound.cc:361
+msgid   "Play WAV (need Device and Filename, sox must be installed)"
+msgstr  "Tocar WAV (requer Dispositivo e Nome de arquivo, requer sox)"
+
+# state: translated
+# (1) proto_xboard.cc:1078
+msgid   "Play against Crafty"
+msgstr  "Jogar contra o Crafty"
+
+# state: translated
+# (1) proto_xboard.cc:769
+msgid   "Play against Engine"
+msgstr  "Jogar contra Programa"
+
+# state: translated
+# (1) proto_xboard.cc:1319
+msgid   "Play against GNU Chess 4"
+msgstr  "Jogar contra o GNU Chess 4"
+
+# state: translated
+# (1) proto_xboard.cc:1234
+msgid   "Play against Sjeng"
+msgstr  "Jogar contra o Sjeng"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:139
+msgid   "Player"
+msgstr  "Jogador"
+
+# state: translated
+# (2) proto_p2p.cc:286,489
+msgid   "Player resigns"
+msgstr  "Jogador abandonou"
+
+# state: translated
+# (1) dlg_prefs.cc:370
+msgid   "Player/Color Name Font"
+msgstr  "Fonte do Nome Jogador/Cor"
+
+# state: translated
+# (1) proto_fics.cc:926
+msgid   "Pos: %s vs. %s"
+msgstr  "Pos: %s vs. %s"
+
+# state: translated
+# (1) dlg_prefs.cc:51
+msgid   "Preferences"
+msgstr  "Preferências"
+
+# state: translated
+# (1) dlg_prefs.cc:944
+msgid   "Press the button to be used for going to the next tab."
+msgstr  "Pressione o botão a ser usado para ir à próxima aba."
+
+# state: translated
+# (1) dlg_prefs.cc:941
+msgid   "Press the button to be used for going to the previous tab."
+msgstr  "Pressione o botão a ser usado para voltar à aba anterior."
+
+# state: translated
+# (1) dlg_prefs.cc:935
+msgid   "Press the button to be used for selecting a square."
+msgstr  "Pressione o botão a ser usado para selecionar peças."
+
+# state: translated
+# (1) dlg_prefs.cc:72
+msgid   "Private Tell"
+msgstr  "Mensagem Pessoal"
+
+# state: translated
+# (1) dlg_prefs.cc:312
+msgid   "Private Tells"
+msgstr  "Mensagens Pessoais"
+
+# state: translated
+# (1) network.cc:798
+msgid   "Program exited too soon"
+msgstr  "Programa saiu muito depressa"
+
+# state: translated
+# (1) widgetproxy.cc:224
+msgid   "Progress"
+msgstr  "Progresso"
+
+# state: translated
+# (1) promote.cc:57
+msgid   "Promotion Piece  "
+msgstr  "Promover para  "
+
+# state: translated
+# (1) proto_p2p.cc:572
+msgid   "Propose"
+msgstr  "Propor"
+
+# state: translated
+# (1) proto_p2p.cc:539
+msgid   "Propose Game"
+msgstr  "Propor Jogo"
+
+# state: translated
+# (1) dlg_connect.cc:106
+msgid   "Protocol"
+msgstr  "Protocolo"
+
+# state: translated
+# (2) proto_p2p.cc:189,199
+msgid   "Protocol mismatch, disconnecting."
+msgstr  "Erro de protocolo, desconectando."
+
+# state: translated
+# (1) board.cc:1013
+msgid   "Queen   %d"
+msgstr  "Dama    %d"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:144
+msgid   "Rated"
+msgstr  "Rated"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:140
+msgid   "Rating"
+msgstr  "Rating"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:146
+msgid   "Rating Range"
+msgstr  "Faixa de Rating"
+
+# state: translated
+# (1) network.cc:788
+msgid   "Read error from program."
+msgstr  "Erro de leitura do programa."
+
+# state: translated
+# (1) proto_p2p.cc:242
+msgid   "Received a game proposal from %s."
+msgstr  "Proposta de jogo recebida de %s."
+
+# state: translated
+# (1) dlg_connect.cc:80
+msgid   "Recent Hosts"
+msgstr  "Servidores Recentes"
+
+# state: translated
+# (4) dlg_gamelist.cc:110,277,844; script.cc:79
+msgid   "Refresh List"
+msgstr  "Atualizar Lista"
+
+# state: translated
+# (1) seekgraph.cc:260
+msgid   "Replied to seek #%d"
+msgstr  "Respondeu ao seek #%d"
+
+# state: translated
+# (2) proto_fics.cc:1608; proto_xboard.cc:382
+msgid   "Resigned."
+msgstr  "Abadonam."
+
+# state: translated
+# (1) dlg_gamelist.cc:323
+msgid   "Result"
+msgstr  "Resultado"
+
+# state: translated
+# (1) proto_xboard.cc:426
+msgid   "Retracted last move."
+msgstr  "A última jogada foi desfeita."
+
+# state: translated
+# (1) dlg_prefs.cc:255
+msgid   "Retrieve ICS Channel Lists from eboard.sf.net"
+msgstr  "Obter listas de nomes de canais de eboard.sf.net"
+
+# state: translated
+# (1) dlg_prefs.cc:342
+msgid   "Revert to Defaults"
+msgstr  "Cores Originais"
+
+# state: translated
+# (1) dlg_prefs.cc:393
+msgid   "Revert to defaults"
+msgstr  "Fontes Originais"
+
+# state: translated
+# (1) dlg_prefs.cc:128
+msgid   "Right"
+msgstr  "Direita"
+
+# state: translated
+# (1) board.cc:1001
+msgid   "Rook    %d"
+msgstr  "Torre   %d"
+
+# state: translated
+# (1) script.cc:80
+msgid   "Run"
+msgstr  "Executar"
+
+# state: translated
+# (1) board.cc:2471
+msgid   "Run Engine..."
+msgstr  "Programa..."
+
+# state: translated
+# (1) sound.cc:363
+msgid   "Run Program (need Filename)"
+msgstr  "Executar Programa (requer Nome de arquivo)"
+
+# state: translated
+# (1) dlg_prefs.cc:209
+msgid   "Run autofics.pl script after connecting to FICS"
+msgstr  "Executar autofics.pl após conectar ao FICS"
+
+# state: translated
+# (1) text.cc:104
+msgid   "Save Buffer As..."
+msgstr  "Salvar Conteúdo Como..."
+
+# state: translated
+# (1) dlg_gamelist.cc:286
+msgid   "Save Game..."
+msgstr  "Salvar Jogo..."
+
+# state: translated
+# (1) dlg_gamelist.cc:682
+msgid   "Save as PGN"
+msgstr  "Salvar como PGN"
+
+# state: translated
+# (2) mainwindow.cc:1151,1176
+msgid   "Scratch %d"
+msgstr  "Rascunho %d"
+
+# state: translated
+# (1) script.cc:62
+msgid   "Script"
+msgstr  "Script"
+
+# state: translated
+# (1) script.cc:44
+msgid   "Script List"
+msgstr  "Lista de Scripts"
+
+# state: translated
+# (1) dlg_prefs.cc:260
+msgid   "Scrollback limit (0 = unlimited) :"
+msgstr  "Limite de scrollback (0 = ilimitado) :"
+
+# state: lost (deprecated key)
+# (1) text.cc:605
+msgid   "Search Text"
+msgstr  "Buscar Texto"
+
+# state: lost (deprecated key)
+# (1) text.cc:615
+msgid   "Search for: "
+msgstr  "Procurar por: "
+
+# state: translated
+# (1) text.cc:96
+msgid   "Search text not found."
+msgstr  "Texto não encontrado."
+
+# state: translated
+# (1) dlg_prefs.cc:318
+msgid   "Seek Ads"
+msgstr  "Anúncios"
+
+# state: translated
+# (2) dlg_prefs.cc:193; proto_fics.cc:1861
+msgid   "Seek Graph"
+msgstr  "Anúncios"
+
+# state: translated
+# (1) dlg_prefs.cc:382
+msgid   "Seek Graph Font"
+msgstr  "Anúncios"
+
+# state: lost (deprecated key)
+# (2) dlg_prefs.cc:187; proto_fics.cc:1848
+msgid   "Seek Table"
+msgstr  "Anúncios"
+
+# state: lost (deprecated key)
+# (1) dlg_prefs.cc:348
+msgid   "Seek Table Font"
+msgstr  "Anúncios"
+
+# state: translated
+# (1) dgtboard.cc:413
+msgid   "Serial :%s"
+msgstr  "Serial: %s"
+
+# state: translated
+# (1) text.cc:442
+msgid   "Set Filter"
+msgstr  "Usar Filtro"
+
+# state: translated
+# (1) text.cc:269
+msgid   "Set Filter..."
+msgstr  "Usar Filtro..."
+
+# state: translated
+# (1) proto_xboard.cc:844
+msgid   "Set depth limit to 0 to use the engine's default."
+msgstr  "Coloque os valores em zero para\nusar o valor padrão do programa."
+
+# state: translated
+# (1) quickbar.cc:67
+msgid   "Setup Buttons"
+msgstr  "Configurar Botões"
+
+# state: translated
+# (1) quickbar.cc:207
+msgid   "Shortcut Button Setup"
+msgstr  "Configuração de Botões de Atalho"
+
+# state: translated
+# (1) dlg_prefs.cc:317
+msgid   "Shouts"
+msgstr  "Shouts"
+
+# state: translated
+# (1) dlg_prefs.cc:249
+msgid   "Show channel tells in one pane per channel"
+msgstr  "Mostrar canais em uma aba por canal"
+
+# state: translated
+# (1) dlg_prefs.cc:252
+msgid   "Show channel tells on console too (when above option is active)"
+msgstr  "Mostrar canais no console também (quando a opção acima estiver ativa)"
+
+# state: translated
+# (1) dlg_prefs.cc:206
+msgid   "Show rating next to player name"
+msgstr  "Mostrar rating ao lado do nome do jogador"
+
+# state: translated
+# (1) dlg_prefs.cc:168
+msgid   "Show shortcut buttons below board"
+msgstr  "Mostrar botões de atalho abaixo do tabuleiro"
+
+# state: translated
+# (1) dlg_prefs.cc:212
+msgid   "Show timestamps for text lines"
+msgstr  "Mostrar hora nas linhas de texto"
+
+# state: translated
+# (1) proto_xboard.cc:802
+msgid   "Side & Time"
+msgstr  "Lado & Tempo"
+
+# state: translated
+# (1) proto_xboard.cc:804
+msgid   "Side Selection"
+msgstr  "Escolha de Lado"
+
+# state: translated
+# (2) board.cc:2476,2481
+msgid   "Side to move: "
+msgstr  "Lado a jogar: "
+
+# state: translated
+# (1) dlg_prefs.cc:532
+msgid   "Smooth joystick cursor"
+msgstr  "Cursor suave para o joystick"
+
+# state: translated
+# (1) dlg_prefs.cc:533
+msgid   "Smooth joystick cursor speed:"
+msgstr  "Velocidade do cursor suave do joystick:"
+
+# state: translated
+# (1) dlg_prefs.cc:162
+msgid   "Smoother animation (eats more CPU)"
+msgstr  "Animação mais suave (gasta mais CPU)"
+
+# state: translated
+# (1) dlg_prefs.cc:230
+msgid   "Soft translate"
+msgstr  "Simplificar"
+
+# state: translated
+# (1) protocol.cc:84
+msgid  ""
+"Sorry, this protocol does not allow to retract a move thru this menu option."
+msgstr ""
+"Desculpe, este protocolo não permite voltar uma jogada através deste menu."
+
+# state: translated
+# (1) sound.cc:337
+msgid   "Sound Event"
+msgstr  "Evento Sonoro"
+
+# state: translated
+# (1) dlg_prefs.cc:422
+msgid   "Sound Events"
+msgstr  "Eventos Sonoros"
+
+# state: translated
+# (1) dlg_prefs.cc:420
+msgid   "Sounds"
+msgstr  "Sons"
+
+# state: translated
+# (1) mainwindow.cc:796
+msgid   "Source code available at http://eboard.sourceforge.net"
+msgstr  "Código-fonte disponível em http://eboard.sourceforge.net"
+
+# state: translated
+# (2) proto_p2p.cc:277,436
+msgid   "Stalemate"
+msgstr  "Rei afogado"
+
+# state: translated
+# (1) p2p.cc:147
+msgid   "Start a connection"
+msgstr  "Iniciar uma conexão"
+
+# state: translated
+# (1) clock.cc:488
+msgid   "Starting Time:"
+msgstr  "Tempo Inicial:"
+
+# state: translated
+# (1) proto_xboard.cc:1198
+msgid   "Suicide"
+msgstr  "Suicide"
+
+# state: translated
+# (1) dlg_connect.cc:105
+msgid   "TCP Port"
+msgstr  "Porta TCP"
+
+# state: translated
+# (2) p2p.cc:72,96
+msgid   "TCP Port:"
+msgstr  "Porta TCP:"
+
+# state: translated
+# (1) dlg_prefs.cc:123
+msgid   "Tab Position"
+msgstr  "Posição das Abas"
+
+# state: translated
+# (1) sound.cc:462
+msgid   "Test"
+msgstr  "Testar"
+
+# state: translated
+# (1) dlg_prefs.cc:436
+msgid   "The checkbox on the left enables/disables the sound."
+msgstr  "O controle à esquerda habilita/desabilita o som."
+
+# state: translated
+# (1) proto_xboard.cc:884
+msgid   "The engine will be run with\n/bin/sh -c 'cd directory ; command line'"
+msgstr  "O programa será executado com\n/bin/sh -c 'cd diretório ; linha de comando'"
+
+# state: translated
+# (1) dlg_connect.cc:305
+msgid   "Think Always"
+msgstr  "Pensar Sempre"
+
+# state: translated
+# (1) proto_xboard.cc:847
+msgid   "Think on opponent's time"
+msgstr  "Pensar no tempo do oponente"
+
+# state: lost (deprecated key)
+# (1) seekgraph.cc:142
+msgid   "Time"
+msgstr  "Tempo"
+
+# state: translated
+# (1) proto_xboard.cc:816
+msgid   "Time Control"
+msgstr  "Controle de Tempo"
+
+# state: translated
+# (1) proto_xboard.cc:829
+msgid   "Time Control..."
+msgstr  "Controle de Tempo..."
+
+# state: translated
+# (1) dlg_connect.cc:291
+msgid   "Time Control:"
+msgstr  "Controle de Tempo"
+
+# state: translated
+# (1) dlg_prefs.cc:74
+msgid   "Time Running Out"
+msgstr  "Tempo Esgotando"
+
+# state: translated
+# (1) network.cc:371
+msgid   "Timeout"
+msgstr  "Tempo Expirou"
+
+# state: translated
+# (1) clock.cc:498
+msgid   "Times can be given as hh:mm:ss , mm:ss or ss"
+msgstr  "Tempos podem ser dados como hh:mm:ss , mm:ss ou ss"
+
+# state: translated
+# (1) quickbar.cc:253
+msgid  ""
+"To run multiple commands with one shortcut, separate the commands with ; (semicolon).\n"
+"To run a script from a shortcut, set command to script.ScriptName, e.g.: script.myscript.pl ."
+msgstr ""
+"Para executar vários comandos, separe-os com ; (ponto-e-vírgula)\n"
+"Para executar um script, use script.nomedoscript"
+
+# state: translated
+# (1) dlg_prefs.cc:132
+msgid   "Top"
+msgstr  "Acima"
+
+# state: translated
+# (1) dgtboard.cc:419
+msgid   "Trademark :%s"
+msgstr  "Marca: %s"
+
+# state: translated
+# (1) dlg_prefs.cc:226
+msgid   "Truncate"
+msgstr  "Truncar"
+
+# state: translated
+# (1) clock.cc:446
+msgid   "Type: Fischer Clock (ICS-like)"
+msgstr  "Tipo: Relógio Fischer (ICS)"
+
+# state: translated
+# (1) clock.cc:444
+msgid   "Type: Fixed Time per Move"
+msgstr  "Tipo: Tempo Fixo por Jogada"
+
+# state: translated
+# (1) clock.cc:447
+msgid   "Type: Use engine's default setting"
+msgstr  "Tipo: Usar o padrão do programa"
+
+# state: translated
+# (1) clock.cc:445
+msgid   "Type: X Moves per Time Period"
+msgstr  "Tipo: X Jogadas por Período"
+
+# state: translated
+# (1) network.cc:467
+msgid   "Unable to bind on port %d."
+msgstr  "Impossível associar à porta %d."
+
+# state: translated
+# (1) network.cc:457
+msgid   "Unable to create socket."
+msgstr  "Impossível criar socket."
+
+# state: translated
+# (1) dgtboard.cc:403
+msgid   "Unable to find the DGT board on port %s."
+msgstr  "DGT não encontrado na porta %s."
+
+# state: lost (deprecated key)
+# (1) dgtboard.cc:215
+msgid   "Unable to find the DGT board on port %s: %s."
+msgstr  "Tabuleiro DGT não encontrado na porta %s: %s."
+
+# state: translated
+# (1) dgtboard.cc:119
+msgid   "Unable to load dgtnix library symbol.\n"
+msgstr  "Erro ao carregar símbolo da biblioteca dgtnix.\n"
+
+# state: translated
+# (1) dgtboard.cc:114
+msgid   "Unable to load dgtnix library.\n"
+msgstr  "Erro ao carregar a biblioteca dgtnix.\n"
+
+# state: translated
+# (1) network.cc:376
+msgid   "Unknown error"
+msgstr  "Erro desconhecido."
+
+# state: translated
+# (1) proto_p2p.cc:295
+msgid   "Unknown result"
+msgstr  "Resultado desconhecido"
+
+# state: translated
+# (1) dlg_prefs.cc:144
+msgid   "Use plain color squares"
+msgstr  "Usar cores lisas nas casas"
+
+# state: translated
+# (1) dlg_prefs.cc:228
+msgid   "Use underscores"
+msgstr  "Usar sublinhas"
+
+# state: translated
+# (1) chess.cc:1479
+msgid   "Value"
+msgstr  "Valor"
+
+# state: translated
+# (1) chess.cc:1496
+msgid   "Value:"
+msgstr  "Valor:"
+
+# state: translated
+# (3) dlg_gamelist.cc:322; proto_xboard.cc:1189,1211
+msgid   "Variant"
+msgstr  "Variante"
+
+# state: translated
+# (2) dlg_connect.cc:307,472
+msgid   "Variant:"
+msgstr  "Variante:"
+
+# state: translated
+# (1) dlg_connect.cc:445
+msgid   "Variant: %s (uneditable)"
+msgstr  "Variante: %s (não editável)"
+
+# state: translated
+# (1) p2p.cc:109
+msgid   "Wait"
+msgstr  "Esperar"
+
+# state: translated
+# (1) p2p.cc:148
+msgid   "Wait for a connection"
+msgstr  "Esperar por uma conexão"
+
+# state: translated
+# (1) p2p.cc:244
+msgid   "Waiting for connection on port %d."
+msgstr  "Esperando conexão na porta %d."
+
+# state: translated
+# (1) dlg_prefs.cc:268
+msgid   "Warn when own clock is below: "
+msgstr  "Avisar quando o próprio relógio estiver abaixo de: "
+
+# state: translated
+# (1) status.cc:43
+msgid   "Welcome to eboard."
+msgstr  "Bem-vindo ao eboard."
+
+# state: translated
+# (5) board.cc:430; dlg_gamelist.cc:320; movelist.cc:65; proto_p2p.cc:550; proto_xboard.cc:1003
+msgid   "White"
+msgstr  "Brancas"
+
+# state: translated
+# (1) bugpane.cc:228
+msgid   "White: %s - %s"
+msgstr  "Brancas: %s - %s"
+
+# state: translated
+# (1) widgetproxy.cc:238
+msgid   "Working..."
+msgstr  "Aguarde..."
+
+# state: translated
+# (1) help.cc:245
+msgid   "Write to Console"
+msgstr  "Escrever no Console"
+
+# state: translated
+# (1) network.cc:367
+msgid   "Wrong address space"
+msgstr  "Endereço inválido"
+
+# state: translated
+# (1) chess.cc:890
+msgid   "Wrote"
+msgstr  "Escrevi"
+
+# state: translated
+# (1) dlg_gamelist.cc:427
+msgid   "Yes"
+msgstr  "Sim"
+
+# state: translated
+# (1) proto_xboard.cc:414
+msgid   "You can only retract when it's your turn to move."
+msgstr  "Você pode voltar apenas quando for a sua vez."
+
+# state: translated
+# (1) proto_p2p.cc:546
+msgid   "Your color:"
+msgstr  "Sua cor:"
+
+# state: translated
+# (1) p2p.cc:135
+msgid   "Your name:"
+msgstr  "Seu nome:"
+
+# state: translated
+# (1) mainwindow.cc:2015
+msgid   "[chat]"
+msgstr  "[chat]"
+
+# state: translated
+# (2) mainwindow.cc:1973,2016
+msgid   "[cmd]"
+msgstr  "[cmd]"
+
+# state: translated
+# (1) global.cc:385
+msgid   "[eboard] ** $HOME is too long"
+msgstr  "[eboard] ** $HOME longo demais"
+
+# state: translated
+# (1) global.cc:412
+msgid   "[eboard] ** failed to create directory "
+msgstr  "[eboard] ** não foi possível criar diretório "
+
+# state: translated
+# (1) global.cc:382
+msgid   "[eboard] ** no $HOME"
+msgstr  "[eboard] ** sem $HOME"
+
+# state: translated
+# (1) sound.cc:149
+msgid   "[eboard] bad RC line\n"
+msgstr  "[eboard] linha de configuração inválida\n"
+
+# state: translated
+# (1) mainwindow.cc:2005
+msgid   "[find]"
+msgstr  "[procurar]"
+
+# state: translated
+# (1) sound.cc:314
+msgid   "beep"
+msgstr  "bipe"
+
+# state: translated
+# (1) sound.cc:313
+msgid   "beeps"
+msgstr  "bipes"
+
+# state: translated
+# (1) proto_fics.cc:1914
+msgid   "black"
+msgstr  "pretas"
+
+# state: translated
+# (1) chess.cc:1254
+msgid   "can't load PGN move text from %s (error opening file)"
+msgstr  "impossível carregar PGN de %s (erro abrindo arquivo)"
+
+# state: translated
+# (1) chess.cc:1260
+msgid   "can't seek to offset %lu of %s"
+msgstr  "impossível deslocar para offset %lu de %s"
+
+# state: lost (deprecated key)
+# (1) dgtboard.cc:208
+msgid   "dgtnix driver version %.1f"
+msgstr  "biblioteca dgtnix versão %.1f"
+
+# state: translated
+# (1) dgtboard.cc:397
+msgid   "dgtnix driver version: %s"
+msgstr  "driver dgtnix versão: %s"
+
+# state: translated
+# (1) dgtboard.cc:146
+msgid   "dgtnix version too old: %f, must be >= %f"
+msgstr  "dgtnix muito antigo: %f, precisa ser >= %f"
+
+# state: translated
+# (1) mainwindow.cc:525
+msgid   "discards board"
+msgstr  "descarta tabuleiro"
+
+# state: translated
+# (1) p2p.cc:33
+msgid   "eboard Direct Connection Manager"
+msgstr  "Gerenciador de Conexão Direta do eboard"
+
+# state: translated
+# (1) mainwindow.cc:790
+msgid   "eboard version %s (%s)"
+msgstr  "eboard versão %s (%s)"
+
+# state: translated
+# (1) help.cc:76
+msgid  ""
+"eboard version %s\n"
+"(c) 2000-%d Felipe Bergo\n"
+"<fbergo@gmail.com>\n"
+"http://eboard.sourceforge.net\n"
+"\nThis program is free software; you can redistribute\n"
+"it and/or modify it under the terms of the GNU General\n"
+"Public License as published by the Free Software\n"
+"Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+msgstr ""
+"eboard versão %s\n"
+"(c) 2000-%d Felipe Bergo\n"
+"<fbergo@gmail.com>\n"
+"http://eboard.sourceforge.net\n"
+"\nEste programa é software livre; você pode redistribui-lo\n"
+"e/ou modificá-lo sob os termos da GNU General Public\n"
+"License tal como publicada pela Free Software Foundation;\n"
+"versão 2 da licença ou (sua opção) qualquer versão\n"
+"mais recente.\n"
+
+# state: translated
+# (1) text.cc:239
+msgid   "eboard: Console #%d"
+msgstr  "eboard: Console #%d"
+
+# state: translated
+# (1) proto_xboard.cc:161
+msgid   "engine claimed illegal move but we didn't move, ignoring it."
+msgstr  "programa reclamou de jogada ilegal mas não houve jogada, ignorando."
+
+# state: translated
+# (1) chess.cc:1267
+msgid   "error parsing PGN data"
+msgstr  "erro interpretando dados PGN"
+
+# state: translated
+# (1) mainwindow.cc:524
+msgid   "flips board"
+msgstr  "inverte tabuleiro"
+
+# state: translated
+# (5) dlg_gamelist.cc:499,510,516,522,528
+msgid   "game"
+msgstr  "jogo"
+
+# state: translated
+# (5) dlg_gamelist.cc:500,511,517,523,529
+msgid   "games"
+msgstr  "jogos"
+
+# state: translated
+# (1) dlg_connect.cc:450
+msgid   "generic xboard v2"
+msgstr  "xboard genérico v2"
+
+# state: translated
+# (1) mainwindow.cc:520
+msgid   "goes back 1 halfmove"
+msgstr  "volta meia jogada"
+
+# state: translated
+# (1) mainwindow.cc:519
+msgid   "goes back to start of game"
+msgstr  "volta ao início do jogo"
+
+# state: translated
+# (1) mainwindow.cc:521
+msgid   "goes forward 1 halfmove"
+msgstr  "avança meia jogada"
+
+# state: translated
+# (1) mainwindow.cc:522
+msgid   "goes forward to end of game"
+msgstr  "avança ao fim do jogo"
+
+# state: translated
+# (1) proto_xboard.cc:177
+msgid   "illegal move!"
+msgstr  "jogada ilegal!"
+
+# state: translated
+# (1) dlg_gamelist.cc:436
+msgid   "in progress"
+msgstr  "em andamento"
+
+# state: translated
+# (1) clock.cc:342
+msgid   "initial time %s, increment %s"
+msgstr  "tempo inicial %s, incremento %s"
+
+# state: translated
+# (1) clock.cc:479
+msgid   "moves in"
+msgstr  "Jogadas"
+
+# state: translated
+# (1) proto_xboard.cc:1009
+msgid   "no"
+msgstr  "não"
+
+# state: translated
+# (2) proto_fics.cc:1541,1728
+msgid   "no such game: "
+msgstr  "jogo inexistente: "
+
+# state: translated
+# (1) clock.cc:333
+msgid   "no time control set"
+msgstr  "Controle de Tempo"
+
+# state: translated
+# (2) movelist.cc:127,128
+msgid   "none"
+msgstr  "nada"
+
+# state: translated
+# (1) sound.cc:326
+msgid   "nothing"
+msgstr  "nada"
+
+# state: translated
+# (1) mainwindow.cc:526
+msgid   "opens new scratch board with position"
+msgstr  "abre novo tabuleiro rascunho com esta posição"
+
+# state: translated
+# (1) clock.cc:473
+msgid   "per move"
+msgstr  "por jogada"
+
+# state: translated
+# (1) sound.cc:323
+msgid   "plain console beep"
+msgstr  "bipe de console"
+
+# state: translated
+# (1) sound.cc:317
+msgid   "play file %s"
+msgstr  "tocar arquivo %s"
+
+# state: translated
+# (1) mainwindow.cc:523
+msgid   "pops up the move list"
+msgstr  "abre a lista de jogadas"
+
+# state: translated
+# (1) network.cc:716
+msgid   "process creation failed."
+msgstr  "Criação de processo falhou."
+
+# state: translated
+# (2) chess.cc:192; seekgraph.cc:549
+msgid   "rated"
+msgstr  "rated"
+
+# state: translated
+# (1) sound.cc:320
+msgid   "run %s"
+msgstr  "executar %s"
+
+# state: translated
+# (1) script.cc:256
+msgid   "running %s"
+msgstr  "rodando %s"
+
+# state: translated
+# (1) chess.cc:834
+msgid   "savePGN failed: %s"
+msgstr  "savePGN falhou: %s"
+
+# state: translated
+# (1) chess.cc:819
+msgid   "savePGN failed: Won't save game with less than 2 moves"
+msgstr  "savePGN falhou: Não grava jogos com menos de 2 movimentos"
+
+# state: translated
+# (1) dlg_prefs.cc:272
+msgid   "seconds."
+msgstr  "segundos."
+
+# state: translated
+# (2) chess.cc:193; seekgraph.cc:550
+msgid   "unrated"
+msgstr  "unrated"
+
+# state: translated
+# (1) clock.cc:313
+msgid   "untimed"
+msgstr  "sem relógio"
+
+# state: translated
+# (1) proto_fics.cc:1913
+msgid   "white"
+msgstr  "brancas"
+
+# state: translated
+# (1) proto_xboard.cc:1008
+msgid   "yes"
+msgstr  "sim"
+

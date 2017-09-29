@@ -1,0 +1,49 @@
+eboard authors:
+
+Felipe Bergo - bergo@seul.org
+
+---
+Refurbished Code Parts
+
+The piece sets are based on Tim Mann's xboard pieceset
+rendering (the 108x108 set) 
+
+The algorithm used to scale piece bitmaps on the fly was
+taken from Gimp 1.0.4 (http://www.gimp.org)
+
+---
+Translation Team
+
+Starting with eboard 0.7.0, eboard has national language
+support (NLS), Currently these languages have translations:
+
+- Brazilian Portuguese (pt_BR), translation by Felipe Bergo
+- German (de), translation by Bernhard Bialas
+- Spanish (es), translation by Ricardo Mones Lastra
+- Italian (it_IT), translation by Massimo Danieli
+- Czech (cs), translation by Ales Dolecek
+
+To add another language, email me (Felipe), it's fairly
+simple (for people familiar to eboard), takes some hours
+and requires no programming skills.
+
+If you find errors in the translations, please tell us!
+
+note for 0.9.0: translations have not been updated since
+0.8.0, so the new dialogs do not have translations yet,
+I hope to release 0.9.1 soon with updated translations.
+
+---
+Thanks
+
+The users listed below helped out by sending bug reports,
+important feature requests or otherwise good advice:
+
+Daniel Burrows, Mike Hill, Marlon Sandford,
+Gian-Carlo Pascutto, Joe Haas,
+Federico Schwindt (OpenBSD audio)
+Chris Howie
+
+Daniel Burrows is packaging eboard for the Debian GNU/Linux
+distribution and is the author of some of the man pages.
+

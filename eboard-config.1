@@ -1,0 +1,37 @@
+.\" In .TH, FOO should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.\"
+.\" This template provided by Tom Christiansen <tchrist@jhereg.perl.com>.
+.\" 
+.TH EBOARD-CONFIG 1
+.SH NAME
+eboard-config \- program to get information about the installed eboard.
+.SH SYNOPSIS
+eboard-config
+.RI [ --prefix|--datadir|--bindir|--version ]
+.SH "DESCRIPTION"
+This manual page briefly documents the
+.B eboard-config
+command.  This manual page was contributed by the developers of
+the Debian GNU/Linux distribution.
+
+eboard-config reports the installation options that the currently installed
+version of eboard was compiled with.
+.SH OPTIONS
+.TP
+.B --prefix
+Returns the prefix under which eboard was installed.
+.TP
+.B --datadir
+Returns the location in which eboard datafiles were installed.
+.TP
+.B --bindir
+Returns the directory in which the eboard binaries were install
+.TP
+.B --version
+Outputs the current eboard version to stdout.
+.SH AUTHOR
+This  manual  page  was  written  by Daniel Burrows <dburrows@debian.org>,
+for the Debian GNU/Linux system, but may be used by others.
+
+

@@ -1,0 +1,3 @@
+version=3
+
+http://sf.net/eboard/eboard-(\d.*)\.tar\.(?:gz|bz2)

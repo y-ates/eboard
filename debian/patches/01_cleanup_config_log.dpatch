@@ -1,0 +1,16 @@
+Description: Clean up config.log
+Author: Patrik Fimml <patrik@fimml.at>
+
+Index: eboard/elifekam
+===================================================================
+--- eboard.orig/elifekam	2011-12-19 20:31:11.985811337 +0100
++++ eboard/elifekam	2011-12-19 20:33:22.281814925 +0100
+@@ -36,7 +36,7 @@
+ 	rm -f $(OBJS) eboard *~
+ 
+ distclean:
+-	rm -f $(OBJS) eboard *~ config.h config.make Makefile $(DIST).tar.gz $(DIST).tar.bz2 eboard.spec eboard-config
++	rm -f $(OBJS) eboard *~ config.h config.make config.log Makefile $(DIST).tar.gz $(DIST).tar.bz2 eboard.spec eboard-config
+ 
+ install: install-bin install-man install-data install-nls
+ 

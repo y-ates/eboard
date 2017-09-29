@@ -1,0 +1,95 @@
+
+Crafty
+
+This document describes the issues related to running the
+Crafty chess engine together with eboard.
+
+Felipe Bergo <bergo@seul.org>
+
+1. What is Crafty ?
+2. Getting Crafty
+3. Compiling and Installing
+4. Book files
+
+---
+
+1. What is Crafty ?
+
+Crafty is a chess engine developed by Robert M. Hyatt. It runs
+on several platforms (Linux, *BSD, Win32, OS/2, etc.). A chess
+engine is, in a nutshell, a piece of software that turns CPU cycles
+into chess moves. It is quite a challenging kind of software to
+write, so good chess engine programmers focus on the chess playing,
+not on the user interface, which is usually a text interface.
+Crafty is no exception. eboard can serve as a graphical chess
+board interface for crafty.
+
+Crafty is distributed under a proprietary license. Its main points are:
+- you can get the source code
+- reproduction and usage of source and binaries allowed for
+  personal use only (this is detailed in the license text)
+- usage on chess competitions requires written permission from the author
+- copies of the source must keep the copyright notice intact
+- changes to the code must be made public
+
+The full terms are found in Crafty's main.c file.
+
+2. Getting Crafty
+
+Crafty can be downloaded from
+
+   <ftp://ftp.cis.uab.edu/pub/hyatt>
+
+If this link ever breaks, try searching for crafty on
+
+   <http://freshmeat.net>
+
+3. Compiling and Installing
+
+To unpack crafty,
+
+mkdir crafty
+cd crafty
+tar zxvf crafty-xx.yy.tar.gz
+
+After unpacking it, you must find a Makefile target that
+matches your system. For Linux-i386 the most common
+is "make linux-elf". There is a linux-i686-elf target,
+but it may not work on your machine if it doesn't support
+all optimizations. 
+
+After compiling with "make {mytarget}", you'll have
+a "crafty" binary in your current dir. Check if the build
+worked by running it "./crafty" and play a couple of moves
+(type "e2e4" at the White(1): prompt, use "display" to
+show the board) -- if it doesn't ends abnormally with
+a message like "Illegal Instruction" you're fine.
+
+The binary must be placed in your PATH to work properly.
+If you have root access you may wish to place it in
+/usr/bin or /usr/local/bin. Else you can place it in
+~/bin (~ is your home dir) and make sure this is
+added to your path. The crafty binary must be
+called just "crafty" (don't rename it), else eboard
+won't find it.
+
+4. Book files
+
+Crafty can (and should) use book files with openings and
+analysed games. These are found in crafty's ftp site
+under the names books.bin and book.bin. eboard will look
+for these in the following places (in this order -- and
+both files should be placed in the same directory):
+
+~/.eboard
+~
+/usr/local/share/eboard
+/usr/share/eboard
+/usr/local/share/crafty
+/usr/share/crafty
+
+The ~ means your home directory. Crafty's
+output files will the placed in the 
+~/.eboard/craftylog directory.
+
+
