@@ -75,8 +75,7 @@ Currently it supports the following protocols / engines:
 
   For automatic login scripts for FICS see Documentation/Scripts.txt
 
-Features:
----------
+# Features:
 
 - Scroll locking on text pane: if you scroll up in the text
   pane, it won't auto-scroll to the bottom when new output
