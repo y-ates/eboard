@@ -113,12 +113,11 @@ the GNU General Public License, version 2 or any later version
 published by the Free Software Foundation. The license is
 included in the COPYING file. 
 
-To compile/install it:
+To compile/install it (as root):
 
 ```
 ./configure
 make
-(become root)
 make install
 ```
 
