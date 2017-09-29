@@ -110,11 +110,6 @@ export LANGUAGE=de
 (eboard checks the LC_MESSAGES, LC_ALL, LANGUAGE and LANG
 environment variables for language settings, in this order)
 
-You can use, modify and redistribute eboard under the terms of
-the GNU General Public License, version 2 or any later version
-published by the Free Software Foundation. The license is
-included in the COPYING file. 
-
 To compile/install it (as root):
 
 ```
@@ -147,3 +142,10 @@ access) is
   http://sourceforge.net/projects/eboard
 
 Have fun!
+
+
+# License
+You can use, modify and redistribute eboard under the terms of
+the GNU General Public License, version 2 or any later version
+published by the Free Software Foundation. The license is
+included in the COPYING file. 
