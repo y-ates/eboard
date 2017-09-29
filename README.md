@@ -98,6 +98,8 @@ Currently it supports the following protocols / engines:
 - National Language Support (portuguese, german, spanish, czech and 
   italian so far)
 
+# Change language
+
 To change the language, make sure you performed 'make install' and
 set the environment variable LANGUAGE to the language code
 (de for German, pt_BR for brazilian Portuguese, es for Spanish, etc.)
