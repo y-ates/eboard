@@ -1,5 +1,4 @@
-eboard README
--------------
+# eboard
 
 eboard is a chess board interface for ICS (Internet Chess
 Servers) and chess engines.
@@ -116,10 +115,12 @@ included in the COPYING file.
 
 To compile/install it:
 
+```
 ./configure
 make
 (become root)
 make install
+```
 
 For further instructions see the INSTALL file. You'll need:
 
