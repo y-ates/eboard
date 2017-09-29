@@ -121,6 +121,8 @@ make
 make install
 ```
 
+# Further instructions
+
 For further instructions see the INSTALL file. You'll need:
 
 - the GTK+ library, version 2.2.0
