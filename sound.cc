@@ -333,7 +333,9 @@ void SoundEvent::edit(SoundEventChangeListener *listener) {
 
 // dialog
 
-SoundEventDialog::SoundEventDialog(SoundEvent *src, SoundEventChangeListener *listener) : ModalDialog(N_("Sound Event")) {
+SoundEventDialog::SoundEventDialog(SoundEvent *src,
+								   SoundEventChangeListener *listener)
+	: ModalDialog(N_("Sound Event")) {
   GtkWidget *v,*tf,*rh,*mh[4],*ml[5],*hs,*bb,*ok,*cancel,*test,*brw;
   GSList *rg;
   int i,j;
