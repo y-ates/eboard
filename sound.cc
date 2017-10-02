@@ -50,6 +50,7 @@
 #ifdef HAVE_SYS_SOUNDCARD_H
 
 #define OSS_DRIVER 1
+#define DEVICE_PATH "/dev/dsp"
 #include <sys/soundcard.h>
 
 #elif defined HAVE_SYS_AUDIOIO_H
@@ -74,7 +75,7 @@ SoundEvent::SoundEvent() {
   Pitch=800;
   Duration=250;
   Count=1;
-  strcpy(Device,"/dev/dsp");
+  strcpy(Device,DEVICE_PATH);
   ExtraData[0]=0;
   enabled = true;
 }
@@ -157,7 +158,7 @@ ostream & operator<<(ostream &s,  SoundEvent e) {
     s << e.Device << ',' << e.Count << ',' << (e.enabled?1:0);
     break;
   case EXT_WAVE:
-    if (e.Device[0] == 0) strcpy(e.Device,"/dev/dsp");
+    if (e.Device[0] == 0) strcpy(e.Device,DEVICE_PATH);
     s << "1," << e.Device << ',' << e.ExtraData;
     s << ',' << (e.enabled?1:0);
     break;
