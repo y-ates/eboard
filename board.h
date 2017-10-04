@@ -46,7 +46,7 @@ class AnimatedPiece {
   virtual void lemming()=0;
   virtual void destroy()=0;
   virtual void step()=0;
-  
+
   int over();
 
   int getX();
@@ -106,7 +106,7 @@ class RootBoard {
 
 // I just can't work out the correct syntax to put the
 // bodies of methods in the .cc file, if you know, email me
-template<class T> 
+template<class T>
 class mblock {
  public:
 
@@ -122,17 +122,17 @@ class mblock {
     if (!data) cerr << "eboard ** mblock error, expect oddities\n";
     return(data!=0);
   }
-  
+
   T * data;
   int sz;
 };
 
 class Board : public WidgetProxy,
-	      public ClockHost,
-	      public RootBoard,
-	      public NotebookInsider,
+          public ClockHost,
+          public RootBoard,
+          public NotebookInsider,
               public TargetManager,
-	      public PieceChangeListener
+          public PieceChangeListener
 {
  public:
   Board();
@@ -155,7 +155,7 @@ class Board : public WidgetProxy,
   void        setCanMove(bool value);
   void        stopClock();
   void        reset();
-  
+
   void  setGame(ChessGame *game);
   ChessGame *getGame();
   void  reloadFonts();
@@ -187,7 +187,7 @@ class Board : public WidgetProxy,
 
   bool FreeMove; // editing positions, examining games
   bool EditMode; // explicit edit mode (with pieces to drop and additional commands)
- 
+
   static Board * PopupOwner;
 
   virtual void renderClock();
@@ -251,7 +251,7 @@ class Board : public WidgetProxy,
   // premove
   int premoveq;
   int pmx[2],pmy[2];
-  piece pmp;  
+  piece pmp;
 
   // dragged piece info
   bool  dr_active;
@@ -296,22 +296,22 @@ class Board : public WidgetProxy,
   friend gboolean vec_board_animate(gpointer data);
 
   friend gboolean board_expose_event(GtkWidget *widget,GdkEventExpose *ee,
-				     gpointer data);
+                     gpointer data);
   friend gboolean board_configure_event(GtkWidget *widget,
-					GdkEventConfigure *ce,
-					gpointer data);
+                    GdkEventConfigure *ce,
+                    gpointer data);
   friend gboolean board_button_press_event(GtkWidget *widget,
-					   GdkEventButton *be,
-					   gpointer data);
+                       GdkEventButton *be,
+                       gpointer data);
   friend gboolean board_button_release_event(GtkWidget *widget,
-					     GdkEventButton *be,
-					     gpointer data);
+                         GdkEventButton *be,
+                         gpointer data);
   friend gboolean board_motion_event(GtkWidget *widget,
-				     GdkEventMotion *em,
-				     gpointer data);
+                     GdkEventMotion *em,
+                     gpointer data);
 
   friend gboolean gtkDgtnixEvent(GIOChannel* channel, GIOCondition cond, gpointer data);
-  
+
 
   friend void drop_callbackP(GtkMenuItem *item,gpointer data);
   friend void drop_callbackR(GtkMenuItem *item,gpointer data);
@@ -361,9 +361,12 @@ class GetFENDialog : public ModalDialog {
 gboolean board_animate(gpointer data);
 gboolean vec_board_animate(gpointer data);
 gboolean board_expose_event(GtkWidget *widget,GdkEventExpose *ee,gpointer data);
-gboolean board_configure_event(GtkWidget *widget,GdkEventConfigure *ce,gpointer data);
-gboolean board_button_press_event(GtkWidget *widget,GdkEventButton *be,gpointer data);
-gboolean board_button_release_event(GtkWidget *widget,GdkEventButton *be,gpointer data);
+gboolean board_configure_event(GtkWidget *widget,GdkEventConfigure *ce,
+                               gpointer data);
+gboolean board_button_press_event(GtkWidget *widget,GdkEventButton *be,
+                                  gpointer data);
+gboolean board_button_release_event(GtkWidget *widget,GdkEventButton *be,
+                                    gpointer data);
 gboolean board_motion_event(GtkWidget *widget,GdkEventMotion *em,gpointer data);
 void drop_callbackP(GtkMenuItem *item,gpointer data);
 void drop_callbackR(GtkMenuItem *item,gpointer data);
