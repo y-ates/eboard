@@ -33,9 +33,9 @@
 #include "stl.h"
 
 class BareBoard : public WidgetProxy,
-	          public RootBoard,
-	          public ClockHost,
-	          public PieceChangeListener
+              public RootBoard,
+              public ClockHost,
+              public PieceChangeListener
 {
  public:
   BareBoard();
@@ -47,7 +47,7 @@ class BareBoard : public WidgetProxy,
   void setClock2(int wmsecs,int bmsecs,int actv,int cdown);
   virtual void updateClock();
   void addPTell(char *text);
-  void update();  
+  void update();
 
   void freeze();
   void thaw();
@@ -72,7 +72,7 @@ class BareBoard : public WidgetProxy,
   void reloadPieceSet();
 
   friend gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
-				   gpointer data);
+                   gpointer data);
 };
 
 class BugPane : public WidgetProxy {
@@ -92,13 +92,13 @@ class BugPane : public WidgetProxy {
   static string BugTell;
 
  private:
-  BareBoard *board;  
+  BareBoard *board;
 
-  friend void bug_ptell(GtkWidget *b,gpointer data);  
+  friend void bug_ptell(GtkWidget *b,gpointer data);
 };
 
 /* friend prototypes */
 gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,gpointer data);
-void     bug_ptell(GtkWidget *b,gpointer data);  
+void     bug_ptell(GtkWidget *b,gpointer data);
 
 #endif
