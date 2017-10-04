@@ -37,12 +37,12 @@ BareBoard::BareBoard() : WidgetProxy() {
   global.addPieceClient(this);
   Names[0]=_("None");
   Names[1]=_("None");
-  
+
   widget=gtk_drawing_area_new();
   gtk_widget_set_events(widget,GDK_EXPOSURE_MASK);
   gtk_signal_connect(GTK_OBJECT(widget),"expose_event",
-		     GTK_SIGNAL_FUNC(bareboard_expose),(gpointer)this);
-  
+             GTK_SIGNAL_FUNC(bareboard_expose),(gpointer)this);
+
   pixbuf=0;
 
   pset=0;
@@ -80,7 +80,7 @@ void BareBoard::setBlack(char *name) {
   Names[1]=name;
   repaint();
 }
-  
+
 void BareBoard::update() {
   if (frozen>0)
     upending=true;
@@ -123,13 +123,13 @@ void BareBoard::thaw() {
 }
 
 gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
-			  gpointer data) {
+              gpointer data) {
 
   BareBoard *me;
   int i,j,k,ww,wh,zh,x,y=0;
   int sqside;
   GdkGC *gc;
-  char z[256],t[64];  
+  char z[256],t[64];
   list<string>::iterator pti;
   rgbptr tmp;
   int rowsz;
@@ -174,18 +174,18 @@ gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
 
     if (global.UseVectorPieces) {
       global.vpieces.drawSquares(me->pixbuf,gc,sqside);
-    
+
       for(i=0;i<8;i++)
-	for(j=0;j<8;j++)
-	  global.vpieces.drawPiece(me->pixbuf,gc,sqside,
-				   i*sqside, j*sqside,
-				   me->position.getPiece(flip?7-i:i,
-							 flip?j:7-j));
+    for(j=0;j<8;j++)
+      global.vpieces.drawPiece(me->pixbuf,gc,sqside,
+                   i*sqside, j*sqside,
+                   me->position.getPiece(flip?7-i:i,
+                             flip?j:7-j));
     } else {
       if (me->pset->extruded) y=sqside/2;
       if (me->pset->side != sqside) {
-	me->reloadPieceSet();
-	me->pset->scale(sqside);
+    me->reloadPieceSet();
+    me->pset->scale(sqside);
       }
 
       rowsz=sqside*8;
@@ -194,21 +194,21 @@ gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
 
       me->pset->beginQueueing();
       for(i=0;i<8;i++)
-	for(j=0;j<8;j++)
-	  me->pset->drawPieceAndSquare(me->position.getPiece(flip?7-i:i,
-							     flip?j:7-j),
-				       tmp, i*sqside , y+j*sqside, rowsz,
-				       (i+j)%2);
+    for(j=0;j<8;j++)
+      me->pset->drawPieceAndSquare(me->position.getPiece(flip?7-i:i,
+                                 flip?j:7-j),
+                       tmp, i*sqside , y+j*sqside, rowsz,
+                       (i+j)%2);
       me->pset->endQueueing();
 
       gdk_draw_rgb_image(me->pixbuf, gc, 0, 0, rowsz, rowsz+y,
-			 GDK_RGB_DITHER_NORMAL, tmp, rowsz*3);
+             GDK_RGB_DITHER_NORMAL, tmp, rowsz*3);
 
       g_free(tmp);
 
     }
 
-    
+
     x=sqside*8+10;
 
     int fh = me->C.fontHeight(0);
@@ -223,7 +223,7 @@ gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
       gdk_draw_rectangle(me->pixbuf,gc,TRUE,x-5,(flip?40:zh-5-fh), 150, 20);
       me->C.setColor(0);
     }
-    
+
     me->clockString(me->clock.getValue2(0),t,64);
     snprintf(z,256,_("White: %s - %s"),me->Names[0].c_str(),t);
 
@@ -249,9 +249,9 @@ gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
     for(i=0;i<5;i++) {
       k=me->position.getStockCount(stock[i]|WHITE);
       for(j=0;j<k;j++) {
-	global.vpieces.drawPiece(me->pixbuf,gc,sqside,x,flip?45:zh-5-sqside-20,
-				 stock[i]|WHITE);
-	x+=sqside+2;
+    global.vpieces.drawPiece(me->pixbuf,gc,sqside,x,flip?45:zh-5-sqside-20,
+                 stock[i]|WHITE);
+    x+=sqside+2;
       }
     }
 
@@ -261,9 +261,9 @@ gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
     for(i=0;i<5;i++) {
       k=me->position.getStockCount(stock[i]|BLACK);
       for(j=0;j<k;j++) {
-	global.vpieces.drawPiece(me->pixbuf,gc,sqside,x,flip?zh-5-sqside-20:45,
-				 stock[i]|BLACK);
-	x+=sqside+2;
+    global.vpieces.drawPiece(me->pixbuf,gc,sqside,x,flip?zh-5-sqside-20:45,
+                 stock[i]|BLACK);
+    x+=sqside+2;
       }
     }
 
@@ -272,16 +272,16 @@ gboolean bareboard_expose(GtkWidget *widget,GdkEventExpose *ee,
     x=sqside*8+10;
     me->C.setColor(global.Colors.TextBright);
     me->C.drawString(x,40+sqside,0,_("Partner Tells:"));
-  
+
     if (!me->PTells.empty()) {
       me->C.setColor(global.Colors.PrivateTell);
       i=zh-20-5-sqside;
 
       pti=me->PTells.end();
       for(pti--;i>(59+sqside);i-=20, pti--) {
-	me->C.drawString(x,i,0,(*pti).c_str() );
-	if (pti == me->PTells.begin())
-	  break;
+    me->C.drawString(x,i,0,(*pti).c_str() );
+    if (pti == me->PTells.begin())
+      break;
       }
     }
   }
@@ -300,21 +300,21 @@ BugPane::BugPane() {
   GtkStyle *style;
   int i,c,r;
   static char *stuff[18]={"---","--","-","+","++","+++",
-			  "P","N","B","R","Q","Diag",
-			  "Sit","Go","Fast","Hard","Dead","Safe"};
-  
-  
+              "P","N","B","R","Q","Diag",
+              "Sit","Go","Fast","Hard","Dead","Safe"};
+
+
   widget = gtk_hbox_new(FALSE,0);
 
   board = new BareBoard();
   board->show();
-  
+
   gtk_box_pack_start(GTK_BOX(widget), board->widget, TRUE,TRUE, 0);
 
   // vbox
   v=gtk_vbox_new(FALSE,0);
   gtk_box_pack_start(GTK_BOX(widget), v, FALSE, TRUE, 0);
-  
+
   // table
   tbl=gtk_table_new(6,3,FALSE);
   gray[0].red=gray[0].green=gray[0].blue=0xaaaa;
@@ -338,7 +338,7 @@ BugPane::BugPane() {
     gtk_table_attach_defaults(GTK_TABLE(tbl),qb[i],c,c+1,r,r+1);
     gshow(qb[i]);
     gtk_signal_connect(GTK_OBJECT(qb[i]),"clicked",
-		       GTK_SIGNAL_FUNC(bug_ptell),(gpointer)(stuff[i]));
+               GTK_SIGNAL_FUNC(bug_ptell),(gpointer)(stuff[i]));
   }
 
   gtk_box_pack_start(GTK_BOX(v), tbl, FALSE, FALSE, 0);
@@ -359,7 +359,7 @@ void BugPane::reset() {
   board->setWhite(_("None"));
   board->setBlack(_("None"));
   thaw();
-  
+
 }
 
 void BugPane::addBugText(char *text) {
@@ -387,7 +387,7 @@ void BugPane::thaw()   { board->thaw(); }
 
 void bug_ptell(GtkWidget *b,gpointer data) {
   char z[256],x[256],c;
-  
+
   g_strlcpy(z,(char *)data,256);
 
   if ((z[0]=='-')||(z[0]=='+')) {
@@ -400,9 +400,9 @@ void bug_ptell(GtkWidget *b,gpointer data) {
       g_strlcpy(x,BugPane::BugTell.c_str(),256);
       c=x[strlen(x)-1];
       if ((c=='+')||(c=='-'))
-	BugPane::BugTell+=z;
+    BugPane::BugTell+=z;
       else
-	BugPane::BugTell=z;
+    BugPane::BugTell=z;
     }
   }
 
