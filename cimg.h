@@ -2,24 +2,24 @@
 
 /*
 
-    eboard - chess client
-    http://eboard.sourceforge.net
-    Copyright (C) 2000-2005 Felipe Paulo Guazzi Bergo
-    bergo@seul.org
+  eboard - chess client
+  http://eboard.sourceforge.net
+  Copyright (C) 2000-2005 Felipe Paulo Guazzi Bergo
+  bergo@seul.org
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 */
 
@@ -35,51 +35,51 @@
 
 class Blitter {
  public:
-  void bitblt(rgbptr src,rgbptr dest,int sx,int sy,int sw,
-	      int dx,int dy,int dw,int w,int h);
-  void bitblt_a(rgbptr src,rgbptr dest,int sx,int sy,int sw,
-		int dx,int dy,int dw,int w,int h, rgbptr alpha);
+    void bitblt(rgbptr src,rgbptr dest,int sx,int sy,int sw,
+                int dx,int dy,int dw,int w,int h);
+    void bitblt_a(rgbptr src,rgbptr dest,int sx,int sy,int sw,
+                  int dx,int dy,int dw,int w,int h, rgbptr alpha);
 };
 
 class ColorSpace {
  public:
 
-  int RGB2YCbCr(int triplet);
-  int YCbCr2RGB(int triplet);
-  int lighter(int triplet);
-  int darker(int triplet);
+    int RGB2YCbCr(int triplet);
+    int YCbCr2RGB(int triplet);
+    int lighter(int triplet);
+    int darker(int triplet);
 
-  int pixr(int triplet);
-  int pixg(int triplet);
-  int pixb(int triplet);
-  int pixel(int r,int g,int b);
+    int pixr(int triplet);
+    int pixg(int triplet);
+    int pixb(int triplet);
+    int pixel(int r,int g,int b);
 
 };
 
 class CImg : public Blitter {
  public:
-  CImg(int w,int h);
-  CImg(const char *filename);
-  CImg(CImg *src);
-  virtual ~CImg();
+    CImg(int w,int h);
+    CImg(const char *filename);
+    CImg(CImg *src);
+    virtual ~CImg();
 
-  void fill(int color);
-  void set(int x,int y, int color);
-  int  get(int x,int y);
-  void crop(int x,int y,int w,int h);
+    void fill(int color);
+    void set(int x,int y, int color);
+    int  get(int x,int y);
+    void crop(int x,int y,int w,int h);
 
-  CImg *alphaScale(rgbptr alpha, int nw,int nh, bool extruded);
-  CImg *scale(int nw, int nh);
+    CImg *alphaScale(rgbptr alpha, int nw,int nh, bool extruded);
+    CImg *scale(int nw, int nh);
 
-  void  writeP6(const char *path);
+    void  writeP6(const char *path);
 
-  int W,H;
-  int rowlen;
-  hati *data;
-  int ok;
+    int W,H;
+    int rowlen;
+    hati *data;
+    int ok;
 
  private:
-  void alloc(int w,int h);
+    void alloc(int w,int h);
 };
 
 #endif
