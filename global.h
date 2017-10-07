@@ -2,24 +2,24 @@
 
 /*
 
-    eboard - chess client
-    http://eboard.sourceforge.net
-    Copyright (C) 2000-2008 Felipe Paulo Guazzi Bergo
-    bergo@seul.org
+  eboard - chess client
+  http://eboard.sourceforge.net
+  Copyright (C) 2000-2008 Felipe Paulo Guazzi Bergo
+  bergo@seul.org
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 */
 
@@ -59,367 +59,367 @@ class VectorPieces;
 
 class HostBookmark {
  public:
-  HostBookmark();
-  int operator==(HostBookmark *hbm);
-  char host[128];
-  int  port;
-  char protocol[64];
+	HostBookmark();
+	int operator==(HostBookmark *hbm);
+	char host[128];
+	int  port;
+	char protocol[64];
 };
 
 class EngineBookmark {
  public:
-  int operator==(EngineBookmark *ebm);
-  void read(tstring &t);
+	int operator==(EngineBookmark *ebm);
+	void read(tstring &t);
 
-  string      caption;
-  string      directory;
-  string      cmdline;
-  int         humanwhite;
-  TimeControl timecontrol;
-  int         maxply;
-  int         think;  
-  int         proto;
-  variant     mode;
+	string      caption;
+	string      directory;
+	string      cmdline;
+	int         humanwhite;
+	TimeControl timecontrol;
+	int         maxply;
+	int         think;
+	int         proto;
+	variant     mode;
 
 };
 
 class ZombieHunter {
  public:
-  ZombieHunter();
-  ~ZombieHunter();
-  void add(int pid, SigChildHandler *sigh);
+	ZombieHunter();
+	~ZombieHunter();
+	void add(int pid, SigChildHandler *sigh);
 
  private:
-  void handleSigChild();
-  friend void zh_sigchild_handler(int sig);
+	void handleSigChild();
+	friend void zh_sigchild_handler(int sig);
 
-  vector<int> pids;
-  vector<SigChildHandler *> handlers;
+	vector<int> pids;
+	vector<SigChildHandler *> handlers;
 };
 
 void zh_sigchild_handler(int sig);
 
 class IcsChannel {
  public:
-  IcsChannel(char *s); // s like "49\tmamer tourneys\n"
-  string name;
-  int    number;
+	IcsChannel(char *s); // s like "49\tmamer tourneys\n"
+	string name;
+	int    number;
 };
 
 class ChannelSplitter : public SigChildHandler
 {
  public:
-  virtual ~ChannelSplitter() {}
-  void appendToChannel(int ch,char *msg,int color,Importance im=IM_NORMAL);
-  virtual Notebook * getNotebook()=0;
+	virtual ~ChannelSplitter() {}
+	void appendToChannel(int ch,char *msg,int color,Importance im=IM_NORMAL);
+	virtual Notebook * getNotebook()=0;
 
-  void removeRemovablePage(int n);
-  void getChannels(char *ipaddr);
-  void channelPageUp(int ch);
-  void channelPageDown(int ch);
+	void removeRemovablePage(int n);
+	void getChannels(char *ipaddr);
+	void channelPageUp(int ch);
+	void channelPageDown(int ch);
 
-  void ZombieNotification(int pid);
-  void updateFont();
+	void ZombieNotification(int pid);
+	void updateFont();
 
  protected:
-  void updateChannelScrollBacks();
+	void updateChannelScrollBacks();
 
  private:
-  void ensurePane(int ch);
-  void createPane(int ch);
+	void ensurePane(int ch);
+	void createPane(int ch);
 
-  void parseChannelList();
-  const char * getChannelTitle(int n);
-  vector<Text *>  panes;
-  vector<int>     numbers;
-  string chlist;
-  vector<IcsChannel> channels;
+	void parseChannelList();
+	const char * getChannelTitle(int n);
+	vector<Text *>  panes;
+	vector<int>     numbers;
+	string chlist;
+	vector<IcsChannel> channels;
 };
 
 class TerminalColor {
  public:
-  TerminalColor();
-  void read(tstring &t);
+	TerminalColor();
+	void read(tstring &t);
 
-  int TextDefault;
-  int TextBright;
-  int PrivateTell;
-  int NewsNotify;
-  int Mamer;
-  int KibitzWhisper;
-  int Shouts;
-  int Seeks;
-  int ChannelTell;
-  int Engine;
-  int Background;
+	int TextDefault;
+	int TextBright;
+	int PrivateTell;
+	int NewsNotify;
+	int Mamer;
+	int KibitzWhisper;
+	int Shouts;
+	int Seeks;
+	int ChannelTell;
+	int Engine;
+	int Background;
 };
 
 class WindowGeometry {
  public:
-  WindowGeometry(int a,int b,int c,int d);
-  WindowGeometry();
+	WindowGeometry(int a,int b,int c,int d);
+	WindowGeometry();
 
-  void read(tstring &t);
-  void print();
+	void read(tstring &t);
+	void print();
 
-  void retrieve(GtkWidget *w);
-  bool isNull();
-  void setNull();
-  int X,Y,W,H;
+	void retrieve(GtkWidget *w);
+	bool isNull();
+	void setNull();
+	int X,Y,W,H;
 };
 
 class Desktop {
  public:
 
-  Desktop();
-  void clear();
+	Desktop();
+	void clear();
 
-  void read(tstring &t);
-  void readConsole(tstring &t);
-  void writeConsoles(ostream &s, const char *key);
+	void read(tstring &t);
+	void readConsole(tstring &t);
+	void writeConsoles(ostream &s, const char *key);
 
-  void addConsole(DetachedConsole *dc);
-  void spawnConsoles(TextSet *ts);
+	void addConsole(DetachedConsole *dc);
+	void spawnConsoles(TextSet *ts);
 
 
-  WindowGeometry wMain, wGames, wLocal, wAds;
-  int PanePosition;
+	WindowGeometry wMain, wGames, wLocal, wAds;
+	int PanePosition;
 
  private:
-  vector<WindowGeometry *> consoles;
-  vector<string *> cfilters;
+	vector<WindowGeometry *> consoles;
+	vector<string *> cfilters;
 };
 
 class Environment {
  public:
-  Environment();
+	Environment();
 
-  string Home; 
-  string User;
-  string Config;
+	string Home;
+	string User;
+	string Config;
 };
 
 class Global : public ChannelSplitter
 {
  public:
-  Global();
-  virtual ~Global() {}
-  
-  ChessGame * getGame(int num);
-  void removeBoard(Board *b);
-  int  nextFreeGameId(int base);
-  void repaintAllBoards();
+	Global();
+	virtual ~Global() {}
 
-  void appendGame(ChessGame *cg,bool RenumberDupes=true);
-  void prependGame(ChessGame *cg,bool RenumberDupes=true);
-  void deleteGame(ChessGame *cg);
+	ChessGame * getGame(int num);
+	void removeBoard(Board *b);
+	int  nextFreeGameId(int base);
+	void repaintAllBoards();
 
-  void statOS();
-  void ensureDirectories();
-  void readRC();
-  void writeRC();
+	void appendGame(ChessGame *cg,bool RenumberDupes=true);
+	void prependGame(ChessGame *cg,bool RenumberDupes=true);
+	void deleteGame(ChessGame *cg);
 
-  void addHostBookmark(HostBookmark *hbm);
-  void addEngineBookmark(EngineBookmark *ebm);
+	void statOS();
+	void ensureDirectories();
+	void readRC();
+	void writeRC();
 
-  void WrappedMainIteration();
-  void WrappedMainQuit();
-  void LogAppend(char *msg);
-  void debug(char *klass,char *method,char *data=0);
+	void addHostBookmark(HostBookmark *hbm);
+	void addEngineBookmark(EngineBookmark *ebm);
 
-  void dumpGames();
-  void dumpBoards();
-  void dumpPanes();
+	void WrappedMainIteration();
+	void WrappedMainQuit();
+	void LogAppend(char *msg);
+	void debug(char *klass,char *method,char *data=0);
 
-  void gatherConsoleState();
+	void dumpGames();
+	void dumpBoards();
+	void dumpPanes();
 
-  void addAgent(NetConnection *ag);
-  void removeAgent(NetConnection *ag);
-  void agentBroadcast(char *z);
-  int  receiveAgentLine(char *dest,int limit);
+	void gatherConsoleState();
 
-  bool effectiveLegalityChecking();
+	void addAgent(NetConnection *ag);
+	void removeAgent(NetConnection *ag);
+	void agentBroadcast(char *z);
+	int  receiveAgentLine(char *dest,int limit);
 
-  /* issue sound events */
-  void opponentMoved();
-  void drawOffered();
-  void privatelyTold();
-  void challenged();
-  void timeRunningOut();
-  void gameWon();
-  void gameLost();
-  void gameStarted();
-  void gameFinished();
-  void moveMade();
+	bool effectiveLegalityChecking();
 
-  void flushSound();
-  void setPasswordMode(int pm);
-  //  void clearSoundStack();
+	/* issue sound events */
+	void opponentMoved();
+	void drawOffered();
+	void privatelyTold();
+	void challenged();
+	void timeRunningOut();
+	void gameWon();
+	void gameLost();
+	void gameStarted();
+	void gameFinished();
+	void moveMade();
 
-  void updateScrollBacks();
-  void dropQuickbarButtons();
+	void flushSound();
+	void setPasswordMode(int pm);
+	//  void clearSoundStack();
 
-  bool hasSoundFile(string &p);
+	void updateScrollBacks();
+	void dropQuickbarButtons();
 
-  Notebook * getNotebook();
+	bool hasSoundFile(string &p);
 
-  void setPieceSet(string &filename,bool chgPieces,bool chgSquares);
-  void respawnPieceSet();
-  void addPieceClient(PieceChangeListener *pcl);
-  void removePieceClient(PieceChangeListener *pcl);
+	Notebook * getNotebook();
 
-  char * filter(char *s);
+	void setPieceSet(string &filename,bool chgPieces,bool chgSquares);
+	void respawnPieceSet();
+	void addPieceClient(PieceChangeListener *pcl);
+	void removePieceClient(PieceChangeListener *pcl);
 
-  // free with free() as usual
-  static void * safeMalloc(int nbytes);
+	char * filter(char *s);
 
-  list<ChessGame *> GameList;
-  list<ChessGame *>::iterator GLi;
-  list<Board *> BoardList;
-  list<Board *>::iterator BLi;
-  list<int> TheOffspring;
+	// free with free() as usual
+	static void * safeMalloc(int nbytes);
 
-  list<NetConnection *> Agents;
-  list<DetachedConsole *> Consoles;
-  list<PieceChangeListener *> PieceClients;
+	list<ChessGame *> GameList;
+	list<ChessGame *>::iterator GLi;
+	list<Board *> BoardList;
+	list<Board *>::iterator BLi;
+	list<int> TheOffspring;
 
-  VectorPieces       vpieces;
-  PieceSet           *pieceset;
+	list<NetConnection *> Agents;
+	list<DetachedConsole *> Consoles;
+	list<PieceChangeListener *> PieceClients;
 
-  InputHandler       *input;
-  OutputPane         *output;
-  NetConnection      *network;
-  Status             *status;
-  Protocol           *protocol;
-  ConnectionHandler  *chandler;
-  PieceProvider      *promotion;
-  Notebook           *ebook;
-  SeekGraph2         *skgraph2;
-  History            *inputhistory;
-  BookmarkListener   *bmlistener;
-  UpdateInterface    *qbcontainer;
-  QuickBar           *quickbar;
-  GtkWidget          *killbox;
-  GtkWidget          *lowernotebook;
-  GtkWidget          *mainpaned;
-  GtkWidget          *toplevelwidget;
-  BugPane            *bugpane;
-  IONotificationInterface *iowatcher;
-  JoystickListener   *joycapture;
+	VectorPieces       vpieces;
+	PieceSet           *pieceset;
 
-  StringCollection   annotator;
-  SoundSlave         sndslave;
-  ZombieHunter       zombies;
+	InputHandler       *input;
+	OutputPane         *output;
+	NetConnection      *network;
+	Status             *status;
+	Protocol           *protocol;
+	ConnectionHandler  *chandler;
+	PieceProvider      *promotion;
+	Notebook           *ebook;
+	SeekGraph2         *skgraph2;
+	History            *inputhistory;
+	BookmarkListener   *bmlistener;
+	UpdateInterface    *qbcontainer;
+	QuickBar           *quickbar;
+	GtkWidget          *killbox;
+	GtkWidget          *lowernotebook;
+	GtkWidget          *mainpaned;
+	GtkWidget          *toplevelwidget;
+	BugPane            *bugpane;
+	IONotificationInterface *iowatcher;
+	JoystickListener   *joycapture;
 
-  int                SelfInputColor;
-  int                PasswordMode;
+	StringCollection   annotator;
+	SoundSlave         sndslave;
+	ZombieHunter       zombies;
 
-  int                LastScratch;
+	int                SelfInputColor;
+	int                PasswordMode;
 
-  int HilightLastMove;
-  int AnimateMoves;
-  int Premove;
+	int                LastScratch;
 
-  int TabPos; // 0=R 1=L 2=T 3=B
+	int HilightLastMove;
+	int AnimateMoves;
+	int Premove;
 
-  char ClockFont[96];
-  char PlayerFont[96];
-  char InfoFont[96];
-  char ConsoleFont[96];
-  char SeekFont[96];
+	int TabPos; // 0=R 1=L 2=T 3=B
 
-  int PlainSquares;
-  int LightSqColor;
-  int DarkSqColor;
+	char ClockFont[96];
+	char PlayerFont[96];
+	char InfoFont[96];
+	char ConsoleFont[96];
+	char SeekFont[96];
 
-  int ShowTimestamp;
-  int ShowRating;
-  int ScrollBack;
-  int FicsAutoLogin;
-  int IcsSeekGraph;
-  int HideSeeks;
-  int BeepWhenOppMoves;
-  int EnableSounds;
-  int UseVectorPieces;
-  int CheckLegality;
-  int SpecialChars; // 0=none 1=truncate 2=underscore 3=soft translate (a^)
+	int PlainSquares;
+	int LightSqColor;
+	int DarkSqColor;
 
-  int SplitChannels;
-  int ChannelsToConsoleToo;
-  int DrawHouseStock;
+	int ShowTimestamp;
+	int ShowRating;
+	int ScrollBack;
+	int FicsAutoLogin;
+	int IcsSeekGraph;
+	int HideSeeks;
+	int BeepWhenOppMoves;
+	int EnableSounds;
+	int UseVectorPieces;
+	int CheckLegality;
+	int SpecialChars; // 0=none 1=truncate 2=underscore 3=soft translate (a^)
 
-  int AppendPlayed;
-  int AppendObserved;
-  char AppendFile[128];
+	int SplitChannels;
+	int ChannelsToConsoleToo;
+	int DrawHouseStock;
 
-  int PopupSecondaryGames;
-  int SmartDiscard;
+	int AppendPlayed;
+	int AppendObserved;
+	char AppendFile[128];
 
-  int ShowCoordinates;
-  int ShowQuickbar;
-  int RetrieveChannelNames;
-  bool PopupHelp;
-  int LowTimeWarningLimit;
-  int SmootherAnimation;
-  int IcsAllObPlayed;
-  int IcsAllObObserved;
+	int PopupSecondaryGames;
+	int SmartDiscard;
 
-  int JSCursorAxis;
-  int JSBrowseAxis;
-  int JSMoveButton;
-  int JSNextTabButton;
-  int JSPrevTabButton;
-  int JSMode;
-  int JSSpeed;
+	int ShowCoordinates;
+	int ShowQuickbar;
+	int RetrieveChannelNames;
+	bool PopupHelp;
+	int LowTimeWarningLimit;
+	int SmootherAnimation;
+	int IcsAllObPlayed;
+	int IcsAllObObserved;
 
-  char P2PName[64];
+	int JSCursorAxis;
+	int JSBrowseAxis;
+	int JSMoveButton;
+	int JSNextTabButton;
+	int JSPrevTabButton;
+	int JSMode;
+	int JSSpeed;
 
-  TerminalColor Colors;
-  Desktop Desk;
-  
-  // 0=opponent moved, 1=draw offer 2=pvt tell 3=challenged
-  // 4=time running out
-  // 5=won game        6=lost game  7=game started
-  // 8=game over (observed)
-  // 9=moved (observed)
-  SoundEvent sndevents[N_SOUND_EVENTS];
+	char P2PName[64];
 
-  int CommLog;
-  int DebugLog;
-  int PauseLog;
+	TerminalColor Colors;
+	Desktop Desk;
 
-  int Quitting;
+	// 0=opponent moved, 1=draw offer 2=pvt tell 3=challenged
+	// 4=time running out
+	// 5=won game        6=lost game  7=game started
+	// 8=game over (observed)
+	// 9=moved (observed)
+	SoundEvent sndevents[N_SOUND_EVENTS];
 
-  list<HostBookmark *>   HostHistory;
-  list<EngineBookmark *> EnginePresets;
+	int CommLog;
+	int DebugLog;
+	int PauseLog;
 
-  vector<string> SoundFiles;
-  vector<QButton *> QuickbarButtons;
+	int Quitting;
 
-  char * Version;
-  char   SystemType[64];
-  char   argv0[512];
+	list<HostBookmark *>   HostHistory;
+	list<EngineBookmark *> EnginePresets;
 
-  Environment env;
+	vector<string> SoundFiles;
+	vector<QButton *> QuickbarButtons;
 
-  string ConsoleReply;
+	char * Version;
+	char   SystemType[64];
+	char   argv0[512];
 
-  int JoystickFD;
+	Environment env;
+
+	string ConsoleReply;
+
+	int JoystickFD;
 
  private:
-  int createDir(char *z);
-  void renumberGame(ChessGame *cg,int id);
-  void clearDupes(ChessGame *cg);
+	int createDir(char *z);
+	void renumberGame(ChessGame *cg,int id);
+	void clearDupes(ChessGame *cg);
 
-  void playOther(int i);
+	void playOther(int i);
 
-  void unicodeNormalize(string &dest, gunichar src);
+	void unicodeNormalize(string &dest, gunichar src);
 
-  int MainLevel;
-  int QuitPending;
+	int MainLevel;
+	int QuitPending;
 
-  vector<const char *> RCKeys;
-  stack<int> SoundStack;
+	vector<const char *> RCKeys;
+	stack<int> SoundStack;
 };
 
 #ifndef GLOBAL_CC
