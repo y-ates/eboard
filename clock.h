@@ -38,7 +38,7 @@
 
 class ClockHost {
  public:
-	virtual void updateClock()=0;
+    virtual void updateClock()=0;
 };
 
 // values for getActive()
@@ -50,53 +50,53 @@ class ClockHost {
 
 class ChessClock : public UpdateInterface {
  public:
-	ChessClock();
-	virtual ~ChessClock();
+    ChessClock();
+    virtual ~ChessClock();
 
-	void setClock2(int whitemsec,int blackmsec,int activep,int countdown);
-	void setHost(ClockHost *hostp);
-	void setAnotherHost(ClockHost *hostp);
-	void setMirror(ChessClock *dest);
+    void setClock2(int whitemsec,int blackmsec,int activep,int countdown);
+    void setHost(ClockHost *hostp);
+    void setAnotherHost(ClockHost *hostp);
+    void setMirror(ChessClock *dest);
 
-	int  getActive();
-	int  getValue2(int black);
+    int  getActive();
+    int  getValue2(int black);
 
-	// which= -1=white 0=active one 1=black
-	void incrementClock2(int which, int msecs);
+    // which= -1=white 0=active one 1=black
+    void incrementClock2(int which, int msecs);
 
-	bool lowTimeWarning(piece mycolor);
+    bool lowTimeWarning(piece mycolor);
 
-	void update();
+    void update();
 
-	int id;
+    int id;
 
  private:
-	int value[2],val_ref[2];
-	Timestamp t_ref[2];
-	int active;
-	int countdownf;
-	ClockHost *host, *host2;
-	ChessClock *mirror;
-	Timestamp LastWarning;
+    int value[2],val_ref[2];
+    Timestamp t_ref[2];
+    int active;
+    int countdownf;
+    ClockHost *host, *host2;
+    ChessClock *mirror;
+    Timestamp LastWarning;
 
-	static int freeid;
+    static int freeid;
 };
 
 
 class ClockMaster {
  public:
-	ClockMaster();
-	void append(ChessClock *clockp);
-	void remove(ChessClock *clockp);
+    ClockMaster();
+    void append(ChessClock *clockp);
+    void remove(ChessClock *clockp);
 
  private:
-	void update();
+    void update();
 
-	list<ChessClock *> clocks;
-	int timeout_on;
-	int timeout_id;
+    list<ChessClock *> clocks;
+    int timeout_on;
+    int timeout_id;
 
-	friend gint clockmaster_timeout(gpointer data);
+    friend gint clockmaster_timeout(gpointer data);
 };
 
 gint clockmaster_timeout(gpointer data);
@@ -105,46 +105,46 @@ gint clockmaster_timeout(gpointer data);
 
 class TimeControl {
  public:
-	TimeControl();
-	TimeControl &operator=(TimeControl &src);
-	int          operator==(TimeControl &src);
-	int          operator!=(TimeControl &src);
+    TimeControl();
+    TimeControl &operator=(TimeControl &src);
+    int          operator==(TimeControl &src);
+    int          operator!=(TimeControl &src);
 
-	void fromSerialization(const char *s);
+    void fromSerialization(const char *s);
 
-	static void secondsToString(char *dest, int maxlen, int secs, bool units=false);
-	static int  stringToSeconds(char *src);
+    static void secondsToString(char *dest, int maxlen, int secs, bool units=false);
+    static int  stringToSeconds(char *src);
 
-	void setSecondsPerMove(int seconds);
-	void setIcs(int base /* secs */, int increment /* secs */);
-	void setXMoves(int nmoves, int nsecs);
+    void setSecondsPerMove(int seconds);
+    void setIcs(int base /* secs */, int increment /* secs */);
+    void setXMoves(int nmoves, int nsecs);
 
-	bool isRegressive();
-	int  startValue();
+    bool isRegressive();
+    int  startValue();
 
-	void toXBoard(char *dest, int maxlen, int flags = 0);
-	void toString(char *dest, int maxlen);
-	void toShortString(char *dest, int maxlen);
-	void toPGN(char *dest, int maxlen); // format as a TimeControl tag
+    void toXBoard(char *dest, int maxlen, int flags = 0);
+    void toString(char *dest, int maxlen);
+    void toShortString(char *dest, int maxlen);
+    void toPGN(char *dest, int maxlen); // format as a TimeControl tag
 
-	TimeControlMode mode;
-	int value[2];
+    TimeControlMode mode;
+    int value[2];
 };
 
 class TimeControlEditDialog : public ModalDialog {
  public:
-	TimeControlEditDialog(TimeControl *tc, bool allownone=true);
-	virtual ~TimeControlEditDialog() {}
-	void setUpdateListener(UpdateInterface *ui);
+    TimeControlEditDialog(TimeControl *tc, bool allownone=true);
+    virtual ~TimeControlEditDialog() {}
+    void setUpdateListener(UpdateInterface *ui);
 
  private:
-	GtkWidget *mi[4], *e[5], *f[3];
-	TimeControl     *src;
-	TimeControl     local;
-	UpdateInterface *listener;
+    GtkWidget *mi[4], *e[5], *f[3];
+    TimeControl     *src;
+    TimeControl     local;
+    UpdateInterface *listener;
 
-	friend void tced_ok(GtkWidget *w, gpointer data);
-	friend void tced_dropmenu(GtkMenuItem *w, gpointer data);
+    friend void tced_ok(GtkWidget *w, gpointer data);
+    friend void tced_dropmenu(GtkMenuItem *w, gpointer data);
 };
 
 void tced_ok(GtkWidget *w, gpointer data);
