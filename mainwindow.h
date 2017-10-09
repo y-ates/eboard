@@ -2,24 +2,24 @@
 
 /*
 
-    eboard - chess client
-    http://eboard.sourceforge.net
-    Copyright (C) 2000-2007 Felipe Paulo Guazzi Bergo
-    bergo@seul.org
+  eboard - chess client
+  http://eboard.sourceforge.net
+  Copyright (C) 2000-2007 Felipe Paulo Guazzi Bergo
+  bergo@seul.org
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 */
 
@@ -49,39 +49,39 @@
 
 class ThemeEntry {
  public:
-  bool isDupe(ThemeEntry *te);
-  bool isNameDupe(ThemeEntry *te);
-  string Filename;
-  string Text;
+	bool isDupe(ThemeEntry *te);
+	bool isNameDupe(ThemeEntry *te);
+	string Filename;
+	string Text;
 };
 
 // implements the chat / command mode switch
 
 class InputModeSelector : public WidgetProxy {
  public:
-  InputModeSelector();
-  virtual ~InputModeSelector() {}
+	InputModeSelector();
+	virtual ~InputModeSelector() {}
 
-  bool getChatMode();
-  bool getSearchMode();
-  void setChatMode(bool m);
-  void setSearchMode(bool m);
-  string &getPrefix();
-  void   setPrefix(char *s);
-  void   setPrefix(string &s);
+	bool getChatMode();
+	bool getSearchMode();
+	void setChatMode(bool m);
+	void setSearchMode(bool m);
+	string &getPrefix();
+	void   setPrefix(char *s);
+	void   setPrefix(string &s);
 
 
-  void flip();
+	void flip();
 
  private:
-  bool   ChatMode, SearchMode;
-  string prefix;
-  GtkWidget *l[2];
+	bool   ChatMode, SearchMode;
+	string prefix;
+	GtkWidget *l[2];
 
-  // R,G,B in [0,255]
-  void setColor(GtkWidget *w, int R,int G, int B);
+	// R,G,B in [0,255]
+	void setColor(GtkWidget *w, int R,int G, int B);
 
-  friend void ims_switch(GtkWidget *w, gpointer data);
+	friend void ims_switch(GtkWidget *w, gpointer data);
 };
 
 void ims_switch(GtkWidget *w, gpointer data);
@@ -89,208 +89,208 @@ void ims_switch(GtkWidget *w, gpointer data);
 class PrefixCache {
  public:
 
-  string * get(int id);
-  void     set(int id,string &val);
-  void     set(int id,char *val);
-  void     setIfNotSet(int id, string &val);
+	string * get(int id);
+	void     set(int id,string &val);
+	void     set(int id,char *val);
+	void     setIfNotSet(int id, string &val);
 
  private:
-  vector<int>      ids;
-  vector<string *> text;
+	vector<int>      ids;
+	vector<string *> text;
 };
 
 // ask about our multiple inheritance contest
 
-class MainWindow : public WidgetProxy, 
-		   public InputHandler,
-		   public ConnectionHandler,
-                   public GameListListener,
-                   public StockListListener,
-		   public AdListListener,
-                   public ConsoleListener,
-                   public PaneChangeListener,
-		   public BookmarkListener,
-		   public UpdateInterface,
-		   public IONotificationInterface
+class MainWindow : public WidgetProxy,
+	public InputHandler,
+	public ConnectionHandler,
+	public GameListListener,
+	public StockListListener,
+	public AdListListener,
+	public ConsoleListener,
+	public PaneChangeListener,
+	public BookmarkListener,
+	public UpdateInterface,
+	public IONotificationInterface
 {
  public:
-  MainWindow();
-  virtual ~MainWindow() {}
-  void setPasswordMode(int pm);
-  void openServer(char *host,int port,Protocol *protocol,char *helper);
-  void openServer(NetConnection *conn, Protocol *protocol);
-  void openEngine(EngineProtocol *xpp, EngineBookmark *ebm=0);
-  void openGameList();
-  void openAdList();
-  void openStockList();
-  void openDetachedConsole();
+	MainWindow();
+	virtual ~MainWindow() {}
+	void setPasswordMode(int pm);
+	void openServer(char *host,int port,Protocol *protocol,char *helper);
+	void openServer(NetConnection *conn, Protocol *protocol);
+	void openEngine(EngineProtocol *xpp, EngineBookmark *ebm=0);
+	void openGameList();
+	void openAdList();
+	void openStockList();
+	void openDetachedConsole();
 
-  void gameListClosed();
-  void stockListClosed();
-  void adListClosed();
-  void consoleClosed();
+	void gameListClosed();
+	void stockListClosed();
+	void adListClosed();
+	void consoleClosed();
 
-  void paneChanged(int pgseq,int pgid);
-  void userInput(const char *text);
-  void peekKeys(GtkWidget *who);
-  int  keyPressed(int keyval, int state);
-  void updatePrefix();
+	void paneChanged(int pgseq,int pgid);
+	void userInput(const char *text);
+	void peekKeys(GtkWidget *who);
+	int  keyPressed(int keyval, int state);
+	void updatePrefix();
 
-  void restoreDesk();
+	void restoreDesk();
 
-  static GdkWindow *RefWindow;
+	static GdkWindow *RefWindow;
 
-  void update();
+	void update();
 
-  void readAvailable(int handle);
-  void writeAvailable(int handle);
+	void readAvailable(int handle);
+	void writeAvailable(int handle);
 
-  void joystickEvent(JoystickEventType jet, int number, int value);
+	void joystickEvent(JoystickEventType jet, int number, int value);
 
  private:
-  int HideMode; // password
-  GtkItemFactory  *gif;
-  GtkWidget       *v;
-  GtkWidget       *menubar;
-  GtkWidget       *inputbox;
-  Notebook        *notebook;
-  TextSet         *icsout;
-  Text            *inconsole, *xconsole;
-  Status          *status;
-  PromotionPicker *promote;
-  QuickBar        *quickbar;
+	int HideMode; // password
+	GtkItemFactory  *gif;
+	GtkWidget       *v;
+	GtkWidget       *menubar;
+	GtkWidget       *inputbox;
+	Notebook        *notebook;
+	TextSet         *icsout;
+	Text            *inconsole, *xconsole;
+	Status          *status;
+	PromotionPicker *promote;
+	QuickBar        *quickbar;
 
-  GameListDialog  *gamelist;
-  StockListDialog *stocklist;
-  AdListDialog    *adlist;
-  ScriptList      *scriptlist;
-  DetachedConsole *consolecopy;
+	GameListDialog  *gamelist;
+	StockListDialog *stocklist;
+	AdListDialog    *adlist;
+	ScriptList      *scriptlist;
+	DetachedConsole *consolecopy;
 
-  InputModeSelector *ims;
-  ExtPatternMatcher asetprefix, arunscript;
-  PrefixCache       imscache;
+	InputModeSelector *ims;
+	ExtPatternMatcher asetprefix, arunscript;
+	PrefixCache       imscache;
 
-  bool QuickbarVisible;
+	bool QuickbarVisible;
 
-  GtkTooltips *tooltips;
-  GtkWidget *navbar[8];
-  bool nav_enable[8];
+	GtkTooltips *tooltips;
+	GtkWidget *navbar[8];
+	bool nav_enable[8];
 
-  GtkWidget *picseal;
-  GdkPixmap *sealmap[2];
-  GdkBitmap *sealmask[2];
-  GtkWidget *vector_checkbox;
+	GtkWidget *picseal;
+	GdkPixmap *sealmap[2];
+	GdkBitmap *sealmask[2];
+	GtkWidget *vector_checkbox;
 
-  History   *InputHistory;
+	History   *InputHistory;
 
-  int jpd; // joystick previous direction
+	int jpd; // joystick previous direction
 
-  void createNavbar(GtkWidget *box);
-  void createSealPix(GtkWidget *box);
+	void createNavbar(GtkWidget *box);
+	void createSealPix(GtkWidget *box);
 
-  void setSealPix(int flag);
+	void setSealPix(int flag);
 
-  void setTitle(char *msg);
-  void searchThemes();
-  void updateBookmarks();
-  void parseThemeFile(char *name);
-  void greet();
+	void setTitle(char *msg);
+	void searchThemes();
+	void updateBookmarks();
+	void parseThemeFile(char *name);
+	void greet();
 
-  void injectInput();
-  void historyUp();
-  void historyDown();
-  void tryConnect(char *host,int port,Protocol *protocol,char *helper);
-  void cleanUpConnection();
-  void disconnect();
+	void injectInput();
+	void historyUp();
+	void historyDown();
+	void tryConnect(char *host,int port,Protocol *protocol,char *helper);
+	void cleanUpConnection();
+	void disconnect();
 
-  void openEngineBookmark(EngineBookmark *bm);
-  void openGnuChess4();
-  void openCrafty();
-  void openSjeng();
-  void openXBoardEngine();
+	void openEngineBookmark(EngineBookmark *bm);
+	void openGnuChess4();
+	void openCrafty();
+	void openSjeng();
+	void openXBoardEngine();
 
-  void gameWalk(int op);
+	void gameWalk(int op);
 
-  void saveDesk();
-  void saveBuffer();
+	void saveDesk();
+	void saveBuffer();
 
-  void newScratchBoard(bool clearboard);
-  void cloneOnScratch(ChessGame *cg0);
+	void newScratchBoard(bool clearboard);
+	void cloneOnScratch(ChessGame *cg0);
 
-  void showQuickbar();
-  void hideQuickbar();
+	void showQuickbar();
+	void hideQuickbar();
 
-  list<ThemeEntry *> Themes;
+	list<ThemeEntry *> Themes;
 
-  gint io_tag;
+	gint io_tag;
 
-  friend void mainwindow_themeitem(GtkMenuItem *menuitem, gpointer data);
-  friend void mainwindow_themeitem2(GtkMenuItem *menuitem, gpointer data);
-  friend void mainwindow_themeitem3(GtkMenuItem *menuitem, gpointer data);
+	friend void mainwindow_themeitem(GtkMenuItem *menuitem, gpointer data);
+	friend void mainwindow_themeitem2(GtkMenuItem *menuitem, gpointer data);
+	friend void mainwindow_themeitem3(GtkMenuItem *menuitem, gpointer data);
 
-  friend int  input_key_press (GtkWidget * wid, GdkEventKey * evt,
-			       gpointer data);
-  friend int  main_key_press (GtkWidget * wid, GdkEventKey * evt,
-			      gpointer data);
+	friend int  input_key_press (GtkWidget * wid, GdkEventKey * evt,
+								 gpointer data);
+	friend int  main_key_press (GtkWidget * wid, GdkEventKey * evt,
+								gpointer data);
 
-  friend void     peer_connect_fics(gpointer data);
+	friend void     peer_connect_fics(gpointer data);
 
-  friend void     peer_connect_xboard(gpointer data);
-  friend void     peer_connect_gnuchess4(gpointer data);
-  friend void     peer_connect_sjeng(gpointer data);
-  friend void     peer_connect_crafty(gpointer data);
+	friend void     peer_connect_xboard(gpointer data);
+	friend void     peer_connect_gnuchess4(gpointer data);
+	friend void     peer_connect_sjeng(gpointer data);
+	friend void     peer_connect_crafty(gpointer data);
 
-  friend void     peer_scratch_empty(gpointer data);
-  friend void     peer_scratch_initial(gpointer data);
+	friend void     peer_scratch_empty(gpointer data);
+	friend void     peer_scratch_initial(gpointer data);
 
-  friend void     peer_connect_ask(gpointer data);
-  friend void     peer_connect_p2p(gpointer data);
-  friend void     peer_disconnect(gpointer data);
-  friend void     help_about(gpointer data);
-  friend void     help_keys(gpointer data);
-  friend void     help_debug(gpointer data);
-  friend void     help_starting(gpointer data);
-  friend void     mainwindow_icsout_changed(GtkEditable *gtke, gpointer data);
+	friend void     peer_connect_ask(gpointer data);
+	friend void     peer_connect_p2p(gpointer data);
+	friend void     peer_disconnect(gpointer data);
+	friend void     help_about(gpointer data);
+	friend void     help_keys(gpointer data);
+	friend void     help_debug(gpointer data);
+	friend void     help_starting(gpointer data);
+	friend void     mainwindow_icsout_changed(GtkEditable *gtke, gpointer data);
 
-  friend void     mainwindow_connect_bookmark(GtkWidget *w, gpointer data);
-  friend void     mainwindow_connect_bookmark2(GtkWidget *w, gpointer data);
-  friend void     mainwindow_edit_engbm(GtkWidget *w, gpointer data);
+	friend void     mainwindow_connect_bookmark(GtkWidget *w, gpointer data);
+	friend void     mainwindow_connect_bookmark2(GtkWidget *w, gpointer data);
+	friend void     mainwindow_edit_engbm(GtkWidget *w, gpointer data);
 
-  friend void     navbar_back_all(GtkWidget *w,gpointer data);
-  friend void     navbar_back_1(GtkWidget *w,gpointer data);
-  friend void     navbar_forward_1(GtkWidget *w,gpointer data);
-  friend void     navbar_forward_all(GtkWidget *w,gpointer data);
-  friend void     navbar_movelist(GtkWidget *w,gpointer data);
-  friend void     navbar_trash(GtkWidget *w,gpointer data);
-  friend void     navbar_toscratch(GtkWidget *w,gpointer data);
-  friend void     navbar_flip(GtkWidget *w,gpointer data);
+	friend void     navbar_back_all(GtkWidget *w,gpointer data);
+	friend void     navbar_back_1(GtkWidget *w,gpointer data);
+	friend void     navbar_forward_1(GtkWidget *w,gpointer data);
+	friend void     navbar_forward_all(GtkWidget *w,gpointer data);
+	friend void     navbar_movelist(GtkWidget *w,gpointer data);
+	friend void     navbar_trash(GtkWidget *w,gpointer data);
+	friend void     navbar_toscratch(GtkWidget *w,gpointer data);
+	friend void     navbar_flip(GtkWidget *w,gpointer data);
 
-  friend void     sett_hilite(GtkWidget *w,gpointer data);
-  friend void     sett_animate(GtkWidget *w,gpointer data);
-  friend void     sett_premove(GtkWidget *w,gpointer data);
-  friend void     sett_coord(GtkWidget *w,gpointer data);
-  friend void     sett_beepopp(GtkWidget *w,gpointer data);
-  friend void     sett_osound(GtkWidget *w,gpointer data);
-  friend void     sett_vector(GtkWidget *w,gpointer data);
-  friend void     sett_legal(GtkWidget *w,gpointer data);
-  friend void     sett_popup(GtkWidget *w,gpointer data);
-  friend void     sett_smarttrash(GtkWidget *w,gpointer data);
+	friend void     sett_hilite(GtkWidget *w,gpointer data);
+	friend void     sett_animate(GtkWidget *w,gpointer data);
+	friend void     sett_premove(GtkWidget *w,gpointer data);
+	friend void     sett_coord(GtkWidget *w,gpointer data);
+	friend void     sett_beepopp(GtkWidget *w,gpointer data);
+	friend void     sett_osound(GtkWidget *w,gpointer data);
+	friend void     sett_vector(GtkWidget *w,gpointer data);
+	friend void     sett_legal(GtkWidget *w,gpointer data);
+	friend void     sett_popup(GtkWidget *w,gpointer data);
+	friend void     sett_smarttrash(GtkWidget *w,gpointer data);
 
-  friend gboolean mainwindow_read_agents(gpointer data);
+	friend gboolean mainwindow_read_agents(gpointer data);
 
-  friend void windows_savedesk(GtkWidget *w, gpointer data);
-  friend void windows_savebuffer(GtkWidget *w, gpointer data);
+	friend void windows_savedesk(GtkWidget *w, gpointer data);
+	friend void windows_savebuffer(GtkWidget *w, gpointer data);
 
-  friend void windows_find(GtkWidget *w, gpointer data);
-  friend void windows_findp(GtkWidget *w, gpointer data);
+	friend void windows_find(GtkWidget *w, gpointer data);
+	friend void windows_findp(GtkWidget *w, gpointer data);
 
-  
-  friend gboolean gtkDgtnixEvent(GIOChannel* channel, GIOCondition cond, gpointer data);
-  
 
-  #ifdef HAVE_LINUX_JOYSTICK_H
-  friend void mainwindow_joystick(gpointer data,gint source,GdkInputCondition cond);
-  #endif
+	friend gboolean gtkDgtnixEvent(GIOChannel* channel, GIOCondition cond, gpointer data);
+
+
+#ifdef HAVE_LINUX_JOYSTICK_H
+	friend void mainwindow_joystick(gpointer data,gint source,GdkInputCondition cond);
+#endif
 };
 
 void sett_prefs(gpointer data);
@@ -339,9 +339,9 @@ void mainwindow_themeitem2(GtkMenuItem *menuitem, gpointer data);
 void mainwindow_themeitem3(GtkMenuItem *menuitem, gpointer data);
 
 int  input_key_press (GtkWidget * wid, GdkEventKey * evt,
-		      gpointer data);
+					  gpointer data);
 int  main_key_press (GtkWidget * wid, GdkEventKey * evt,
-		     gpointer data);
+					 gpointer data);
 
 void     peer_connect_fics(gpointer data);
 
