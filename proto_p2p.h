@@ -37,35 +37,35 @@ class P2PProtocol;
 
 class GameProposal {
  public:
-	GameProposal();
-	GameProposal operator=(GameProposal &g);
+    GameProposal();
+    GameProposal operator=(GameProposal &g);
 
-	bool        AmWhite;
-	TimeControl timecontrol;
-	variant     Variant;
+    bool        AmWhite;
+    TimeControl timecontrol;
+    variant     Variant;
 };
 
 class P2PPad : public NonModalDialog {
  public:
-	P2PPad(P2PProtocol *_proto);
-	virtual ~P2PPad();
+    P2PPad(P2PProtocol *_proto);
+    virtual ~P2PPad();
 
-	void setProposal(GameProposal &g);
-	void setDrawProp();
-	void resetDrawProp();
+    void setProposal(GameProposal &g);
+    void setDrawProp();
+    void resetDrawProp();
 
  private:
-	P2PProtocol *proto;
-	DropBox *color;
-	GtkWidget *wtime, *winc, *wprop, *wacc;
-	BoxedLabel *bl[3];
+    P2PProtocol *proto;
+    DropBox *color;
+    GtkWidget *wtime, *winc, *wprop, *wacc;
+    BoxedLabel *bl[3];
 
-	bool PropIsDraw;
+    bool PropIsDraw;
 
-	void clearProposal();
+    void clearProposal();
 
-	friend void p2ppad_accept(GtkWidget *w, gpointer data);
-	friend void p2ppad_propose(GtkWidget *w, gpointer data);
+    friend void p2ppad_accept(GtkWidget *w, gpointer data);
+    friend void p2ppad_propose(GtkWidget *w, gpointer data);
 };
 
 void p2ppad_accept(GtkWidget *w, gpointer data);
@@ -73,53 +73,53 @@ void p2ppad_propose(GtkWidget *w, gpointer data);
 
 class P2PProtocol : public Protocol {
  public:
-	P2PProtocol();
-	virtual ~P2PProtocol();
+    P2PProtocol();
+    virtual ~P2PProtocol();
 
-	void receiveString(char *netstring);
-	void sendMove(int x1,int y1,int x2,int y2,int prom);
-	void sendUserInput(char *line);
-	void finalize();
+    void receiveString(char *netstring);
+    void sendMove(int x1,int y1,int x2,int y2,int prom);
+    void sendUserInput(char *line);
+    void finalize();
 
-	virtual bool requiresLegalityChecking();
+    virtual bool requiresLegalityChecking();
 
-	void resign();
-	void draw();
-	void adjourn();
-	void abort();
+    void resign();
+    void draw();
+    void adjourn();
+    void abort();
 
-	void hail();
+    void hail();
 
-	void sendProposal(GameProposal &g);
-	void acceptProposal();
+    void sendProposal(GameProposal &g);
+    void acceptProposal();
 
-	char *getRemotePlayer();
+    char *getRemotePlayer();
 
  private:
 
-	void sendId();
-	void createGame(GameProposal &g);
-	void gameOver(GameResult gr, char *desc);
+    void sendId();
+    void createGame(GameProposal &g);
+    void gameOver(GameResult gr, char *desc);
 
-	PatternBinder     Binder;
-	ExtPatternMatcher Chat, ProtoGreet, NameGreet,
-		GameProp, Accept, Move, Outcome, DrawOffer;
+    PatternBinder     Binder;
+    ExtPatternMatcher Chat, ProtoGreet, NameGreet,
+        GameProp, Accept, Move, Outcome, DrawOffer;
 
-	char *tmpbuf;
+    char *tmpbuf;
 
-	char RemotePlayer[64];
-	char RemoteSoftware[128];
-	int  RemoteProtover;
+    char RemotePlayer[64];
+    char RemoteSoftware[128];
+    int  RemoteProtover;
 
-	bool IdSent, IdReceived;
+    bool IdSent, IdReceived;
 
-	GameProposal MyProp, HisProp, Current;
-	bool GotProp, GotDrawProp, SentDrawProp;
+    GameProposal MyProp, HisProp, Current;
+    bool GotProp, GotDrawProp, SentDrawProp;
 
-	int        MoveNumber;
-	ChessGame *MyGame;
+    int        MoveNumber;
+    ChessGame *MyGame;
 
-	P2PPad *pad;
+    P2PPad *pad;
 };
 
 #endif
