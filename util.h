@@ -2,24 +2,24 @@
 
 /*
 
-    eboard - chess client
-    http://eboard.sourceforge.net
-    Copyright (C) 2000-2001 Felipe Paulo Guazzi Bergo
-    bergo@seul.org
+  eboard - chess client
+  http://eboard.sourceforge.net
+  Copyright (C) 2000-2001 Felipe Paulo Guazzi Bergo
+  bergo@seul.org
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 */
 
@@ -35,105 +35,105 @@
 
 class FileFinder {
  public:
-  FileFinder();
-  ~FileFinder();
-  void addDirectory(char *dir);
-  void addDirectory(string &dir);
-  void addMyDirectory(char *dir);
-  void addMyDirectory(string &dir);
+	FileFinder();
+	~FileFinder();
+	void addDirectory(char *dir);
+	void addDirectory(string &dir);
+	void addMyDirectory(char *dir);
+	void addMyDirectory(string &dir);
 
-  int  find(char *name,char *fullpath);
-  int  find(string &name, string &out);
+	int  find(char *name,char *fullpath);
+	int  find(string &name, string &out);
 
-  int getPathCount();
-  string &getPath(unsigned int i);
+	int getPathCount();
+	string &getPath(unsigned int i);
 
  private:
-  vector<string> path;
+	vector<string> path;
 };
 
 class EboardFileFinder : public FileFinder {
  public:
-  EboardFileFinder();
+	EboardFileFinder();
 };
 
 // pattern matching wizardry
 
 class Pattern {
  public:
-  Pattern();
-  virtual ~Pattern();
+	Pattern();
+	virtual ~Pattern();
 
-  // results: 0=match -1 = no match 1=multiple matches; on
-  // matches, last contains the first character after the match
-  virtual int tryMatch(list<char>::iterator & first,
-		       list<char>::iterator & last)=0;
-  virtual void reset();
-  
-  bool eternal;
+	// results: 0=match -1 = no match 1=multiple matches; on
+	// matches, last contains the first character after the match
+	virtual int tryMatch(list<char>::iterator & first,
+						 list<char>::iterator & last)=0;
+	virtual void reset();
+
+	bool eternal;
 };
 
 class ExactStringPat : public Pattern {
  public:
-  ExactStringPat(char *pat);
-  virtual ~ExactStringPat() {}
+	ExactStringPat(char *pat);
+	virtual ~ExactStringPat() {}
 
-  virtual int tryMatch(list<char>::iterator & first,
-		       list<char>::iterator & last);
+	virtual int tryMatch(list<char>::iterator & first,
+						 list<char>::iterator & last);
  protected:
-  list<char> pattern;
+	list<char> pattern;
 };
 
 // same thing, case insensitive
 class CIExactStringPat : public ExactStringPat {
  public:
-  CIExactStringPat(char *pat) : ExactStringPat(pat) { }
-  virtual ~CIExactStringPat() {}
-  
-  int tryMatch(list<char>::iterator & first,
-	       list<char>::iterator & last);
+ CIExactStringPat(char *pat) : ExactStringPat(pat) { }
+	virtual ~CIExactStringPat() {}
+
+	int tryMatch(list<char>::iterator & first,
+				 list<char>::iterator & last);
 };
 
 // you probably know this simply as the '*' wildcard
 class KleeneStarPat : public Pattern {
  public:
-  KleeneStarPat();
-  int tryMatch(list<char>::iterator & first,
-	       list<char>::iterator & last);
-  void reset();
+	KleeneStarPat();
+	int tryMatch(list<char>::iterator & first,
+				 list<char>::iterator & last);
+	void reset();
  private:
-  int CallCount;
+	int CallCount;
 };
 
 // string of any size (will try to maximize) made up of
 // characters from a given set
 class SetPat : public Pattern {
  public:
-  SetPat();
+	SetPat();
 
-  void addToSet(char c);
-  void addToSet(char *s);
-  void clearSet();
+	void addToSet(char c);
+	void addToSet(char *s);
+	void clearSet();
 
-  void includeUppercase();
-  void includeLowercase();
-  void includeLetters();
-  void includeNumbers();
+	void includeUppercase();
+	void includeLowercase();
+	void includeLetters();
+	void includeNumbers();
 
-  int tryMatch(list<char>::iterator & first,
-	       list<char>::iterator & last);
+	int tryMatch(list<char>::iterator & first,
+				 list<char>::iterator & last);
  protected:
-  bool *myset;
+	bool *myset;
  private:
-  bool inSet(char c);
+	bool inSet(char c);
 };
 
 // generic (eats 256 bytes per object -- unwise)
 class CharSetPat : public SetPat {
  public:
-  CharSetPat();
+	CharSetPat();
  private:
-  bool theset[256];
+	bool theset[256];
 };
 
 // calling include___() or addToSet() or clearSet() on
@@ -145,123 +145,123 @@ class CharSetPat : public SetPat {
 // %n - digits, '+' and '-'
 class PercNSetPat : public SetPat {
  public:
-  PercNSetPat();
+	PercNSetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %s - A-Z,a-z
 class PercSSetPat : public SetPat {
  public:
-  PercSSetPat();
+	PercSSetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %S - A-Z,a-z,0-9,_
 class PercUpperSSetPat : public SetPat {
  public:
-  PercUpperSSetPat();
+	PercUpperSSetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %a - A-Z,a-z,()*
 class PercASetPat : public SetPat {
  public:
-  PercASetPat();
+	PercASetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %A - %a U [0-9]
 class PercUpperASetPat : public SetPat {
  public:
-  PercUpperASetPat();
+	PercUpperASetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %b - spaces and tabs
 class PercBSetPat : public SetPat {
  public:
-  PercBSetPat();
+	PercBSetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %r - almost everything except spaces and tabs
 class PercRSetPat : public SetPat {
  public:
-  PercRSetPat();
+	PercRSetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 // %N - digits only
 class PercUpperNSetPat : public SetPat {
  public:
-  PercUpperNSetPat();
+	PercUpperNSetPat();
  private:
-  static bool theset[256];
+	static bool theset[256];
 };
 
 class PatternMatcher {
  public:
-  PatternMatcher();
-  virtual ~PatternMatcher();
+	PatternMatcher();
+	virtual ~PatternMatcher();
 
-  void append(Pattern *p);
-  void reset();
-  int  match(const char *stryng); // binds local 'data' list
-  int  match();             // uses PatternBinder bound data
+	void append(Pattern *p);
+	void reset();
+	int  match(const char *stryng); // binds local 'data' list
+	int  match();             // uses PatternBinder bound data
 
-  char *getToken(int index);
-  
-  void bindData(list<char> *newdata);
+	char *getToken(int index);
+
+	void bindData(list<char> *newdata);
 
  protected:
-  void cleanUp();
+	void cleanUp();
 
  private:
-  int recursiveMatch(list<Pattern *>::iterator & pat,
-		     list<char>::iterator & p0,
-		     list<char>::iterator & p1);
+	int recursiveMatch(list<Pattern *>::iterator & pat,
+					   list<char>::iterator & p0,
+					   list<char>::iterator & p1);
 
-  void lesserCleanUp();
+	void lesserCleanUp();
 
-  list<Pattern *> pattern;
-  list<char>      data;
-  list<list<char>::iterator *> matches;
-  list<char> *    bound;
-  
-  int bufsize;
-  char *token;
+	list<Pattern *> pattern;
+	list<char>      data;
+	list<list<char>::iterator *> matches;
+	list<char> *    bound;
+
+	int bufsize;
+	char *token;
 };
 
 class ExtPatternMatcher : public PatternMatcher {
  public:
-  ExtPatternMatcher();
+	ExtPatternMatcher();
 
-  void set(char *hrp); // set from a human readable pattern
+	void set(char *hrp); // set from a human readable pattern
 
-  // for patterns created with "set", these are the %s , %n
-  char *getSToken(int index);
-  char *getNToken(int index);
-  char *getAToken(int index);
-  char *getBToken(int index);
-  char *getRToken(int index);
-  char *getStarToken(int index);
+	// for patterns created with "set", these are the %s , %n
+	char *getSToken(int index);
+	char *getNToken(int index);
+	char *getAToken(int index);
+	char *getBToken(int index);
+	char *getRToken(int index);
+	char *getStarToken(int index);
 
  private:
-  char *getXToken(vector<int> &v, int index);
+	char *getXToken(vector<int> &v, int index);
 
-  vector<int> atokens;
-  vector<int> btokens;
-  vector<int> rtokens;
-  vector<int> stokens;
-  vector<int> ntokens;
-  vector<int> startokens;
+	vector<int> atokens;
+	vector<int> btokens;
+	vector<int> rtokens;
+	vector<int> stokens;
+	vector<int> ntokens;
+	vector<int> startokens;
 };
 
 // helper class to encapsulate char * -> list<char>
@@ -269,12 +269,12 @@ class ExtPatternMatcher : public PatternMatcher {
 // matching over a common string
 class PatternBinder {
  public:
-  void add(PatternMatcher *pm0,...); // arguments are pointers to PatternMatcher objects
-  void prepare(const char *target);
-  
+	void add(PatternMatcher *pm0,...); // arguments are pointers to PatternMatcher objects
+	void prepare(const char *target);
+
  private:
-  list<PatternMatcher *> group;
-  list<char> data;
+	list<PatternMatcher *> group;
+	list<char> data;
 };
 
 // read from a (possibly) compressed stream. currently
@@ -287,48 +287,48 @@ class PatternBinder {
 // extension in the name
 
 class zifstream {
-  
- public:
-  zifstream();
-  zifstream(char *name);
 
-  void          open(char *name);
-  bool          getline(char *ptr, int len, char delim='\n');
-  
-  bool          seekg(unsigned long offset);
-  unsigned long tellg();
-  
-  bool          operator!();
-  bool          eof();
-  void          close();
-  bool          fail();
-  bool          is_open();
+ public:
+	zifstream();
+	zifstream(char *name);
+
+	void          open(char *name);
+	bool          getline(char *ptr, int len, char delim='\n');
+
+	bool          seekg(unsigned long offset);
+	unsigned long tellg();
+
+	bool          operator!();
+	bool          eof();
+	void          close();
+	bool          fail();
+	bool          is_open();
 
  private:
-  ifstream x;
-  bool isopen;
-  bool compressed;
-  int  failure;
-  char tmpfile[280];
-  char ungzfile[280];
-  char origfile[256];
+	ifstream x;
+	bool isopen;
+	bool compressed;
+	int  failure;
+	char tmpfile[280];
+	char ungzfile[280];
+	char origfile[256];
 
-  void copen();
-  void cclose();
+	void copen();
+	void cclose();
 
-}; 
+};
 
 class Timestamp {
  public:
-  Timestamp(int sec, int usec);
-  Timestamp();
+	Timestamp(int sec, int usec);
+	Timestamp();
 
-  Timestamp & operator=(Timestamp &t);
-  double operator-(Timestamp &t);
-  static Timestamp & now();
+	Timestamp & operator=(Timestamp &t);
+	double operator-(Timestamp &t);
+	static Timestamp & now();
 
  private:
-  int S,U;
+	int S,U;
 
 };
 
