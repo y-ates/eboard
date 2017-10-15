@@ -17,16 +17,16 @@
 using namespace std;
 
 /*
-using std::list;
-using std::vector;
-using std::stack;
-using std::deque;
-using std::string;
+  using std::list;
+  using std::vector;
+  using std::stack;
+  using std::deque;
+  using std::string;
 
-using std::ostream;
-using std::istream;
-using std::ofstream;
-using std::ifstream;
+  using std::ostream;
+  using std::istream;
+  using std::ofstream;
+  using std::ifstream;
 */
 
 #endif
