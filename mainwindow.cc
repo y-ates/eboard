@@ -140,42 +140,42 @@ gchar * gtkgettext(const char *text, gpointer data) {
 MainWindow::MainWindow() {
 	GtkAccelGroup *mag;
 	GtkWidget *tw[10];
-	GtkWidget *bhb,*whb,*dm;
+	GtkWidget *bhb, *whb, *dm;
 
-	GtkWidget *P,*SN, *tl1, *tl2;
+	GtkWidget *P, *SN, *tl1, *tl2;
 
 	Board *tmp;
 	int i;
-	int nitems=sizeof(mainwindow_mainmenu)/sizeof(mainwindow_mainmenu[0]);
+	int nitems = sizeof(mainwindow_mainmenu)/sizeof(mainwindow_mainmenu[0]);
 
-	gamelist=0;
-	stocklist=0;
-	adlist=0;
-	consolecopy=0;
-	scriptlist=0;
-	ims=0;
-	jpd = 0;
+	gamelist    = 0;
+	stocklist   = 0;
+	adlist      = 0;
+	consolecopy = 0;
+	scriptlist  = 0;
+	ims         = 0;
+	jpd         = 0;
 
 	io_tag = -1;
 
 	asetprefix.set("%%prefix *");
 	arunscript.set("%%do *");
 
-	for(i=0;i<8;i++)
-		nav_enable[i]=true;
+	for(i=0; i<8; i++)
+		nav_enable[i] = true;
 
-	widget=gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	widget = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	gtk_widget_set_events(widget,GDK_KEY_PRESS_MASK);
 	setTitle("eboard");
 	gtk_widget_realize(widget);
 	gtk_window_resize(GTK_WINDOW(widget),800,600);
-	RefWindow=widget->window;
+	RefWindow = widget->window;
 
-	tooltips=GTK_TOOLTIPS(gtk_tooltips_new());
+	tooltips = GTK_TOOLTIPS(gtk_tooltips_new());
 
 	/* menu bar */
-	mag=gtk_accel_group_new();
-	gif=gtk_item_factory_new(GTK_TYPE_MENU_BAR, "<main>", mag);
+	mag = gtk_accel_group_new();
+	gif = gtk_item_factory_new(GTK_TYPE_MENU_BAR, "<main>", mag);
 
 #ifdef ENABLE_NLS
 	gtk_item_factory_set_translate_func(gif,(GtkTranslateFunc) gtkgettext, 0, 0);
@@ -184,7 +184,7 @@ MainWindow::MainWindow() {
 	gtk_item_factory_create_items (gif, nitems, mainwindow_mainmenu, NULL);
 	gtk_window_add_accel_group(GTK_WINDOW(widget), mag);
 
-	v=gtk_vbox_new(FALSE,0);
+	v = gtk_vbox_new(FALSE,0);
 	gshow(v);
 	gtk_container_add(GTK_CONTAINER(widget),v);
 	menubar = gtk_item_factory_get_widget (gif, "<main>");
@@ -197,15 +197,15 @@ MainWindow::MainWindow() {
 	updateBookmarks();
 
 	/* promotion menu */
-	promote=new PromotionPicker(widget->window);
+	promote = new PromotionPicker(widget->window);
 
 	/* restore main window geometry */
 	if (!global.Desk.wMain.isNull()) {
-		gtk_window_move(GTK_WINDOW(widget),global.Desk.wMain.X,global.Desk.wMain.Y);
-		gtk_window_resize(GTK_WINDOW(widget),global.Desk.wMain.W,global.Desk.wMain.H);
+		gtk_window_move(GTK_WINDOW(widget), global.Desk.wMain.X, global.Desk.wMain.Y);
+		gtk_window_resize(GTK_WINDOW(widget), global.Desk.wMain.W, global.Desk.wMain.H);
 	}
 
-	whb=gtk_hbox_new(FALSE,0);
+	whb = gtk_hbox_new(FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (v), whb, FALSE, TRUE, 0);
 
 	gtk_box_pack_start (GTK_BOX (whb), menubar, TRUE, TRUE, 0);
@@ -217,14 +217,15 @@ MainWindow::MainWindow() {
 	gshow(whb);
 
 	/* paned widget */
-	P=gtk_vpaned_new();
-	global.mainpaned=P;
+	P = gtk_vpaned_new();
+	global.mainpaned = P;
 	gtk_box_pack_start(GTK_BOX(v), P, TRUE, TRUE, 0);
 
 	/* main notebook */
-	notebook=new Notebook();
+	notebook = new Notebook();
 	{
-		GtkPositionType rqda[4]={GTK_POS_RIGHT,GTK_POS_LEFT,GTK_POS_TOP,GTK_POS_BOTTOM};
+		GtkPositionType rqda[4] = {GTK_POS_RIGHT, GTK_POS_LEFT, GTK_POS_TOP,
+								   GTK_POS_BOTTOM};
 		notebook->setTabPosition(rqda[global.TabPos%4]);
 	}
 	notebook->show();
@@ -235,9 +236,9 @@ MainWindow::MainWindow() {
 
 	/* restore pane divider position */
 	if (global.Desk.PanePosition)
-		gtk_paned_set_position(GTK_PANED(P),global.Desk.PanePosition);
+		gtk_paned_set_position(GTK_PANED(P), global.Desk.PanePosition);
 	else
-		gtk_paned_set_position(GTK_PANED(P),7000);
+		gtk_paned_set_position(GTK_PANED(P), 7000);
 
 	global.lowernotebook = SN;
 
@@ -247,8 +248,8 @@ MainWindow::MainWindow() {
 
 	/* console snippet */
 
-	tl1=gtk_label_new(_("Console"));
-	xconsole=new Text();
+	tl1      = gtk_label_new(_("Console"));
+	xconsole = new Text();
 
 	gtk_notebook_append_page(GTK_NOTEBOOK(SN), xconsole->widget, tl1);
 	gtk_notebook_set_tab_pos(GTK_NOTEBOOK(SN), GTK_POS_RIGHT);
@@ -266,67 +267,68 @@ MainWindow::MainWindow() {
 	gtk_notebook_append_page(GTK_NOTEBOOK(SN), global.bugpane->widget, tl2);
 	gshow(tl2);
 
-	gtk_notebook_set_page(GTK_NOTEBOOK(SN),0);
+	gtk_notebook_set_page(GTK_NOTEBOOK(SN), 0);
 
 	/* main board */
 
 	tmp=new Board();
 	notebook->addPage(tmp->widget,_("Main Board"),-1);
-	tmp->setNotebook(notebook,-1);
+	tmp->setNotebook(notebook, -1);
 
 	/* quick bar */
 	quickbar=new QuickBar(widget);
-	gtk_box_pack_start(GTK_BOX(v), quickbar->widget, FALSE,TRUE, 0);
+	gtk_box_pack_start(GTK_BOX(v), quickbar->widget, FALSE, TRUE, 0);
 	quickbar->show();
-	QuickbarVisible=true;
+	QuickbarVisible = true;
 	if (!global.ShowQuickbar)
 		hideQuickbar();
 
-	inconsole=new Text();
+	inconsole = new Text();
 	icsout->addTarget(inconsole);
 	inconsole->show();
-	notebook->addPage(inconsole->widget,_("Console"),-2);
-	inconsole->setNotebook(notebook,-2);
+	notebook->addPage(inconsole->widget,_("Console"), -2);
+	inconsole->setNotebook(notebook, -2);
 
 	greet();
 
 	/* bottom entry box */
-	tw[0]=gtk_frame_new(0);
-	gtk_frame_set_shadow_type(GTK_FRAME(tw[0]),GTK_SHADOW_ETCHED_OUT);
-	tw[1]=gtk_hbox_new(FALSE,0);
-	gtk_container_add(GTK_CONTAINER(tw[0]),tw[1]);
-	gtk_container_set_border_width(GTK_CONTAINER(tw[1]),4);
-	inputbox=gtk_entry_new();
-	gtk_widget_set_events(inputbox,(GdkEventMask)(gtk_widget_get_events(inputbox)|GDK_FOCUS_CHANGE_MASK));
+	tw[0] = gtk_frame_new(0);
+	gtk_frame_set_shadow_type(GTK_FRAME(tw[0]), GTK_SHADOW_ETCHED_OUT);
+	tw[1] = gtk_hbox_new(FALSE,0);
+	gtk_container_add(GTK_CONTAINER(tw[0]), tw[1]);
+	gtk_container_set_border_width(GTK_CONTAINER(tw[1]), 4);
+	inputbox = gtk_entry_new();
+	gtk_widget_set_events(inputbox,
+						  (GdkEventMask)(gtk_widget_get_events(inputbox)|GDK_FOCUS_CHANGE_MASK));
 
-	gtk_signal_connect(GTK_OBJECT(inputbox),"focus_out_event",
-					   GTK_SIGNAL_FUNC(mainwindow_input_focus_out),NULL);
+	gtk_signal_connect(GTK_OBJECT(inputbox), "focus_out_event",
+					   GTK_SIGNAL_FUNC(mainwindow_input_focus_out), NULL);
 
-	ims=new InputModeSelector();
+	ims = new InputModeSelector();
 
-	gtk_box_pack_start(GTK_BOX(tw[1]),ims->widget,FALSE,TRUE,0);
-	gtk_box_pack_start(GTK_BOX(tw[1]),inputbox,TRUE,TRUE,4);
+	gtk_box_pack_start(GTK_BOX(tw[1]), ims->widget, FALSE, TRUE, 0);
+	gtk_box_pack_start(GTK_BOX(tw[1]), inputbox, TRUE, TRUE, 4);
 
 
 	gshow(inputbox);
 	ims->show();
-	Gtk::show(tw[0],tw[1],NULL);
-	gtk_box_pack_start(GTK_BOX(v),tw[0],FALSE,FALSE,0);
+	Gtk::show(tw[0], tw[1], NULL);
+	gtk_box_pack_start(GTK_BOX(v), tw[0], FALSE, FALSE, 0);
 
-	InputHistory=new History(256);
+	InputHistory = new History(256);
 
 	/* status bar */
-	status=new Status();
+	status = new Status();
 	status->show();
 
-	bhb=gtk_hbox_new(FALSE,0);
-	gtk_box_pack_start(GTK_BOX(v),bhb,FALSE,TRUE,0);
+	bhb = gtk_hbox_new(FALSE, 0);
+	gtk_box_pack_start(GTK_BOX(v), bhb, FALSE, TRUE, 0);
 	gshow(bhb);
 
 	// timeseal icon
 	createSealPix(bhb);
 
-	gtk_box_pack_start(GTK_BOX(bhb),status->widget,TRUE,TRUE,0);
+	gtk_box_pack_start(GTK_BOX(bhb), status->widget, TRUE, TRUE, 0);
 
 	/* game browsing buttons */
 	createNavbar(bhb);
@@ -346,69 +348,69 @@ MainWindow::MainWindow() {
 	   (gpointer)this);
 	*/
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_HIGHLIGHT);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.HilightLastMove);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_hilite),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_HIGHLIGHT);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.HilightLastMove);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_hilite), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_ANIMATE);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.AnimateMoves);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_animate),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_ANIMATE);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.AnimateMoves);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_animate), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_PREMOVE);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.Premove);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_premove),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_PREMOVE);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.Premove);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_premove), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_MOVEBEEP);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.BeepWhenOppMoves);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_beepopp),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_MOVEBEEP);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.BeepWhenOppMoves);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_beepopp), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_SOUND);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.EnableSounds);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_osound),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_SOUND);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.EnableSounds);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_osound), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_VECTOR);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.UseVectorPieces);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_vector),0);
-	vector_checkbox=dm;
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_VECTOR);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.UseVectorPieces);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_vector), 0);
+	vector_checkbox = dm;
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_LEGALITY);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.CheckLegality);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_legal),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_LEGALITY);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.CheckLegality);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_legal), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_COORDS);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.ShowCoordinates);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_coord),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_COORDS);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.ShowCoordinates);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_coord), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_POPUP);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.PopupSecondaryGames);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_popup),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_POPUP);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.PopupSecondaryGames);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_popup), 0);
 
-	dm=gtk_item_factory_get_widget_by_action(gif,FA_SMART);
-	gmiset(GTK_CHECK_MENU_ITEM(dm),global.SmartDiscard);
-	gtk_signal_connect(GTK_OBJECT(dm),"toggled",GTK_SIGNAL_FUNC(sett_smarttrash),0);
+	dm = gtk_item_factory_get_widget_by_action(gif, FA_SMART);
+	gmiset(GTK_CHECK_MENU_ITEM(dm), global.SmartDiscard);
+	gtk_signal_connect(GTK_OBJECT(dm), "toggled", GTK_SIGNAL_FUNC(sett_smarttrash), 0);
 
-	setIcon(icon_eboard_xpm,"eboard");
-	HideMode=0;
+	setIcon(icon_eboard_xpm, "eboard");
+	HideMode = 0;
 
-	global.input=this;
-	global.output=icsout;
-	global.status=status;
-	global.chandler=(ConnectionHandler *)this;
-	global.promotion=(PieceProvider *)promote;
-	global.ebook=notebook;
-	global.inputhistory=InputHistory;
-	global.bmlistener=(BookmarkListener *)this;
-	global.qbcontainer=(UpdateInterface *)this;
-	global.iowatcher=(IONotificationInterface *)this;
-	global.quickbar=quickbar;
-	global.killbox=tw[1];
-	global.toplevelwidget=widget;
-	mainw=this;
+	global.input = this;
+	global.output = icsout;
+	global.status = status;
+	global.chandler = (ConnectionHandler *)this;
+	global.promotion = (PieceProvider *)promote;
+	global.ebook = notebook;
+	global.inputhistory = InputHistory;
+	global.bmlistener = (BookmarkListener *)this;
+	global.qbcontainer = (UpdateInterface *)this;
+	global.iowatcher = (IONotificationInterface *)this;
+	global.quickbar = quickbar;
+	global.killbox = tw[1];
+	global.toplevelwidget = widget;
+	mainw = this;
 
 	notebook->setListener(this);
-	paneChanged(0,-1);
+	paneChanged(0, -1);
 
-	gtk_timeout_add(150,forced_focus,(gpointer)inputbox);
+	gtk_timeout_add(150, forced_focus, (gpointer)inputbox);
 }
 
 void MainWindow::update() {
@@ -435,7 +437,7 @@ void MainWindow::hideQuickbar() {
 }
 
 void MainWindow::setSealPix(int flag) {
-	gtk_pixmap_set(GTK_PIXMAP(picseal),sealmap[flag?1:0],
+	gtk_pixmap_set(GTK_PIXMAP(picseal), sealmap[flag?1:0],
 				   sealmask[flag?1:0]);
 	gtk_widget_queue_resize(picseal);
 }
@@ -444,10 +446,10 @@ void MainWindow::createSealPix(GtkWidget *box) {
 	GtkWidget *fr;
 	GtkStyle *style;
 
-	fr=gtk_frame_new(0);
-	gtk_frame_set_shadow_type(GTK_FRAME(fr),GTK_SHADOW_ETCHED_OUT);
+	fr = gtk_frame_new(0);
+	gtk_frame_set_shadow_type(GTK_FRAME(fr), GTK_SHADOW_ETCHED_OUT);
 
-	style=gtk_widget_get_style(widget);
+	style = gtk_widget_get_style(widget);
 	sealmap[0] = gdk_pixmap_create_from_xpm_d (widget->window, &sealmask[0],
 											   &style->bg[GTK_STATE_NORMAL],
 											   (gchar **) sealoff_xpm);
@@ -455,21 +457,21 @@ void MainWindow::createSealPix(GtkWidget *box) {
 											   &style->bg[GTK_STATE_NORMAL],
 											   (gchar **) sealon_xpm);
 
-	picseal=gtk_pixmap_new(sealmap[0],sealmask[0]);
-	gtk_container_add(GTK_CONTAINER(fr),picseal);
+	picseal = gtk_pixmap_new(sealmap[0], sealmask[0]);
+	gtk_container_add(GTK_CONTAINER(fr), picseal);
 
-	gtk_box_pack_start(GTK_BOX(box),fr,FALSE,FALSE,0);
-	Gtk::show(picseal,fr,NULL);
+	gtk_box_pack_start(GTK_BOX(box), fr, FALSE, FALSE, 0);
+	Gtk::show(picseal, fr, NULL);
 }
 
 void MainWindow::createNavbar(GtkWidget *box) {
 	GdkPixmap *d[8];
 	GdkBitmap *mask[8];
-	GtkWidget *p[8],*b[8],*fr,*mb,*lb;
+	GtkWidget *p[8], *b[8], *fr, *mb, *lb;
 	GtkStyle *style;
 	int i;
 
-	style=gtk_widget_get_style(widget);
+	style = gtk_widget_get_style(widget);
 	d[0] = gdk_pixmap_create_from_xpm_d (widget->window, &mask[0],
 										 &style->bg[GTK_STATE_NORMAL],
 										 (gchar **) backn_xpm);
@@ -494,27 +496,27 @@ void MainWindow::createNavbar(GtkWidget *box) {
 	d[7] = gdk_pixmap_create_from_xpm_d (widget->window, &mask[7],
 										 &style->bg[GTK_STATE_NORMAL],
 										 (gchar **) toscratch_xpm);
-	mb=gtk_hbox_new(FALSE,0);
-	fr=gtk_frame_new(0);
-	gtk_frame_set_shadow_type(GTK_FRAME(fr),GTK_SHADOW_ETCHED_OUT);
-	gtk_container_add(GTK_CONTAINER(fr),mb);
+	mb = gtk_hbox_new(FALSE, 0);
+	fr = gtk_frame_new(0);
+	gtk_frame_set_shadow_type(GTK_FRAME(fr), GTK_SHADOW_ETCHED_OUT);
+	gtk_container_add(GTK_CONTAINER(fr), mb);
 
-	lb=gtk_label_new(_("Game/Board: "));
-	gtk_box_pack_start(GTK_BOX(mb),lb,FALSE,FALSE,2);
+	lb = gtk_label_new(_("Game/Board: "));
+	gtk_box_pack_start(GTK_BOX(mb), lb, FALSE, FALSE, 2);
 
-	for(i=0;i<8;i++) {
-		b[i]=gtk_button_new();
-		p[i]=gtk_pixmap_new(d[i],mask[i]);
-		gtk_container_add(GTK_CONTAINER(b[i]),p[i]);
+	for(i=0; i<8; i++) {
+		b[i] = gtk_button_new();
+		p[i] = gtk_pixmap_new(d[i], mask[i]);
+		gtk_container_add(GTK_CONTAINER(b[i]), p[i]);
 		gshow(p[i]);
-		gtk_box_pack_start(GTK_BOX(mb),b[i],FALSE,TRUE,0);
+		gtk_box_pack_start(GTK_BOX(mb), b[i], FALSE, TRUE, 0);
 		gshow(b[i]);
-		navbar[i]=b[i];
+		navbar[i] = b[i];
 	}
 
 
-	gtk_box_pack_end(GTK_BOX(box),fr,FALSE,FALSE,0);
-	Gtk::show(mb,lb,fr,NULL);
+	gtk_box_pack_end(GTK_BOX(box), fr, FALSE, FALSE, 0);
+	Gtk::show(mb, lb, fr, NULL);
 
 	gtk_tooltips_set_tip(tooltips,b[0],_("goes back to start of game"),0);
 	gtk_tooltips_set_tip(tooltips,b[1],_("goes back 1 halfmove"),0);
@@ -525,26 +527,26 @@ void MainWindow::createNavbar(GtkWidget *box) {
 	gtk_tooltips_set_tip(tooltips,b[6],_("discards board"),0);
 	gtk_tooltips_set_tip(tooltips,b[7],_("opens new scratch board with position"),0);
 
-	gtk_signal_connect(GTK_OBJECT(b[0]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_back_all),this);
-	gtk_signal_connect(GTK_OBJECT(b[1]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_back_1),this);
-	gtk_signal_connect(GTK_OBJECT(b[2]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_forward_1),this);
-	gtk_signal_connect(GTK_OBJECT(b[3]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_forward_all),this);
-	gtk_signal_connect(GTK_OBJECT(b[4]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_movelist),this);
-	gtk_signal_connect(GTK_OBJECT(b[5]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_flip),this);
-	gtk_signal_connect(GTK_OBJECT(b[6]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_trash),this);
-	gtk_signal_connect(GTK_OBJECT(b[7]),"clicked",
-					   GTK_SIGNAL_FUNC(navbar_toscratch),this);
+	gtk_signal_connect(GTK_OBJECT(b[0]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_back_all), this);
+	gtk_signal_connect(GTK_OBJECT(b[1]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_back_1), this);
+	gtk_signal_connect(GTK_OBJECT(b[2]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_forward_1), this);
+	gtk_signal_connect(GTK_OBJECT(b[3]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_forward_all), this);
+	gtk_signal_connect(GTK_OBJECT(b[4]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_movelist), this);
+	gtk_signal_connect(GTK_OBJECT(b[5]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_flip), this);
+	gtk_signal_connect(GTK_OBJECT(b[6]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_trash), this);
+	gtk_signal_connect(GTK_OBJECT(b[7]), "clicked",
+					   GTK_SIGNAL_FUNC(navbar_toscratch), this);
 }
 
 void MainWindow::setTitle(char *msg) {
-	gtk_window_set_title(GTK_WINDOW(widget),msg);
+	gtk_window_set_title(GTK_WINDOW(widget), msg);
 }
 
 void MainWindow::restoreDesk() {
@@ -582,7 +584,7 @@ void MainWindow::parseThemeFile(char *name) {
 	ifstream f(name);
 	if (!f) return;
 
-	global.debug("MainWindow","parseThemeFile",name);
+	global.debug("MainWindow", "parseThemeFile", name);
 
 	while( memset(s,0,256), f.getline(s,255,'\n') ) {
 		if (s[0]=='#') continue;
@@ -597,15 +599,15 @@ void MainWindow::parseThemeFile(char *name) {
 		}
 
 		t.set(s);
-		p=t.token(comma);
+		p = t.token(comma);
 		if (!p) continue;
-		te=new ThemeEntry();
+		te = new ThemeEntry();
 		te->Filename=*p;
-		p=t.token(comma);
-		if (p) te->Text=*p;
+		p = t.token(comma);
+		if (p) te->Text = *p;
 
 		// avoid dupes
-		for(it=Themes.begin();it!=Themes.end();it++) {
+		for (it=Themes.begin(); it!=Themes.end(); it++) {
 			if ( (*it)->isDupe(te) ) {
 				delete te;
 				te=0;
@@ -613,8 +615,8 @@ void MainWindow::parseThemeFile(char *name) {
 			}
 			if ( (*it)->isNameDupe(te) ) {
 				++ndc;
-				snprintf(aux,16," (%d)",ndc);
-				te->Text+=aux;
+				snprintf(aux,16," (%d)", ndc);
+				te->Text += aux;
 			}
 		}
 
@@ -635,17 +637,17 @@ void MainWindow::updateBookmarks() {
 
 	// ics bookmarks
 
-	pmenu=gtk_item_factory_get_widget_by_action(gif,FA_ICSBOOKMARKS);
+	pmenu = gtk_item_factory_get_widget_by_action(gif, FA_ICSBOOKMARKS);
 
-	r=gtk_container_children(GTK_CONTAINER(pmenu));
-	for(s=r;s!=0;s=g_list_next(s))
+	r = gtk_container_children(GTK_CONTAINER(pmenu));
+	for(s=r; s!=0; s=g_list_next(s))
 		gtk_container_remove( GTK_CONTAINER(pmenu), GTK_WIDGET(s->data) );
 	g_list_free(r);
 
-	i=1;
-	for(hi=global.HostHistory.begin();hi!=global.HostHistory.end();hi++,i++) {
-		snprintf(z,256,_("%d. Connect to %s:%d (%s)"),i,(*hi)->host,(*hi)->port,(*hi)->protocol);
-		item=gtk_menu_item_new_with_label( z );
+	i = 1;
+	for(hi=global.HostHistory.begin(); hi!=global.HostHistory.end(); hi++, i++) {
+		snprintf(z,256,_("%d. Connect to %s:%d (%s)"), i, (*hi)->host, (*hi)->port, (*hi)->protocol);
+		item = gtk_menu_item_new_with_label( z );
 
 		gtk_signal_connect(GTK_OBJECT(item),"activate",
 						   GtkSignalFunc(mainwindow_connect_bookmark),
@@ -656,54 +658,55 @@ void MainWindow::updateBookmarks() {
 	}
 
 	if (global.HostHistory.empty()) {
-		item=gtk_menu_item_new_with_label(_("(no bookmarks)"));
-		gtk_widget_set_sensitive(item,FALSE);
-		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu),item);
+		item = gtk_menu_item_new_with_label(_("(no bookmarks)"));
+		gtk_widget_set_sensitive(item, FALSE);
+		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu), item);
 		gshow(item);
 	}
 
 	// engine bookmarks
 
-	pmenu=gtk_item_factory_get_widget_by_action(gif,FA_ENGBOOKMARKS);
+	pmenu = gtk_item_factory_get_widget_by_action(gif, FA_ENGBOOKMARKS);
 
-	r=gtk_container_children(GTK_CONTAINER(pmenu));
-	for(s=r;s!=0;s=g_list_next(s))
+	r = gtk_container_children(GTK_CONTAINER(pmenu));
+	for(s=r; s!=0; s=g_list_next(s))
 		gtk_container_remove( GTK_CONTAINER(pmenu), GTK_WIDGET(s->data) );
 	g_list_free(r);
 
 	if (!global.EnginePresets.empty()) {
 		item=gtk_menu_item_new_with_label(_("Edit Bookmarks..."));
-		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu),item);
+		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu), item);
 		gshow(item);
 
-		gtk_signal_connect(GTK_OBJECT(item),"activate",
+		gtk_signal_connect(GTK_OBJECT(item), "activate",
 						   GtkSignalFunc(mainwindow_edit_engbm),
 						   (gpointer) this);
 
 		item=gtk_separator_menu_item_new();
-		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu),item);
+		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu), item);
 		gshow(item);
 	}
 
 	i=1;
-	for(ei=global.EnginePresets.begin();ei!=global.EnginePresets.end();ei++, i++) {
-		snprintf(z,256,"%d. ",i);
-		x=z;
-		x+=(*ei)->caption;
-		item=gtk_menu_item_new_with_label( x.c_str() );
+	for(ei=global.EnginePresets.begin(); ei!=global.EnginePresets.end();
+		ei++, i++) {
+		snprintf(z, 256, "%d. ", i);
+		x = z;
+		x += (*ei)->caption;
+		item = gtk_menu_item_new_with_label( x.c_str() );
 
-		gtk_signal_connect(GTK_OBJECT(item),"activate",
+		gtk_signal_connect(GTK_OBJECT(item), "activate",
 						   GtkSignalFunc(mainwindow_connect_bookmark2),
 						   (gpointer)(*ei));
 
-		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu),item);
+		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu), item);
 		gshow(item);
 	}
 
 	if (global.EnginePresets.empty()) {
-		item=gtk_menu_item_new_with_label(_("(no bookmarks)"));
-		gtk_widget_set_sensitive(item,FALSE);
-		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu),item);
+		item = gtk_menu_item_new_with_label(_("(no bookmarks)"));
+		gtk_widget_set_sensitive(item, FALSE);
+		gtk_menu_shell_append(GTK_MENU_SHELL(pmenu), item);
 		gshow(item);
 	}
 }
@@ -720,16 +723,16 @@ void MainWindow::searchThemes() {
 	ExtPatternMatcher ExtraConf;
 	string s;
 
-	tmenu[0]=gtk_item_factory_get_widget_by_action(gif,FA_LOADTHEME);
-	tmenu[1]=gtk_item_factory_get_widget_by_action(gif,FA_LOADPIECES);
-	tmenu[2]=gtk_item_factory_get_widget_by_action(gif,FA_LOADSQUARES);
+	tmenu[0] = gtk_item_factory_get_widget_by_action(gif, FA_LOADTHEME);
+	tmenu[1] = gtk_item_factory_get_widget_by_action(gif, FA_LOADPIECES);
+	tmenu[2] = gtk_item_factory_get_widget_by_action(gif, FA_LOADSQUARES);
 
-	j=eff.getPathCount();
+	j = eff.getPathCount();
 
 	for(i=0;i<j;i++) {
-		g_strlcpy(tmp,eff.getPath(i).c_str(),512);
-		g_strlcat(tmp,"/",512);
-		g_strlcat(tmp,"eboard_themes.conf",512);
+		g_strlcpy(tmp, eff.getPath(i).c_str(), 512);
+		g_strlcat(tmp, "/", 512);
+		g_strlcat(tmp,"eboard_themes.conf", 512);
 		parseThemeFile(tmp);
 	}
 
@@ -740,7 +743,7 @@ void MainWindow::searchThemes() {
 
 		while( (ds=readdir(dh)) != 0 ) {
 			if (ExtraConf.match(ds->d_name)) {
-				snprintf(tmp,512,DATADIR "/eboard/%s",ds->d_name);
+				snprintf(tmp, 512, DATADIR "/eboard/%s", ds->d_name);
 				parseThemeFile(tmp);
 			}
 		}
@@ -748,68 +751,68 @@ void MainWindow::searchThemes() {
 	}
 
 	if (!Themes.empty()) {
-		for(i=0,it=Themes.begin();it!=Themes.end();it++,i++) {
+		for (i=0, it=Themes.begin(); it!=Themes.end(); it++,i++) {
 
 			// load all
 
-			menuitem=gtk_menu_item_new_with_label( (*it)->Text.c_str() );
-			gtk_signal_connect(GTK_OBJECT(menuitem),"activate",
+			menuitem = gtk_menu_item_new_with_label( (*it)->Text.c_str() );
+			gtk_signal_connect(GTK_OBJECT(menuitem), "activate",
 							   GtkSignalFunc(mainwindow_themeitem),
 							   (gpointer)(*it));
-			gtk_menu_shell_append(GTK_MENU_SHELL(tmenu[0]),menuitem);
+			gtk_menu_shell_append(GTK_MENU_SHELL(tmenu[0]), menuitem);
 			gshow(menuitem);
 
 			// load pieces
 
-			menuitem=gtk_menu_item_new_with_label( (*it)->Text.c_str() );
-			gtk_signal_connect(GTK_OBJECT(menuitem),"activate",
+			menuitem = gtk_menu_item_new_with_label( (*it)->Text.c_str() );
+			gtk_signal_connect(GTK_OBJECT(menuitem), "activate",
 							   GtkSignalFunc(mainwindow_themeitem2),
 							   (gpointer)(*it));
-			gtk_menu_shell_append(GTK_MENU_SHELL(tmenu[1]),menuitem);
+			gtk_menu_shell_append(GTK_MENU_SHELL(tmenu[1]), menuitem);
 			gshow(menuitem);
 
 			// load squares
 
-			menuitem=gtk_menu_item_new_with_label( (*it)->Text.c_str() );
-			gtk_signal_connect(GTK_OBJECT(menuitem),"activate",
+			menuitem = gtk_menu_item_new_with_label( (*it)->Text.c_str() );
+			gtk_signal_connect(GTK_OBJECT(menuitem), "activate",
 							   GtkSignalFunc(mainwindow_themeitem3),
 							   (gpointer)(*it));
-			gtk_menu_shell_append(GTK_MENU_SHELL(tmenu[2]),menuitem);
+			gtk_menu_shell_append(GTK_MENU_SHELL(tmenu[2]), menuitem);
 			gshow(menuitem);
 
 		}
-		global.setPieceSet(Themes.front()->Filename,true,true);
+		global.setPieceSet(Themes.front()->Filename, true, true);
 	} else {
-		s="classic.png";
-		global.setPieceSet(s,true,true);
+		s = "classic.png";
+		global.setPieceSet(s, true, true);
 	}
 }
 
 void MainWindow::greet() {
 	char z[128];
-	snprintf (z,128,_("eboard version %s (%s)"),global.Version,global.SystemType);
-	icsout->append(z,0xc0ff00,IM_IGNORE);
+	snprintf (z, 128, _("eboard version %s (%s)"), global.Version,global.SystemType);
+	icsout->append(z, 0xc0ff00, IM_IGNORE);
 	snprintf (z,128,_("(c) 2000-%d Felipe Bergo <fbergo@gmail.com> (FICS handle: Pulga)"), 2007);
-	icsout->append(z,0xc0ff00,IM_IGNORE);
-	icsout->append(_("Distributed under the terms of the GNU General Public License, version 2 or later"),0xffc000,IM_IGNORE);
+	icsout->append(z,0xc0ff00, IM_IGNORE);
+	icsout->append(_("Distributed under the terms of the GNU General Public License, version 2 or later"), 0xffc000, IM_IGNORE);
 	icsout->append("http://www.gnu.org/copyleft/gpl.html",0xffc000,IM_IGNORE);
-	icsout->append(_("Source code available at http://eboard.sourceforge.net"),0xc0ff00,IM_IGNORE);
-	icsout->append("---",0xc0ff00,IM_IGNORE);
+	icsout->append(_("Source code available at http://eboard.sourceforge.net"), 0xc0ff00, IM_IGNORE);
+	icsout->append("---", 0xc0ff00, IM_IGNORE);
 
 }
 
 void MainWindow::updatePrefix() {
 	int id;
-	id=notebook->getCurrentPageId();
-	if (id==-2) {
-		imscache.set(-2,global.ConsoleReply);
+	id = notebook->getCurrentPageId();
+	if (id == -2) {
+		imscache.set(-2, global.ConsoleReply);
 		ims->setPrefix( * (imscache.get(-2)) );
 	}
 }
 
 void MainWindow::setPasswordMode(int pm) {
-	HideMode=pm;
-	global.PauseLog=pm;
+	HideMode = pm;
+	global.PauseLog = pm;
 	gtk_entry_set_visibility(GTK_ENTRY(inputbox),(pm?FALSE:TRUE));
 	global.setPasswordMode(pm);
 }
@@ -817,46 +820,46 @@ void MainWindow::setPasswordMode(int pm) {
 void MainWindow::openGameList() {
 	if (gamelist)
 		return;
-	gamelist=new GameListDialog(this);
+	gamelist = new GameListDialog(this);
 	gamelist->show();
 }
 
 void MainWindow::openAdList() {
 	if (adlist)
 		return;
-	adlist=new AdListDialog(this);
+	adlist = new AdListDialog(this);
 	adlist->show();
 }
 
 void MainWindow::gameListClosed() {
 	if (gamelist)
 		delete gamelist;
-	gamelist=0;
+	gamelist = 0;
 }
 
 void MainWindow::openStockList() {
 	if (stocklist)
 		return;
-	stocklist=new StockListDialog(this);
+	stocklist = new StockListDialog(this);
 	stocklist->show();
 }
 
 void MainWindow::stockListClosed() {
 	if (stocklist)
 		delete stocklist;
-	stocklist=0;
+	stocklist = 0;
 }
 
 void MainWindow::adListClosed() {
 	if (adlist)
 		delete adlist;
-	adlist=0;
+	adlist = 0;
 }
 
 void MainWindow::openDetachedConsole() {
 	if (consolecopy)
 		return;
-	consolecopy=new DetachedConsole(icsout,this);
+	consolecopy = new DetachedConsole(icsout,this);
 	consolecopy->show();
 }
 
@@ -868,28 +871,28 @@ void MainWindow::peekKeys(GtkWidget *who) {
 void MainWindow::consoleClosed() {
 	if (consolecopy)
 		delete consolecopy;
-	consolecopy=0;
+	consolecopy = 0;
 }
 
 void MainWindow::userInput(const char *text) {
 	char *nv;
 	int i,j;
-	if (text==0) return;
+	if (text == 0) return;
 
-	j=strlen(text);
+	j = strlen(text);
 
-	nv=(char *) Global::safeMalloc(j+1);
-	strcpy(nv,text);
+	nv = (char *) Global::safeMalloc(j+1);
+	strcpy(nv, text);
 
 	// join multi-line pastes in one single line
-	for(i=0;i<j;i++)
+	for(i=0; i<j; i++)
 		if ((nv[i]=='\n')||(nv[i]=='\r'))
-			nv[i]=' ';
+			nv[i] = ' ';
 
 	if (HideMode)
-		icsout->append(_("> (password sent)"),global.SelfInputColor);
+		icsout->append(_("> (password sent)"), global.SelfInputColor);
 	else
-		icsout->append("> ",nv,global.SelfInputColor);
+		icsout->append("> ", nv, global.SelfInputColor);
 
 	if (global.protocol)
 		global.protocol->sendUserInput(nv);
@@ -899,10 +902,10 @@ void MainWindow::userInput(const char *text) {
 }
 
 void MainWindow::injectInput() {
-	char z[4096],y[256];
+	char z[4096], y[256];
 	int id;
 
-	g_strlcpy(z,gtk_entry_get_text(GTK_ENTRY(inputbox)),4096);
+	g_strlcpy(z, gtk_entry_get_text(GTK_ENTRY(inputbox)), 4096);
 
 	if (ims->getSearchMode()) {
 		inconsole->SearchString = z;
@@ -912,31 +915,31 @@ void MainWindow::injectInput() {
 	}
 
 	if (asetprefix.match(z)) {
-		id=notebook->getCurrentPageId();
+		id = notebook->getCurrentPageId();
 		imscache.set(id, asetprefix.getStarToken(0) );
 		ims->setPrefix( * (imscache.get(id)) );
 		goto ii_nothing_else;
 	}
 
 	if (arunscript.match(z)) {
-		g_strlcpy(y,arunscript.getStarToken(0),256);
+		g_strlcpy(y,arunscript.getStarToken(0), 256);
 		new ScriptInstance(y);
 		goto ii_nothing_else;
 		return;
 	}
 
 	if (ims->getChatMode()) {
-		g_strlcpy(z,ims->getPrefix().c_str(),4096);
+		g_strlcpy(z,ims->getPrefix().c_str(), 4096);
 		if (z[0])
-			g_strlcat(z," ",4096);
+			g_strlcat(z, " ", 4096);
 	} else
-		z[0]=0;
-	g_strlcat(z,gtk_entry_get_text(GTK_ENTRY(inputbox)),4096);
+		z[0] = 0;
+	g_strlcat(z,gtk_entry_get_text(GTK_ENTRY(inputbox)), 4096);
 
 	userInput(z);
 
  ii_nothing_else:
-	gtk_entry_set_text(GTK_ENTRY(inputbox),"\0");
+	gtk_entry_set_text(GTK_ENTRY(inputbox), "\0");
 }
 
 void MainWindow::historyUp() {
